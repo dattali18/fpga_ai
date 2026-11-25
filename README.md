@@ -24,6 +24,23 @@ Empirical research repository studying whether an experienced software engineer 
 * `exp001` requirements: [context/experiments/exp001/REQUIREMENTS.md](context/experiments/exp001/REQUIREMENTS.md)
 * `exp001` acceptance criteria: [context/experiments/exp001/ACCEPTANCE_CRITERIA.md](context/experiments/exp001/ACCEPTANCE_CRITERIA.md)
 * `exp001` milestone plan: [context/experiments/exp001/IMPLEMENTATION_PLAN.md](context/experiments/exp001/IMPLEMENTATION_PLAN.md)
+* Live milestone status: [research/STATUS.md](research/STATUS.md)
+* GCP capability and protected-file baseline: [research/ENVIRONMENT_CAPABILITY.md](research/ENVIRONMENT_CAPABILITY.md)
+* `exp001` specification review and traceability: [experiments/exp001/docs/SPECIFICATION_REVIEW.md](experiments/exp001/docs/SPECIFICATION_REVIEW.md)
+
+## Repository Layout (Directories Created On-Demand Per Milestone)
+
+```text
+fpga_ai/
+|-- AGENTS.md                  # [Protected] Entry point
+|-- START_PROMPT.md            # [Protected] Bootstrap prompt
+|-- .agents/                   # [Protected] Rules, skills, workflows
+|-- context/                   # [Protected] Vision, decisions, specs, initial status
+|-- docker/                    # [M1] Portable Linux ARM64 Dockerfile & smoke tests
+|-- scripts/                   # [M1] Portable runner & digest-check scripts
+|-- experiments/exp001/        # [M0-M5] docs/, reference/ (planner), rtl/, tb/, syn/, results/
+`-- research/                  # [M0-M5] STATUS.md, TODO.md, plans/, daily_notes/, changelog/
+```
 
 ## Repository Ownership Boundaries
 
