@@ -1,0 +1,44 @@
+# Environment & local secrets (never commit credentials)
+.env
+.env.*
+*.pem
+*.key
+
+# Python caches & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.coverage
+htmlcov/
+
+# HDL simulation & cocotb build artifacts
+sim_build/
+**/sim_build/
+*.cf
+*.o
+e~*.o
+*.ghw
+*.vcd
+*.fst
+**/tb/results.xml
+results.xml
+
+# Synthesis temporary outputs (preserve experiments/**/results/ evidence)
+yosys_tmp*/
+*.pid
+
+# Portable transfer archives / bundles
+*.bundle
+
+# OS & editor metadata (Linux / macOS ARM64)
+.DS_Store
+._*
+.vscode/
+.idea/
+*.swp
+*~
