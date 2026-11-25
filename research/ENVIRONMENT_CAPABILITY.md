@@ -40,8 +40,8 @@ Because no `linux/arm64` container can be built or probed on GCP, the following 
 
 ## 4. Protected Bootstrap File SHA-256 Baseline (35 Files)
 
-Combined manifest SHA-256 (`find AGENTS.md START_PROMPT.md .agents context -type f | sort | xargs sha256sum | sha256sum`):
-`2fc5ad8a16cb46f235b6b71762b8c3f82bde8ce4ba6303f3e0da7248c7a2bf58`
+Combined portable manifest SHA-256 (`LC_ALL=C find AGENTS.md START_PROMPT.md .agents context -type f | LC_ALL=C sort | xargs sha256sum | sha256sum`):
+`e10a800fe0a2a1407ee46656bc4a73d4eb2373cefd43641d20b7e3d2482a129c`
 
 ```text
 29bf5406c6015e0f55b79eff66d16e47c0e9c08f41e961c5dd57371fda0f492b  AGENTS.md

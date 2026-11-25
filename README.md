@@ -27,6 +27,16 @@ Empirical research repository studying whether an experienced software engineer 
 * Live milestone status: [research/STATUS.md](research/STATUS.md)
 * GCP capability and protected-file baseline: [research/ENVIRONMENT_CAPABILITY.md](research/ENVIRONMENT_CAPABILITY.md)
 * `exp001` specification review and traceability: [experiments/exp001/docs/SPECIFICATION_REVIEW.md](experiments/exp001/docs/SPECIFICATION_REVIEW.md)
+* `exp001` ARM64 container and smoke-test guide: [experiments/exp001/docs/INFRASTRUCTURE.md](experiments/exp001/docs/INFRASTRUCTURE.md)
+
+## Quick Commands ([Makefile](Makefile))
+
+* `make verify` -- Verify SHA-256 integrity of protected planner-owned files (host Python 3).
+* `make build` -- Build native `linux/arm64` toolchain image (`make build-sim` for simulation-only stage).
+* `make smoke-sim` -- Run VHDL-2008 + `ieee.float_pkg` simulation smoke tests (`ghdl` + `cocotb`/`pytest`/`numpy`).
+* `make smoke-synth` -- Run generic synthesis smoke tests (`smoke_reg` and `smoke_fp32_add` separately).
+* `make smoke` -- Run both `smoke-sim` and `smoke-synth` with independent logs and exit codes.
+* `make shell` -- Open an interactive `bash` shell inside the `linux/arm64` container.
 
 ## Repository Layout (Directories Created On-Demand Per Milestone)
 
