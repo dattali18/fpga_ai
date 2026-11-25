@@ -28,6 +28,7 @@ Empirical research repository studying whether an experienced software engineer 
 * GCP capability and protected-file baseline: [research/ENVIRONMENT_CAPABILITY.md](research/ENVIRONMENT_CAPABILITY.md)
 * `exp001` specification review and traceability: [experiments/exp001/docs/SPECIFICATION_REVIEW.md](experiments/exp001/docs/SPECIFICATION_REVIEW.md)
 * `exp001` ARM64 container and smoke-test guide: [experiments/exp001/docs/INFRASTRUCTURE.md](experiments/exp001/docs/INFRASTRUCTURE.md)
+* `M3` GCP-to-local ARM64 handoff and resume guide: [research/HANDOFF_M3.md](research/HANDOFF_M3.md)
 
 ## Quick Commands ([Makefile](Makefile))
 
