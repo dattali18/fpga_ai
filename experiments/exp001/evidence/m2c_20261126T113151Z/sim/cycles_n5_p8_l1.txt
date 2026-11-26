@@ -1,0 +1,7 @@
+CYCLES t=0 latency=50 period=50
+CYCLES t=1 latency=50 period=50
+CYCLES t=2 latency=50 period=50
+CYCLES t=3 latency=50 period=50
+CYCLES t=4 latency=50 period=58
+CYCLES t=5 latency=50 period=50
+CYCLES t=6 latency=50 period=NA

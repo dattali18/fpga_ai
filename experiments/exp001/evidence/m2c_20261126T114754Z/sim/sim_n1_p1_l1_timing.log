@@ -1,0 +1,10 @@
+CYCLES t=0 latency=3 period=3
+CYCLES t=1 latency=3 period=3
+CYCLES t=2 latency=3 period=3
+CYCLES t=3 latency=3 period=3
+CYCLES t=4 latency=3 period=4
+CYCLES t=5 latency=3 period=3
+CYCLES t=6 latency=3 period=NA
+vectors/dpc_n1_p1.txt: 7 transactions, 7 outputs, 53 checks, 0 errors
+PASS: vectors/dpc_n1_p1.txt
+simulation finished @340ns

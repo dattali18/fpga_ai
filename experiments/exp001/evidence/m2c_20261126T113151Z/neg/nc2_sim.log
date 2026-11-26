@@ -1,0 +1,13 @@
+/workspace/experiments/exp001/tb/tb_dpc.vhd:152:11:@255ns:(report error): MISMATCH tx 0 n = 0 got=(BCC93BCC,BD9AD554) exp=(BCC93BCD,BD9AD554)
+CYCLES t=0 latency=40 period=40
+CYCLES t=1 latency=40 period=40
+CYCLES t=2 latency=40 period=40
+CYCLES t=3 latency=40 period=40
+CYCLES t=4 latency=40 period=43
+CYCLES t=5 latency=40 period=40
+CYCLES t=6 latency=40 period=NA
+neg/dpc_n8_p3_badY.txt: 7 transactions, 56 outputs, 571 checks, 1 errors
+/workspace/experiments/exp001/tb/tb_dpc.vhd:463:7:@2990ns:(report failure): FAIL: neg/dpc_n8_p3_badY.txt (1 errors)
+./tb_dpc:error: report failed
+in process .tb_dpc(sim).main_p
+./tb_dpc:error: simulation failed

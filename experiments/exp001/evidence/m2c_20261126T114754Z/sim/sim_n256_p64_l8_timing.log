@@ -1,0 +1,10 @@
+CYCLES t=0 latency=2784 period=2784
+CYCLES t=1 latency=2784 period=2784
+CYCLES t=2 latency=2784 period=2784
+CYCLES t=3 latency=2784 period=2784
+CYCLES t=4 latency=2784 period=2848
+CYCLES t=5 latency=2784 period=2784
+CYCLES t=6 latency=2784 period=NA
+vectors/dpc_n256_p64.txt: 7 transactions, 1792 outputs, 38987 checks, 0 errors
+PASS: vectors/dpc_n256_p64.txt
+simulation finished @196900ns

@@ -261,3 +261,20 @@ Owner: user; approved (planner review of M2b). M2b accepted on run m2b_20261126T
 
 ### D-075 - Order of the next milestones
 Owner: planner; approved by the user. M2c (G_LANES > 1) is next. Post-synthesis checks and Series 7 mapping move to M4 and apply to the final design. M4 checks LUTRAM mapping for all configurations, including (256,64). BRAM would need a synchronous-read architecture and is out of scope for now.
+
+## EXP001 M2c - DPC parallel lanes (2026-11-26)
+
+### D-076 - Lane architecture and closed-form cycle formula
+Owner: Claude Code (implementer), within G5 and the approved M2c plan. Groups n0 = 0, L, 2L, ...; lane j computes y[n0 + j]. Sliding window of L-1 registers plus the sample read in the current cycle (lane L-1); one sample read and one pulse read per cycle. States S_IDLE, S_LOAD_REF, S_LOAD_IN, S_FILL (L-1 cycles, skipped for L = 1), S_COMPUTE (P cycles, one MAC per lane), S_OUT (v = min(L, N_RG - n0) cycles). n0 and the sample index idx use addr_width(N_RG + P + L) bits; idx is compared with N_RG before truncation. Lanes with n0 + j >= N_RG compute but are never output. No output/compute overlap (owner "go" on the plan, question 1 left at the proposed default). Closed form at out_ready = 1: latency = 2*N_RG + ceil(N_RG/L)*(P + L - 1); period = latency, + P when the next block starts with a pulse load. For L = 1 it equals the M2b result N_RG + N_RG(P + 1). Elaboration check 1 <= G_LANES <= G_N_RG replaces the M2b check.
+
+### D-077 - Lane accumulators as the result buffer
+Owner: Claude Code (implementer); plan question 2 left at the proposed default. The accumulator input is +0 at k = 0 (no clear cycle, M2b rule acc = +0 preserved), and in S_OUT the output data are acc(j_out) through an explicit bounded lane mux (select_lane, FIFO-DEFECT-001 lesson: j_out has 2**addr_width(L) codes for L lanes). Outputs depend only on registers. Alternative: a separate output register (one more cycle per group, latency 2*N_RG + G*(P + L)).
+
+### D-078 - DPC-DEFECT-002 and the M2c candidate run
+Owner: Claude Code (implementer); for planner review and owner acceptance. First M2c run m2c_20261126T113151Z: all simulation, numerical, formula and negative-control checks PASS, but tri-state warnings were 32L + 2 for L > 1 (OVERALL FAIL). Root cause: window arrays sized L with only L-1 entries written; GHDL synthesis emitted a 'bZ constant for the unwritten entry (structural, not functional). Fix: window type of exactly L-1 entries (at least 1). Re-run m2c_20261126T114754Z: OVERALL PASS (C1-C7); 39 simulations and dumps bit exact; NC1-NC3 fail as intended; 9/9 syntheses 0 problems, $mul = 4L, tri-state = 32L; measured cycles equal 2*N_RG + ceil(N_RG/L)*(P + L - 1) on all 13 fixtures and repeat identically; L = 1 cycles identical to M2b. First run kept with CORRECTION.md (D-053 policy). Evidence: experiments/exp001/VALIDATION_M2C.md.
+
+### D-079 - Accept M2c
+Owner: user; approved (planner review of M2c). M2c accepted on run m2c_20261126T114754Z (completes D-078) within the simulation and generic structural synthesis scope. Mapping, post-synthesis equivalence and timing are not established. The superseded run m2c_20261126T113151Z is kept with its CORRECTION.md (D-053 policy).
+
+### D-080 - M4 before optimisation; M4 mapping set
+Owner: planner; approved by the user. M4 (post-synthesis simulation and Series 7 mapping of the final M2c design) comes before any cycle or pipelining optimisation. Optimisation becomes M6, after Amir's review. M4 mapping set: (256,64) with L = 1, 2, 4, 8 and (64,16) with L = 1, 4.

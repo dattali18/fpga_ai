@@ -1,0 +1,10 @@
+CYCLES t=0 latency=26 period=26
+CYCLES t=1 latency=26 period=26
+CYCLES t=2 latency=26 period=26
+CYCLES t=3 latency=26 period=26
+CYCLES t=4 latency=26 period=29
+CYCLES t=5 latency=26 period=26
+CYCLES t=6 latency=26 period=NA
+vectors/dpc_n8_p3.txt: 7 transactions, 56 outputs, 375 checks, 0 errors
+PASS: vectors/dpc_n8_p3.txt
+simulation finished @2010ns

@@ -1,0 +1,3 @@
+vectors/dpc_n64_p16.txt: 7 transactions, 448 outputs, 3485 checks, 0 errors
+PASS: vectors/dpc_n64_p16.txt
+simulation finished @19190ns

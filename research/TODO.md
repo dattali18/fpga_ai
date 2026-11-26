@@ -13,11 +13,13 @@ date: "2026-11-25"
   testbenches instead of cocotb/pytest (D-065). M2b is accepted (D-074,
   [validation](../experiments/exp001/VALIDATION_M2B.md)).
 - `TODO-005` (local Docker smoke): done in the M1 local validation.
+- M2c (`G_LANES > 1`) accepted (D-079,
+  [validation](../experiments/exp001/VALIDATION_M2C.md)).
 - Next:
-  - M2c (`G_LANES > 1`, parallel fixtures, measured cycles against the G5 model);
-  - M4 on the final design (D-075): post-synthesis checks and Series 7 mapping,
-    including LUTRAM mapping for every configuration, (256,64) included;
-  - pipelining milestone;
+  - M4 on the final design (D-075, D-080): post-synthesis simulation and Series 7
+    mapping of (256,64) with L = 1, 2, 4, 8 and (64,16) with L = 1, 4, including LUTRAM;
+  - M6 after Amir's review (D-080): pipelining; overlap of output/input with compute
+    (the `2*N_RG` term);
   - M5 review document for Amir.
 - The table below is a historical M3 snapshot of 2026-11-25 (D-067); later dated
   sections remain valid.

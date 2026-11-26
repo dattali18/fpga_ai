@@ -7,24 +7,25 @@ date: "2026-11-25"
 
 ## Current status (2026-11-26)
 
-- **Milestone:** M2b ACCEPTED (D-074) on run `m2b_20261126T111903Z`
-  ([validation](../experiments/exp001/VALIDATION_M2B.md)), within simulation and
-  generic structural synthesis scope. Next: M2c (D-075). M2a COMPLETE (D-063, `fe26c25`).
+- **Milestone:** M2c ACCEPTED (D-079) on run `m2c_20261126T114754Z`
+  ([validation](../experiments/exp001/VALIDATION_M2C.md)). Next: M4 post-synthesis
+  simulation and Series 7 mapping; optimisation is M6, after Amir's review (D-080). M2b ACCEPTED (D-074,
+  [validation](../experiments/exp001/VALIDATION_M2B.md)). M2a COMPLETE (D-063, `fe26c25`).
 - **Workflow:** Claude Code implements, Claude chat plans and reviews, the owner approves
   and commits (D-064). exp001 testbenches are plain GHDL (D-065).
 - **AC1:** PASS. Protected and oracle digests verified before and after the M2b run;
   the oracle manifest digest equals D-068.
-- **AC3:** PASS for the six `G_LANES = 1` configurations (compiled, elaborated,
-  synthesized).
-- **AC4:** PASS for the edge and baseline fixtures (bit exact and error bound, 18
-  dumps).
+- **AC3:** PASS for all 13 specification and edge configurations (compiled and
+  elaborated; 9 synthesized, (64,16,64) and the lane edge cases simulation only).
+- **AC4:** PASS for every fixture and lane count (bit exact and error bound, 39 dumps in
+  M2c).
 - **AC5:** generic structural synthesis PASS (0 problems; 32 tri-state warnings per
   configuration, CA-OBS-001). Series 7 mapping NOT_RUN (M4).
-- **AC6:** cycles measured for `G_LANES = 1` (latency `N_RG + N_RG(P+1)`); parallel
-  configurations NOT_RUN (M2c).
+- **AC6:** cycles measured for all configurations; equal to the closed form
+  `2*N_RG + ceil(N_RG/L)*(P+L-1)` (D-076). Simulation cycles only.
 - **AC7:** NOT_RUN (review package M5).
 - **Defects:** M2A-DEFECT-001 (D-066); DPC-DEFECT-001 (runner memory metric, fixed,
-  D-073).
+  D-073); DPC-DEFECT-002 (partly written window array, fixed, D-078).
 - The tables and sections below are a historical M3 snapshot of 2026-11-25 plus dated
   updates; this block supersedes them (D-067).
 

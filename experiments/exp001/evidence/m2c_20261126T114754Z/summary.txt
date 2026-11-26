@@ -1,0 +1,122 @@
+PASS  protected+oracle before: PASS: Verified 35 protected bootstrap files (combined SHA-256: e10a800fe0a2a1407ee46656bc4a73d4eb2373cefd43641d20b7e3d2482a129c) + 1 oracle files
+PASS  reference vectors: 6 files
+PASS  ghdl analysis + elaboration
+PASS  sim   n1_p1_l1_stress: 7 transactions, 7 outputs, 62 checks, 0 errors
+PASS  check n1_p1_l1_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.2569
+PASS  sim   n1_p1_l1_timing: 7 transactions, 7 outputs, 53 checks, 0 errors
+PASS  check n1_p1_l1_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.2569
+PASS  sim   n1_p1_l1_timing2: 7 transactions, 7 outputs, 53 checks, 0 errors
+PASS  check n1_p1_l1_timing2: gate failures=0 bit-exact mismatches=0 worst err/tol=0.2569
+PASS  cycles n1_p1_l1: identical in two timing runs (7 lines)
+PASS  formula n1_p1_l1: measured = 2N+ceil(N/L)(P+L-1) = 3
+PASS  sim   n5_p8_l1_stress: 7 transactions, 35 outputs, 774 checks, 0 errors
+PASS  check n5_p8_l1_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1372
+PASS  sim   n5_p8_l1_timing: 7 transactions, 35 outputs, 711 checks, 0 errors
+PASS  check n5_p8_l1_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1372
+PASS  sim   n5_p8_l1_timing2: 7 transactions, 35 outputs, 711 checks, 0 errors
+PASS  check n5_p8_l1_timing2: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1372
+PASS  cycles n5_p8_l1: identical in two timing runs (7 lines)
+PASS  formula n5_p8_l1: measured = 2N+ceil(N/L)(P+L-1) = 50
+PASS  sim   n8_p3_l1_stress: 7 transactions, 56 outputs, 625 checks, 0 errors
+PASS  check n8_p3_l1_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.2490
+PASS  sim   n8_p3_l1_timing: 7 transactions, 56 outputs, 571 checks, 0 errors
+PASS  check n8_p3_l1_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.2490
+PASS  sim   n8_p3_l1_timing2: 7 transactions, 56 outputs, 571 checks, 0 errors
+PASS  check n8_p3_l1_timing2: gate failures=0 bit-exact mismatches=0 worst err/tol=0.2490
+PASS  cycles n8_p3_l1: identical in two timing runs (7 lines)
+PASS  formula n8_p3_l1: measured = 2N+ceil(N/L)(P+L-1) = 40
+PASS  sim   n8_p8_l1_stress: 7 transactions, 56 outputs, 1200 checks, 0 errors
+PASS  check n8_p8_l1_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1415
+PASS  sim   n8_p8_l1_timing: 7 transactions, 56 outputs, 1131 checks, 0 errors
+PASS  check n8_p8_l1_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1415
+PASS  sim   n8_p8_l1_timing2: 7 transactions, 56 outputs, 1131 checks, 0 errors
+PASS  check n8_p8_l1_timing2: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1415
+PASS  cycles n8_p8_l1: identical in two timing runs (7 lines)
+PASS  formula n8_p8_l1: measured = 2N+ceil(N/L)(P+L-1) = 80
+PASS  sim   n64_p16_l1_stress: 7 transactions, 448 outputs, 16802 checks, 0 errors
+PASS  check n64_p16_l1_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1490
+PASS  sim   n64_p16_l1_timing: 7 transactions, 448 outputs, 16139 checks, 0 errors
+PASS  check n64_p16_l1_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1490
+PASS  sim   n64_p16_l1_timing2: 7 transactions, 448 outputs, 16139 checks, 0 errors
+PASS  check n64_p16_l1_timing2: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1490
+PASS  cycles n64_p16_l1: identical in two timing runs (7 lines)
+PASS  formula n64_p16_l1: measured = 2N+ceil(N/L)(P+L-1) = 1152
+PASS  sim   n256_p64_l1_stress: 7 transactions, 1792 outputs, 238562 checks, 0 errors
+PASS  check n256_p64_l1_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.0637
+PASS  sim   n256_p64_l1_timing: 7 transactions, 1792 outputs, 236555 checks, 0 errors
+PASS  check n256_p64_l1_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.0637
+PASS  sim   n256_p64_l1_timing2: 7 transactions, 1792 outputs, 236555 checks, 0 errors
+PASS  check n256_p64_l1_timing2: gate failures=0 bit-exact mismatches=0 worst err/tol=0.0637
+PASS  cycles n256_p64_l1: identical in two timing runs (7 lines)
+PASS  formula n256_p64_l1: measured = 2N+ceil(N/L)(P+L-1) = 16896
+PASS  sim   n64_p16_l3_stress: 7 transactions, 448 outputs, 7896 checks, 0 errors
+PASS  check n64_p16_l3_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1490
+PASS  sim   n64_p16_l3_timing: 7 transactions, 448 outputs, 7347 checks, 0 errors
+PASS  check n64_p16_l3_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1490
+PASS  sim   n64_p16_l3_timing2: 7 transactions, 448 outputs, 7347 checks, 0 errors
+PASS  check n64_p16_l3_timing2: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1490
+PASS  cycles n64_p16_l3: identical in two timing runs (7 lines)
+PASS  formula n64_p16_l3: measured = 2N+ceil(N/L)(P+L-1) = 524
+PASS  sim   n64_p16_l4_stress: 7 transactions, 448 outputs, 6689 checks, 0 errors
+PASS  check n64_p16_l4_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1490
+PASS  sim   n64_p16_l4_timing: 7 transactions, 448 outputs, 6059 checks, 0 errors
+PASS  check n64_p16_l4_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1490
+PASS  sim   n64_p16_l4_timing2: 7 transactions, 448 outputs, 6059 checks, 0 errors
+PASS  check n64_p16_l4_timing2: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1490
+PASS  cycles n64_p16_l4: identical in two timing runs (7 lines)
+PASS  formula n64_p16_l4: measured = 2N+ceil(N/L)(P+L-1) = 432
+PASS  sim   n256_p64_l8_stress: 7 transactions, 1792 outputs, 41240 checks, 0 errors
+PASS  check n256_p64_l8_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.0637
+PASS  sim   n256_p64_l8_timing: 7 transactions, 1792 outputs, 38987 checks, 0 errors
+PASS  check n256_p64_l8_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.0637
+PASS  sim   n256_p64_l8_timing2: 7 transactions, 1792 outputs, 38987 checks, 0 errors
+PASS  check n256_p64_l8_timing2: gate failures=0 bit-exact mismatches=0 worst err/tol=0.0637
+PASS  cycles n256_p64_l8: identical in two timing runs (7 lines)
+PASS  formula n256_p64_l8: measured = 2N+ceil(N/L)(P+L-1) = 2784
+PASS  sim   n64_p16_l64_stress: 7 transactions, 448 outputs, 3485 checks, 0 errors
+PASS  check n64_p16_l64_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1490
+PASS  sim   n64_p16_l64_timing: 7 transactions, 448 outputs, 2909 checks, 0 errors
+PASS  check n64_p16_l64_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1490
+PASS  sim   n64_p16_l64_timing2: 7 transactions, 448 outputs, 2909 checks, 0 errors
+PASS  check n64_p16_l64_timing2: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1490
+PASS  cycles n64_p16_l64: identical in two timing runs (7 lines)
+PASS  formula n64_p16_l64: measured = 2N+ceil(N/L)(P+L-1) = 207
+PASS  sim   n8_p3_l8_stress: 7 transactions, 56 outputs, 450 checks, 0 errors
+PASS  check n8_p3_l8_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.2490
+PASS  sim   n8_p3_l8_timing: 7 transactions, 56 outputs, 375 checks, 0 errors
+PASS  check n8_p3_l8_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.2490
+PASS  sim   n8_p3_l8_timing2: 7 transactions, 56 outputs, 375 checks, 0 errors
+PASS  check n8_p3_l8_timing2: gate failures=0 bit-exact mismatches=0 worst err/tol=0.2490
+PASS  cycles n8_p3_l8: identical in two timing runs (7 lines)
+PASS  formula n8_p3_l8: measured = 2N+ceil(N/L)(P+L-1) = 26
+PASS  sim   n5_p8_l2_stress: 7 transactions, 35 outputs, 565 checks, 0 errors
+PASS  check n5_p8_l2_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1372
+PASS  sim   n5_p8_l2_timing: 7 transactions, 35 outputs, 529 checks, 0 errors
+PASS  check n5_p8_l2_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1372
+PASS  sim   n5_p8_l2_timing2: 7 transactions, 35 outputs, 529 checks, 0 errors
+PASS  check n5_p8_l2_timing2: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1372
+PASS  cycles n5_p8_l2: identical in two timing runs (7 lines)
+PASS  formula n5_p8_l2: measured = 2N+ceil(N/L)(P+L-1) = 37
+PASS  sim   n8_p8_l3_stress: 7 transactions, 56 outputs, 718 checks, 0 errors
+PASS  check n8_p8_l3_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1415
+PASS  sim   n8_p8_l3_timing: 7 transactions, 56 outputs, 655 checks, 0 errors
+PASS  check n8_p8_l3_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1415
+PASS  sim   n8_p8_l3_timing2: 7 transactions, 56 outputs, 655 checks, 0 errors
+PASS  check n8_p8_l3_timing2: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1415
+PASS  cycles n8_p8_l3: identical in two timing runs (7 lines)
+PASS  formula n8_p8_l3: measured = 2N+ceil(N/L)(P+L-1) = 46
+PASS  NC1 bit flip: --check failed as intended (gate failures=0 bit-exact mismatches=1 worst err/tol=0.2490)
+PASS  NC2 bad Y: testbench failed as intended (1 errors)
+PASS  NC3 bad last output (L=3): testbench failed as intended at n = 7 (1 errors)
+PASS  synth n1_p1_l1: problems=0 cells=3283 $mul=4 memories=4 bits=256 warnings=32 (tri-state 32)
+PASS  synth n5_p8_l1: problems=0 cells=3373 $mul=4 memories=4 bits=1024 warnings=32 (tri-state 32)
+PASS  synth n8_p3_l1: problems=0 cells=3344 $mul=4 memories=4 bits=768 warnings=32 (tri-state 32)
+PASS  synth n8_p8_l1: problems=0 cells=3373 $mul=4 memories=4 bits=1024 warnings=32 (tri-state 32)
+PASS  synth n64_p16_l1: problems=0 cells=3785 $mul=4 memories=4 bits=5120 warnings=32 (tri-state 32)
+PASS  synth n256_p64_l1: problems=0 cells=5269 $mul=4 memories=4 bits=20480 warnings=32 (tri-state 32)
+PASS  synth n64_p16_l3: problems=0 cells=9753 $mul=12 memories=4 bits=5120 warnings=96 (tri-state 96)
+PASS  synth n64_p16_l4: problems=0 cells=12733 $mul=16 memories=4 bits=5120 warnings=128 (tri-state 128)
+PASS  synth n256_p64_l8: problems=0 cells=26137 $mul=32 memories=4 bits=20480 warnings=256 (tri-state 256)
+PASS  protected+oracle after: PASS: Verified 35 protected bootstrap files (combined SHA-256: e10a800fe0a2a1407ee46656bc4a73d4eb2373cefd43641d20b7e3d2482a129c) + 1 oracle files
+PASS  oracle manifest digest = D-068 value, unchanged
+OVERALL: PASS

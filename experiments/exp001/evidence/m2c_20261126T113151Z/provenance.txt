@@ -1,0 +1,12 @@
+run_id: m2c_20261126T113151Z
+command: bash experiments/exp001/tb/run_dpc.sh
+date_utc: 2026-11-26T11:43:51Z
+git_head: 6cc35c08e97413bf9a1f844c06f7595f4f94f4ac
+image: fpga_ai-toolchain:m1-arm64 (sha256:cfa652b2fa6b6e661c83bed5d8ef9a35eb616683644b1bb49f75db3f8bb8d85f)
+host: Darwin arm64
+seed: 20261126  stress_pct: 30
+git_status_short:
+A  experiments/exp001/prompts/M2C_PROMPT.md
+ M experiments/exp001/rtl/dpc.vhd
+ M experiments/exp001/tb/run_dpc.sh
+ M research/DECISION_LOG.md

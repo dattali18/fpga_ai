@@ -1,0 +1,10 @@
+CYCLES t=0 latency=37 period=37
+CYCLES t=1 latency=37 period=37
+CYCLES t=2 latency=37 period=37
+CYCLES t=3 latency=37 period=37
+CYCLES t=4 latency=37 period=45
+CYCLES t=5 latency=37 period=37
+CYCLES t=6 latency=37 period=NA
+vectors/dpc_n5_p8.txt: 7 transactions, 35 outputs, 529 checks, 0 errors
+PASS: vectors/dpc_n5_p8.txt
+simulation finished @2930ns

@@ -1,0 +1,2 @@
+  transaction 0: (3, '00000001 00000000', '00000000 00000000')
+gate failures=0 bit-exact mismatches=1 worst err/tol=0.2490
