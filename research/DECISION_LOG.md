@@ -111,3 +111,28 @@ Owner: planner; delegated. All 22 configurations pass both views and simulation;
 
 ### D-033 - Retain paired evidence and defer physical claims
 Owner: planner; delegated. Track both compact paired datasets and provenance without replacing historical V1 data. Raw build artifacts remain local. Next proposed investigation: device-specific mapping as a distinct experiment, target selection pending. Alternative: immediately develop V3, deferred until physical resource evidence is available.
+
+## FPGA-family mapping experiment (2026-11-26)
+
+### D-034 - Reference architecture
+Owner: planner; user approved mapping experiment. Select Xilinx Series 7 (xc7) as a reference family because installed Yosys exposes LUT, distributed RAM and block RAM mappings. Alternatives: iCE40, ECP5, UltraScale. No specific part or board selected. Evidence: local Yosys help probe. Physical timing and fit remain unknown.
+
+### D-035 - Out-of-context mapping
+Owner: planner; delegated. Use synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf for both versions. Exclude top-level I/O and clock buffer insertion to compare internal component resources. Retain check -assert. No RTL changes or retiming. Mapped primitives are estimates, not routed utilization.
+
+### D-036 - Controlled mapping strategies
+Owner: planner; user approved direction. Reuse all 22 paired configurations for both RTL versions. Compare default, -nobram, and -nobram -nolutram -nosrl (132 mappings). Record exact primitive types and counts, netlists, commands, wall times and failures. Keep distributed RAM and SRL primitives distinct from logic LUTs; do not equate primitive counts with occupied slices. No new functional simulation in this mapping-only run; existing oracle regression is prior evidence, not netlist equivalence. Continue individual failures and return nonzero if any fail.
+
+### D-037 - Defer physical implementation
+Owner: planner; delegated. No nextpnr executable was found in the local probe. Use existing Docker image, no installations. Defer part selection, placement, routing, timing closure and mapped functional equivalence. Raw evidence stays in ignored build directory; compact results to be archived after review. Status: planned; actual mapping pending.
+
+## XC7 mapping acceptance (2026-11-26)
+
+### D-038 - Accept V2 resource-mapping improvement
+Owner: planner; delegated decision, user approved proceeding with archival. Evidence: F-FIFO-014 through F-FIFO-020, benchmarks/xc7/RESULTS.md. All 132 runs passed; V2 uses distributed RAM and fewer ordinary LUT/FF cells in aggregate. No claim of physical timing or total LUT utilization.
+
+### D-039 - Retain compact mapping evidence
+Owner: planner. Archive CSVs, commands, configuration list, logs summary and provenance; leave large raw mapped netlists and individual logs in local ignored build directory. Alternative: commit entire 162 MB transfer archive; rejected to avoid repository bloat. Raw archive retention outside Git remains user responsibility.
+
+### D-040 - Prioritize mapped functional equivalence
+Owner: planner; user approved sequence. Preserve V1/V2 and evaluate mapped behavior before considering BRAM-oriented V3. Neither structural checks nor resource mapping establish equivalence.

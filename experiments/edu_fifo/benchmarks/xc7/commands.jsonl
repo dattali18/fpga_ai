@@ -1,0 +1,220 @@
+{"cwd": "v1/w1_d1", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/rtl/edu_fifo.vhd"]}
+{"cwd": "v1/w1_d1", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=1", "-gG_DEPTH=1", "edu_fifo"]}
+{"cwd": "v1/w1_d1", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v1/w1_d1", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v1/w1_d1", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v1/w8_d1", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/rtl/edu_fifo.vhd"]}
+{"cwd": "v1/w8_d1", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=8", "-gG_DEPTH=1", "edu_fifo"]}
+{"cwd": "v1/w8_d1", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v1/w8_d1", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v1/w8_d1", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v1/w8_d3", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/rtl/edu_fifo.vhd"]}
+{"cwd": "v1/w8_d3", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=8", "-gG_DEPTH=3", "edu_fifo"]}
+{"cwd": "v1/w8_d3", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v1/w8_d3", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v1/w8_d3", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v1/w8_d4", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/rtl/edu_fifo.vhd"]}
+{"cwd": "v1/w8_d4", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=8", "-gG_DEPTH=4", "edu_fifo"]}
+{"cwd": "v1/w8_d4", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v1/w8_d4", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v1/w8_d4", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v1/w8_d32", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/rtl/edu_fifo.vhd"]}
+{"cwd": "v1/w8_d32", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=8", "-gG_DEPTH=32", "edu_fifo"]}
+{"cwd": "v1/w8_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v1/w8_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v1/w8_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v1/w16_d5", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/rtl/edu_fifo.vhd"]}
+{"cwd": "v1/w16_d5", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=16", "-gG_DEPTH=5", "edu_fifo"]}
+{"cwd": "v1/w16_d5", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v1/w16_d5", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v1/w16_d5", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v1/w16_d32", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/rtl/edu_fifo.vhd"]}
+{"cwd": "v1/w16_d32", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=16", "-gG_DEPTH=32", "edu_fifo"]}
+{"cwd": "v1/w16_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v1/w16_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v1/w16_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v1/w32_d1", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/rtl/edu_fifo.vhd"]}
+{"cwd": "v1/w32_d1", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=1", "edu_fifo"]}
+{"cwd": "v1/w32_d1", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v1/w32_d1", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v1/w32_d1", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v1/w32_d3", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/rtl/edu_fifo.vhd"]}
+{"cwd": "v1/w32_d3", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=3", "edu_fifo"]}
+{"cwd": "v1/w32_d3", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v1/w32_d3", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v1/w32_d3", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v1/w32_d4", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/rtl/edu_fifo.vhd"]}
+{"cwd": "v1/w32_d4", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=4", "edu_fifo"]}
+{"cwd": "v1/w32_d4", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v1/w32_d4", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v1/w32_d4", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v1/w32_d8", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/rtl/edu_fifo.vhd"]}
+{"cwd": "v1/w32_d8", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=8", "edu_fifo"]}
+{"cwd": "v1/w32_d8", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v1/w32_d8", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v1/w32_d8", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v1/w32_d15", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/rtl/edu_fifo.vhd"]}
+{"cwd": "v1/w32_d15", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=15", "edu_fifo"]}
+{"cwd": "v1/w32_d15", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v1/w32_d15", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v1/w32_d15", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v1/w32_d16", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/rtl/edu_fifo.vhd"]}
+{"cwd": "v1/w32_d16", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=16", "edu_fifo"]}
+{"cwd": "v1/w32_d16", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v1/w32_d16", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v1/w32_d16", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v1/w32_d31", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/rtl/edu_fifo.vhd"]}
+{"cwd": "v1/w32_d31", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=31", "edu_fifo"]}
+{"cwd": "v1/w32_d31", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v1/w32_d31", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v1/w32_d31", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v1/w32_d32", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/rtl/edu_fifo.vhd"]}
+{"cwd": "v1/w32_d32", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=32", "edu_fifo"]}
+{"cwd": "v1/w32_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v1/w32_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v1/w32_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v1/w32_d63", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/rtl/edu_fifo.vhd"]}
+{"cwd": "v1/w32_d63", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=63", "edu_fifo"]}
+{"cwd": "v1/w32_d63", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v1/w32_d63", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v1/w32_d63", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v1/w32_d64", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/rtl/edu_fifo.vhd"]}
+{"cwd": "v1/w32_d64", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=64", "edu_fifo"]}
+{"cwd": "v1/w32_d64", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v1/w32_d64", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v1/w32_d64", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v1/w32_d127", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/rtl/edu_fifo.vhd"]}
+{"cwd": "v1/w32_d127", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=127", "edu_fifo"]}
+{"cwd": "v1/w32_d127", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v1/w32_d127", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v1/w32_d127", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v1/w32_d128", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/rtl/edu_fifo.vhd"]}
+{"cwd": "v1/w32_d128", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=128", "edu_fifo"]}
+{"cwd": "v1/w32_d128", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v1/w32_d128", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v1/w32_d128", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v1/w32_d256", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/rtl/edu_fifo.vhd"]}
+{"cwd": "v1/w32_d256", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=256", "edu_fifo"]}
+{"cwd": "v1/w32_d256", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v1/w32_d256", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v1/w32_d256", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v1/w64_d32", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/rtl/edu_fifo.vhd"]}
+{"cwd": "v1/w64_d32", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=64", "-gG_DEPTH=32", "edu_fifo"]}
+{"cwd": "v1/w64_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v1/w64_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v1/w64_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v1/w128_d32", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/rtl/edu_fifo.vhd"]}
+{"cwd": "v1/w128_d32", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=128", "-gG_DEPTH=32", "edu_fifo"]}
+{"cwd": "v1/w128_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v1/w128_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v1/w128_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v2/w1_d1", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd"]}
+{"cwd": "v2/w1_d1", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=1", "-gG_DEPTH=1", "edu_fifo"]}
+{"cwd": "v2/w1_d1", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v2/w1_d1", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v2/w1_d1", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v2/w8_d1", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd"]}
+{"cwd": "v2/w8_d1", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=8", "-gG_DEPTH=1", "edu_fifo"]}
+{"cwd": "v2/w8_d1", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v2/w8_d1", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v2/w8_d1", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v2/w8_d3", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd"]}
+{"cwd": "v2/w8_d3", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=8", "-gG_DEPTH=3", "edu_fifo"]}
+{"cwd": "v2/w8_d3", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v2/w8_d3", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v2/w8_d3", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v2/w8_d4", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd"]}
+{"cwd": "v2/w8_d4", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=8", "-gG_DEPTH=4", "edu_fifo"]}
+{"cwd": "v2/w8_d4", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v2/w8_d4", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v2/w8_d4", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v2/w8_d32", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd"]}
+{"cwd": "v2/w8_d32", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=8", "-gG_DEPTH=32", "edu_fifo"]}
+{"cwd": "v2/w8_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v2/w8_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v2/w8_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v2/w16_d5", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd"]}
+{"cwd": "v2/w16_d5", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=16", "-gG_DEPTH=5", "edu_fifo"]}
+{"cwd": "v2/w16_d5", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v2/w16_d5", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v2/w16_d5", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v2/w16_d32", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd"]}
+{"cwd": "v2/w16_d32", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=16", "-gG_DEPTH=32", "edu_fifo"]}
+{"cwd": "v2/w16_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v2/w16_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v2/w16_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v2/w32_d1", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd"]}
+{"cwd": "v2/w32_d1", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=1", "edu_fifo"]}
+{"cwd": "v2/w32_d1", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v2/w32_d1", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v2/w32_d1", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v2/w32_d3", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd"]}
+{"cwd": "v2/w32_d3", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=3", "edu_fifo"]}
+{"cwd": "v2/w32_d3", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v2/w32_d3", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v2/w32_d3", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v2/w32_d4", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd"]}
+{"cwd": "v2/w32_d4", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=4", "edu_fifo"]}
+{"cwd": "v2/w32_d4", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v2/w32_d4", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v2/w32_d4", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v2/w32_d8", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd"]}
+{"cwd": "v2/w32_d8", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=8", "edu_fifo"]}
+{"cwd": "v2/w32_d8", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v2/w32_d8", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v2/w32_d8", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v2/w32_d15", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd"]}
+{"cwd": "v2/w32_d15", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=15", "edu_fifo"]}
+{"cwd": "v2/w32_d15", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v2/w32_d15", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v2/w32_d15", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v2/w32_d16", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd"]}
+{"cwd": "v2/w32_d16", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=16", "edu_fifo"]}
+{"cwd": "v2/w32_d16", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v2/w32_d16", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v2/w32_d16", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v2/w32_d31", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd"]}
+{"cwd": "v2/w32_d31", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=31", "edu_fifo"]}
+{"cwd": "v2/w32_d31", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v2/w32_d31", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v2/w32_d31", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v2/w32_d32", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd"]}
+{"cwd": "v2/w32_d32", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=32", "edu_fifo"]}
+{"cwd": "v2/w32_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v2/w32_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v2/w32_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v2/w32_d63", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd"]}
+{"cwd": "v2/w32_d63", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=63", "edu_fifo"]}
+{"cwd": "v2/w32_d63", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v2/w32_d63", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v2/w32_d63", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v2/w32_d64", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd"]}
+{"cwd": "v2/w32_d64", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=64", "edu_fifo"]}
+{"cwd": "v2/w32_d64", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v2/w32_d64", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v2/w32_d64", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v2/w32_d127", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd"]}
+{"cwd": "v2/w32_d127", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=127", "edu_fifo"]}
+{"cwd": "v2/w32_d127", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v2/w32_d127", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v2/w32_d127", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v2/w32_d128", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd"]}
+{"cwd": "v2/w32_d128", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=128", "edu_fifo"]}
+{"cwd": "v2/w32_d128", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v2/w32_d128", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v2/w32_d128", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v2/w32_d256", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd"]}
+{"cwd": "v2/w32_d256", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=32", "-gG_DEPTH=256", "edu_fifo"]}
+{"cwd": "v2/w32_d256", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v2/w32_d256", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v2/w32_d256", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v2/w64_d32", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd"]}
+{"cwd": "v2/w64_d32", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=64", "-gG_DEPTH=32", "edu_fifo"]}
+{"cwd": "v2/w64_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v2/w64_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v2/w64_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}
+{"cwd": "v2/w128_d32", "argv": ["ghdl", "-a", "--std=08", "/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd"]}
+{"cwd": "v2/w128_d32", "argv": ["ghdl", "--synth", "--std=08", "--no-formal", "--out=verilog", "-gG_WIDTH=128", "-gG_DEPTH=32", "edu_fifo"]}
+{"cwd": "v2/w128_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf ; check -assert; stat -tech xilinx; write_json default.json"]}
+{"cwd": "v2/w128_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram; check -assert; stat -tech xilinx; write_json no_bram.json"]}
+{"cwd": "v2/w128_d32", "argv": ["yosys", "-p", "read_verilog edu_fifo.v; synth_xilinx -family xc7 -top edu_fifo -noiopad -noclkbuf -nobram -nolutram -nosrl; check -assert; stat -tech xilinx; write_json logic_only.json"]}

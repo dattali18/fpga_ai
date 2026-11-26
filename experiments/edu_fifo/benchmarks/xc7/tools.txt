@@ -1,0 +1,10 @@
+GHDL 4.1.0 (Ubuntu 4.1.0+dfsg-0ubuntu2.1) [Dunoon edition]
+ Compiled with GNAT Version: 13.3.0
+ GCC 13.3.0 code generator
+Written by Tristan Gingold.
+
+Copyright (C) 2003 - 2024 Tristan Gingold.
+GHDL is free software, covered by the GNU General Public License.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Yosys 0.33 (git sha1 2584903a060)
+Python 3.12.3
