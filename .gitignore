@@ -42,3 +42,17 @@ yosys_tmp*/
 .idea/
 *.swp
 *~
+
+# Local diagnostic reports
+/fpga_ai_host_report.txt
+
+# Generated simulation executables
+/tb_smoke_fp32_add
+/tb_smoke_reg
+
+# Local experiment artifacts
+/experiments/edu_register/build/
+/experiments/exp001/results/
+
+# Temporary repository transfer archives
+/*.zip
