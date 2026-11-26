@@ -1,0 +1,5 @@
+ M research/DECISION_LOG.md
+ M scripts/benchmark_edu_fifo.sh
+?? claude_edu_fifo_v2_prompt.md
+?? experiments/edu_fifo/v2/
+?? integrate_edu_fifo_v2.sh

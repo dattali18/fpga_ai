@@ -3,18 +3,31 @@ set -euo pipefail
 export PYTHONDONTWRITEBYTECODE=1 GIT_OPTIONAL_LOCKS=0
 [[ "$(pwd -P)" == "$(git rev-parse --show-toplevel)" && "$(basename "$PWD")" == fpga_ai ]] || { echo 'Run from fpga_ai root' >&2; exit 1; }
 base=experiments/edu_fifo
+variant=${1:-v1}
+[[ $# -le 1 ]] || { echo 'Usage: benchmark_edu_fifo.sh [v1|v2]' >&2; exit 1; }
+case "$variant" in
+    v1) rtl=rtl/edu_fifo.vhd ;;
+    v2) rtl=v2/rtl/edu_fifo.vhd ;;
+    *) echo 'Expected v1 or v2' >&2; exit 1 ;;
+esac
+for q in "$base/$rtl" "$base/v2" "$base/v2/rtl"; do
+    [[ ! -L "$q" ]] || { echo "Symlink refused: $q" >&2; exit 1; }
+done
+[[ -f "$base/$rtl" ]] || { echo 'Missing RTL' >&2; exit 1; }
 for p in experiments "$base" "$base/rtl" "$base/tb" "$base/build" "$base/golden.py" "$base/rtl/edu_fifo.vhd" "$base/tb/tb_edu_fifo.vhd" scripts scripts/verify_protected_digests.py; do
     [[ ! -L "$p" ]] || { echo "Symlink refused: $p" >&2; exit 1; }
 done
 python3 scripts/verify_protected_digests.py
 mkdir -p "$base/build"
-run=$(mktemp -d "$base/build/benchmark.XXXXXXXX")
+run=$(mktemp -d "$base/build/benchmark.$variant.XXXXXXXX")
 echo "Results: $run"
+printf "%s\n" "$variant" > "$run/variant.txt"
+python3 -c 'import hashlib, pathlib; print(hashlib.sha256(pathlib.Path("scripts/benchmark_edu_fifo.sh").read_bytes()).hexdigest())' > "$run/runner_sha256.txt"
 git rev-parse HEAD > "$run/git_head.txt"
 git status --short > "$run/git_status.txt"
 docker image inspect fpga_ai-toolchain:m1-arm64 --format '{{.Id}}' > "$run/image_id.txt"
 rc=0
-docker run --rm --platform linux/arm64 -v "$PWD:/workspace" -w "/workspace/$run" fpga_ai-toolchain:m1-arm64 bash -euo pipefail -c '
+docker run --rm -e "FIFO_RTL=../../$rtl" --platform linux/arm64 -v "$PWD:/workspace" -w "/workspace/$run" fpga_ai-toolchain:m1-arm64 bash -euo pipefail -c '
 export PYTHONDONTWRITEBYTECODE=1
 mkdir -p tmp
 export TMPDIR="$PWD/tmp"
@@ -22,7 +35,7 @@ ghdl --version > tools.txt
 yosys -V >> tools.txt
 python3 --version >> tools.txt
 python3 - <<"PY"
-import sys, hashlib
+import sys, hashlib, os
 from pathlib import Path
 sys.path.insert(0, "../..")
 from golden import vectors, main
@@ -36,10 +49,10 @@ with open("configs.tsv", "w") as f:
         Path(f"vectors/{tag}.txt").write_text("\n".join(rows)+"\n")
         f.write(f"{w}\t{d}\t{len(rows)}\n")
 with open("source_sha256.txt","w") as f:
-    for p in ("../../golden.py","../../rtl/edu_fifo.vhd","../../tb/tb_edu_fifo.vhd"):
+    for p in ("../../golden.py",os.environ["FIFO_RTL"],"../../tb/tb_edu_fifo.vhd"):
         f.write(f"{hashlib.sha256(Path(p).read_bytes()).hexdigest()}  {p}\n")
 PY
-ghdl -a --std=08 ../../rtl/edu_fifo.vhd ../../tb/tb_edu_fifo.vhd
+ghdl -a --std=08 "$FIFO_RTL" ../../tb/tb_edu_fifo.vhd
 ghdl -e --std=08 tb_edu_fifo
 python3 - <<"PY"
 import csv, json, subprocess, time

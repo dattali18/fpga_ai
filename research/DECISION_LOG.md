@@ -89,3 +89,25 @@ Owner: user approved optimization direction; planner delegated engineering crite
 
 ### D-027 - V2 implementation autonomy
 Owner: planner; delegated. Ask coder for a separate VHDL implementation and explicit rationale, alternatives and risks. Memory-oriented implementation is the objective; no prescribed internal buffering microarchitecture. No modifications to oracle, testbench or protected context. Compare with identical 22 configurations and both synthesis views after review. Candidate must be separately integrated and verified. Status: awaiting coder submission.
+
+## V2 candidate review and integration (2026-11-26)
+
+### D-028 - Coder architecture choices
+Owner: Claude (coder); submitted, reviewer accepted for testing only. See experiments/edu_fifo/v2/DESIGN.md, V2-D1 through V2-D5, for detailed alternatives and risks. Padded power-of-two storage, fixed-width unsigned pointers with logical-depth wrap, special depth-one register, unchanged occupancy/handshake logic, reset-free synchronous write and asynchronous read. Rejected synchronous prefetch architecture in favor of simpler cycle-equivalent behavior. Potential cost: padding and no guarantee of BRAM mapping. Candidate ZIP SHA-256: 1966ba5e46d541b818818127a4224683744a226c466a72dfaeefa5a396f7708c. Claude reports a scratch Python cross-check, not independently reproduced; HDL execution NOT RUN by coder.
+
+### D-029 - Reviewer acceptance for integration
+Owner: planner/reviewer; delegated. Static review finds interface, reset gating, logical capacity, full replacement, no empty bypass and stall stability consistent with V1. Preserve candidate RTL unchanged; no corrections requested before execution. Alternative: mandate synchronous read or prefetch, rejected for this candidate to preserve coder autonomy and avoid unnecessary changes. Limits: asynchronous read may not map to BRAM; padding may waste capacity; elaboration integer limits apply; physical mapping and equivalence not established. Acceptance pending 22-config local regression and synthesis.
+
+### D-030 - Shared benchmark runner variant selection
+Owner: planner; delegated. Extend existing runner with optional v1/v2 selector (default v1), compile only selected RTL, use unchanged oracle, testbench, configurations and strict synthesis passes. Separate run directories and record variant and runner hash. Alternative: duplicate runner, rejected to avoid benchmark drift. V1 source remains immutable; previous runner remains in Git history. Local execution pending.
+
+## Paired V1/V2 benchmark acceptance (2026-11-26)
+
+### D-031 - Repeat V1 with V2 benchmark runner
+Owner: user; observed action. Rationale: control runner and environment differences. Alternative: compare against historical V1 run alone. Evidence: 22 identical stimuli, same tools and image. Single timing repetition; dirty tree documented.
+
+### D-032 - Accept V2 within generic synthesis scope
+Owner: planner; delegated. All 22 configurations pass both views and simulation; no candidate RTL corrections. Memory retained in 19 depth>1 cases. At W32 D256 mapped cells 1824 to 1110; W16 D5 worsens from 64 to 69. Preserve V1 rather than replace it. See benchmarks/COMPARISON.md. Physical implementation and equivalence remain unverified.
+
+### D-033 - Retain paired evidence and defer physical claims
+Owner: planner; delegated. Track both compact paired datasets and provenance without replacing historical V1 data. Raw build artifacts remain local. Next proposed investigation: device-specific mapping as a distinct experiment, target selection pending. Alternative: immediately develop V3, deferred until physical resource evidence is available.
