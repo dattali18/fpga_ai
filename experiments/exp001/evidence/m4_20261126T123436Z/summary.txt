@@ -1,0 +1,58 @@
+PASS    protected+oracle before: PASS: Verified 35 protected bootstrap files (combined SHA-256: e10a800fe0a2a1407ee46656bc4a73d4eb2373cefd43641d20b7e3d2482a129c) + 1 oracle files
+PASS    RTL and tb_dpc.vhd byte-identical to M2c commit ded8d4a
+PASS    reference vectors: 6 files
+PASS    F1: hand-built coarse = standard coarse minus share; no -noshare option in Yosys 0.33
+PASS    Yosys resolves 1'bZ ? 4'b1010 : a to y = a (normal path); basis of N2
+PASS    A n8_p3_l1 rewrite: shift_calls=32 shift_calls_with_to_integer=32 replaced=32 remaining_in_shifts=0 use_clauses_added=2 other_to_integer=8
+PASS    A n8_p3_l1 N2: zsel_replaced=32 expected=32 remaining_Z_literals=0
+PASS    A sim   n8_p3_l1_stress: 7 transactions, 56 outputs, 625 checks, 0 errors
+PASS    A check n8_p3_l1_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.2490
+PASS    A sim   n8_p3_l1_timing: 7 transactions, 56 outputs, 571 checks, 0 errors
+PASS    A check n8_p3_l1_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.2490
+PASS    A cycles n8_p3_l1: netlist = RTL formula (latency=40)
+PASS    A n5_p8_l2 rewrite: shift_calls=64 shift_calls_with_to_integer=64 replaced=64 remaining_in_shifts=0 use_clauses_added=2 other_to_integer=8
+PASS    A n5_p8_l2 N2: zsel_replaced=64 expected=64 remaining_Z_literals=0
+PASS    A sim   n5_p8_l2_stress: 7 transactions, 35 outputs, 565 checks, 0 errors
+PASS    A check n5_p8_l2_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1372
+PASS    A sim   n5_p8_l2_timing: 7 transactions, 35 outputs, 529 checks, 0 errors
+PASS    A check n5_p8_l2_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1372
+PASS    A cycles n5_p8_l2: netlist = RTL formula (latency=37)
+PASS    A n8_p8_l3 rewrite: shift_calls=96 shift_calls_with_to_integer=96 replaced=96 remaining_in_shifts=0 use_clauses_added=2 other_to_integer=8
+PASS    A n8_p8_l3 N2: zsel_replaced=96 expected=96 remaining_Z_literals=0
+PASS    A sim   n8_p8_l3_stress: 7 transactions, 56 outputs, 718 checks, 0 errors
+PASS    A check n8_p8_l3_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1415
+PASS    A sim   n8_p8_l3_timing: 7 transactions, 56 outputs, 655 checks, 0 errors
+PASS    A check n8_p8_l3_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1415
+PASS    A cycles n8_p8_l3: netlist = RTL formula (latency=46)
+PASS    A n64_p16_l1 rewrite: shift_calls=32 shift_calls_with_to_integer=32 replaced=32 remaining_in_shifts=0 use_clauses_added=2 other_to_integer=8
+PASS    A n64_p16_l1 N2: zsel_replaced=32 expected=32 remaining_Z_literals=0
+PASS    A sim   n64_p16_l1_stress: 7 transactions, 448 outputs, 16802 checks, 0 errors
+PASS    A check n64_p16_l1_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1490
+PASS    A sim   n64_p16_l1_timing: 7 transactions, 448 outputs, 16139 checks, 0 errors
+PASS    A check n64_p16_l1_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1490
+PASS    A cycles n64_p16_l1: netlist = RTL formula (latency=1152)
+PASS    A n64_p16_l4 rewrite: shift_calls=128 shift_calls_with_to_integer=128 replaced=128 remaining_in_shifts=0 use_clauses_added=2 other_to_integer=8
+PASS    A n64_p16_l4 N2: zsel_replaced=128 expected=128 remaining_Z_literals=0
+PASS    A sim   n64_p16_l4_stress: 7 transactions, 448 outputs, 6689 checks, 0 errors
+PASS    A check n64_p16_l4_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1490
+PASS    A sim   n64_p16_l4_timing: 7 transactions, 448 outputs, 6059 checks, 0 errors
+PASS    A check n64_p16_l4_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1490
+PASS    A cycles n64_p16_l4: netlist = RTL formula (latency=432)
+PASS    A n256_p64_l8 rewrite: shift_calls=256 shift_calls_with_to_integer=256 replaced=256 remaining_in_shifts=0 use_clauses_added=2 other_to_integer=8
+PASS    A n256_p64_l8 N2: zsel_replaced=256 expected=256 remaining_Z_literals=0
+FAIL    A n256_p64_l8: netlist analysis/elaboration failed
+PASS    A NC bad Y (netlist 8,3,1): testbench failed as intended (1 errors)
+PASS    A diagnostic N1-only (8,3,1): all 56 outputs X, 56 errors, as expected without N2
+PASS    B n64_p16_l1 default: 48s mem=1183.55MB problems=0 LUT=8404 FF=96 CARRY4=1346 MUXF7/8=2028/714 DSP=8 LUTRAM=34(RAM32M:12+RAM64M:22) SRL=0 RAMB18/36=0/0 other=498 depth=712
+PASS    B n256_p64_l1 default: 50s mem=1184.82MB problems=0 LUT=8439 FF=106 CARRY4=1351 MUXF7/8=2095/769 DSP=8 LUTRAM=110(RAM64M:110) SRL=0 RAMB18/36=0/0 other=497 depth=722
+PASS    B n256_p64_l2 default: 104s mem=2229.67MB problems=0 LUT=16424 FF=235 CARRY4=2672 MUXF7/8=4077/1473 DSP=16 LUTRAM=110(RAM64M:110) SRL=0 RAMB18/36=0/0 other=990 depth=735
+PASS    B n64_p16_l4 default: 230s mem=4330.06MB problems=0 LUT=32052 FF=483 CARRY4=5312 MUXF7/8=8117/2871 DSP=32 LUTRAM=34(RAM32M:12+RAM64M:22) SRL=0 RAMB18/36=0/0 other=1976 depth=768
+PASS    B n256_p64_l4 default: 245s mem=4329.55MB problems=0 LUT=32839 FF=493 CARRY4=5316 MUXF7/8=8400/3025 DSP=32 LUTRAM=110(RAM64M:110) SRL=0 RAMB18/36=0/0 other=1981 depth=758
+PASS    B n64_p16_l4 nolutram: 253s mem=4329.97MB problems=0 LUT=33515 FF=5603 CARRY4=5312 MUXF7/8=7862/2797 DSP=32 LUTRAM=0(-) SRL=0 RAMB18/36=0/0 other=1978 depth=754
+PASS    B n256_p64_l8 default: 924s mem=8558.20MB problems=0 LUT=64982 FF=1006 CARRY4=10606 MUXF7/8=16171/5832 DSP=64 LUTRAM=110(RAM64M:110) SRL=0 RAMB18/36=0/0 other=3953 depth=774
+PASS    B n64_p16_l4 nodsp: 256s mem=4321.61MB problems=0 LUT=55622 FF=483 CARRY4=5504 MUXF7/8=8222/2940 DSP=0 LUTRAM=34(RAM32M:12+RAM64M:22) SRL=0 RAMB18/36=0/0 other=1976 depth=781
+BLOCKED A mapped (Verilog) netlist simulation: no Verilog simulator in the image (acknowledged gap, not counted in OVERALL)
+NOT_RUN C equivalence generic vs xc7 netlist: skipped by planner decision (expected INCONCLUSIVE: DSP48E1 black box)
+PASS    protected+oracle after: PASS: Verified 35 protected bootstrap files (combined SHA-256: e10a800fe0a2a1407ee46656bc4a73d4eb2373cefd43641d20b7e3d2482a129c) + 1 oracle files
+PASS    oracle manifest digest = D-068 value, unchanged
+OVERALL: FAIL (total 4628s)

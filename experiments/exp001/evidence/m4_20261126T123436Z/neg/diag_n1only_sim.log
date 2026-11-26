@@ -1,0 +1,256 @@
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@225ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@225ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@245ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@245ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+/workspace/experiments/exp001/tb/tb_dpc.vhd:152:11:@255ns:(report error): MISMATCH tx 0 n = 0 got=(XXXXXXXX,XXXXXXXX) exp=(BCC93BCC,BD9AD554)
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@265ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@265ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@285ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@285ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+/workspace/experiments/exp001/tb/tb_dpc.vhd:152:11:@295ns:(report error): MISMATCH tx 0 n = 1 got=(XXXXXXXX,XXXXXXXX) exp=(00000000,00000000)
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@305ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@305ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@325ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@325ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+/workspace/experiments/exp001/tb/tb_dpc.vhd:152:11:@335ns:(report error): MISMATCH tx 0 n = 2 got=(XXXXXXXX,XXXXXXXX) exp=(00000000,00000000)
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@345ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@345ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@365ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@365ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+/workspace/experiments/exp001/tb/tb_dpc.vhd:152:11:@375ns:(report error): MISMATCH tx 0 n = 3 got=(XXXXXXXX,XXXXXXXX) exp=(00000000,00000000)
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@385ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@385ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@405ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@405ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+/workspace/experiments/exp001/tb/tb_dpc.vhd:152:11:@415ns:(report error): MISMATCH tx 0 n = 4 got=(XXXXXXXX,XXXXXXXX) exp=(00000000,00000000)
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@425ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@425ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@445ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@445ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+/workspace/experiments/exp001/tb/tb_dpc.vhd:152:11:@455ns:(report error): MISMATCH tx 0 n = 5 got=(XXXXXXXX,XXXXXXXX) exp=(00000000,00000000)
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@465ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@465ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@485ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@485ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+/workspace/experiments/exp001/tb/tb_dpc.vhd:152:11:@495ns:(report error): MISMATCH tx 0 n = 6 got=(XXXXXXXX,XXXXXXXX) exp=(00000000,00000000)
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@505ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@505ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@525ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@525ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+/workspace/experiments/exp001/tb/tb_dpc.vhd:152:11:@535ns:(report error): MISMATCH tx 0 n = 7 got=(XXXXXXXX,XXXXXXXX) exp=(00000000,00000000)
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@625ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@625ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@645ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@645ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+/workspace/experiments/exp001/tb/tb_dpc.vhd:152:11:@655ns:(report error): MISMATCH tx 1 n = 0 got=(XXXXXXXX,XXXXXXXX) exp=(00000000,00000000)
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@665ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@665ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@685ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@685ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+/workspace/experiments/exp001/tb/tb_dpc.vhd:152:11:@695ns:(report error): MISMATCH tx 1 n = 1 got=(XXXXXXXX,XXXXXXXX) exp=(00000000,00000000)
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@705ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@705ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@725ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@725ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+/workspace/experiments/exp001/tb/tb_dpc.vhd:152:11:@735ns:(report error): MISMATCH tx 1 n = 2 got=(XXXXXXXX,XXXXXXXX) exp=(00000000,00000000)
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@745ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@745ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@765ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@765ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+/workspace/experiments/exp001/tb/tb_dpc.vhd:152:11:@775ns:(report error): MISMATCH tx 1 n = 3 got=(XXXXXXXX,XXXXXXXX) exp=(00000000,00000000)
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@785ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@785ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@805ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@805ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+/workspace/experiments/exp001/tb/tb_dpc.vhd:152:11:@815ns:(report error): MISMATCH tx 1 n = 4 got=(XXXXXXXX,XXXXXXXX) exp=(00000000,00000000)
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@825ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@825ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@845ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@845ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+/workspace/experiments/exp001/tb/tb_dpc.vhd:152:11:@855ns:(report error): MISMATCH tx 1 n = 5 got=(XXXXXXXX,XXXXXXXX) exp=(3D9F3E69,BC8764AC)
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@865ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@865ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@885ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@885ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+/workspace/experiments/exp001/tb/tb_dpc.vhd:152:11:@895ns:(report error): MISMATCH tx 1 n = 6 got=(XXXXXXXX,XXXXXXXX) exp=(3F78D183,BE538D4C)
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@905ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@905ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@925ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@925ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+/workspace/experiments/exp001/tb/tb_dpc.vhd:152:11:@935ns:(report error): MISMATCH tx 1 n = 7 got=(XXXXXXXX,XXXXXXXX) exp=(BCC93BCC,BD9AD554)
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1025ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1025ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1045ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1045ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+/workspace/experiments/exp001/tb/tb_dpc.vhd:152:11:@1055ns:(report error): MISMATCH tx 2 n = 0 got=(XXXXXXXX,XXXXXXXX) exp=(00000000,00000000)
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1065ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1065ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1085ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1085ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+/workspace/experiments/exp001/tb/tb_dpc.vhd:152:11:@1095ns:(report error): MISMATCH tx 2 n = 1 got=(XXXXXXXX,XXXXXXXX) exp=(00000000,00000000)
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1105ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1105ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1125ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1125ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+/workspace/experiments/exp001/tb/tb_dpc.vhd:152:11:@1135ns:(report error): MISMATCH tx 2 n = 2 got=(XXXXXXXX,XXXXXXXX) exp=(3D9F3E69,BC8764AC)
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1145ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1145ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1165ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1165ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+/workspace/experiments/exp001/tb/tb_dpc.vhd:152:11:@1175ns:(report error): MISMATCH tx 2 n = 3 got=(XXXXXXXX,XXXXXXXX) exp=(3F78D183,BE538D4C)
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1185ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1185ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1205ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1205ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1225ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1225ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1245ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1245ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1265ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1265ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1285ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1285ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1305ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1305ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1325ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1325ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1425ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1425ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1445ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1445ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1465ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1465ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1485ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1485ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1505ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1505ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1525ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1525ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1545ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1545ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1565ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1565ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1585ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1585ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1605ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1605ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1625ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1625ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1645ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1645ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1665ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1665ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1685ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1685ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1705ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1705ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1725ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1725ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1825ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1825ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1845ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1845ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1865ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1865ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1885ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1885ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1905ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1905ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1925ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1925ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1945ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1945ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1965ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1965ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1985ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@1985ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2005ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2005ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2025ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2025ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2045ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2045ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2065ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2065ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2085ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2085ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2105ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2105ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2125ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2125ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2255ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2255ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2275ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2275ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2295ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2295ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2315ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2315ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2335ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2335ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2355ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2355ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2375ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2375ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2395ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2395ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2415ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2415ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2435ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2435ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2455ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2455ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2475ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2475ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2495ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2495ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2515ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2515ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2535ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2535ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2555ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2555ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2655ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2655ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2675ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2675ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2695ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2695ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2715ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2715ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2735ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2735ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2755ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2755ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2775ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2775ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2795ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2795ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2815ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2815ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2835ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2835ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2855ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2855ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2875ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2875ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2895ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2895ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2915ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2915ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2935ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2935ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2955ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1168:7:@2955ns:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+CYCLES t=0 latency=40 period=40
+CYCLES t=1 latency=40 period=40
+CYCLES t=2 latency=40 period=40
+CYCLES t=3 latency=40 period=40
+CYCLES t=4 latency=40 period=43
+CYCLES t=5 latency=40 period=40
+CYCLES t=6 latency=40 period=NA
+../../vectors/dpc_n8_p3.txt: 7 transactions, 56 outputs, 571 checks, 56 errors
+/workspace/experiments/exp001/tb/tb_dpc.vhd:463:7:@2990ns:(report failure): FAIL: ../../vectors/dpc_n8_p3.txt (56 errors)
+./tb_dpc:error: report failed
+in process .tb_dpc(sim).main_p
+./tb_dpc:error: simulation failed

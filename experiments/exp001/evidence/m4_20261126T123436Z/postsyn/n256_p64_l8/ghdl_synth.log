@@ -1,0 +1,12 @@
+/workspace/experiments/exp001/rtl/dpc.vhd:139:10:note: found RAM "r_re_mem", width: 32 bits, depth: 64
+  signal r_re_mem, r_im_mem : t_mem_r;
+         ^
+/workspace/experiments/exp001/rtl/dpc.vhd:139:20:note: found RAM "r_im_mem", width: 32 bits, depth: 64
+  signal r_re_mem, r_im_mem : t_mem_r;
+                   ^
+/workspace/experiments/exp001/rtl/dpc.vhd:138:10:note: found RAM "x_re_mem", width: 32 bits, depth: 256
+  signal x_re_mem, x_im_mem : t_mem_x;
+         ^
+/workspace/experiments/exp001/rtl/dpc.vhd:138:20:note: found RAM "x_im_mem", width: 32 bits, depth: 256
+  signal x_re_mem, x_im_mem : t_mem_x;
+                   ^

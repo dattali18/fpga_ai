@@ -1,0 +1,290 @@
+--- experiments/exp001/build/m4_20261126T123436Z/postsyn/n64_p16_l1/net_sat.vhdl	2026-11-26 14:41:20
++++ experiments/exp001/build/m4_20261126T123436Z/postsyn/n64_p16_l1/net_satz.vhdl	2026-11-26 14:41:20
+@@ -7812,7 +7812,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:589:5
+   n435_o <= n434_o when n373_o = '0' else n399_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n436_o <= n435_o when std_logic'('Z') = '0' else "1010";
++  n436_o <= n435_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:590:36
+   n468_o <= ops_re (30 downto 23);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:590:8
+@@ -7874,7 +7874,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:589:5
+   n533_o <= n532_o when n471_o = '0' else n497_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n534_o <= n533_o when std_logic'('Z') = '0' else "1010";
++  n534_o <= n533_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:905:17
+   n537_o <= '1' when n436_o = "1010" else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:905:34
+@@ -7992,7 +7992,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:606:5
+   n801_o <= n800_o when n769_o = '0' else n795_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n802_o <= n801_o when std_logic'('Z') = '0' else "1010";
++  n802_o <= n801_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:2459:49
+   n938_o <= ops_re (31 downto 23);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:2467:15
+@@ -8033,7 +8033,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:606:5
+   n1007_o <= n1006_o when n975_o = '0' else n1001_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n1008_o <= n1007_o when std_logic'('Z') = '0' else "1010";
++  n1008_o <= n1007_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:254:27
+   n1017_o <= n736_o (22 downto 0);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:256:7
+@@ -9080,7 +9080,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:589:5
+   n2089_o <= n2088_o when n2027_o = '0' else n2053_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n2090_o <= n2089_o when std_logic'('Z') = '0' else "1010";
++  n2090_o <= n2089_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:590:36
+   n2122_o <= ops_im (30 downto 23);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:590:8
+@@ -9142,7 +9142,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:589:5
+   n2187_o <= n2186_o when n2125_o = '0' else n2151_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n2188_o <= n2187_o when std_logic'('Z') = '0' else "1010";
++  n2188_o <= n2187_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:905:17
+   n2191_o <= '1' when n2090_o = "1010" else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:905:34
+@@ -9260,7 +9260,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:606:5
+   n2455_o <= n2454_o when n2423_o = '0' else n2449_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n2456_o <= n2455_o when std_logic'('Z') = '0' else "1010";
++  n2456_o <= n2455_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:2459:49
+   n2592_o <= ops_im (31 downto 23);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:2467:15
+@@ -9301,7 +9301,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:606:5
+   n2661_o <= n2660_o when n2629_o = '0' else n2655_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n2662_o <= n2661_o when std_logic'('Z') = '0' else "1010";
++  n2662_o <= n2661_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:254:27
+   n2671_o <= n2390_o (22 downto 0);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:256:7
+@@ -10348,7 +10348,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:589:5
+   n3743_o <= n3742_o when n3681_o = '0' else n3707_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n3744_o <= n3743_o when std_logic'('Z') = '0' else "1010";
++  n3744_o <= n3743_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:590:36
+   n3776_o <= ops_im (30 downto 23);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:590:8
+@@ -10410,7 +10410,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:589:5
+   n3841_o <= n3840_o when n3779_o = '0' else n3805_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n3842_o <= n3841_o when std_logic'('Z') = '0' else "1010";
++  n3842_o <= n3841_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:905:17
+   n3845_o <= '1' when n3744_o = "1010" else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:905:34
+@@ -10528,7 +10528,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:606:5
+   n4109_o <= n4108_o when n4077_o = '0' else n4103_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n4110_o <= n4109_o when std_logic'('Z') = '0' else "1010";
++  n4110_o <= n4109_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:2459:49
+   n4246_o <= ops_im (31 downto 23);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:2467:15
+@@ -10569,7 +10569,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:606:5
+   n4315_o <= n4314_o when n4283_o = '0' else n4309_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n4316_o <= n4315_o when std_logic'('Z') = '0' else "1010";
++  n4316_o <= n4315_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:254:27
+   n4325_o <= n4044_o (22 downto 0);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:256:7
+@@ -11616,7 +11616,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:589:5
+   n5397_o <= n5396_o when n5335_o = '0' else n5361_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n5398_o <= n5397_o when std_logic'('Z') = '0' else "1010";
++  n5398_o <= n5397_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:590:36
+   n5430_o <= ops_re (30 downto 23);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:590:8
+@@ -11678,7 +11678,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:589:5
+   n5495_o <= n5494_o when n5433_o = '0' else n5459_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n5496_o <= n5495_o when std_logic'('Z') = '0' else "1010";
++  n5496_o <= n5495_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:905:17
+   n5499_o <= '1' when n5398_o = "1010" else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:905:34
+@@ -11796,7 +11796,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:606:5
+   n5763_o <= n5762_o when n5731_o = '0' else n5757_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n5764_o <= n5763_o when std_logic'('Z') = '0' else "1010";
++  n5764_o <= n5763_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:2459:49
+   n5900_o <= ops_re (31 downto 23);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:2467:15
+@@ -11837,7 +11837,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:606:5
+   n5969_o <= n5968_o when n5937_o = '0' else n5963_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n5970_o <= n5969_o when std_logic'('Z') = '0' else "1010";
++  n5970_o <= n5969_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:254:27
+   n5979_o <= n5698_o (22 downto 0);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:256:7
+@@ -12902,7 +12902,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:589:5
+   n7100_o <= n7099_o when n7038_o = '0' else n7064_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n7101_o <= n7100_o when std_logic'('Z') = '0' else "1010";
++  n7101_o <= n7100_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:590:36
+   n7133_o <= n6978_o (30 downto 23);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:590:8
+@@ -12964,7 +12964,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:589:5
+   n7198_o <= n7197_o when n7136_o = '0' else n7162_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n7199_o <= n7198_o when std_logic'('Z') = '0' else "1010";
++  n7199_o <= n7198_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:736:17
+   n7202_o <= '1' when n7101_o = "1010" else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:736:34
+@@ -13059,7 +13059,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:606:5
+   n7452_o <= n7451_o when n7420_o = '0' else n7446_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n7453_o <= n7452_o when std_logic'('Z') = '0' else "1010";
++  n7453_o <= n7452_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:2459:49
+   n7589_o <= n6978_o (31 downto 23);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:2467:15
+@@ -13100,7 +13100,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:606:5
+   n7658_o <= n7657_o when n7626_o = '0' else n7652_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n7659_o <= n7658_o when std_logic'('Z') = '0' else "1010";
++  n7659_o <= n7658_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:254:27
+   n7668_o <= n7387_o (22 downto 0);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:256:7
+@@ -14657,7 +14657,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:589:5
+   n9134_o <= n9133_o when n9072_o = '0' else n9098_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n9135_o <= n9134_o when std_logic'('Z') = '0' else "1010";
++  n9135_o <= n9134_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:590:36
+   n9167_o <= n6891_o (30 downto 23);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:590:8
+@@ -14719,7 +14719,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:589:5
+   n9232_o <= n9231_o when n9170_o = '0' else n9196_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n9233_o <= n9232_o when std_logic'('Z') = '0' else "1010";
++  n9233_o <= n9232_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:736:17
+   n9236_o <= '1' when n9135_o = "1010" else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:736:34
+@@ -14814,7 +14814,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:606:5
+   n9486_o <= n9485_o when n9454_o = '0' else n9480_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n9487_o <= n9486_o when std_logic'('Z') = '0' else "1010";
++  n9487_o <= n9486_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:2459:49
+   n9623_o <= n6891_o (31 downto 23);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:2467:15
+@@ -14855,7 +14855,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:606:5
+   n9692_o <= n9691_o when n9660_o = '0' else n9686_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n9693_o <= n9692_o when std_logic'('Z') = '0' else "1010";
++  n9693_o <= n9692_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:254:27
+   n9702_o <= n9421_o (22 downto 0);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:256:7
+@@ -16412,7 +16412,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:589:5
+   n11181_o <= n11180_o when n11119_o = '0' else n11145_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n11182_o <= n11181_o when std_logic'('Z') = '0' else "1010";
++  n11182_o <= n11181_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:590:36
+   n11214_o <= n8958_o (30 downto 23);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:590:8
+@@ -16474,7 +16474,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:589:5
+   n11279_o <= n11278_o when n11217_o = '0' else n11243_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n11280_o <= n11279_o when std_logic'('Z') = '0' else "1010";
++  n11280_o <= n11279_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:736:17
+   n11283_o <= '1' when n11182_o = "1010" else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:736:34
+@@ -16569,7 +16569,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:606:5
+   n11533_o <= n11532_o when n11501_o = '0' else n11527_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n11534_o <= n11533_o when std_logic'('Z') = '0' else "1010";
++  n11534_o <= n11533_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:2459:49
+   n11670_o <= n8958_o (31 downto 23);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:2467:15
+@@ -16610,7 +16610,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:606:5
+   n11739_o <= n11738_o when n11707_o = '0' else n11733_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n11740_o <= n11739_o when std_logic'('Z') = '0' else "1010";
++  n11740_o <= n11739_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:254:27
+   n11749_o <= n11468_o (22 downto 0);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:256:7
+@@ -18167,7 +18167,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:589:5
+   n13240_o <= n13239_o when n13178_o = '0' else n13204_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n13241_o <= n13240_o when std_logic'('Z') = '0' else "1010";
++  n13241_o <= n13240_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:590:36
+   n13273_o <= n10992_o (30 downto 23);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:590:8
+@@ -18229,7 +18229,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:589:5
+   n13338_o <= n13337_o when n13276_o = '0' else n13302_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n13339_o <= n13338_o when std_logic'('Z') = '0' else "1010";
++  n13339_o <= n13338_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:736:17
+   n13342_o <= '1' when n13241_o = "1010" else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:736:34
+@@ -18324,7 +18324,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:606:5
+   n13592_o <= n13591_o when n13560_o = '0' else n13586_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n13593_o <= n13592_o when std_logic'('Z') = '0' else "1010";
++  n13593_o <= n13592_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:2459:49
+   n13729_o <= n10992_o (31 downto 23);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:2467:15
+@@ -18365,7 +18365,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:606:5
+   n13798_o <= n13797_o when n13766_o = '0' else n13792_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:586:5
+-  n13799_o <= n13798_o when std_logic'('Z') = '0' else "1010";
++  n13799_o <= n13798_o when true else "1010";
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:254:27
+   n13808_o <= n13527_o (22 downto 0);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:256:7

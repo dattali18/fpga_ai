@@ -1,0 +1,5 @@
+labels: begin prepare map_dsp coarse map_memory map_ffram fine map_cells map_ffs map_luts finalize check edif blif
+standard coarse: techmap -map +/cmp2lut.v -map +/cmp2lcu.v -D LUT_WIDTH=[46] | alumacc | share | opt | memory -nomap | opt_clean
+used coarse    : techmap -map +/cmp2lut.v -map +/cmp2lcu.v -D LUT_WIDTH=6 | alumacc | opt | memory -nomap | opt_clean
+noshare_option_present: False
+RESULT: EQUAL_MINUS_SHARE

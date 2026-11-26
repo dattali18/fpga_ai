@@ -1,0 +1,1 @@
+shift_calls=128 shift_calls_with_to_integer=128 replaced=128 remaining_in_shifts=0 use_clauses_added=2 other_to_integer=8

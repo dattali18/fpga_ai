@@ -1,0 +1,530 @@
+--- experiments/exp001/build/m4_20261126T123436Z/postsyn/n5_p8_l2/net.vhdl	2026-11-26 14:36:17
++++ experiments/exp001/build/m4_20261126T123436Z/postsyn/n5_p8_l2/net_sat.vhdl	2026-11-26 14:36:18
+@@ -1,6 +1,7 @@
+ library ieee;
+ use ieee.std_logic_1164.all;
+ use ieee.numeric_std.all;
++use work.m4_sat_pkg.all;
+ use work.dpc_pkg.all;
+ entity dpc is
+   generic (
+@@ -26,6 +27,7 @@
+ library ieee;
+ use ieee.std_logic_1164.all;
+ use ieee.numeric_std.all;
++use work.m4_sat_pkg.all;
+ 
+ architecture rtl of dpc is
+   signal wrap_clk: std_logic;
+@@ -15638,7 +15640,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:954:39
+   n1261_o <= n1260_o (30 downto 0);  --  trunc
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:954:19
+-  n1262_o <= std_logic_vector (shift_left (unsigned (n1154_o), to_integer (unsigned (n1261_o))));
++  n1262_o <= std_logic_vector (shift_left (unsigned (n1154_o), sat_shift (n1261_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:22
+   n1264_o <= '1' when n822_o = "0111" else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:48
+@@ -15772,7 +15774,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:957:39
+   n1369_o <= n1368_o (30 downto 0);  --  trunc
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:957:19
+-  n1370_o <= std_logic_vector (shift_left (unsigned (n1091_o), to_integer (unsigned (n1369_o))));
++  n1370_o <= std_logic_vector (shift_left (unsigned (n1091_o), sat_shift (n1369_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:7
+   n1371_o <= n1091_o when n1267_o = '0' else n1370_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:7
+@@ -16004,11 +16006,11 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:423:5
+   n1573_o <= n1566_o when n1531_o = '0' else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n1577_o <= std_logic_vector (shift_right (unsigned (n1387_o), to_integer(unsigned (n1568_o))));
++  n1577_o <= std_logic_vector (shift_right (unsigned (n1387_o), sat_shift (n1568_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n1578_o <= std_logic_vector(-signed (n1568_o));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n1579_o <= std_logic_vector (shift_left (unsigned (n1387_o), to_integer (unsigned (n1578_o))));
++  n1579_o <= std_logic_vector (shift_left (unsigned (n1387_o), sat_shift (n1578_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n1580_o <= n1568_o (31);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+@@ -16906,7 +16908,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:954:39
+   n2915_o <= n2914_o (30 downto 0);  --  trunc
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:954:19
+-  n2916_o <= std_logic_vector (shift_left (unsigned (n2808_o), to_integer (unsigned (n2915_o))));
++  n2916_o <= std_logic_vector (shift_left (unsigned (n2808_o), sat_shift (n2915_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:22
+   n2918_o <= '1' when n2476_o = "0111" else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:48
+@@ -17040,7 +17042,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:957:39
+   n3023_o <= n3022_o (30 downto 0);  --  trunc
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:957:19
+-  n3024_o <= std_logic_vector (shift_left (unsigned (n2745_o), to_integer (unsigned (n3023_o))));
++  n3024_o <= std_logic_vector (shift_left (unsigned (n2745_o), sat_shift (n3023_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:7
+   n3025_o <= n2745_o when n2921_o = '0' else n3024_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:7
+@@ -17272,11 +17274,11 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:423:5
+   n3227_o <= n3220_o when n3185_o = '0' else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n3231_o <= std_logic_vector (shift_right (unsigned (n3041_o), to_integer(unsigned (n3222_o))));
++  n3231_o <= std_logic_vector (shift_right (unsigned (n3041_o), sat_shift (n3222_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n3232_o <= std_logic_vector(-signed (n3222_o));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n3233_o <= std_logic_vector (shift_left (unsigned (n3041_o), to_integer (unsigned (n3232_o))));
++  n3233_o <= std_logic_vector (shift_left (unsigned (n3041_o), sat_shift (n3232_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n3234_o <= n3222_o (31);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+@@ -18174,7 +18176,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:954:39
+   n4569_o <= n4568_o (30 downto 0);  --  trunc
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:954:19
+-  n4570_o <= std_logic_vector (shift_left (unsigned (n4462_o), to_integer (unsigned (n4569_o))));
++  n4570_o <= std_logic_vector (shift_left (unsigned (n4462_o), sat_shift (n4569_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:22
+   n4572_o <= '1' when n4130_o = "0111" else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:48
+@@ -18308,7 +18310,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:957:39
+   n4677_o <= n4676_o (30 downto 0);  --  trunc
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:957:19
+-  n4678_o <= std_logic_vector (shift_left (unsigned (n4399_o), to_integer (unsigned (n4677_o))));
++  n4678_o <= std_logic_vector (shift_left (unsigned (n4399_o), sat_shift (n4677_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:7
+   n4679_o <= n4399_o when n4575_o = '0' else n4678_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:7
+@@ -18540,11 +18542,11 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:423:5
+   n4881_o <= n4874_o when n4839_o = '0' else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n4885_o <= std_logic_vector (shift_right (unsigned (n4695_o), to_integer(unsigned (n4876_o))));
++  n4885_o <= std_logic_vector (shift_right (unsigned (n4695_o), sat_shift (n4876_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n4886_o <= std_logic_vector(-signed (n4876_o));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n4887_o <= std_logic_vector (shift_left (unsigned (n4695_o), to_integer (unsigned (n4886_o))));
++  n4887_o <= std_logic_vector (shift_left (unsigned (n4695_o), sat_shift (n4886_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n4888_o <= n4876_o (31);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+@@ -19442,7 +19444,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:954:39
+   n6223_o <= n6222_o (30 downto 0);  --  trunc
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:954:19
+-  n6224_o <= std_logic_vector (shift_left (unsigned (n6116_o), to_integer (unsigned (n6223_o))));
++  n6224_o <= std_logic_vector (shift_left (unsigned (n6116_o), sat_shift (n6223_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:22
+   n6226_o <= '1' when n5784_o = "0111" else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:48
+@@ -19576,7 +19578,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:957:39
+   n6331_o <= n6330_o (30 downto 0);  --  trunc
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:957:19
+-  n6332_o <= std_logic_vector (shift_left (unsigned (n6053_o), to_integer (unsigned (n6331_o))));
++  n6332_o <= std_logic_vector (shift_left (unsigned (n6053_o), sat_shift (n6331_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:7
+   n6333_o <= n6053_o when n6229_o = '0' else n6332_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:7
+@@ -19808,11 +19810,11 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:423:5
+   n6535_o <= n6528_o when n6493_o = '0' else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n6539_o <= std_logic_vector (shift_right (unsigned (n6349_o), to_integer(unsigned (n6530_o))));
++  n6539_o <= std_logic_vector (shift_right (unsigned (n6349_o), sat_shift (n6530_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n6540_o <= std_logic_vector(-signed (n6530_o));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n6541_o <= std_logic_vector (shift_left (unsigned (n6349_o), to_integer (unsigned (n6540_o))));
++  n6541_o <= std_logic_vector (shift_left (unsigned (n6349_o), sat_shift (n6540_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n6542_o <= n6530_o (31);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+@@ -20602,7 +20604,7 @@
+   n7827_o <= std_logic_vector (resize (signed (n7825_o), 31));  --  sext
+   n7828_o <= n7744_o & n7742_o & n7745_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:793:22
+-  n7829_o <= std_logic_vector (shift_right (unsigned (n7828_o), to_integer(unsigned (n7827_o))));
++  n7829_o <= std_logic_vector (shift_right (unsigned (n7828_o), sat_shift (n7827_o)));
+   n7830_o <= n7810_o & n7808_o & n7811_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:795:28
+   n7831_o <= n7807_o (7);
+@@ -20958,7 +20960,7 @@
+   n8068_o <= std_logic_vector (resize (signed (n7815_o), 31));  --  sext
+   n8069_o <= n7810_o & n7808_o & n7811_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:818:22
+-  n8070_o <= std_logic_vector (shift_right (unsigned (n8069_o), to_integer(unsigned (n8068_o))));
++  n8070_o <= std_logic_vector (shift_right (unsigned (n8069_o), sat_shift (n8068_o)));
+   n8071_o <= n7744_o & n7742_o & n7745_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:820:28
+   n8072_o <= n7741_o (7);
+@@ -21580,11 +21582,11 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:423:5
+   n8538_o <= n8531_o when n8496_o = '0' else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n8542_o <= std_logic_vector (shift_right (unsigned (n8348_o), to_integer(unsigned (n8533_o))));
++  n8542_o <= std_logic_vector (shift_right (unsigned (n8348_o), sat_shift (n8533_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n8543_o <= std_logic_vector(-signed (n8533_o));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n8544_o <= std_logic_vector (shift_left (unsigned (n8348_o), to_integer (unsigned (n8543_o))));
++  n8544_o <= std_logic_vector (shift_left (unsigned (n8348_o), sat_shift (n8543_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n8545_o <= n8533_o (31);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+@@ -22357,7 +22359,7 @@
+   n9861_o <= std_logic_vector (resize (signed (n9859_o), 31));  --  sext
+   n9862_o <= n9778_o & n9776_o & n9779_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:793:22
+-  n9863_o <= std_logic_vector (shift_right (unsigned (n9862_o), to_integer(unsigned (n9861_o))));
++  n9863_o <= std_logic_vector (shift_right (unsigned (n9862_o), sat_shift (n9861_o)));
+   n9864_o <= n9844_o & n9842_o & n9845_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:795:28
+   n9865_o <= n9841_o (7);
+@@ -22713,7 +22715,7 @@
+   n10102_o <= std_logic_vector (resize (signed (n9849_o), 31));  --  sext
+   n10103_o <= n9844_o & n9842_o & n9845_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:818:22
+-  n10104_o <= std_logic_vector (shift_right (unsigned (n10103_o), to_integer(unsigned (n10102_o))));
++  n10104_o <= std_logic_vector (shift_right (unsigned (n10103_o), sat_shift (n10102_o)));
+   n10105_o <= n9778_o & n9776_o & n9779_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:820:28
+   n10106_o <= n9775_o (7);
+@@ -23335,11 +23337,11 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:423:5
+   n10572_o <= n10565_o when n10530_o = '0' else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n10576_o <= std_logic_vector (shift_right (unsigned (n10382_o), to_integer(unsigned (n10567_o))));
++  n10576_o <= std_logic_vector (shift_right (unsigned (n10382_o), sat_shift (n10567_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n10577_o <= std_logic_vector(-signed (n10567_o));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n10578_o <= std_logic_vector (shift_left (unsigned (n10382_o), to_integer (unsigned (n10577_o))));
++  n10578_o <= std_logic_vector (shift_left (unsigned (n10382_o), sat_shift (n10577_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n10579_o <= n10567_o (31);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+@@ -24112,7 +24114,7 @@
+   n11908_o <= std_logic_vector (resize (signed (n11906_o), 31));  --  sext
+   n11909_o <= n11825_o & n11823_o & n11826_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:793:22
+-  n11910_o <= std_logic_vector (shift_right (unsigned (n11909_o), to_integer(unsigned (n11908_o))));
++  n11910_o <= std_logic_vector (shift_right (unsigned (n11909_o), sat_shift (n11908_o)));
+   n11911_o <= n11891_o & n11889_o & n11892_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:795:28
+   n11912_o <= n11888_o (7);
+@@ -24468,7 +24470,7 @@
+   n12149_o <= std_logic_vector (resize (signed (n11896_o), 31));  --  sext
+   n12150_o <= n11891_o & n11889_o & n11892_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:818:22
+-  n12151_o <= std_logic_vector (shift_right (unsigned (n12150_o), to_integer(unsigned (n12149_o))));
++  n12151_o <= std_logic_vector (shift_right (unsigned (n12150_o), sat_shift (n12149_o)));
+   n12152_o <= n11825_o & n11823_o & n11826_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:820:28
+   n12153_o <= n11822_o (7);
+@@ -25090,11 +25092,11 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:423:5
+   n12619_o <= n12612_o when n12577_o = '0' else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n12623_o <= std_logic_vector (shift_right (unsigned (n12429_o), to_integer(unsigned (n12614_o))));
++  n12623_o <= std_logic_vector (shift_right (unsigned (n12429_o), sat_shift (n12614_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n12624_o <= std_logic_vector(-signed (n12614_o));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n12625_o <= std_logic_vector (shift_left (unsigned (n12429_o), to_integer (unsigned (n12624_o))));
++  n12625_o <= std_logic_vector (shift_left (unsigned (n12429_o), sat_shift (n12624_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n12626_o <= n12614_o (31);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+@@ -25867,7 +25869,7 @@
+   n13967_o <= std_logic_vector (resize (signed (n13965_o), 31));  --  sext
+   n13968_o <= n13884_o & n13882_o & n13885_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:793:22
+-  n13969_o <= std_logic_vector (shift_right (unsigned (n13968_o), to_integer(unsigned (n13967_o))));
++  n13969_o <= std_logic_vector (shift_right (unsigned (n13968_o), sat_shift (n13967_o)));
+   n13970_o <= n13950_o & n13948_o & n13951_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:795:28
+   n13971_o <= n13947_o (7);
+@@ -26223,7 +26225,7 @@
+   n14208_o <= std_logic_vector (resize (signed (n13955_o), 31));  --  sext
+   n14209_o <= n13950_o & n13948_o & n13951_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:818:22
+-  n14210_o <= std_logic_vector (shift_right (unsigned (n14209_o), to_integer(unsigned (n14208_o))));
++  n14210_o <= std_logic_vector (shift_right (unsigned (n14209_o), sat_shift (n14208_o)));
+   n14211_o <= n13884_o & n13882_o & n13885_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:820:28
+   n14212_o <= n13881_o (7);
+@@ -26845,11 +26847,11 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:423:5
+   n14678_o <= n14671_o when n14636_o = '0' else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n14682_o <= std_logic_vector (shift_right (unsigned (n14488_o), to_integer(unsigned (n14673_o))));
++  n14682_o <= std_logic_vector (shift_right (unsigned (n14488_o), sat_shift (n14673_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n14683_o <= std_logic_vector(-signed (n14673_o));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n14684_o <= std_logic_vector (shift_left (unsigned (n14488_o), to_integer (unsigned (n14683_o))));
++  n14684_o <= std_logic_vector (shift_left (unsigned (n14488_o), sat_shift (n14683_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n14685_o <= n14673_o (31);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+@@ -27773,7 +27775,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:954:39
+   n16196_o <= n16195_o (30 downto 0);  --  trunc
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:954:19
+-  n16197_o <= std_logic_vector (shift_left (unsigned (n16089_o), to_integer (unsigned (n16196_o))));
++  n16197_o <= std_logic_vector (shift_left (unsigned (n16089_o), sat_shift (n16196_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:22
+   n16199_o <= '1' when n15757_o = "0111" else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:48
+@@ -27907,7 +27909,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:957:39
+   n16304_o <= n16303_o (30 downto 0);  --  trunc
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:957:19
+-  n16305_o <= std_logic_vector (shift_left (unsigned (n16026_o), to_integer (unsigned (n16304_o))));
++  n16305_o <= std_logic_vector (shift_left (unsigned (n16026_o), sat_shift (n16304_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:7
+   n16306_o <= n16026_o when n16202_o = '0' else n16305_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:7
+@@ -28139,11 +28141,11 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:423:5
+   n16508_o <= n16501_o when n16466_o = '0' else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n16512_o <= std_logic_vector (shift_right (unsigned (n16322_o), to_integer(unsigned (n16503_o))));
++  n16512_o <= std_logic_vector (shift_right (unsigned (n16322_o), sat_shift (n16503_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n16513_o <= std_logic_vector(-signed (n16503_o));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n16514_o <= std_logic_vector (shift_left (unsigned (n16322_o), to_integer (unsigned (n16513_o))));
++  n16514_o <= std_logic_vector (shift_left (unsigned (n16322_o), sat_shift (n16513_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n16515_o <= n16503_o (31);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+@@ -29041,7 +29043,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:954:39
+   n17850_o <= n17849_o (30 downto 0);  --  trunc
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:954:19
+-  n17851_o <= std_logic_vector (shift_left (unsigned (n17743_o), to_integer (unsigned (n17850_o))));
++  n17851_o <= std_logic_vector (shift_left (unsigned (n17743_o), sat_shift (n17850_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:22
+   n17853_o <= '1' when n17411_o = "0111" else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:48
+@@ -29175,7 +29177,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:957:39
+   n17958_o <= n17957_o (30 downto 0);  --  trunc
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:957:19
+-  n17959_o <= std_logic_vector (shift_left (unsigned (n17680_o), to_integer (unsigned (n17958_o))));
++  n17959_o <= std_logic_vector (shift_left (unsigned (n17680_o), sat_shift (n17958_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:7
+   n17960_o <= n17680_o when n17856_o = '0' else n17959_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:7
+@@ -29407,11 +29409,11 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:423:5
+   n18162_o <= n18155_o when n18120_o = '0' else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n18166_o <= std_logic_vector (shift_right (unsigned (n17976_o), to_integer(unsigned (n18157_o))));
++  n18166_o <= std_logic_vector (shift_right (unsigned (n17976_o), sat_shift (n18157_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n18167_o <= std_logic_vector(-signed (n18157_o));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n18168_o <= std_logic_vector (shift_left (unsigned (n17976_o), to_integer (unsigned (n18167_o))));
++  n18168_o <= std_logic_vector (shift_left (unsigned (n17976_o), sat_shift (n18167_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n18169_o <= n18157_o (31);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+@@ -30309,7 +30311,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:954:39
+   n19504_o <= n19503_o (30 downto 0);  --  trunc
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:954:19
+-  n19505_o <= std_logic_vector (shift_left (unsigned (n19397_o), to_integer (unsigned (n19504_o))));
++  n19505_o <= std_logic_vector (shift_left (unsigned (n19397_o), sat_shift (n19504_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:22
+   n19507_o <= '1' when n19065_o = "0111" else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:48
+@@ -30443,7 +30445,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:957:39
+   n19612_o <= n19611_o (30 downto 0);  --  trunc
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:957:19
+-  n19613_o <= std_logic_vector (shift_left (unsigned (n19334_o), to_integer (unsigned (n19612_o))));
++  n19613_o <= std_logic_vector (shift_left (unsigned (n19334_o), sat_shift (n19612_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:7
+   n19614_o <= n19334_o when n19510_o = '0' else n19613_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:7
+@@ -30675,11 +30677,11 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:423:5
+   n19816_o <= n19809_o when n19774_o = '0' else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n19820_o <= std_logic_vector (shift_right (unsigned (n19630_o), to_integer(unsigned (n19811_o))));
++  n19820_o <= std_logic_vector (shift_right (unsigned (n19630_o), sat_shift (n19811_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n19821_o <= std_logic_vector(-signed (n19811_o));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n19822_o <= std_logic_vector (shift_left (unsigned (n19630_o), to_integer (unsigned (n19821_o))));
++  n19822_o <= std_logic_vector (shift_left (unsigned (n19630_o), sat_shift (n19821_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n19823_o <= n19811_o (31);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+@@ -31577,7 +31579,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:954:39
+   n21158_o <= n21157_o (30 downto 0);  --  trunc
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:954:19
+-  n21159_o <= std_logic_vector (shift_left (unsigned (n21051_o), to_integer (unsigned (n21158_o))));
++  n21159_o <= std_logic_vector (shift_left (unsigned (n21051_o), sat_shift (n21158_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:22
+   n21161_o <= '1' when n20719_o = "0111" else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:48
+@@ -31711,7 +31713,7 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:957:39
+   n21266_o <= n21265_o (30 downto 0);  --  trunc
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:957:19
+-  n21267_o <= std_logic_vector (shift_left (unsigned (n20988_o), to_integer (unsigned (n21266_o))));
++  n21267_o <= std_logic_vector (shift_left (unsigned (n20988_o), sat_shift (n21266_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:7
+   n21268_o <= n20988_o when n21164_o = '0' else n21267_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:955:7
+@@ -31943,11 +31945,11 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:423:5
+   n21470_o <= n21463_o when n21428_o = '0' else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n21474_o <= std_logic_vector (shift_right (unsigned (n21284_o), to_integer(unsigned (n21465_o))));
++  n21474_o <= std_logic_vector (shift_right (unsigned (n21284_o), sat_shift (n21465_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n21475_o <= std_logic_vector(-signed (n21465_o));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n21476_o <= std_logic_vector (shift_left (unsigned (n21284_o), to_integer (unsigned (n21475_o))));
++  n21476_o <= std_logic_vector (shift_left (unsigned (n21284_o), sat_shift (n21475_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n21477_o <= n21465_o (31);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+@@ -32737,7 +32739,7 @@
+   n22762_o <= std_logic_vector (resize (signed (n22760_o), 31));  --  sext
+   n22763_o <= n22679_o & n22677_o & n22680_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:793:22
+-  n22764_o <= std_logic_vector (shift_right (unsigned (n22763_o), to_integer(unsigned (n22762_o))));
++  n22764_o <= std_logic_vector (shift_right (unsigned (n22763_o), sat_shift (n22762_o)));
+   n22765_o <= n22745_o & n22743_o & n22746_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:795:28
+   n22766_o <= n22742_o (7);
+@@ -33093,7 +33095,7 @@
+   n23003_o <= std_logic_vector (resize (signed (n22750_o), 31));  --  sext
+   n23004_o <= n22745_o & n22743_o & n22746_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:818:22
+-  n23005_o <= std_logic_vector (shift_right (unsigned (n23004_o), to_integer(unsigned (n23003_o))));
++  n23005_o <= std_logic_vector (shift_right (unsigned (n23004_o), sat_shift (n23003_o)));
+   n23006_o <= n22679_o & n22677_o & n22680_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:820:28
+   n23007_o <= n22676_o (7);
+@@ -33715,11 +33717,11 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:423:5
+   n23473_o <= n23466_o when n23431_o = '0' else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n23477_o <= std_logic_vector (shift_right (unsigned (n23283_o), to_integer(unsigned (n23468_o))));
++  n23477_o <= std_logic_vector (shift_right (unsigned (n23283_o), sat_shift (n23468_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n23478_o <= std_logic_vector(-signed (n23468_o));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n23479_o <= std_logic_vector (shift_left (unsigned (n23283_o), to_integer (unsigned (n23478_o))));
++  n23479_o <= std_logic_vector (shift_left (unsigned (n23283_o), sat_shift (n23478_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n23480_o <= n23468_o (31);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+@@ -34492,7 +34494,7 @@
+   n24796_o <= std_logic_vector (resize (signed (n24794_o), 31));  --  sext
+   n24797_o <= n24713_o & n24711_o & n24714_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:793:22
+-  n24798_o <= std_logic_vector (shift_right (unsigned (n24797_o), to_integer(unsigned (n24796_o))));
++  n24798_o <= std_logic_vector (shift_right (unsigned (n24797_o), sat_shift (n24796_o)));
+   n24799_o <= n24779_o & n24777_o & n24780_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:795:28
+   n24800_o <= n24776_o (7);
+@@ -34848,7 +34850,7 @@
+   n25037_o <= std_logic_vector (resize (signed (n24784_o), 31));  --  sext
+   n25038_o <= n24779_o & n24777_o & n24780_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:818:22
+-  n25039_o <= std_logic_vector (shift_right (unsigned (n25038_o), to_integer(unsigned (n25037_o))));
++  n25039_o <= std_logic_vector (shift_right (unsigned (n25038_o), sat_shift (n25037_o)));
+   n25040_o <= n24713_o & n24711_o & n24714_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:820:28
+   n25041_o <= n24710_o (7);
+@@ -35470,11 +35472,11 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:423:5
+   n25507_o <= n25500_o when n25465_o = '0' else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n25511_o <= std_logic_vector (shift_right (unsigned (n25317_o), to_integer(unsigned (n25502_o))));
++  n25511_o <= std_logic_vector (shift_right (unsigned (n25317_o), sat_shift (n25502_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n25512_o <= std_logic_vector(-signed (n25502_o));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n25513_o <= std_logic_vector (shift_left (unsigned (n25317_o), to_integer (unsigned (n25512_o))));
++  n25513_o <= std_logic_vector (shift_left (unsigned (n25317_o), sat_shift (n25512_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n25514_o <= n25502_o (31);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+@@ -36247,7 +36249,7 @@
+   n26843_o <= std_logic_vector (resize (signed (n26841_o), 31));  --  sext
+   n26844_o <= n26760_o & n26758_o & n26761_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:793:22
+-  n26845_o <= std_logic_vector (shift_right (unsigned (n26844_o), to_integer(unsigned (n26843_o))));
++  n26845_o <= std_logic_vector (shift_right (unsigned (n26844_o), sat_shift (n26843_o)));
+   n26846_o <= n26826_o & n26824_o & n26827_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:795:28
+   n26847_o <= n26823_o (7);
+@@ -36603,7 +36605,7 @@
+   n27084_o <= std_logic_vector (resize (signed (n26831_o), 31));  --  sext
+   n27085_o <= n26826_o & n26824_o & n26827_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:818:22
+-  n27086_o <= std_logic_vector (shift_right (unsigned (n27085_o), to_integer(unsigned (n27084_o))));
++  n27086_o <= std_logic_vector (shift_right (unsigned (n27085_o), sat_shift (n27084_o)));
+   n27087_o <= n26760_o & n26758_o & n26761_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:820:28
+   n27088_o <= n26757_o (7);
+@@ -37225,11 +37227,11 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:423:5
+   n27554_o <= n27547_o when n27512_o = '0' else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n27558_o <= std_logic_vector (shift_right (unsigned (n27364_o), to_integer(unsigned (n27549_o))));
++  n27558_o <= std_logic_vector (shift_right (unsigned (n27364_o), sat_shift (n27549_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n27559_o <= std_logic_vector(-signed (n27549_o));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n27560_o <= std_logic_vector (shift_left (unsigned (n27364_o), to_integer (unsigned (n27559_o))));
++  n27560_o <= std_logic_vector (shift_left (unsigned (n27364_o), sat_shift (n27559_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n27561_o <= n27549_o (31);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+@@ -38002,7 +38004,7 @@
+   n28902_o <= std_logic_vector (resize (signed (n28900_o), 31));  --  sext
+   n28903_o <= n28819_o & n28817_o & n28820_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:793:22
+-  n28904_o <= std_logic_vector (shift_right (unsigned (n28903_o), to_integer(unsigned (n28902_o))));
++  n28904_o <= std_logic_vector (shift_right (unsigned (n28903_o), sat_shift (n28902_o)));
+   n28905_o <= n28885_o & n28883_o & n28886_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:795:28
+   n28906_o <= n28882_o (7);
+@@ -38358,7 +38360,7 @@
+   n29143_o <= std_logic_vector (resize (signed (n28890_o), 31));  --  sext
+   n29144_o <= n28885_o & n28883_o & n28886_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:818:22
+-  n29145_o <= std_logic_vector (shift_right (unsigned (n29144_o), to_integer(unsigned (n29143_o))));
++  n29145_o <= std_logic_vector (shift_right (unsigned (n29144_o), sat_shift (n29143_o)));
+   n29146_o <= n28819_o & n28817_o & n28820_o;
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:820:28
+   n29147_o <= n28816_o (7);
+@@ -38980,11 +38982,11 @@
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:423:5
+   n29613_o <= n29606_o when n29571_o = '0' else '0';
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n29617_o <= std_logic_vector (shift_right (unsigned (n29423_o), to_integer(unsigned (n29608_o))));
++  n29617_o <= std_logic_vector (shift_right (unsigned (n29423_o), sat_shift (n29608_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n29618_o <= std_logic_vector(-signed (n29608_o));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+-  n29619_o <= std_logic_vector (shift_left (unsigned (n29423_o), to_integer (unsigned (n29618_o))));
++  n29619_o <= std_logic_vector (shift_left (unsigned (n29423_o), sat_shift (n29618_o)));
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23
+   n29620_o <= n29608_o (31);
+   -- ../../src/ieee2008/float_generic_pkg-body.vhdl:444:23

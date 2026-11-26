@@ -15,12 +15,14 @@ date: "2026-11-25"
 - `TODO-005` (local Docker smoke): done in the M1 local validation.
 - M2c (`G_LANES > 1`) accepted (D-079,
   [validation](../experiments/exp001/VALIDATION_M2C.md)).
+- M4 (post-synthesis simulation, Series 7 mapping) run `m4_20261126T123436Z` is a
+  candidate for planner review (D-085, [results](../experiments/exp001/RESULTS_M4.md)).
+  Open: classify Part A (256,64,8) as BLOCKED (M4-TOOL-004); optionally re-run it with
+  more VM memory (owner decision).
 - Next:
-  - M4 on the final design (D-075, D-080): post-synthesis simulation and Series 7
-    mapping of (256,64) with L = 1, 2, 4, 8 and (64,16) with L = 1, 4, including LUTRAM;
+  - M5 review document for Amir, including the float_pkg portability finding (D-084);
   - M6 after Amir's review (D-080): pipelining; overlap of output/input with compute
-    (the `2*N_RG` term);
-  - M5 review document for Amir.
+    (the `2*N_RG` term).
 - The table below is a historical M3 snapshot of 2026-11-25 (D-067); later dated
   sections remain valid.
 
@@ -42,6 +44,7 @@ Maintained per [../.agents/skills/todo-tracking/SKILL.md](../.agents/skills/todo
 ## 2026-11-26 - M1 local validation
 
 - [ ] Verify post-synthesis numerical equivalence and investigate the four tri-state warnings before claiming arithmetic netlist correctness.
+  - 2026-11-26 (M4, D-084): tri-state warnings EXPLAINED (not fixed): each is one constant-Z select from the float_pkg metavalue test (CA-OBS-001). Generic netlist simulation bit exact for 5 of 6 DPC fixtures (D-085); mapped netlist equivalence not established.
 - [ ] Validate binary32 multiplication independently if required by a future approved generic arithmetic experiment.
 - [ ] Move container pytest temporary build artifacts into the project results tree.
 - [ ] Review proposed reusable skill updates separately; do not edit protected files without approval.

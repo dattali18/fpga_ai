@@ -1,0 +1,1766 @@
+warnings: 712295
+ 161 Warning: Detected loop at \n11815_o [0] in dpc
+ 804 Warning: Detected loop at \n11896_o [4] in dpc
+ 488 Warning: Detected loop at \n11896_o [5] in dpc
+ 168 Warning: Detected loop at \n11896_o [6] in dpc
+ 171 Warning: Detected loop at \n11896_o [8] in dpc
+ 497 Warning: Detected loop at \n11906_o [4] in dpc
+ 174 Warning: Detected loop at \n12338_o in dpc
+ 161 Warning: Detected loop at \n12395_o [10] in dpc
+ 161 Warning: Detected loop at \n12395_o [13] in dpc
+ 161 Warning: Detected loop at \n12395_o [6] in dpc
+ 662 Warning: Detected loop at \n12429_o [10] in dpc
+1129 Warning: Detected loop at \n12429_o [11] in dpc
+ 973 Warning: Detected loop at \n12429_o [12] in dpc
+ 817 Warning: Detected loop at \n12429_o [13] in dpc
+ 661 Warning: Detected loop at \n12429_o [14] in dpc
+1112 Warning: Detected loop at \n12429_o [15] in dpc
+ 956 Warning: Detected loop at \n12429_o [16] in dpc
+ 800 Warning: Detected loop at \n12429_o [17] in dpc
+ 644 Warning: Detected loop at \n12429_o [18] in dpc
+1112 Warning: Detected loop at \n12429_o [19] in dpc
+ 956 Warning: Detected loop at \n12429_o [20] in dpc
+ 800 Warning: Detected loop at \n12429_o [21] in dpc
+ 644 Warning: Detected loop at \n12429_o [22] in dpc
+1113 Warning: Detected loop at \n12429_o [23] in dpc
+ 957 Warning: Detected loop at \n12429_o [24] in dpc
+ 801 Warning: Detected loop at \n12429_o [25] in dpc
+ 645 Warning: Detected loop at \n12429_o [26] in dpc
+ 174 Warning: Detected loop at \n12429_o [27] in dpc
+ 956 Warning: Detected loop at \n12429_o [3] in dpc
+ 800 Warning: Detected loop at \n12429_o [4] in dpc
+ 644 Warning: Detected loop at \n12429_o [5] in dpc
+1130 Warning: Detected loop at \n12429_o [7] in dpc
+ 974 Warning: Detected loop at \n12429_o [8] in dpc
+ 818 Warning: Detected loop at \n12429_o [9] in dpc
+ 648 Warning: Detected loop at \n12565_o [0] in dpc
+ 318 Warning: Detected loop at \n12570_o [0] in dpc
+ 159 Warning: Detected loop at \n12570_o [28] in dpc
+ 159 Warning: Detected loop at \n12570_o [4] in dpc
+ 644 Warning: Detected loop at \n12574_o [0] in dpc
+ 483 Warning: Detected loop at \n12574_o [1] in dpc
+ 322 Warning: Detected loop at \n12574_o [2] in dpc
+ 161 Warning: Detected loop at \n12574_o [3] in dpc
+ 955 Warning: Detected loop at \n12574_o [4] in dpc
+ 636 Warning: Detected loop at \n12574_o [8] in dpc
+ 741 Warning: Detected loop at \n12624_o [28] in dpc
+ 353 Warning: Detected loop at \n12627_o [10] in dpc
+ 362 Warning: Detected loop at \n12627_o [11] in dpc
+ 328 Warning: Detected loop at \n12627_o [12] in dpc
+ 328 Warning: Detected loop at \n12627_o [13] in dpc
+ 328 Warning: Detected loop at \n12627_o [14] in dpc
+ 358 Warning: Detected loop at \n12627_o [15] in dpc
+ 164 Warning: Detected loop at \n12627_o [16] in dpc
+ 164 Warning: Detected loop at \n12627_o [17] in dpc
+ 164 Warning: Detected loop at \n12627_o [18] in dpc
+ 164 Warning: Detected loop at \n12627_o [19] in dpc
+ 878 Warning: Detected loop at \n12627_o [20] in dpc
+ 841 Warning: Detected loop at \n12627_o [21] in dpc
+ 842 Warning: Detected loop at \n12627_o [22] in dpc
+ 841 Warning: Detected loop at \n12627_o [23] in dpc
+ 685 Warning: Detected loop at \n12627_o [24] in dpc
+ 546 Warning: Detected loop at \n12627_o [4] in dpc
+ 555 Warning: Detected loop at \n12627_o [5] in dpc
+ 546 Warning: Detected loop at \n12627_o [6] in dpc
+ 549 Warning: Detected loop at \n12627_o [7] in dpc
+ 358 Warning: Detected loop at \n12627_o [8] in dpc
+ 351 Warning: Detected loop at \n12627_o [9] in dpc
+ 322 Warning: Detected loop at \n12844_o [0] in dpc
+ 161 Warning: Detected loop at \n12844_o [1] in dpc
+ 638 Warning: Detected loop at \n12844_o [4] in dpc
+ 480 Warning: Detected loop at \n12844_o [5] in dpc
+ 312 Warning: Detected loop at \n12846_o [1] in dpc
+ 156 Warning: Detected loop at \n12846_o [10] in dpc
+ 468 Warning: Detected loop at \n12846_o [12] in dpc
+ 312 Warning: Detected loop at \n12846_o [13] in dpc
+ 156 Warning: Detected loop at \n12846_o [14] in dpc
+ 468 Warning: Detected loop at \n12846_o [16] in dpc
+ 312 Warning: Detected loop at \n12846_o [17] in dpc
+ 156 Warning: Detected loop at \n12846_o [18] in dpc
+ 156 Warning: Detected loop at \n12846_o [2] in dpc
+ 505 Warning: Detected loop at \n12846_o [20] in dpc
+ 349 Warning: Detected loop at \n12846_o [21] in dpc
+ 193 Warning: Detected loop at \n12846_o [22] in dpc
+ 468 Warning: Detected loop at \n12846_o [4] in dpc
+ 312 Warning: Detected loop at \n12846_o [5] in dpc
+ 156 Warning: Detected loop at \n12846_o [6] in dpc
+ 468 Warning: Detected loop at \n12846_o [8] in dpc
+ 312 Warning: Detected loop at \n12846_o [9] in dpc
+ 156 Warning: Detected loop at \n12851_o [1] in dpc
+ 156 Warning: Detected loop at \n12851_o [10] in dpc
+ 156 Warning: Detected loop at \n12851_o [12] in dpc
+ 156 Warning: Detected loop at \n12851_o [13] in dpc
+ 156 Warning: Detected loop at \n12851_o [16] in dpc
+ 156 Warning: Detected loop at \n12851_o [18] in dpc
+ 156 Warning: Detected loop at \n12851_o [20] in dpc
+ 156 Warning: Detected loop at \n12851_o [21] in dpc
+ 193 Warning: Detected loop at \n12851_o [22] in dpc
+ 156 Warning: Detected loop at \n12851_o [4] in dpc
+ 156 Warning: Detected loop at \n12851_o [5] in dpc
+ 156 Warning: Detected loop at \n12851_o [8] in dpc
+ 322 Warning: Detected loop at \n12912_o [26] in dpc
+ 479 Warning: Detected loop at \n12912_o [27] in dpc
+ 481 Warning: Detected loop at \n12912_o [28] in dpc
+ 481 Warning: Detected loop at \n12912_o [29] in dpc
+ 641 Warning: Detected loop at \n12912_o [30] in dpc
+ 483 Warning: Detected loop at \n12951_o [31] in dpc
+ 789 Warning: Detected loop at \n12987_o [0] in dpc
+ 169 Warning: Detected loop at \n13874_o [0] in dpc
+ 841 Warning: Detected loop at \n13955_o [4] in dpc
+ 511 Warning: Detected loop at \n13955_o [5] in dpc
+ 177 Warning: Detected loop at \n13955_o [6] in dpc
+ 180 Warning: Detected loop at \n13955_o [8] in dpc
+ 522 Warning: Detected loop at \n13965_o [4] in dpc
+ 354 Warning: Detected loop at \n13965_o [5] in dpc
+ 182 Warning: Detected loop at \n14397_o in dpc
+ 341 Warning: Detected loop at \n14454_o [18] in dpc
+ 177 Warning: Detected loop at \n14454_o [6] in dpc
+ 341 Warning: Detected loop at \n14454_o [8] in dpc
+ 722 Warning: Detected loop at \n14488_o [10] in dpc
+1201 Warning: Detected loop at \n14488_o [11] in dpc
+1037 Warning: Detected loop at \n14488_o [12] in dpc
+ 873 Warning: Detected loop at \n14488_o [13] in dpc
+ 709 Warning: Detected loop at \n14488_o [14] in dpc
+1213 Warning: Detected loop at \n14488_o [15] in dpc
+1050 Warning: Detected loop at \n14488_o [16] in dpc
+ 886 Warning: Detected loop at \n14488_o [17] in dpc
+ 722 Warning: Detected loop at \n14488_o [18] in dpc
+1200 Warning: Detected loop at \n14488_o [19] in dpc
+1036 Warning: Detected loop at \n14488_o [20] in dpc
+ 872 Warning: Detected loop at \n14488_o [21] in dpc
+ 708 Warning: Detected loop at \n14488_o [22] in dpc
+1192 Warning: Detected loop at \n14488_o [23] in dpc
+1032 Warning: Detected loop at \n14488_o [24] in dpc
+ 872 Warning: Detected loop at \n14488_o [25] in dpc
+ 708 Warning: Detected loop at \n14488_o [26] in dpc
+ 187 Warning: Detected loop at \n14488_o [27] in dpc
+1023 Warning: Detected loop at \n14488_o [3] in dpc
+ 859 Warning: Detected loop at \n14488_o [4] in dpc
+ 695 Warning: Detected loop at \n14488_o [5] in dpc
+ 531 Warning: Detected loop at \n14488_o [6] in dpc
+1214 Warning: Detected loop at \n14488_o [7] in dpc
+1050 Warning: Detected loop at \n14488_o [8] in dpc
+ 886 Warning: Detected loop at \n14488_o [9] in dpc
+ 670 Warning: Detected loop at \n14624_o [0] in dpc
+ 168 Warning: Detected loop at \n14624_o [4] in dpc
+ 331 Warning: Detected loop at \n14629_o [0] in dpc
+ 168 Warning: Detected loop at \n14629_o [1] in dpc
+ 166 Warning: Detected loop at \n14629_o [28] in dpc
+ 166 Warning: Detected loop at \n14629_o [4] in dpc
+1010 Warning: Detected loop at \n14633_o [0] in dpc
+ 674 Warning: Detected loop at \n14633_o [1] in dpc
+ 506 Warning: Detected loop at \n14633_o [2] in dpc
+ 338 Warning: Detected loop at \n14633_o [3] in dpc
+ 997 Warning: Detected loop at \n14633_o [4] in dpc
+ 664 Warning: Detected loop at \n14633_o [8] in dpc
+ 779 Warning: Detected loop at \n14683_o [28] in dpc
+ 372 Warning: Detected loop at \n14686_o [10] in dpc
+ 172 Warning: Detected loop at \n14686_o [11] in dpc
+ 371 Warning: Detected loop at \n14686_o [12] in dpc
+ 373 Warning: Detected loop at \n14686_o [13] in dpc
+ 344 Warning: Detected loop at \n14686_o [14] in dpc
+ 344 Warning: Detected loop at \n14686_o [15] in dpc
+ 172 Warning: Detected loop at \n14686_o [16] in dpc
+ 172 Warning: Detected loop at \n14686_o [17] in dpc
+ 172 Warning: Detected loop at \n14686_o [18] in dpc
+ 374 Warning: Detected loop at \n14686_o [19] in dpc
+ 906 Warning: Detected loop at \n14686_o [20] in dpc
+ 906 Warning: Detected loop at \n14686_o [21] in dpc
+ 875 Warning: Detected loop at \n14686_o [22] in dpc
+ 711 Warning: Detected loop at \n14686_o [24] in dpc
+ 711 Warning: Detected loop at \n14686_o [25] in dpc
+ 736 Warning: Detected loop at \n14686_o [4] in dpc
+ 564 Warning: Detected loop at \n14686_o [5] in dpc
+ 571 Warning: Detected loop at \n14686_o [6] in dpc
+ 568 Warning: Detected loop at \n14686_o [7] in dpc
+ 371 Warning: Detected loop at \n14686_o [8] in dpc
+ 368 Warning: Detected loop at \n14686_o [9] in dpc
+ 337 Warning: Detected loop at \n14903_o [0] in dpc
+ 169 Warning: Detected loop at \n14903_o [1] in dpc
+ 669 Warning: Detected loop at \n14903_o [4] in dpc
+ 504 Warning: Detected loop at \n14903_o [5] in dpc
+ 328 Warning: Detected loop at \n14905_o [1] in dpc
+ 164 Warning: Detected loop at \n14905_o [10] in dpc
+ 492 Warning: Detected loop at \n14905_o [12] in dpc
+ 328 Warning: Detected loop at \n14905_o [13] in dpc
+ 164 Warning: Detected loop at \n14905_o [14] in dpc
+ 492 Warning: Detected loop at \n14905_o [16] in dpc
+ 328 Warning: Detected loop at \n14905_o [17] in dpc
+ 164 Warning: Detected loop at \n14905_o [18] in dpc
+ 164 Warning: Detected loop at \n14905_o [2] in dpc
+ 522 Warning: Detected loop at \n14905_o [20] in dpc
+ 362 Warning: Detected loop at \n14905_o [21] in dpc
+ 202 Warning: Detected loop at \n14905_o [22] in dpc
+ 492 Warning: Detected loop at \n14905_o [4] in dpc
+ 328 Warning: Detected loop at \n14905_o [5] in dpc
+ 164 Warning: Detected loop at \n14905_o [6] in dpc
+ 492 Warning: Detected loop at \n14905_o [8] in dpc
+ 328 Warning: Detected loop at \n14905_o [9] in dpc
+ 164 Warning: Detected loop at \n14910_o [1] in dpc
+ 164 Warning: Detected loop at \n14910_o [12] in dpc
+ 164 Warning: Detected loop at \n14910_o [13] in dpc
+ 164 Warning: Detected loop at \n14910_o [14] in dpc
+ 164 Warning: Detected loop at \n14910_o [16] in dpc
+ 362 Warning: Detected loop at \n14910_o [20] in dpc
+ 320 Warning: Detected loop at \n14910_o [21] in dpc
+ 160 Warning: Detected loop at \n14910_o [22] in dpc
+ 164 Warning: Detected loop at \n14910_o [4] in dpc
+ 164 Warning: Detected loop at \n14910_o [5] in dpc
+ 164 Warning: Detected loop at \n14910_o [8] in dpc
+ 164 Warning: Detected loop at \n14910_o [9] in dpc
+ 168 Warning: Detected loop at \n14919_o [1] in dpc
+ 168 Warning: Detected loop at \n14919_o [2] in dpc
+ 168 Warning: Detected loop at \n14919_o [4] in dpc
+ 169 Warning: Detected loop at \n14971_o [23] in dpc
+ 169 Warning: Detected loop at \n14971_o [24] in dpc
+ 169 Warning: Detected loop at \n14971_o [25] in dpc
+ 501 Warning: Detected loop at \n14971_o [27] in dpc
+ 504 Warning: Detected loop at \n14971_o [28] in dpc
+ 505 Warning: Detected loop at \n14971_o [29] in dpc
+ 672 Warning: Detected loop at \n14971_o [30] in dpc
+ 504 Warning: Detected loop at \n15010_o [31] in dpc
+ 827 Warning: Detected loop at \n15046_o [0] in dpc
+   4 Warning: Detected loop at \n154_o [0] in dpc
+   2 Warning: Detected loop at \n154_o [2] in dpc
+   2 Warning: Detected loop at \n154_o [4] in dpc
+   1 Warning: Detected loop at \n154_o [5] in dpc
+   2 Warning: Detected loop at \n164_o [1] in dpc
+   1 Warning: Detected loop at \n164_o [2] in dpc
+   4 Warning: Detected loop at \n164_o [4] in dpc
+   3 Warning: Detected loop at \n164_o [5] in dpc
+   2 Warning: Detected loop at \n164_o [6] in dpc
+   1 Warning: Detected loop at \n164_o [7] in dpc
+   9 Warning: Detected loop at \n236_o [0] in dpc
+   6 Warning: Detected loop at \n236_o [1] in dpc
+   3 Warning: Detected loop at \n236_o [2] in dpc
+  50 Warning: Detected loop at \n236_o [4] in dpc
+  30 Warning: Detected loop at \n236_o [5] in dpc
+  29 Warning: Detected loop at \n236_o [6] in dpc
+  13 Warning: Detected loop at \n236_o [7] in dpc
+  21 Warning: Detected loop at \n236_o [8] in dpc
+ 164 Warning: Detected loop at \n26750_o [0] in dpc
+ 813 Warning: Detected loop at \n26831_o [4] in dpc
+ 491 Warning: Detected loop at \n26831_o [5] in dpc
+ 328 Warning: Detected loop at \n26831_o [6] in dpc
+ 168 Warning: Detected loop at \n26831_o [8] in dpc
+ 497 Warning: Detected loop at \n26841_o [4] in dpc
+ 183 Warning: Detected loop at \n27273_o in dpc
+ 163 Warning: Detected loop at \n27330_o [10] in dpc
+ 163 Warning: Detected loop at \n27330_o [14] in dpc
+ 163 Warning: Detected loop at \n27330_o [18] in dpc
+ 163 Warning: Detected loop at \n27330_o [22] in dpc
+ 163 Warning: Detected loop at \n27330_o [25] in dpc
+ 163 Warning: Detected loop at \n27330_o [6] in dpc
+ 670 Warning: Detected loop at \n27364_o [10] in dpc
+1149 Warning: Detected loop at \n27364_o [11] in dpc
+ 989 Warning: Detected loop at \n27364_o [12] in dpc
+ 829 Warning: Detected loop at \n27364_o [13] in dpc
+ 669 Warning: Detected loop at \n27364_o [14] in dpc
+1145 Warning: Detected loop at \n27364_o [15] in dpc
+ 985 Warning: Detected loop at \n27364_o [16] in dpc
+ 825 Warning: Detected loop at \n27364_o [17] in dpc
+ 665 Warning: Detected loop at \n27364_o [18] in dpc
+1144 Warning: Detected loop at \n27364_o [19] in dpc
+ 987 Warning: Detected loop at \n27364_o [20] in dpc
+ 827 Warning: Detected loop at \n27364_o [21] in dpc
+ 667 Warning: Detected loop at \n27364_o [22] in dpc
+1138 Warning: Detected loop at \n27364_o [23] in dpc
+ 981 Warning: Detected loop at \n27364_o [24] in dpc
+ 824 Warning: Detected loop at \n27364_o [25] in dpc
+ 667 Warning: Detected loop at \n27364_o [26] in dpc
+ 177 Warning: Detected loop at \n27364_o [27] in dpc
+ 972 Warning: Detected loop at \n27364_o [3] in dpc
+ 812 Warning: Detected loop at \n27364_o [4] in dpc
+ 652 Warning: Detected loop at \n27364_o [5] in dpc
+1150 Warning: Detected loop at \n27364_o [7] in dpc
+ 990 Warning: Detected loop at \n27364_o [8] in dpc
+ 830 Warning: Detected loop at \n27364_o [9] in dpc
+ 651 Warning: Detected loop at \n27500_o [0] in dpc
+ 323 Warning: Detected loop at \n27500_o [4] in dpc
+ 323 Warning: Detected loop at \n27505_o [0] in dpc
+ 162 Warning: Detected loop at \n27505_o [1] in dpc
+ 163 Warning: Detected loop at \n27505_o [28] in dpc
+ 163 Warning: Detected loop at \n27505_o [4] in dpc
+ 978 Warning: Detected loop at \n27509_o [0] in dpc
+ 654 Warning: Detected loop at \n27509_o [1] in dpc
+ 328 Warning: Detected loop at \n27509_o [2] in dpc
+ 164 Warning: Detected loop at \n27509_o [3] in dpc
+1139 Warning: Detected loop at \n27509_o [4] in dpc
+ 652 Warning: Detected loop at \n27509_o [8] in dpc
+ 370 Warning: Detected loop at \n27562_o [10] in dpc
+ 337 Warning: Detected loop at \n27562_o [11] in dpc
+ 333 Warning: Detected loop at \n27562_o [12] in dpc
+ 367 Warning: Detected loop at \n27562_o [13] in dpc
+ 373 Warning: Detected loop at \n27562_o [14] in dpc
+ 333 Warning: Detected loop at \n27562_o [15] in dpc
+ 366 Warning: Detected loop at \n27562_o [16] in dpc
+ 374 Warning: Detected loop at \n27562_o [17] in dpc
+ 376 Warning: Detected loop at \n27562_o [18] in dpc
+ 167 Warning: Detected loop at \n27562_o [19] in dpc
+ 825 Warning: Detected loop at \n27562_o [20] in dpc
+ 861 Warning: Detected loop at \n27562_o [21] in dpc
+ 876 Warning: Detected loop at \n27562_o [22] in dpc
+ 831 Warning: Detected loop at \n27562_o [23] in dpc
+ 665 Warning: Detected loop at \n27562_o [24] in dpc
+ 844 Warning: Detected loop at \n27562_o [25] in dpc
+ 541 Warning: Detected loop at \n27562_o [4] in dpc
+ 538 Warning: Detected loop at \n27562_o [5] in dpc
+ 534 Warning: Detected loop at \n27562_o [6] in dpc
+ 507 Warning: Detected loop at \n27562_o [7] in dpc
+ 338 Warning: Detected loop at \n27562_o [8] in dpc
+ 369 Warning: Detected loop at \n27562_o [9] in dpc
+ 328 Warning: Detected loop at \n27779_o [0] in dpc
+ 164 Warning: Detected loop at \n27779_o [1] in dpc
+ 654 Warning: Detected loop at \n27779_o [4] in dpc
+ 493 Warning: Detected loop at \n27779_o [5] in dpc
+ 320 Warning: Detected loop at \n27781_o [1] in dpc
+ 160 Warning: Detected loop at \n27781_o [10] in dpc
+ 480 Warning: Detected loop at \n27781_o [12] in dpc
+ 320 Warning: Detected loop at \n27781_o [13] in dpc
+ 160 Warning: Detected loop at \n27781_o [14] in dpc
+ 477 Warning: Detected loop at \n27781_o [16] in dpc
+ 320 Warning: Detected loop at \n27781_o [17] in dpc
+ 160 Warning: Detected loop at \n27781_o [18] in dpc
+ 160 Warning: Detected loop at \n27781_o [2] in dpc
+ 471 Warning: Detected loop at \n27781_o [20] in dpc
+ 314 Warning: Detected loop at \n27781_o [21] in dpc
+ 157 Warning: Detected loop at \n27781_o [22] in dpc
+ 480 Warning: Detected loop at \n27781_o [4] in dpc
+ 320 Warning: Detected loop at \n27781_o [5] in dpc
+ 160 Warning: Detected loop at \n27781_o [6] in dpc
+ 480 Warning: Detected loop at \n27781_o [8] in dpc
+ 320 Warning: Detected loop at \n27781_o [9] in dpc
+ 160 Warning: Detected loop at \n27786_o [1] in dpc
+ 160 Warning: Detected loop at \n27786_o [12] in dpc
+ 160 Warning: Detected loop at \n27786_o [13] in dpc
+ 317 Warning: Detected loop at \n27786_o [16] in dpc
+ 317 Warning: Detected loop at \n27786_o [17] in dpc
+ 314 Warning: Detected loop at \n27786_o [20] in dpc
+ 314 Warning: Detected loop at \n27786_o [21] in dpc
+ 157 Warning: Detected loop at \n27786_o [22] in dpc
+ 160 Warning: Detected loop at \n27786_o [4] in dpc
+ 160 Warning: Detected loop at \n27786_o [8] in dpc
+ 164 Warning: Detected loop at \n27795_o [1] in dpc
+ 164 Warning: Detected loop at \n27795_o [4] in dpc
+ 328 Warning: Detected loop at \n27847_o [23] in dpc
+ 328 Warning: Detected loop at \n27847_o [26] in dpc
+ 328 Warning: Detected loop at \n27847_o [27] in dpc
+ 493 Warning: Detected loop at \n27847_o [28] in dpc
+ 493 Warning: Detected loop at \n27847_o [29] in dpc
+ 657 Warning: Detected loop at \n27847_o [30] in dpc
+ 490 Warning: Detected loop at \n27886_o [31] in dpc
+ 807 Warning: Detected loop at \n27922_o [0] in dpc
+ 169 Warning: Detected loop at \n28809_o [0] in dpc
+ 844 Warning: Detected loop at \n28890_o [4] in dpc
+ 512 Warning: Detected loop at \n28890_o [5] in dpc
+ 176 Warning: Detected loop at \n28890_o [6] in dpc
+ 179 Warning: Detected loop at \n28890_o [8] in dpc
+ 521 Warning: Detected loop at \n28900_o [4] in dpc
+ 182 Warning: Detected loop at \n29332_o in dpc
+ 169 Warning: Detected loop at \n29389_o [23] in dpc
+ 169 Warning: Detected loop at \n29389_o [5] in dpc
+ 169 Warning: Detected loop at \n29389_o [6] in dpc
+ 169 Warning: Detected loop at \n29389_o [8] in dpc
+ 692 Warning: Detected loop at \n29423_o [10] in dpc
+1172 Warning: Detected loop at \n29423_o [11] in dpc
+1007 Warning: Detected loop at \n29423_o [12] in dpc
+ 842 Warning: Detected loop at \n29423_o [13] in dpc
+ 677 Warning: Detected loop at \n29423_o [14] in dpc
+1171 Warning: Detected loop at \n29423_o [15] in dpc
+1006 Warning: Detected loop at \n29423_o [16] in dpc
+ 841 Warning: Detected loop at \n29423_o [17] in dpc
+ 676 Warning: Detected loop at \n29423_o [18] in dpc
+1172 Warning: Detected loop at \n29423_o [19] in dpc
+1007 Warning: Detected loop at \n29423_o [20] in dpc
+ 842 Warning: Detected loop at \n29423_o [21] in dpc
+ 677 Warning: Detected loop at \n29423_o [22] in dpc
+1170 Warning: Detected loop at \n29423_o [23] in dpc
+1010 Warning: Detected loop at \n29423_o [24] in dpc
+ 850 Warning: Detected loop at \n29423_o [25] in dpc
+ 690 Warning: Detected loop at \n29423_o [26] in dpc
+ 183 Warning: Detected loop at \n29423_o [27] in dpc
+1020 Warning: Detected loop at \n29423_o [3] in dpc
+ 855 Warning: Detected loop at \n29423_o [4] in dpc
+ 690 Warning: Detected loop at \n29423_o [5] in dpc
+ 525 Warning: Detected loop at \n29423_o [6] in dpc
+1187 Warning: Detected loop at \n29423_o [7] in dpc
+1022 Warning: Detected loop at \n29423_o [8] in dpc
+ 857 Warning: Detected loop at \n29423_o [9] in dpc
+ 686 Warning: Detected loop at \n29559_o [0] in dpc
+ 329 Warning: Detected loop at \n29564_o [0] in dpc
+ 165 Warning: Detected loop at \n29564_o [1] in dpc
+ 167 Warning: Detected loop at \n29564_o [28] in dpc
+ 167 Warning: Detected loop at \n29564_o [4] in dpc
+1006 Warning: Detected loop at \n29568_o [0] in dpc
+ 507 Warning: Detected loop at \n29568_o [1] in dpc
+ 338 Warning: Detected loop at \n29568_o [2] in dpc
+ 169 Warning: Detected loop at \n29568_o [3] in dpc
+1003 Warning: Detected loop at \n29568_o [4] in dpc
+ 668 Warning: Detected loop at \n29568_o [8] in dpc
+ 375 Warning: Detected loop at \n29621_o [10] in dpc
+ 371 Warning: Detected loop at \n29621_o [11] in dpc
+ 380 Warning: Detected loop at \n29621_o [12] in dpc
+ 383 Warning: Detected loop at \n29621_o [13] in dpc
+ 344 Warning: Detected loop at \n29621_o [14] in dpc
+ 384 Warning: Detected loop at \n29621_o [15] in dpc
+ 172 Warning: Detected loop at \n29621_o [16] in dpc
+ 172 Warning: Detected loop at \n29621_o [17] in dpc
+ 172 Warning: Detected loop at \n29621_o [18] in dpc
+ 172 Warning: Detected loop at \n29621_o [19] in dpc
+ 914 Warning: Detected loop at \n29621_o [20] in dpc
+ 880 Warning: Detected loop at \n29621_o [21] in dpc
+ 930 Warning: Detected loop at \n29621_o [22] in dpc
+ 931 Warning: Detected loop at \n29621_o [23] in dpc
+ 908 Warning: Detected loop at \n29621_o [24] in dpc
+ 908 Warning: Detected loop at \n29621_o [25] in dpc
+ 574 Warning: Detected loop at \n29621_o [4] in dpc
+ 581 Warning: Detected loop at \n29621_o [5] in dpc
+ 580 Warning: Detected loop at \n29621_o [6] in dpc
+ 580 Warning: Detected loop at \n29621_o [7] in dpc
+ 371 Warning: Detected loop at \n29621_o [8] in dpc
+ 383 Warning: Detected loop at \n29621_o [9] in dpc
+ 760 Warning: Detected loop at \n29623_o in dpc
+ 338 Warning: Detected loop at \n29838_o [0] in dpc
+ 169 Warning: Detected loop at \n29838_o [1] in dpc
+ 670 Warning: Detected loop at \n29838_o [4] in dpc
+ 504 Warning: Detected loop at \n29838_o [5] in dpc
+ 330 Warning: Detected loop at \n29840_o [1] in dpc
+ 165 Warning: Detected loop at \n29840_o [10] in dpc
+ 495 Warning: Detected loop at \n29840_o [12] in dpc
+ 330 Warning: Detected loop at \n29840_o [13] in dpc
+ 165 Warning: Detected loop at \n29840_o [14] in dpc
+ 495 Warning: Detected loop at \n29840_o [16] in dpc
+ 330 Warning: Detected loop at \n29840_o [17] in dpc
+ 165 Warning: Detected loop at \n29840_o [18] in dpc
+ 165 Warning: Detected loop at \n29840_o [2] in dpc
+ 480 Warning: Detected loop at \n29840_o [20] in dpc
+ 320 Warning: Detected loop at \n29840_o [21] in dpc
+ 160 Warning: Detected loop at \n29840_o [22] in dpc
+ 495 Warning: Detected loop at \n29840_o [4] in dpc
+ 330 Warning: Detected loop at \n29840_o [5] in dpc
+ 165 Warning: Detected loop at \n29840_o [6] in dpc
+ 495 Warning: Detected loop at \n29840_o [8] in dpc
+ 330 Warning: Detected loop at \n29840_o [9] in dpc
+ 165 Warning: Detected loop at \n29845_o [1] in dpc
+ 165 Warning: Detected loop at \n29845_o [13] in dpc
+ 325 Warning: Detected loop at \n29845_o [16] in dpc
+ 165 Warning: Detected loop at \n29845_o [17] in dpc
+ 320 Warning: Detected loop at \n29845_o [20] in dpc
+ 320 Warning: Detected loop at \n29845_o [21] in dpc
+ 160 Warning: Detected loop at \n29845_o [22] in dpc
+ 165 Warning: Detected loop at \n29845_o [5] in dpc
+ 165 Warning: Detected loop at \n29845_o [8] in dpc
+ 165 Warning: Detected loop at \n29845_o [9] in dpc
+ 168 Warning: Detected loop at \n29854_o [4] in dpc
+ 169 Warning: Detected loop at \n29906_o [23] in dpc
+ 169 Warning: Detected loop at \n29906_o [24] in dpc
+ 503 Warning: Detected loop at \n29906_o [27] in dpc
+ 505 Warning: Detected loop at \n29906_o [28] in dpc
+ 505 Warning: Detected loop at \n29906_o [29] in dpc
+ 673 Warning: Detected loop at \n29906_o [30] in dpc
+ 339 Warning: Detected loop at \n29945_o [31] in dpc
+ 831 Warning: Detected loop at \n29981_o [0] in dpc
+   6 Warning: Detected loop at \n30124_o [0] in dpc
+   4 Warning: Detected loop at \n30124_o [1] in dpc
+   2 Warning: Detected loop at \n30124_o [2] in dpc
+  10 Warning: Detected loop at \n30124_o [4] in dpc
+   9 Warning: Detected loop at \n30138_o [1] in dpc
+   6 Warning: Detected loop at \n30138_o [2] in dpc
+   3 Warning: Detected loop at \n30138_o [3] in dpc
+  37 Warning: Detected loop at \n30138_o [5] in dpc
+  22 Warning: Detected loop at \n30138_o [6] in dpc
+  13 Warning: Detected loop at \n30138_o [7] in dpc
+   2 Warning: Detected loop at \n30164_o [0] in dpc
+   3 Warning: Detected loop at \n30164_o [1] in dpc
+   2 Warning: Detected loop at \n30172_o [3] in dpc
+   2 Warning: Detected loop at \n30172_o [4] in dpc
+   1 Warning: Detected loop at \n30258_q [1] in dpc
+   1 Warning: Detected loop at \n30258_q [2] in dpc
+  10 Warning: Detected loop at \n30262_q [5] in dpc
+   3 Warning: Detected loop at \n30265_q [4] in dpc
+   2 Warning: Detected loop at \n30265_q [6] in dpc
+   1 Warning: Detected loop at \n30265_q [7] in dpc
+  16 Warning: Detected loop at \n30265_q [8] in dpc
+   3 Warning: Detected loop at \n30266_q [3] in dpc
+   3 Warning: Detected loop at \n30266_q [5] in dpc
+   1 Warning: Detected loop at \n30266_q [7] in dpc
+   1 Warning: Detected loop at \n30266_q [8] in dpc
+ 164 Warning: Detected loop at \n30269_q [0] in dpc
+ 164 Warning: Detected loop at \n30269_q [1] in dpc
+ 164 Warning: Detected loop at \n30269_q [10] in dpc
+ 164 Warning: Detected loop at \n30269_q [11] in dpc
+ 164 Warning: Detected loop at \n30269_q [12] in dpc
+ 164 Warning: Detected loop at \n30269_q [13] in dpc
+ 164 Warning: Detected loop at \n30269_q [14] in dpc
+ 164 Warning: Detected loop at \n30269_q [15] in dpc
+ 164 Warning: Detected loop at \n30269_q [16] in dpc
+ 164 Warning: Detected loop at \n30269_q [17] in dpc
+ 164 Warning: Detected loop at \n30269_q [18] in dpc
+ 164 Warning: Detected loop at \n30269_q [19] in dpc
+ 164 Warning: Detected loop at \n30269_q [2] in dpc
+ 164 Warning: Detected loop at \n30269_q [20] in dpc
+ 164 Warning: Detected loop at \n30269_q [21] in dpc
+ 164 Warning: Detected loop at \n30269_q [22] in dpc
+ 164 Warning: Detected loop at \n30269_q [23] in dpc
+ 164 Warning: Detected loop at \n30269_q [24] in dpc
+ 164 Warning: Detected loop at \n30269_q [25] in dpc
+ 164 Warning: Detected loop at \n30269_q [26] in dpc
+ 164 Warning: Detected loop at \n30269_q [27] in dpc
+ 164 Warning: Detected loop at \n30269_q [28] in dpc
+ 164 Warning: Detected loop at \n30269_q [29] in dpc
+ 164 Warning: Detected loop at \n30269_q [3] in dpc
+ 164 Warning: Detected loop at \n30269_q [30] in dpc
+ 164 Warning: Detected loop at \n30269_q [31] in dpc
+ 162 Warning: Detected loop at \n30269_q [32] in dpc
+ 163 Warning: Detected loop at \n30269_q [33] in dpc
+ 163 Warning: Detected loop at \n30269_q [34] in dpc
+ 163 Warning: Detected loop at \n30269_q [35] in dpc
+ 163 Warning: Detected loop at \n30269_q [36] in dpc
+ 163 Warning: Detected loop at \n30269_q [37] in dpc
+ 163 Warning: Detected loop at \n30269_q [38] in dpc
+ 163 Warning: Detected loop at \n30269_q [39] in dpc
+ 164 Warning: Detected loop at \n30269_q [4] in dpc
+ 163 Warning: Detected loop at \n30269_q [40] in dpc
+ 163 Warning: Detected loop at \n30269_q [41] in dpc
+ 163 Warning: Detected loop at \n30269_q [42] in dpc
+ 163 Warning: Detected loop at \n30269_q [43] in dpc
+ 163 Warning: Detected loop at \n30269_q [44] in dpc
+ 163 Warning: Detected loop at \n30269_q [45] in dpc
+ 163 Warning: Detected loop at \n30269_q [46] in dpc
+ 163 Warning: Detected loop at \n30269_q [47] in dpc
+ 163 Warning: Detected loop at \n30269_q [48] in dpc
+ 163 Warning: Detected loop at \n30269_q [49] in dpc
+ 164 Warning: Detected loop at \n30269_q [5] in dpc
+ 163 Warning: Detected loop at \n30269_q [50] in dpc
+ 163 Warning: Detected loop at \n30269_q [51] in dpc
+ 163 Warning: Detected loop at \n30269_q [52] in dpc
+ 163 Warning: Detected loop at \n30269_q [53] in dpc
+ 163 Warning: Detected loop at \n30269_q [54] in dpc
+ 162 Warning: Detected loop at \n30269_q [55] in dpc
+ 162 Warning: Detected loop at \n30269_q [56] in dpc
+ 162 Warning: Detected loop at \n30269_q [57] in dpc
+ 162 Warning: Detected loop at \n30269_q [58] in dpc
+ 162 Warning: Detected loop at \n30269_q [59] in dpc
+ 164 Warning: Detected loop at \n30269_q [6] in dpc
+ 162 Warning: Detected loop at \n30269_q [60] in dpc
+ 162 Warning: Detected loop at \n30269_q [61] in dpc
+ 162 Warning: Detected loop at \n30269_q [62] in dpc
+ 162 Warning: Detected loop at \n30269_q [63] in dpc
+ 164 Warning: Detected loop at \n30269_q [7] in dpc
+ 164 Warning: Detected loop at \n30269_q [8] in dpc
+ 164 Warning: Detected loop at \n30269_q [9] in dpc
+ 169 Warning: Detected loop at \n30270_q [0] in dpc
+ 171 Warning: Detected loop at \n30270_q [1] in dpc
+ 171 Warning: Detected loop at \n30270_q [10] in dpc
+ 171 Warning: Detected loop at \n30270_q [11] in dpc
+ 171 Warning: Detected loop at \n30270_q [12] in dpc
+ 171 Warning: Detected loop at \n30270_q [13] in dpc
+ 171 Warning: Detected loop at \n30270_q [14] in dpc
+ 171 Warning: Detected loop at \n30270_q [15] in dpc
+ 171 Warning: Detected loop at \n30270_q [16] in dpc
+ 171 Warning: Detected loop at \n30270_q [17] in dpc
+ 171 Warning: Detected loop at \n30270_q [18] in dpc
+ 171 Warning: Detected loop at \n30270_q [19] in dpc
+ 171 Warning: Detected loop at \n30270_q [2] in dpc
+ 171 Warning: Detected loop at \n30270_q [20] in dpc
+ 171 Warning: Detected loop at \n30270_q [21] in dpc
+ 171 Warning: Detected loop at \n30270_q [22] in dpc
+ 169 Warning: Detected loop at \n30270_q [26] in dpc
+ 169 Warning: Detected loop at \n30270_q [27] in dpc
+ 169 Warning: Detected loop at \n30270_q [28] in dpc
+ 169 Warning: Detected loop at \n30270_q [29] in dpc
+ 171 Warning: Detected loop at \n30270_q [3] in dpc
+ 169 Warning: Detected loop at \n30270_q [30] in dpc
+ 169 Warning: Detected loop at \n30270_q [31] in dpc
+ 169 Warning: Detected loop at \n30270_q [32] in dpc
+ 169 Warning: Detected loop at \n30270_q [33] in dpc
+ 169 Warning: Detected loop at \n30270_q [34] in dpc
+ 169 Warning: Detected loop at \n30270_q [35] in dpc
+ 169 Warning: Detected loop at \n30270_q [36] in dpc
+ 169 Warning: Detected loop at \n30270_q [37] in dpc
+ 169 Warning: Detected loop at \n30270_q [38] in dpc
+ 169 Warning: Detected loop at \n30270_q [39] in dpc
+ 171 Warning: Detected loop at \n30270_q [4] in dpc
+ 169 Warning: Detected loop at \n30270_q [40] in dpc
+ 169 Warning: Detected loop at \n30270_q [41] in dpc
+ 169 Warning: Detected loop at \n30270_q [42] in dpc
+ 169 Warning: Detected loop at \n30270_q [43] in dpc
+ 169 Warning: Detected loop at \n30270_q [44] in dpc
+ 169 Warning: Detected loop at \n30270_q [45] in dpc
+ 169 Warning: Detected loop at \n30270_q [46] in dpc
+ 169 Warning: Detected loop at \n30270_q [47] in dpc
+ 169 Warning: Detected loop at \n30270_q [48] in dpc
+ 169 Warning: Detected loop at \n30270_q [49] in dpc
+ 171 Warning: Detected loop at \n30270_q [5] in dpc
+ 169 Warning: Detected loop at \n30270_q [50] in dpc
+ 169 Warning: Detected loop at \n30270_q [51] in dpc
+ 169 Warning: Detected loop at \n30270_q [52] in dpc
+ 169 Warning: Detected loop at \n30270_q [53] in dpc
+ 169 Warning: Detected loop at \n30270_q [54] in dpc
+ 169 Warning: Detected loop at \n30270_q [55] in dpc
+ 169 Warning: Detected loop at \n30270_q [56] in dpc
+ 169 Warning: Detected loop at \n30270_q [57] in dpc
+ 169 Warning: Detected loop at \n30270_q [58] in dpc
+ 169 Warning: Detected loop at \n30270_q [59] in dpc
+ 171 Warning: Detected loop at \n30270_q [6] in dpc
+ 169 Warning: Detected loop at \n30270_q [60] in dpc
+ 169 Warning: Detected loop at \n30270_q [61] in dpc
+ 169 Warning: Detected loop at \n30270_q [62] in dpc
+ 169 Warning: Detected loop at \n30270_q [63] in dpc
+ 171 Warning: Detected loop at \n30270_q [7] in dpc
+ 171 Warning: Detected loop at \n30270_q [8] in dpc
+ 171 Warning: Detected loop at \n30270_q [9] in dpc
+  22 Warning: Detected loop at \n47_o [8] in dpc
+ 334 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$163044.A [0] in dpc
+ 377 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$163044.A [1] in dpc
+ 181 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$163044.A [3] in dpc
+ 181 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$163044.A [7] in dpc
+ 190 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$163045.A [1] in dpc
+ 377 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$163045.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 885 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$163045.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 368 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$163079.A [5] in dpc
+ 700 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$163079.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 182 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$163110.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 740 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$163110.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 359 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$163176.A [2] in dpc
+ 168 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$163176.A [3] in dpc
+ 177 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$163176.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 363 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$163191.A [7] in dpc
+ 182 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$163247.A [1] in dpc
+ 885 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$163248.A [5] in dpc
+ 177 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$163250.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 177 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$163250.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 881 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$163254.A [6] in dpc
+ 354 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$166581.A [0] in dpc
+ 382 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$166581.A [1] in dpc
+ 356 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$166581.A [7] in dpc
+ 192 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$166582.A [1] in dpc
+ 381 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$166582.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 874 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$166582.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 181 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$166619.A [6] in dpc
+ 188 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$166619.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 914 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$166634.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 187 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$166716.A [4] in dpc
+ 885 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$166859.A [4] in dpc
+ 889 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$166859.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 323 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168330.A [0] in dpc
+ 366 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168330.A [1] in dpc
+ 336 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168330.A [3] in dpc
+ 163 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168330.A [6] in dpc
+ 829 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168330.A [7] in dpc
+ 193 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168331.A [1] in dpc
+ 366 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168331.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 845 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168331.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 375 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168407.A [5] in dpc
+ 681 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168407.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 186 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168418.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 559 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168418.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 854 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168484.A [7] in dpc
+ 331 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168534.A [4] in dpc
+ 844 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168542.A [4] in dpc
+ 342 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168542.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 855 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168542.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 316 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168596.A [0] in dpc
+ 360 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168596.A [1] in dpc
+ 499 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168596.A [3] in dpc
+ 336 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168596.A [7] in dpc
+ 161 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168596.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 161 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168596.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 184 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168597.A [1] in dpc
+ 360 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168597.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 842 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168597.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 359 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168627.A [5] in dpc
+ 668 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168627.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 180 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168658.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 348 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168658.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 343 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168729.A [2] in dpc
+ 159 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168729.A [3] in dpc
+ 169 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168729.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 513 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168736.A [7] in dpc
+ 836 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168798.A [4] in dpc
+ 345 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168798.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 852 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$168798.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 505 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169193.A [2] in dpc
+ 842 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169193.A [3] in dpc
+ 187 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169193.A [4] in dpc
+ 703 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169206.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 698 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169207.A [7] in dpc
+ 199 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169211.A [3] in dpc
+ 371 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169211.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 543 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169211.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 199 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169212.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 509 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169212.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 382 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169241.A [6] in dpc
+ 860 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169241.A [7] in dpc
+ 347 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169243.A [7] in dpc
+ 164 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169244.A [2] in dpc
+ 821 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169244.A [3] in dpc
+ 693 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169250.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 336 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169260.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 499 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169260.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 815 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169261.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 367 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169277.A [2] in dpc
+ 909 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169277.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 802 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169280.A [3] in dpc
+ 161 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169280.A [4] in dpc
+ 193 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169296.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 328 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169296.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 164 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169305.A [2] in dpc
+ 367 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169320.A [0] in dpc
+ 193 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169324.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 328 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169324.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 193 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169326.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 328 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169326.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 367 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169335.A [1] in dpc
+ 910 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169335.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 193 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169338.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 484 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169338.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 367 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169349.A [0] in dpc
+ 367 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169349.A [1] in dpc
+ 367 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169349.A [2] in dpc
+ 522 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169349.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 193 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169351.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 484 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169351.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 193 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169352.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 484 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169352.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 193 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169353.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 484 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169353.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 193 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169355.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 484 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169355.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 330 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169366.A [3] in dpc
+ 928 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169366.A [5] in dpc
+ 335 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169366.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 367 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169370.A [1] in dpc
+ 364 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169370.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 164 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169370.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 329 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169372.A [3] in dpc
+ 330 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169372.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 334 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169372.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 695 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169376.A [0] in dpc
+ 358 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169376.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 358 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169376.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 367 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169383.A [0] in dpc
+ 328 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169383.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 320 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169383.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 522 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169390.A [4] in dpc
+ 357 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169390.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 550 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169390.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 855 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169397.A [4] in dpc
+ 358 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169397.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 513 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169397.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 680 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169402.A [4] in dpc
+ 359 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169402.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 514 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169402.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 359 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169407.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 551 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169407.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 186 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169412.A [3] in dpc
+ 907 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169412.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 164 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169415.A [4] in dpc
+ 328 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169415.A [5] in dpc
+ 320 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169415.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 186 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169419.A [3] in dpc
+ 833 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169419.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 186 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169425.A [3] in dpc
+ 872 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169425.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 854 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169431.A [3] in dpc
+ 677 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169431.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 975 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169470.A [4] in dpc
+ 894 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169483.A [6] in dpc
+ 508 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169483.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 837 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169486.A [3] in dpc
+ 168 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169486.A [4] in dpc
+ 698 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169499.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 344 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169501.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 344 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169502.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 195 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169516.A [1] in dpc
+ 195 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169516.A [2] in dpc
+ 736 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169516.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 508 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169518.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 508 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169519.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 344 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169536.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 345 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169540.A [3] in dpc
+ 195 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169544.A [0] in dpc
+ 508 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169548.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 344 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169550.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 195 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169553.A [3] in dpc
+ 195 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169553.A [4] in dpc
+ 367 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169553.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 367 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169553.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 336 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169563.A [2] in dpc
+ 336 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169563.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 340 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169563.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 367 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169567.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 369 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169567.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 195 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169575.A [1] in dpc
+ 358 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169582.A [1] in dpc
+ 372 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169582.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 367 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169582.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 163 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169585.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 508 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169585.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 371 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169587.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 566 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169587.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 195 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169594.A [0] in dpc
+ 373 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169594.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 570 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169594.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 344 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169600.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 367 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169601.A [4] in dpc
+ 367 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169601.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 532 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169601.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 336 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169603.A [3] in dpc
+ 195 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169607.A [1] in dpc
+ 719 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169607.A [4] in dpc
+ 367 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169607.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 531 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169607.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 892 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169613.A [3] in dpc
+ 929 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169613.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 893 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169619.A [3] in dpc
+ 929 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169619.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 877 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169625.A [3] in dpc
+ 898 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169625.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 905 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169630.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 692 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169637.A [4] in dpc
+ 832 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169681.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 332 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169683.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 332 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169687.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 500 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169695.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 492 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169697.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 332 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169698.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 332 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169699.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 492 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169701.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 332 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169702.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 500 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169709.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 492 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169711.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 492 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169712.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 168 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169713.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 160 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169715.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 492 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169715.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 364 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169727.A [3] in dpc
+ 365 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169735.A [3] in dpc
+ 160 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169740.A [0] in dpc
+ 333 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169740.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 167 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169740.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 364 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169743.A [2] in dpc
+ 649 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169748.A [0] in dpc
+ 160 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169748.A [1] in dpc
+ 333 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169748.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 167 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169748.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 558 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169762.A [4] in dpc
+ 332 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169762.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 332 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169762.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 367 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169770.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 366 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169770.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 373 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169776.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 372 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169776.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 514 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169783.A [4] in dpc
+ 335 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169783.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 498 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169783.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 863 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169789.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 370 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169792.A [5] in dpc
+ 699 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169797.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 701 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169804.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 885 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169810.A [3] in dpc
+ 830 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169810.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 539 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169847.A [2] in dpc
+ 199 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169850.A [1] in dpc
+ 199 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169850.A [3] in dpc
+ 742 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169850.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 199 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169851.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 674 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169851.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 199 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169853.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 344 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169853.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 199 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169863.A [0] in dpc
+ 199 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169863.A [2] in dpc
+ 745 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169863.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 199 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169865.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 344 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169865.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 199 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169867.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 344 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169867.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 199 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169869.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 344 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169869.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 199 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169877.A [1] in dpc
+ 944 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169877.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 199 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169880.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 509 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169880.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 199 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169890.A [3] in dpc
+ 941 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169890.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 199 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169891.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 509 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169891.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 199 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169893.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 504 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169893.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 199 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169909.A [1] in dpc
+ 372 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169909.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 172 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169909.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+ 543 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169915.A [0] in dpc
+ 380 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169922.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 579 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169922.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 384 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169929.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 583 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169929.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 365 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169934.A [4] in dpc
+ 372 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169934.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 537 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169934.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 400 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169940.A [0] in dpc
+ 384 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169940.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 583 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169940.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 904 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169947.A [3] in dpc
+ 941 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169947.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 950 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169952.A [3] in dpc
+ 873 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169952.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 193 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169957.A [3] in dpc
+ 744 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169957.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 199 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169963.A [1] in dpc
+ 193 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169963.A [3] in dpc
+ 708 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169963.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 780 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171034.A [5] in dpc
+ 976 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171034.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 164 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171037.A [0] in dpc
+ 685 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171037.A [3] in dpc
+ 186 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171041.A [1] in dpc
+ 826 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171041.A [3] in dpc
+ 870 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171041.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 164 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171042.A [1] in dpc
+ 195 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171207.A [0] in dpc
+ 933 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171207.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 176 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171208.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 164 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171246.A [1] in dpc
+ 863 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171255.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 893 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171257.A [1] in dpc
+ 981 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171257.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 711 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171260.A [1] in dpc
+ 172 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171260.A [2] in dpc
+ 539 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171264.A [0] in dpc
+ 374 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171925.A [5] in dpc
+ 550 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171925.A [6] in dpc
+ 163 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171937.A [1] in dpc
+ 985 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171978.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 167 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171981.A [0] in dpc
+ 167 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171981.A [2] in dpc
+ 167 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171982.A [2] in dpc
+ 354 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171982.A [6] in dpc
+ 320 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171984.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 401 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$172125.A [6] in dpc
+ 414 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$172125.A [7] in dpc
+ 169 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$172171.A [1] in dpc
+1015 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$172179.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 172 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$172182.A [0] in dpc
+ 172 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$172182.A [2] in dpc
+ 172 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$172183.A [0] in dpc
+ 172 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$172183.A [2] in dpc
+ 495 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$172185.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+ 504 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$174684.A [2] in dpc
+ 666 Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$174684.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f0 in dpc
+   3 Warning: Detected loop at $abc$161423$auto$opt_dff.cc:219:make_patterns_logic$12353 in dpc
+   6 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$48967.CO [3] in dpc
+   3 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$48970.CO [3] in dpc
+1127 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49057.CO [3] in dpc
+1269 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49057.CO [7] in dpc
+ 483 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49063.CO [3] in dpc
+ 161 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49063.X [0] in dpc
+ 624 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49066.CO [11] in dpc
+ 624 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49066.CO [15] in dpc
+ 624 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49066.CO [19] in dpc
+ 468 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49066.CO [3] in dpc
+ 624 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49066.CO [7] in dpc
+ 389 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49066.X [0] in dpc
+1173 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49069.CO [3] in dpc
+1325 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49069.CO [7] in dpc
+ 505 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49075.CO [3] in dpc
+ 168 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49075.X [0] in dpc
+ 656 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49078.CO [11] in dpc
+ 655 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49078.CO [15] in dpc
+ 655 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49078.CO [19] in dpc
+ 492 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49078.CO [3] in dpc
+ 656 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49078.CO [7] in dpc
+ 566 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49078.X [0] in dpc
+1309 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.CO [11] in dpc
+1305 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.CO [15] in dpc
+1301 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.CO [19] in dpc
+1295 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.CO [23] in dpc
+1132 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.CO [3] in dpc
+1310 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.CO [7] in dpc
+ 486 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.X [1] in dpc
+ 486 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.X [10] in dpc
+ 499 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.X [11] in dpc
+ 486 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.X [13] in dpc
+ 486 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.X [14] in dpc
+ 501 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.X [15] in dpc
+ 483 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.X [17] in dpc
+ 486 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.X [18] in dpc
+ 498 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.X [19] in dpc
+ 486 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.X [2] in dpc
+ 483 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.X [21] in dpc
+ 320 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.X [22] in dpc
+ 504 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.X [23] in dpc
+ 504 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.X [3] in dpc
+ 486 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.X [5] in dpc
+ 486 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.X [6] in dpc
+ 503 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.X [7] in dpc
+ 486 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49162.X [9] in dpc
+1139 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49165.CO [3] in dpc
+1299 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49165.CO [7] in dpc
+ 490 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49171.CO [3] in dpc
+ 164 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49171.X [0] in dpc
+ 640 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49174.CO [11] in dpc
+ 640 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49174.CO [15] in dpc
+ 634 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49174.CO [19] in dpc
+ 480 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49174.CO [3] in dpc
+ 640 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49174.CO [7] in dpc
+1170 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49177.CO [3] in dpc
+1333 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49177.CO [7] in dpc
+ 507 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49183.CO [3] in dpc
+ 168 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49183.X [0] in dpc
+ 660 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49186.CO [11] in dpc
+ 660 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49186.CO [15] in dpc
+ 655 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49186.CO [19] in dpc
+ 495 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49186.CO [3] in dpc
+ 660 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49186.CO [7] in dpc
+ 656 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49243.CO [7] in dpc
+ 340 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49249.BB [28] in dpc
+ 688 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49252.CO [7] in dpc
+ 362 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49258.BB [28] in dpc
+ 659 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49303.CO [7] in dpc
+ 688 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49312.CO [7] in dpc
+ 984 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49330.CO [3] in dpc
+1337 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.CO [11] in dpc
+1336 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.CO [15] in dpc
+1332 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.CO [19] in dpc
+1330 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.CO [23] in dpc
+1185 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.CO [3] in dpc
+1352 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.CO [7] in dpc
+ 503 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.X [1] in dpc
+ 503 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.X [10] in dpc
+ 504 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.X [11] in dpc
+ 338 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.X [12] in dpc
+ 503 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.X [13] in dpc
+ 503 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.X [14] in dpc
+ 503 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.X [15] in dpc
+ 338 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.X [16] in dpc
+ 503 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.X [17] in dpc
+ 503 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.X [18] in dpc
+ 520 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.X [19] in dpc
+ 518 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.X [2] in dpc
+ 498 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.X [21] in dpc
+ 498 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.X [22] in dpc
+ 521 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.X [23] in dpc
+ 334 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.X [3] in dpc
+ 334 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.X [5] in dpc
+ 503 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.X [6] in dpc
+ 503 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.X [7] in dpc
+ 338 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.X [8] in dpc
+ 503 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49357.X [9] in dpc
+1285 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.CO [11] in dpc
+1268 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.CO [15] in dpc
+1268 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.CO [19] in dpc
+1266 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.CO [23] in dpc
+1112 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.CO [3] in dpc
+1286 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.CO [7] in dpc
+ 478 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.X [1] in dpc
+ 317 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.X [10] in dpc
+ 478 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.X [11] in dpc
+ 322 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.X [12] in dpc
+ 478 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.X [13] in dpc
+ 478 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.X [14] in dpc
+ 478 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.X [15] in dpc
+ 322 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.X [16] in dpc
+ 478 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.X [17] in dpc
+ 478 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.X [18] in dpc
+ 478 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.X [19] in dpc
+ 478 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.X [2] in dpc
+ 322 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.X [20] in dpc
+ 478 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.X [21] in dpc
+ 478 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.X [22] in dpc
+ 497 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.X [23] in dpc
+ 496 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.X [3] in dpc
+ 478 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.X [5] in dpc
+ 478 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.X [6] in dpc
+ 495 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.X [7] in dpc
+ 478 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49399.X [9] in dpc
+1365 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.CO [11] in dpc
+1376 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.CO [15] in dpc
+1360 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.CO [19] in dpc
+1352 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.CO [23] in dpc
+1187 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.CO [3] in dpc
+1378 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.CO [7] in dpc
+ 345 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [0] in dpc
+ 505 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [1] in dpc
+ 505 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [10] in dpc
+ 532 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [11] in dpc
+ 505 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [13] in dpc
+ 505 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [14] in dpc
+ 328 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [15] in dpc
+ 341 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [16] in dpc
+ 505 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [17] in dpc
+ 505 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [18] in dpc
+ 505 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [19] in dpc
+ 505 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [2] in dpc
+ 341 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [20] in dpc
+ 501 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [21] in dpc
+ 501 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [22] in dpc
+ 528 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [23] in dpc
+ 518 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [3] in dpc
+ 328 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [5] in dpc
+ 505 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [6] in dpc
+ 505 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [7] in dpc
+ 341 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [8] in dpc
+ 505 Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [9] in dpc
+ 167 Warning: Detected loop at $auto$maccmap.cc:240:synth$104544.CO [11] in dpc
+ 167 Warning: Detected loop at $auto$maccmap.cc:240:synth$104544.CO [15] in dpc
+ 167 Warning: Detected loop at $auto$maccmap.cc:240:synth$104544.CO [19] in dpc
+ 167 Warning: Detected loop at $auto$maccmap.cc:240:synth$104544.CO [23] in dpc
+ 167 Warning: Detected loop at $auto$maccmap.cc:240:synth$104544.CO [27] in dpc
+ 489 Warning: Detected loop at $auto$maccmap.cc:240:synth$104544.CO [3] in dpc
+ 332 Warning: Detected loop at $auto$maccmap.cc:240:synth$104544.CO [7] in dpc
+ 680 Warning: Detected loop at $auto$maccmap.cc:240:synth$104544.X [1] in dpc
+ 330 Warning: Detected loop at $auto$maccmap.cc:240:synth$104544.X [2] in dpc
+ 163 Warning: Detected loop at $auto$maccmap.cc:240:synth$114288.CO [11] in dpc
+ 163 Warning: Detected loop at $auto$maccmap.cc:240:synth$114288.CO [15] in dpc
+ 163 Warning: Detected loop at $auto$maccmap.cc:240:synth$114288.CO [19] in dpc
+ 163 Warning: Detected loop at $auto$maccmap.cc:240:synth$114288.CO [23] in dpc
+ 163 Warning: Detected loop at $auto$maccmap.cc:240:synth$114288.CO [27] in dpc
+ 483 Warning: Detected loop at $auto$maccmap.cc:240:synth$114288.CO [3] in dpc
+ 323 Warning: Detected loop at $auto$maccmap.cc:240:synth$114288.CO [7] in dpc
+ 480 Warning: Detected loop at $auto$maccmap.cc:240:synth$114288.X [1] in dpc
+ 159 Warning: Detected loop at $auto$maccmap.cc:240:synth$116304.CO [11] in dpc
+ 159 Warning: Detected loop at $auto$maccmap.cc:240:synth$116304.CO [15] in dpc
+ 159 Warning: Detected loop at $auto$maccmap.cc:240:synth$116304.CO [19] in dpc
+ 159 Warning: Detected loop at $auto$maccmap.cc:240:synth$116304.CO [23] in dpc
+ 159 Warning: Detected loop at $auto$maccmap.cc:240:synth$116304.CO [27] in dpc
+ 474 Warning: Detected loop at $auto$maccmap.cc:240:synth$116304.CO [3] in dpc
+ 316 Warning: Detected loop at $auto$maccmap.cc:240:synth$116304.CO [7] in dpc
+ 166 Warning: Detected loop at $auto$maccmap.cc:240:synth$120306.CO [11] in dpc
+ 166 Warning: Detected loop at $auto$maccmap.cc:240:synth$120306.CO [15] in dpc
+ 166 Warning: Detected loop at $auto$maccmap.cc:240:synth$120306.CO [19] in dpc
+ 166 Warning: Detected loop at $auto$maccmap.cc:240:synth$120306.CO [23] in dpc
+ 166 Warning: Detected loop at $auto$maccmap.cc:240:synth$120306.CO [27] in dpc
+ 494 Warning: Detected loop at $auto$maccmap.cc:240:synth$120306.CO [3] in dpc
+ 330 Warning: Detected loop at $auto$maccmap.cc:240:synth$120306.CO [7] in dpc
+ 656 Warning: Detected loop at $auto$maccmap.cc:240:synth$120306.X [1] in dpc
+ 820 Warning: Detected loop at $auto$maccmap.cc:240:synth$120306.X [2] in dpc
+   2 Warning: Detected loop at $auto$xilinx_dffopt.cc:347:execute$198231 in dpc
+   1 Warning: Detected loop at $auto$xilinx_dffopt.cc:347:execute$198233 in dpc
+   1 Warning: Detected loop at $auto$xilinx_dffopt.cc:347:execute$198235 in dpc
+   2 Warning: Detected loop at $auto$xilinx_dffopt.cc:347:execute$198237 in dpc
+   2 Warning: Detected loop at $auto$xilinx_dffopt.cc:347:execute$198239 in dpc
+   2 Warning: Detected loop at $auto$xilinx_dffopt.cc:347:execute$198241 in dpc
+   2 Warning: Detected loop at $auto$xilinx_dffopt.cc:347:execute$198243 in dpc
+   2 Warning: Detected loop at $auto$xilinx_dffopt.cc:347:execute$198245 in dpc
+   5 Warning: Detected loop at $auto$xilinx_dffopt.cc:347:execute$198247 in dpc
+   3 Warning: Detected loop at $auto$xilinx_dffopt.cc:347:execute$198249 in dpc
+   2 Warning: Detected loop at $auto$xilinx_dffopt.cc:347:execute$198251 in dpc
+   6 Warning: Detected loop at $auto$xilinx_dffopt.cc:347:execute$198253 in dpc
+   4 Warning: Detected loop at $auto$xilinx_dffopt.cc:347:execute$198255 in dpc
+   3 Warning: Detected loop at $auto$xilinx_dffopt.cc:347:execute$198257 in dpc
+   6 Warning: Detected loop at $auto$xilinx_dffopt.cc:347:execute$198259 in dpc
+ 386 Warning: Detected loop at $gt$net.v:39173$8031.genblk1.S [5] in dpc
+ 169 Warning: Detected loop at $lt$net.v:24213$3162.genblk1.S [2] in dpc
+ 177 Warning: Detected loop at $lt$net.v:25980$3714.genblk1.S [2] in dpc
+ 172 Warning: Detected loop at $lt$net.v:36444$7179.genblk1.S [2] in dpc
+ 177 Warning: Detected loop at $lt$net.v:38211$7731.genblk1.S [2] in dpc
+ 676 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [1] in dpc
+ 663 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [11] in dpc
+ 670 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [12] in dpc
+ 648 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [13] in dpc
+ 664 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [14] in dpc
+ 668 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [15] in dpc
+ 664 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [16] in dpc
+ 668 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [17] in dpc
+ 667 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [18] in dpc
+ 663 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [19] in dpc
+ 169 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [2] in dpc
+ 667 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [20] in dpc
+ 662 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [21] in dpc
+ 663 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [22] in dpc
+ 663 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [23] in dpc
+ 663 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [24] in dpc
+ 662 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [25] in dpc
+ 669 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [3] in dpc
+ 330 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [4] in dpc
+ 343 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [5] in dpc
+ 330 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [7] in dpc
+ 674 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [8] in dpc
+ 668 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.BB [9] in dpc
+ 646 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.CO [11] in dpc
+ 621 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.CO [15] in dpc
+ 624 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.CO [19] in dpc
+ 624 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.CO [23] in dpc
+ 472 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.CO [3] in dpc
+ 647 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.CO [7] in dpc
+ 178 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.Y [10] in dpc
+ 468 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.Y [12] in dpc
+ 312 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.Y [13] in dpc
+ 156 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.Y [14] in dpc
+ 468 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.Y [16] in dpc
+ 312 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.Y [17] in dpc
+ 156 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.Y [18] in dpc
+ 468 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.Y [20] in dpc
+ 312 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.Y [21] in dpc
+ 156 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.Y [22] in dpc
+ 486 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.Y [24] in dpc
+ 330 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.Y [25] in dpc
+ 174 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.Y [26] in dpc
+ 491 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.Y [4] in dpc
+ 335 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.Y [5] in dpc
+ 179 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.Y [6] in dpc
+ 490 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.Y [8] in dpc
+ 334 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99747.$auto$alumacc.cc:485:replace_alu$100164.Y [9] in dpc
+ 708 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [1] in dpc
+ 701 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [10] in dpc
+ 706 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [11] in dpc
+ 701 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [12] in dpc
+ 706 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [13] in dpc
+ 702 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [15] in dpc
+ 702 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [16] in dpc
+ 697 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [17] in dpc
+ 682 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [18] in dpc
+ 702 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [19] in dpc
+ 354 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [2] in dpc
+ 697 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [20] in dpc
+ 701 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [21] in dpc
+ 702 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [22] in dpc
+ 702 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [23] in dpc
+ 702 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [24] in dpc
+ 702 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [25] in dpc
+ 177 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [3] in dpc
+ 697 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [4] in dpc
+ 702 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [5] in dpc
+ 702 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [7] in dpc
+ 682 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [8] in dpc
+ 702 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.BB [9] in dpc
+ 656 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.CO [11] in dpc
+ 681 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.CO [15] in dpc
+ 651 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.CO [19] in dpc
+ 652 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.CO [23] in dpc
+ 497 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.CO [3] in dpc
+ 682 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.CO [7] in dpc
+ 164 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.Y [10] in dpc
+ 518 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.Y [12] in dpc
+ 354 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.Y [13] in dpc
+ 190 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.Y [14] in dpc
+ 491 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.Y [16] in dpc
+ 328 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.Y [17] in dpc
+ 164 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.Y [18] in dpc
+ 492 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.Y [20] in dpc
+ 328 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.Y [21] in dpc
+ 164 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.Y [22] in dpc
+ 507 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.Y [24] in dpc
+ 347 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.Y [25] in dpc
+ 187 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.Y [26] in dpc
+ 518 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.Y [4] in dpc
+ 354 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.Y [5] in dpc
+ 190 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.Y [6] in dpc
+ 492 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.Y [8] in dpc
+ 328 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99754.$auto$alumacc.cc:485:replace_alu$100164.Y [9] in dpc
+ 342 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.BB [1] in dpc
+ 511 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.BB [11] in dpc
+ 512 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.BB [12] in dpc
+ 513 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.BB [13] in dpc
+ 346 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.BB [15] in dpc
+ 510 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.BB [16] in dpc
+ 512 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.BB [17] in dpc
+ 510 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.BB [19] in dpc
+ 504 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.BB [2] in dpc
+ 513 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.BB [20] in dpc
+ 509 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.BB [21] in dpc
+ 509 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.BB [23] in dpc
+ 509 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.BB [24] in dpc
+ 665 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.BB [25] in dpc
+ 514 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.BB [3] in dpc
+ 516 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.BB [4] in dpc
+ 514 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.BB [5] in dpc
+ 516 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.BB [7] in dpc
+ 515 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.BB [8] in dpc
+ 172 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.BB [9] in dpc
+ 660 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.CO [11] in dpc
+ 656 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.CO [15] in dpc
+ 655 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.CO [19] in dpc
+ 649 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.CO [23] in dpc
+ 483 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.CO [3] in dpc
+ 661 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.CO [7] in dpc
+ 162 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.Y [1] in dpc
+ 180 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.Y [10] in dpc
+ 496 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.Y [12] in dpc
+ 336 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.Y [13] in dpc
+ 176 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.Y [14] in dpc
+ 498 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.Y [16] in dpc
+ 338 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.Y [17] in dpc
+ 178 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.Y [18] in dpc
+ 492 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.Y [20] in dpc
+ 335 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.Y [21] in dpc
+ 175 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.Y [22] in dpc
+ 490 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.Y [24] in dpc
+ 333 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.Y [25] in dpc
+ 176 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.Y [26] in dpc
+ 501 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.Y [4] in dpc
+ 341 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.Y [5] in dpc
+ 181 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.Y [6] in dpc
+ 500 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.Y [8] in dpc
+ 340 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99775.$auto$alumacc.cc:485:replace_alu$100164.Y [9] in dpc
+ 526 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.BB [10] in dpc
+ 691 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.BB [11] in dpc
+ 690 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.BB [12] in dpc
+ 690 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.BB [13] in dpc
+ 685 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.BB [14] in dpc
+ 685 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.BB [15] in dpc
+ 685 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.BB [16] in dpc
+ 690 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.BB [17] in dpc
+ 690 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.BB [18] in dpc
+ 687 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.BB [19] in dpc
+ 354 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.BB [2] in dpc
+ 690 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.BB [20] in dpc
+ 686 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.BB [21] in dpc
+ 846 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.BB [23] in dpc
+ 686 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.BB [24] in dpc
+ 686 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.BB [25] in dpc
+ 692 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.BB [3] in dpc
+ 527 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.BB [4] in dpc
+ 526 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.BB [6] in dpc
+ 690 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.BB [7] in dpc
+ 672 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.BB [8] in dpc
+ 526 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.BB [9] in dpc
+ 660 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.CO [11] in dpc
+ 660 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.CO [15] in dpc
+ 655 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.CO [19] in dpc
+ 671 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.CO [23] in dpc
+ 518 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.CO [3] in dpc
+ 679 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.CO [7] in dpc
+ 165 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.Y [10] in dpc
+ 495 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.Y [12] in dpc
+ 330 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.Y [13] in dpc
+ 165 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.Y [14] in dpc
+ 495 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.Y [16] in dpc
+ 330 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.Y [17] in dpc
+ 165 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.Y [18] in dpc
+ 511 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.Y [20] in dpc
+ 346 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.Y [21] in dpc
+ 181 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.Y [22] in dpc
+ 502 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.Y [24] in dpc
+ 342 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.Y [25] in dpc
+ 182 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.Y [26] in dpc
+ 514 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.Y [4] in dpc
+ 349 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.Y [5] in dpc
+ 184 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.Y [6] in dpc
+ 495 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.Y [8] in dpc
+ 330 Warning: Detected loop at $techmap$auto$opt_share.cc:199:merge_operators$99782.$auto$alumacc.cc:485:replace_alu$100164.Y [9] in dpc
+ 165 Warning: Detected loop at $techmap178358$abc$161423$auto$blifparse.cc:525:parse_blif$168334.A [4] in dpc
+ 507 Warning: Detected loop at $techmap178492$abc$161423$auto$blifparse.cc:525:parse_blif$168468.A [0] in dpc
+ 172 Warning: Detected loop at $techmap178511$abc$161423$auto$blifparse.cc:525:parse_blif$168504.A [1] in dpc
+ 344 Warning: Detected loop at $techmap178549$abc$161423$auto$blifparse.cc:525:parse_blif$168472.A [2] in dpc
+ 169 Warning: Detected loop at $techmap178565$abc$161423$auto$blifparse.cc:525:parse_blif$168566.A [2] in dpc
+ 338 Warning: Detected loop at $techmap178567$abc$161423$auto$blifparse.cc:525:parse_blif$168564.A [0] in dpc
+ 341 Warning: Detected loop at $techmap178568$abc$161423$auto$blifparse.cc:525:parse_blif$168549.A [0] in dpc
+ 377 Warning: Detected loop at $techmap178602$abc$161423$auto$blifparse.cc:525:parse_blif$169251.A [4] in dpc
+ 197 Warning: Detected loop at $techmap178620$abc$161423$auto$blifparse.cc:525:parse_blif$169692.A [0] in dpc
+ 197 Warning: Detected loop at $techmap178626$abc$161423$auto$blifparse.cc:525:parse_blif$169737.A [0] in dpc
+ 197 Warning: Detected loop at $techmap178626$abc$161423$auto$blifparse.cc:525:parse_blif$169737.A [1] in dpc
+ 326 Warning: Detected loop at $techmap178627$abc$161423$auto$blifparse.cc:525:parse_blif$169736.A [0] in dpc
+ 861 Warning: Detected loop at $techmap178634$abc$161423$auto$blifparse.cc:525:parse_blif$169733.A [0] in dpc
+ 364 Warning: Detected loop at $techmap178640$abc$161423$auto$blifparse.cc:525:parse_blif$169744.A [0] in dpc
+ 334 Warning: Detected loop at $techmap178643$abc$161423$auto$blifparse.cc:525:parse_blif$171979.A [2] in dpc
+ 188 Warning: Detected loop at $techmap178643$abc$161423$auto$blifparse.cc:525:parse_blif$171979.A [3] in dpc
+ 197 Warning: Detected loop at $techmap178657$abc$161423$auto$blifparse.cc:525:parse_blif$169760.A [0] in dpc
+ 364 Warning: Detected loop at $techmap178660$abc$161423$auto$blifparse.cc:525:parse_blif$169758.A [0] in dpc
+ 326 Warning: Detected loop at $techmap178661$abc$161423$auto$blifparse.cc:525:parse_blif$169757.A [0] in dpc
+ 334 Warning: Detected loop at $techmap178662$abc$161423$auto$blifparse.cc:525:parse_blif$171980.A [0] in dpc
+ 558 Warning: Detected loop at $techmap178662$abc$161423$auto$blifparse.cc:525:parse_blif$171980.A [1] in dpc
+ 370 Warning: Detected loop at $techmap178673$abc$161423$auto$blifparse.cc:525:parse_blif$169726.A [0] in dpc
+ 197 Warning: Detected loop at $techmap178681$abc$161423$auto$blifparse.cc:525:parse_blif$169767.A [0] in dpc
+ 326 Warning: Detected loop at $techmap178682$abc$161423$auto$blifparse.cc:525:parse_blif$169780.A [1] in dpc
+ 197 Warning: Detected loop at $techmap178686$abc$161423$auto$blifparse.cc:525:parse_blif$169787.A [0] in dpc
+ 364 Warning: Detected loop at $techmap178688$abc$161423$auto$blifparse.cc:525:parse_blif$169786.A [1] in dpc
+ 364 Warning: Detected loop at $techmap178689$abc$161423$auto$blifparse.cc:525:parse_blif$169785.A [0] in dpc
+ 326 Warning: Detected loop at $techmap178690$abc$161423$auto$blifparse.cc:525:parse_blif$169784.A [0] in dpc
+ 197 Warning: Detected loop at $techmap178692$abc$161423$auto$blifparse.cc:525:parse_blif$169795.A [0] in dpc
+ 326 Warning: Detected loop at $techmap178693$abc$161423$auto$blifparse.cc:525:parse_blif$169794.A [0] in dpc
+ 365 Warning: Detected loop at $techmap178695$abc$161423$auto$blifparse.cc:525:parse_blif$169793.A [0] in dpc
+ 365 Warning: Detected loop at $techmap178695$abc$161423$auto$blifparse.cc:525:parse_blif$169793.A [1] in dpc
+ 197 Warning: Detected loop at $techmap178705$abc$161423$auto$blifparse.cc:525:parse_blif$169813.A [0] in dpc
+ 197 Warning: Detected loop at $techmap178708$abc$161423$auto$blifparse.cc:525:parse_blif$169826.A [1] in dpc
+ 364 Warning: Detected loop at $techmap178711$abc$161423$auto$blifparse.cc:525:parse_blif$169834.A [1] in dpc
+ 364 Warning: Detected loop at $techmap178711$abc$161423$auto$blifparse.cc:525:parse_blif$169834.A [3] in dpc
+ 888 Warning: Detected loop at $techmap178712$abc$161423$auto$blifparse.cc:525:parse_blif$169833.A [0] in dpc
+ 841 Warning: Detected loop at $techmap178713$abc$161423$auto$blifparse.cc:525:parse_blif$169832.A [2] in dpc
+ 323 Warning: Detected loop at $techmap178722$abc$161423$auto$blifparse.cc:525:parse_blif$169818.A [0] in dpc
+ 365 Warning: Detected loop at $techmap178723$abc$161423$auto$blifparse.cc:525:parse_blif$169817.A [0] in dpc
+ 166 Warning: Detected loop at $techmap178725$abc$161423$auto$blifparse.cc:525:parse_blif$169816.A [0] in dpc
+ 326 Warning: Detected loop at $techmap178725$abc$161423$auto$blifparse.cc:525:parse_blif$169816.A [1] in dpc
+ 885 Warning: Detected loop at $techmap178726$abc$161423$auto$blifparse.cc:525:parse_blif$169815.A [2] in dpc
+ 370 Warning: Detected loop at $techmap178730$abc$161423$auto$blifparse.cc:525:parse_blif$169837.A [0] in dpc
+ 848 Warning: Detected loop at $techmap178731$abc$161423$auto$blifparse.cc:525:parse_blif$169836.A [4] in dpc
+ 884 Warning: Detected loop at $techmap178740$abc$161423$auto$blifparse.cc:525:parse_blif$169842.A [0] in dpc
+ 729 Warning: Detected loop at $techmap178741$abc$161423$auto$blifparse.cc:525:parse_blif$169841.A [3] in dpc
+ 901 Warning: Detected loop at $techmap178742$abc$161423$auto$blifparse.cc:525:parse_blif$169840.A [4] in dpc
+ 690 Warning: Detected loop at $techmap178749$abc$161423$auto$blifparse.cc:525:parse_blif$169811.A [0] in dpc
+ 333 Warning: Detected loop at $techmap178752$abc$161423$auto$blifparse.cc:525:parse_blif$171985.A [1] in dpc
+ 323 Warning: Detected loop at $techmap178766$abc$161423$auto$blifparse.cc:525:parse_blif$171971.A [3] in dpc
+ 840 Warning: Detected loop at $techmap178787$abc$161423$auto$blifparse.cc:525:parse_blif$171950.A [1] in dpc
+ 971 Warning: Detected loop at $techmap178788$abc$161423$auto$blifparse.cc:525:parse_blif$171949.A [2] in dpc
+ 363 Warning: Detected loop at $techmap178789$abc$161423$auto$blifparse.cc:525:parse_blif$171943.A [4] in dpc
+ 908 Warning: Detected loop at $techmap178791$abc$161423$auto$blifparse.cc:525:parse_blif$171942.A [2] in dpc
+ 205 Warning: Detected loop at $techmap178807$abc$161423$auto$blifparse.cc:525:parse_blif$171924.A [0] in dpc
+ 425 Warning: Detected loop at $techmap178807$abc$161423$auto$blifparse.cc:525:parse_blif$171924.A [3] in dpc
+ 324 Warning: Detected loop at $techmap178857$abc$161423$auto$blifparse.cc:525:parse_blif$171842.A [4] in dpc
+ 328 Warning: Detected loop at $techmap178858$abc$161423$auto$blifparse.cc:525:parse_blif$171841.A [0] in dpc
+ 169 Warning: Detected loop at $techmap181508$abc$161423$auto$blifparse.cc:525:parse_blif$163153.A [4] in dpc
+ 177 Warning: Detected loop at $techmap181567$abc$161423$auto$blifparse.cc:525:parse_blif$163217.A [1] in dpc
+ 177 Warning: Detected loop at $techmap181600$abc$161423$auto$blifparse.cc:525:parse_blif$163249.A [3] in dpc
+ 539 Warning: Detected loop at $techmap181673$abc$161423$auto$blifparse.cc:525:parse_blif$169913.A [0] in dpc
+ 539 Warning: Detected loop at $techmap181673$abc$161423$auto$blifparse.cc:525:parse_blif$169913.A [1] in dpc
+ 337 Warning: Detected loop at $techmap181674$abc$161423$auto$blifparse.cc:525:parse_blif$169912.A [0] in dpc
+ 176 Warning: Detected loop at $techmap181676$abc$161423$auto$blifparse.cc:525:parse_blif$166585.A [4] in dpc
+ 528 Warning: Detected loop at $techmap182103$abc$161423$auto$blifparse.cc:525:parse_blif$166712.A [0] in dpc
+ 177 Warning: Detected loop at $techmap182132$abc$161423$auto$blifparse.cc:525:parse_blif$166877.A [5] in dpc
+ 376 Warning: Detected loop at $techmap182297$abc$161423$auto$blifparse.cc:525:parse_blif$169911.A [2] in dpc
+ 385 Warning: Detected loop at $techmap182302$abc$161423$auto$blifparse.cc:525:parse_blif$169200.A [4] in dpc
+ 352 Warning: Detected loop at $techmap182302$abc$161423$auto$blifparse.cc:525:parse_blif$169200.A [5] in dpc
+ 539 Warning: Detected loop at $techmap182316$abc$161423$auto$blifparse.cc:525:parse_blif$169919.A [1] in dpc
+ 375 Warning: Detected loop at $techmap182317$abc$161423$auto$blifparse.cc:525:parse_blif$169918.A [0] in dpc
+ 377 Warning: Detected loop at $techmap182318$abc$161423$auto$blifparse.cc:525:parse_blif$169917.A [3] in dpc
+ 739 Warning: Detected loop at $techmap182319$abc$161423$auto$blifparse.cc:525:parse_blif$172181.A [0] in dpc
+ 941 Warning: Detected loop at $techmap182319$abc$161423$auto$blifparse.cc:525:parse_blif$172181.A [1] in dpc
+ 349 Warning: Detected loop at $techmap182333$abc$161423$auto$blifparse.cc:525:parse_blif$169493.A [5] in dpc
+ 172 Warning: Detected loop at $techmap182353$abc$161423$auto$blifparse.cc:525:parse_blif$171204.A [1] in dpc
+ 163 Warning: Detected loop at $techmap182355$abc$161423$auto$blifparse.cc:525:parse_blif$171254.A [2] in dpc
+ 708 Warning: Detected loop at $techmap182359$abc$161423$auto$blifparse.cc:525:parse_blif$171242.A [1] in dpc
+ 933 Warning: Detected loop at $techmap182402$abc$161423$auto$blifparse.cc:525:parse_blif$171199.A [0] in dpc
+ 336 Warning: Detected loop at $techmap182406$abc$161423$auto$blifparse.cc:525:parse_blif$169564.A [0] in dpc
+ 345 Warning: Detected loop at $techmap182408$abc$161423$auto$blifparse.cc:525:parse_blif$169562.A [1] in dpc
+ 336 Warning: Detected loop at $techmap182415$abc$161423$auto$blifparse.cc:525:parse_blif$169573.A [0] in dpc
+ 336 Warning: Detected loop at $techmap182415$abc$161423$auto$blifparse.cc:525:parse_blif$169573.A [1] in dpc
+ 336 Warning: Detected loop at $techmap182416$abc$161423$auto$blifparse.cc:525:parse_blif$169572.A [0] in dpc
+ 346 Warning: Detected loop at $techmap182417$abc$161423$auto$blifparse.cc:525:parse_blif$169571.A [3] in dpc
+ 862 Warning: Detected loop at $techmap182418$abc$161423$auto$blifparse.cc:525:parse_blif$169570.A [0] in dpc
+ 195 Warning: Detected loop at $techmap182419$abc$161423$auto$blifparse.cc:525:parse_blif$171258.A [1] in dpc
+ 367 Warning: Detected loop at $techmap182419$abc$161423$auto$blifparse.cc:525:parse_blif$171258.A [3] in dpc
+ 345 Warning: Detected loop at $techmap182424$abc$161423$auto$blifparse.cc:525:parse_blif$169579.A [0] in dpc
+ 172 Warning: Detected loop at $techmap182425$abc$161423$auto$blifparse.cc:525:parse_blif$169577.A [0] in dpc
+ 546 Warning: Detected loop at $techmap182426$abc$161423$auto$blifparse.cc:525:parse_blif$171259.A [1] in dpc
+ 367 Warning: Detected loop at $techmap182426$abc$161423$auto$blifparse.cc:525:parse_blif$171259.A [2] in dpc
+ 347 Warning: Detected loop at $techmap182431$abc$161423$auto$blifparse.cc:525:parse_blif$169608.A [0] in dpc
+ 336 Warning: Detected loop at $techmap182435$abc$161423$auto$blifparse.cc:525:parse_blif$169605.A [1] in dpc
+ 346 Warning: Detected loop at $techmap182436$abc$161423$auto$blifparse.cc:525:parse_blif$169604.A [0] in dpc
+ 348 Warning: Detected loop at $techmap182437$abc$161423$auto$blifparse.cc:525:parse_blif$169602.A [0] in dpc
+ 335 Warning: Detected loop at $techmap182442$abc$161423$auto$blifparse.cc:525:parse_blif$169617.A [0] in dpc
+ 172 Warning: Detected loop at $techmap182444$abc$161423$auto$blifparse.cc:525:parse_blif$169616.A [1] in dpc
+ 346 Warning: Detected loop at $techmap182445$abc$161423$auto$blifparse.cc:525:parse_blif$169614.A [0] in dpc
+ 336 Warning: Detected loop at $techmap182456$abc$161423$auto$blifparse.cc:525:parse_blif$169648.A [1] in dpc
+ 336 Warning: Detected loop at $techmap182456$abc$161423$auto$blifparse.cc:525:parse_blif$169648.A [2] in dpc
+ 845 Warning: Detected loop at $techmap182457$abc$161423$auto$blifparse.cc:525:parse_blif$169647.A [0] in dpc
+ 879 Warning: Detected loop at $techmap182458$abc$161423$auto$blifparse.cc:525:parse_blif$169646.A [2] in dpc
+ 172 Warning: Detected loop at $techmap182461$abc$161423$auto$blifparse.cc:525:parse_blif$169638.A [0] in dpc
+ 351 Warning: Detected loop at $techmap182462$abc$161423$auto$blifparse.cc:525:parse_blif$169636.A [0] in dpc
+ 195 Warning: Detected loop at $techmap182463$abc$161423$auto$blifparse.cc:525:parse_blif$169635.A [2] in dpc
+ 336 Warning: Detected loop at $techmap182468$abc$161423$auto$blifparse.cc:525:parse_blif$169652.A [1] in dpc
+ 345 Warning: Detected loop at $techmap182473$abc$161423$auto$blifparse.cc:525:parse_blif$169643.A [0] in dpc
+ 345 Warning: Detected loop at $techmap182474$abc$161423$auto$blifparse.cc:525:parse_blif$169642.A [0] in dpc
+ 889 Warning: Detected loop at $techmap182475$abc$161423$auto$blifparse.cc:525:parse_blif$169641.A [2] in dpc
+ 518 Warning: Detected loop at $techmap182478$abc$161423$auto$blifparse.cc:525:parse_blif$169656.A [0] in dpc
+ 844 Warning: Detected loop at $techmap182479$abc$161423$auto$blifparse.cc:525:parse_blif$169655.A [2] in dpc
+ 892 Warning: Detected loop at $techmap182480$abc$161423$auto$blifparse.cc:525:parse_blif$169654.A [4] in dpc
+ 837 Warning: Detected loop at $techmap182484$abc$161423$auto$blifparse.cc:525:parse_blif$169660.A [0] in dpc
+ 336 Warning: Detected loop at $techmap182486$abc$161423$auto$blifparse.cc:525:parse_blif$169659.A [0] in dpc
+ 888 Warning: Detected loop at $techmap182487$abc$161423$auto$blifparse.cc:525:parse_blif$169658.A [4] in dpc
+ 711 Warning: Detected loop at $techmap182495$abc$161423$auto$blifparse.cc:525:parse_blif$171261.A [1] in dpc
+ 367 Warning: Detected loop at $techmap182495$abc$161423$auto$blifparse.cc:525:parse_blif$171261.A [2] in dpc
+ 195 Warning: Detected loop at $techmap182496$abc$161423$auto$blifparse.cc:525:parse_blif$169482.A [3] in dpc
+ 672 Warning: Detected loop at $techmap182499$abc$161423$auto$blifparse.cc:525:parse_blif$169626.A [0] in dpc
+ 198 Warning: Detected loop at $techmap182504$abc$161423$auto$blifparse.cc:525:parse_blif$171274.A [0] in dpc
+ 794 Warning: Detected loop at $techmap182504$abc$161423$auto$blifparse.cc:525:parse_blif$171274.A [3] in dpc
+ 322 Warning: Detected loop at $techmap182506$abc$161423$auto$blifparse.cc:525:parse_blif$168851.A [0] in dpc
+ 161 Warning: Detected loop at $techmap182508$abc$161423$auto$blifparse.cc:525:parse_blif$168850.A [1] in dpc
+ 168 Warning: Detected loop at $techmap182633$abc$161423$auto$blifparse.cc:525:parse_blif$168727.A [1] in dpc
+ 169 Warning: Detected loop at $techmap182648$abc$161423$auto$blifparse.cc:525:parse_blif$168780.A [3] in dpc
+ 168 Warning: Detected loop at $techmap182808$abc$161423$auto$blifparse.cc:525:parse_blif$168829.A [2] in dpc
+ 336 Warning: Detected loop at $techmap182809$abc$161423$auto$blifparse.cc:525:parse_blif$168827.A [0] in dpc
+ 340 Warning: Detected loop at $techmap182825$abc$161423$auto$blifparse.cc:525:parse_blif$168812.A [0] in dpc
+ 327 Warning: Detected loop at $techmap182826$abc$161423$auto$blifparse.cc:525:parse_blif$168791.A [1] in dpc
+ 320 Warning: Detected loop at $techmap182915$abc$161423$auto$blifparse.cc:525:parse_blif$170953.A [2] in dpc
+ 330 Warning: Detected loop at $techmap183183$abc$161423$auto$blifparse.cc:525:parse_blif$172032.A [1] in dpc
+ 507 Warning: Detected loop at $techmap183183$abc$161423$auto$blifparse.cc:525:parse_blif$172032.A [5] in dpc
+ 338 Warning: Detected loop at $techmap183184$abc$161423$auto$blifparse.cc:525:parse_blif$172031.A [0] in dpc
+ 344 Warning: Detected loop at $techmap183286$abc$161423$auto$blifparse.cc:525:parse_blif$169172.A [0] in dpc
+ 539 Warning: Detected loop at $techmap183335$abc$161423$auto$blifparse.cc:525:parse_blif$169945.A [1] in dpc
+ 539 Warning: Detected loop at $techmap183341$abc$161423$auto$blifparse.cc:525:parse_blif$169938.A [0] in dpc
+ 539 Warning: Detected loop at $techmap183341$abc$161423$auto$blifparse.cc:525:parse_blif$169938.A [1] in dpc
+ 337 Warning: Detected loop at $techmap183342$abc$161423$auto$blifparse.cc:525:parse_blif$169937.A [0] in dpc
+ 337 Warning: Detected loop at $techmap183343$abc$161423$auto$blifparse.cc:525:parse_blif$169936.A [2] in dpc
+ 750 Warning: Detected loop at $techmap183344$abc$161423$auto$blifparse.cc:525:parse_blif$169935.A [0] in dpc
+ 375 Warning: Detected loop at $techmap183347$abc$161423$auto$blifparse.cc:525:parse_blif$169931.A [0] in dpc
+ 539 Warning: Detected loop at $techmap183351$abc$161423$auto$blifparse.cc:525:parse_blif$169950.A [0] in dpc
+ 172 Warning: Detected loop at $techmap183352$abc$161423$auto$blifparse.cc:525:parse_blif$169949.A [0] in dpc
+ 172 Warning: Detected loop at $techmap183352$abc$161423$auto$blifparse.cc:525:parse_blif$169949.A [1] in dpc
+ 337 Warning: Detected loop at $techmap183355$abc$161423$auto$blifparse.cc:525:parse_blif$169948.A [0] in dpc
+ 750 Warning: Detected loop at $techmap183355$abc$161423$auto$blifparse.cc:525:parse_blif$169948.A [2] in dpc
+ 539 Warning: Detected loop at $techmap183359$abc$161423$auto$blifparse.cc:525:parse_blif$169972.A [0] in dpc
+ 376 Warning: Detected loop at $techmap183362$abc$161423$auto$blifparse.cc:525:parse_blif$169990.A [1] in dpc
+ 381 Warning: Detected loop at $techmap183363$abc$161423$auto$blifparse.cc:525:parse_blif$169989.A [0] in dpc
+ 876 Warning: Detected loop at $techmap183364$abc$161423$auto$blifparse.cc:525:parse_blif$169988.A [4] in dpc
+ 539 Warning: Detected loop at $techmap183366$abc$161423$auto$blifparse.cc:525:parse_blif$169955.A [0] in dpc
+ 539 Warning: Detected loop at $techmap183369$abc$161423$auto$blifparse.cc:525:parse_blif$169978.A [0] in dpc
+ 375 Warning: Detected loop at $techmap183370$abc$161423$auto$blifparse.cc:525:parse_blif$169977.A [0] in dpc
+ 915 Warning: Detected loop at $techmap183371$abc$161423$auto$blifparse.cc:525:parse_blif$169976.A [3] in dpc
+ 927 Warning: Detected loop at $techmap183372$abc$161423$auto$blifparse.cc:525:parse_blif$169975.A [0] in dpc
+ 193 Warning: Detected loop at $techmap183373$abc$161423$auto$blifparse.cc:525:parse_blif$169974.A [2] in dpc
+ 172 Warning: Detected loop at $techmap183376$abc$161423$auto$blifparse.cc:525:parse_blif$169970.A [0] in dpc
+ 944 Warning: Detected loop at $techmap183377$abc$161423$auto$blifparse.cc:525:parse_blif$169969.A [2] in dpc
+ 376 Warning: Detected loop at $techmap183379$abc$161423$auto$blifparse.cc:525:parse_blif$169982.A [2] in dpc
+ 375 Warning: Detected loop at $techmap183386$abc$161423$auto$blifparse.cc:525:parse_blif$169986.A [2] in dpc
+ 909 Warning: Detected loop at $techmap183391$abc$161423$auto$blifparse.cc:525:parse_blif$169994.A [0] in dpc
+ 337 Warning: Detected loop at $techmap183394$abc$161423$auto$blifparse.cc:525:parse_blif$169993.A [0] in dpc
+ 375 Warning: Detected loop at $techmap183394$abc$161423$auto$blifparse.cc:525:parse_blif$169993.A [1] in dpc
+ 922 Warning: Detected loop at $techmap183395$abc$161423$auto$blifparse.cc:525:parse_blif$169992.A [4] in dpc
+ 337 Warning: Detected loop at $techmap183397$abc$161423$auto$blifparse.cc:525:parse_blif$169959.A [2] in dpc
+ 883 Warning: Detected loop at $techmap183398$abc$161423$auto$blifparse.cc:525:parse_blif$169958.A [0] in dpc
+ 713 Warning: Detected loop at $techmap183400$abc$161423$auto$blifparse.cc:525:parse_blif$169965.A [4] in dpc
+ 920 Warning: Detected loop at $techmap183401$abc$161423$auto$blifparse.cc:525:parse_blif$169964.A [0] in dpc
+ 567 Warning: Detected loop at $techmap183406$abc$161423$auto$blifparse.cc:525:parse_blif$172180.A [0] in dpc
+ 372 Warning: Detected loop at $techmap183406$abc$161423$auto$blifparse.cc:525:parse_blif$172180.A [2] in dpc
+ 435 Warning: Detected loop at $techmap183407$abc$161423$auto$blifparse.cc:525:parse_blif$172215.A [3] in dpc
+ 203 Warning: Detected loop at $techmap183407$abc$161423$auto$blifparse.cc:525:parse_blif$172215.A [4] in dpc
+ 170 Warning: Detected loop at $techmap183407$abc$161423$auto$blifparse.cc:525:parse_blif$172215.A [5] in dpc
+ 329 Warning: Detected loop at $techmap183450$abc$161423$auto$blifparse.cc:525:parse_blif$172014.A [1] in dpc
+ 161 Warning: Detected loop at $techmap183478$abc$161423$auto$blifparse.cc:525:parse_blif$170941.A [0] in dpc
+ 322 Warning: Detected loop at $techmap183514$abc$161423$auto$blifparse.cc:525:parse_blif$171071.A [1] in dpc
+ 169 Warning: Detected loop at $techmap183521$abc$161423$auto$blifparse.cc:525:parse_blif$169307.A [1] in dpc
+ 320 Warning: Detected loop at $techmap183534$abc$161423$auto$blifparse.cc:525:parse_blif$169373.A [0] in dpc
+ 320 Warning: Detected loop at $techmap183537$abc$161423$auto$blifparse.cc:525:parse_blif$169400.A [0] in dpc
+ 329 Warning: Detected loop at $techmap183539$abc$161423$auto$blifparse.cc:525:parse_blif$169398.A [2] in dpc
+ 320 Warning: Detected loop at $techmap183548$abc$161423$auto$blifparse.cc:525:parse_blif$169380.A [0] in dpc
+ 320 Warning: Detected loop at $techmap183548$abc$161423$auto$blifparse.cc:525:parse_blif$169380.A [1] in dpc
+ 320 Warning: Detected loop at $techmap183551$abc$161423$auto$blifparse.cc:525:parse_blif$169405.A [1] in dpc
+ 330 Warning: Detected loop at $techmap183552$abc$161423$auto$blifparse.cc:525:parse_blif$169404.A [0] in dpc
+ 655 Warning: Detected loop at $techmap183553$abc$161423$auto$blifparse.cc:525:parse_blif$169403.A [1] in dpc
+ 329 Warning: Detected loop at $techmap183553$abc$161423$auto$blifparse.cc:525:parse_blif$169403.A [2] in dpc
+ 320 Warning: Detected loop at $techmap183559$abc$161423$auto$blifparse.cc:525:parse_blif$169417.A [0] in dpc
+ 330 Warning: Detected loop at $techmap183560$abc$161423$auto$blifparse.cc:525:parse_blif$169416.A [0] in dpc
+ 164 Warning: Detected loop at $techmap183560$abc$161423$auto$blifparse.cc:525:parse_blif$169416.A [1] in dpc
+ 328 Warning: Detected loop at $techmap183561$abc$161423$auto$blifparse.cc:525:parse_blif$169413.A [0] in dpc
+ 329 Warning: Detected loop at $techmap183567$abc$161423$auto$blifparse.cc:525:parse_blif$169409.A [0] in dpc
+ 328 Warning: Detected loop at $techmap183571$abc$161423$auto$blifparse.cc:525:parse_blif$169371.A [2] in dpc
+ 358 Warning: Detected loop at $techmap183575$abc$161423$auto$blifparse.cc:525:parse_blif$171035.A [0] in dpc
+ 359 Warning: Detected loop at $techmap183575$abc$161423$auto$blifparse.cc:525:parse_blif$171035.A [2] in dpc
+ 320 Warning: Detected loop at $techmap183585$abc$161423$auto$blifparse.cc:525:parse_blif$169391.A [0] in dpc
+ 320 Warning: Detected loop at $techmap183588$abc$161423$auto$blifparse.cc:525:parse_blif$169435.A [1] in dpc
+ 320 Warning: Detected loop at $techmap183591$abc$161423$auto$blifparse.cc:525:parse_blif$169453.A [1] in dpc
+ 659 Warning: Detected loop at $techmap183592$abc$161423$auto$blifparse.cc:525:parse_blif$169452.A [0] in dpc
+ 858 Warning: Detected loop at $techmap183593$abc$161423$auto$blifparse.cc:525:parse_blif$169451.A [2] in dpc
+ 494 Warning: Detected loop at $techmap183599$abc$161423$auto$blifparse.cc:525:parse_blif$169457.A [0] in dpc
+ 334 Warning: Detected loop at $techmap183600$abc$161423$auto$blifparse.cc:525:parse_blif$169456.A [0] in dpc
+ 656 Warning: Detected loop at $techmap183600$abc$161423$auto$blifparse.cc:525:parse_blif$169456.A [2] in dpc
+ 329 Warning: Detected loop at $techmap183602$abc$161423$auto$blifparse.cc:525:parse_blif$169422.A [0] in dpc
+ 805 Warning: Detected loop at $techmap183605$abc$161423$auto$blifparse.cc:525:parse_blif$169462.A [0] in dpc
+ 658 Warning: Detected loop at $techmap183606$abc$161423$auto$blifparse.cc:525:parse_blif$169461.A [3] in dpc
+ 813 Warning: Detected loop at $techmap183607$abc$161423$auto$blifparse.cc:525:parse_blif$169460.A [0] in dpc
+ 334 Warning: Detected loop at $techmap183609$abc$161423$auto$blifparse.cc:525:parse_blif$169438.A [0] in dpc
+ 841 Warning: Detected loop at $techmap183610$abc$161423$auto$blifparse.cc:525:parse_blif$169437.A [2] in dpc
+ 650 Warning: Detected loop at $techmap183613$abc$161423$auto$blifparse.cc:525:parse_blif$169448.A [0] in dpc
+ 331 Warning: Detected loop at $techmap183614$abc$161423$auto$blifparse.cc:525:parse_blif$169447.A [0] in dpc
+ 836 Warning: Detected loop at $techmap183615$abc$161423$auto$blifparse.cc:525:parse_blif$169446.A [2] in dpc
+ 329 Warning: Detected loop at $techmap183617$abc$161423$auto$blifparse.cc:525:parse_blif$169442.A [0] in dpc
+ 847 Warning: Detected loop at $techmap183618$abc$161423$auto$blifparse.cc:525:parse_blif$169441.A [2] in dpc
+ 320 Warning: Detected loop at $techmap183619$abc$161423$auto$blifparse.cc:525:parse_blif$171040.A [5] in dpc
+ 164 Warning: Detected loop at $techmap183623$abc$161423$auto$blifparse.cc:525:parse_blif$171038.A [1] in dpc
+ 186 Warning: Detected loop at $techmap183623$abc$161423$auto$blifparse.cc:525:parse_blif$171038.A [3] in dpc
+ 357 Warning: Detected loop at $techmap183630$abc$161423$auto$blifparse.cc:525:parse_blif$171036.A [2] in dpc
+ 841 Warning: Detected loop at $techmap183630$abc$161423$auto$blifparse.cc:525:parse_blif$171036.A [3] in dpc
+ 827 Warning: Detected loop at $techmap183633$abc$161423$auto$blifparse.cc:525:parse_blif$169426.A [0] in dpc
+ 822 Warning: Detected loop at $techmap183637$abc$161423$auto$blifparse.cc:525:parse_blif$169420.A [0] in dpc
+ 330 Warning: Detected loop at $techmap183639$abc$161423$auto$blifparse.cc:525:parse_blif$169432.A [0] in dpc
+ 531 Warning: Detected loop at $techmap183661$abc$161423$auto$blifparse.cc:525:parse_blif$171014.A [1] in dpc
+ 687 Warning: Detected loop at $techmap183670$abc$161423$auto$blifparse.cc:525:parse_blif$171005.A [4] in dpc
+ 926 Warning: Detected loop at $techmap183704$abc$161423$auto$blifparse.cc:525:parse_blif$170961.A [0] in dpc
+ 994 Warning: Detected loop at $techmap183708$abc$161423$auto$blifparse.cc:525:parse_blif$171074.A [3] in dpc
+ 199 Warning: Detected loop at $techmap183708$abc$161423$auto$blifparse.cc:525:parse_blif$171074.A [4] in dpc
+ 161 Warning: Detected loop at $techmap183708$abc$161423$auto$blifparse.cc:525:parse_blif$171074.A [5] in dpc
+ 164 Warning: Detected loop at $techmap183818$abc$161423$auto$blifparse.cc:525:parse_blif$172016.A [5] in dpc
+ 164 Warning: Detected loop at $techmap183887$abc$161423$auto$blifparse.cc:525:parse_blif$171089.A [2] in dpc
+ 338 Warning: Detected loop at $techmap183888$abc$161423$auto$blifparse.cc:525:parse_blif$171158.A [0] in dpc
+ 169 Warning: Detected loop at $techmap184137$abc$161423$auto$blifparse.cc:525:parse_blif$172223.A [4] in dpc
+ 159 Warning: Detected loop at $techmap184304$abc$161423$auto$blifparse.cc:525:parse_blif$170943.A [0] in dpc
+ 161 Warning: Detected loop at $techmap184305$abc$161423$auto$blifparse.cc:525:parse_blif$170942.A [0] in dpc
+  66 Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+ 166 Warning: Detected loop at $techmap184443$abc$161423$auto$blifparse.cc:525:parse_blif$171172.A [2] in dpc
+ 354 Warning: Detected loop at $techmap184458$abc$161423$auto$blifparse.cc:525:parse_blif$172107.A [0] in dpc
+ 162 Warning: Detected loop at $techmap184738$abc$161423$auto$blifparse.cc:525:parse_blif$170882.A [0] in dpc
+   8 Warning: Detected loop at $techmap184768$abc$161423$auto$blifparse.cc:525:parse_blif$172235.A [0] in dpc
+   3 Warning: Detected loop at $techmap184932$abc$161423$auto$blifparse.cc:525:parse_blif$172256.A [0] in dpc
+   6 Warning: Detected loop at $techmap185208$abc$161423$auto$blifparse.cc:525:parse_blif$169274.A [0] in dpc
+ 811 Warning: Detected loop at $techmap185260$abc$161423$auto$blifparse.cc:525:parse_blif$174608.A [1] in dpc
+ 503 Warning: Detected loop at $techmap185301$abc$161423$auto$blifparse.cc:525:parse_blif$173814.A [3] in dpc
+ 335 Warning: Detected loop at $techmap185825$abc$161423$auto$blifparse.cc:525:parse_blif$163043.A [1] in dpc
+ 341 Warning: Detected loop at $techmap185829$abc$161423$auto$blifparse.cc:525:parse_blif$171301.A [2] in dpc
+ 338 Warning: Detected loop at $techmap186241$abc$161423$auto$blifparse.cc:525:parse_blif$164835.A [4] in dpc
+ 169 Warning: Detected loop at $techmap186242$abc$161423$auto$blifparse.cc:525:parse_blif$164834.A [4] in dpc
+ 477 Warning: Detected loop at $techmap186547$abc$161423$auto$blifparse.cc:525:parse_blif$169152.A [0] in dpc
+   3 Warning: Detected loop at $techmap187362$abc$161423$auto$blifparse.cc:525:parse_blif$169662.A [1] in dpc
+ 877 Warning: Detected loop at $techmap187784$abc$161423$auto$blifparse.cc:525:parse_blif$174916.A [2] in dpc
+ 702 Warning: Detected loop at $techmap187883$abc$161423$auto$blifparse.cc:525:parse_blif$174872.A [4] in dpc
+ 882 Warning: Detected loop at $techmap187884$abc$161423$auto$blifparse.cc:525:parse_blif$174871.A [2] in dpc
+ 707 Warning: Detected loop at $techmap187948$abc$161423$auto$blifparse.cc:525:parse_blif$174782.A [0] in dpc
+ 884 Warning: Detected loop at $techmap188072$abc$161423$auto$blifparse.cc:525:parse_blif$173773.A [0] in dpc
+ 697 Warning: Detected loop at $techmap188073$abc$161423$auto$blifparse.cc:525:parse_blif$173772.A [4] in dpc
+ 329 Warning: Detected loop at $techmap188336$abc$161423$auto$blifparse.cc:525:parse_blif$174689.A [1] in dpc
+ 679 Warning: Detected loop at $techmap188337$abc$161423$auto$blifparse.cc:525:parse_blif$174749.A [0] in dpc
+ 836 Warning: Detected loop at $techmap188338$abc$161423$auto$blifparse.cc:525:parse_blif$174748.A [2] in dpc
+ 843 Warning: Detected loop at $techmap188414$abc$161423$auto$blifparse.cc:525:parse_blif$174657.A [2] in dpc
+ 517 Warning: Detected loop at $techmap188584$abc$161423$auto$blifparse.cc:525:parse_blif$174573.A [0] in dpc
+ 825 Warning: Detected loop at $techmap188670$abc$161423$auto$blifparse.cc:525:parse_blif$175032.A [0] in dpc
+ 806 Warning: Detected loop at $techmap188860$abc$161423$auto$blifparse.cc:525:parse_blif$174974.A [0] in dpc
+ 800 Warning: Detected loop at $techmap188864$abc$161423$auto$blifparse.cc:525:parse_blif$174973.A [0] in dpc
+ 661 Warning: Detected loop at $techmap188911$abc$161423$auto$blifparse.cc:525:parse_blif$174944.A [0] in dpc
+ 828 Warning: Detected loop at $techmap188918$abc$161423$auto$blifparse.cc:525:parse_blif$174940.A [0] in dpc
+ 844 Warning: Detected loop at $techmap189449$abc$161423$auto$blifparse.cc:525:parse_blif$174706.A [2] in dpc
+ 162 Warning: Detected loop at $techmap189649$abc$161423$auto$blifparse.cc:525:parse_blif$171917.A [0] in dpc
+ 163 Warning: Detected loop at $techmap189736$abc$161423$auto$blifparse.cc:525:parse_blif$174601.A [3] in dpc
+  64 Warning: Yosys has only limited support for tri-state logic at the moment. 
+---- check, statistics, ltp, end (excerpt) ----
+Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171246.A [1] in dpc
+Warning: Detected loop at \n14454_o [18] in dpc
+Warning: Detected loop at \n14454_o [8] in dpc
+Warning: Detected loop at \n14910_o [9] in dpc
+Warning: Detected loop at $techmap188918$abc$161423$auto$blifparse.cc:525:parse_blif$174940.A [0] in dpc
+Warning: Detected loop at $auto$maccmap.cc:240:synth$120306.X [2] in dpc
+Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [10] in dpc
+Warning: Detected loop at \n14910_o [8] in dpc
+Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [2] in dpc
+Warning: Detected loop at $techmap188918$abc$161423$auto$blifparse.cc:525:parse_blif$174940.A [0] in dpc
+Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [7] in dpc
+Warning: Detected loop at \n14910_o [5] in dpc
+Warning: Detected loop at $techmap188918$abc$161423$auto$blifparse.cc:525:parse_blif$174940.A [0] in dpc
+Warning: Detected loop at $techmap188911$abc$161423$auto$blifparse.cc:525:parse_blif$174944.A [0] in dpc
+Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [6] in dpc
+Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [9] in dpc
+Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$171257.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+Warning: Detected loop at $auto$maccmap.cc:240:synth$120306.X [1] in dpc
+Warning: Detected loop at $auto$maccmap.cc:240:synth$120306.X [2] in dpc
+Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [15] in dpc
+Warning: Detected loop at \n14910_o [14] in dpc
+Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [1] in dpc
+Warning: Detected loop at $auto$maccmap.cc:240:synth$120306.X [2] in dpc
+Warning: Detected loop at $auto$maccmap.cc:240:synth$120306.X [1] in dpc
+Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [14] in dpc
+Warning: Detected loop at \n14910_o [13] in dpc
+Warning: Detected loop at $techmap182416$abc$161423$auto$blifparse.cc:525:parse_blif$169572.A [0] in dpc
+Warning: Detected loop at $techmap182406$abc$161423$auto$blifparse.cc:525:parse_blif$169564.A [0] in dpc
+Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [5] in dpc
+Warning: Detected loop at \n14910_o [4] in dpc
+Warning: Detected loop at $auto$maccmap.cc:240:synth$120306.X [1] in dpc
+Warning: Detected loop at $auto$maccmap.cc:240:synth$120306.X [2] in dpc
+Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [19] in dpc
+Warning: Detected loop at \n14910_o [16] in dpc
+Warning: Detected loop at $auto$maccmap.cc:240:synth$120306.X [2] in dpc
+Warning: Detected loop at $auto$maccmap.cc:240:synth$120306.X [1] in dpc
+Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [18] in dpc
+Warning: Detected loop at $techmap182456$abc$161423$auto$blifparse.cc:525:parse_blif$169648.A [1] in dpc
+Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [17] in dpc
+Warning: Detected loop at $techmap182499$abc$161423$auto$blifparse.cc:525:parse_blif$169626.A [0] in dpc
+Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [13] in dpc
+Warning: Detected loop at \n14910_o [12] in dpc
+Warning: Detected loop at $techmap182415$abc$161423$auto$blifparse.cc:525:parse_blif$169573.A [1] in dpc
+Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$163079.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+Warning: Detected loop at $techmap182442$abc$161423$auto$blifparse.cc:525:parse_blif$169617.A [0] in dpc
+Warning: Detected loop at \n15046_o [0] in dpc
+Warning: Detected loop at $techmap182504$abc$161423$auto$blifparse.cc:525:parse_blif$171274.A [3] in dpc
+Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169585.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.f1 in dpc
+Warning: Detected loop at $abc$161423$auto$blifparse.cc:525:parse_blif$169582.A [1] in dpc
+Warning: Detected loop at \n14910_o [22] in dpc
+Warning: Detected loop at \n14910_o [21] in dpc
+Warning: Detected loop at \n14910_o [20] in dpc
+Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [22] in dpc
+Warning: Detected loop at \n14910_o [21] in dpc
+Warning: Detected loop at $auto$alumacc.cc:485:replace_alu$49417.X [21] in dpc
+Warning: Detected loop at \n236_o [4] in dpc
+Warning: Detected loop at \n236_o [5] in dpc
+Warning: Detected loop at \n236_o [6] in dpc
+Warning: Detected loop at \n236_o [7] in dpc
+Warning: Detected loop at \n236_o [6] in dpc
+Warning: Detected loop at \n236_o [0] in dpc
+Warning: Detected loop at \n236_o [1] in dpc
+Warning: Detected loop at \n236_o [2] in dpc
+Warning: Detected loop at \n30266_q [3] in dpc
+Warning: Detected loop at \n30265_q [8] in dpc
+Warning: Detected loop at \n47_o [8] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at \n30138_o [5] in dpc
+Warning: Detected loop at \n30265_q [6] in dpc
+Warning: Detected loop at \n47_o [8] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at \n30138_o [5] in dpc
+Warning: Detected loop at \n30265_q [6] in dpc
+Warning: Detected loop at \n30138_o [7] in dpc
+Warning: Detected loop at \n30265_q [8] in dpc
+Warning: Detected loop at \n30138_o [5] in dpc
+Warning: Detected loop at \n47_o [8] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at \n30138_o [5] in dpc
+Warning: Detected loop at \n47_o [8] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at \n30138_o [5] in dpc
+Warning: Detected loop at \n30138_o [6] in dpc
+Warning: Detected loop at \n30138_o [7] in dpc
+Warning: Detected loop at \n30265_q [8] in dpc
+Warning: Detected loop at \n30138_o [7] in dpc
+Warning: Detected loop at \n30138_o [5] in dpc
+Warning: Detected loop at \n47_o [8] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at \n30138_o [5] in dpc
+Warning: Detected loop at \n30138_o [6] in dpc
+Warning: Detected loop at \n47_o [8] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at \n30138_o [5] in dpc
+Warning: Detected loop at \n30138_o [6] in dpc
+Warning: Detected loop at \n30138_o [7] in dpc
+Warning: Detected loop at \n30265_q [8] in dpc
+Warning: Detected loop at \n30138_o [1] in dpc
+Warning: Detected loop at \n30138_o [5] in dpc
+Warning: Detected loop at \n30138_o [5] in dpc
+Warning: Detected loop at \n30138_o [6] in dpc
+Warning: Detected loop at \n47_o [8] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at \n30138_o [5] in dpc
+Warning: Detected loop at \n30138_o [6] in dpc
+Warning: Detected loop at \n30138_o [7] in dpc
+Warning: Detected loop at \n30265_q [8] in dpc
+Warning: Detected loop at \n30138_o [1] in dpc
+Warning: Detected loop at \n30138_o [2] in dpc
+Warning: Detected loop at \n30138_o [5] in dpc
+Warning: Detected loop at \n30138_o [5] in dpc
+Warning: Detected loop at \n30138_o [6] in dpc
+Warning: Detected loop at \n47_o [8] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at $techmap184359$abc$161423$auto$blifparse.cc:525:parse_blif$170002.A [0] in dpc
+Warning: Detected loop at \n30138_o [5] in dpc
+Warning: Detected loop at \n30138_o [6] in dpc
+Warning: Detected loop at \n30138_o [7] in dpc
+Warning: Detected loop at \n30265_q [8] in dpc
+Warning: Detected loop at \n30138_o [1] in dpc
+Warning: Detected loop at \n30138_o [2] in dpc
+Warning: Detected loop at \n30138_o [3] in dpc
+Warning: Detected loop at \n30265_q [4] in dpc
+Warning: Detected loop at $abc$161423$auto$opt_dff.cc:219:make_patterns_logic$12353 in dpc
+Warning: Detected loop at $techmap187362$abc$161423$auto$blifparse.cc:525:parse_blif$169662.A [1] in dpc
+Warning: Detected loop at $techmap187362$abc$161423$auto$blifparse.cc:525:parse_blif$169662.A [1] in dpc
+Warning: Detected loop at \n30258_q [1] in dpc
+Warning: Detected loop at \n30164_o [1] in dpc
+
+Longest topological path in dpc (length=735):
+
+Warnings: 1675 unique messages, 712295 total
+End of script. Logfile hash: d8f001563d, CPU: user 55.94s system 4.32s, MEM: 2229.67 MB peak
+Yosys 0.33 (git sha1 2584903a060)
+Time spent: 25% 8x techmap (18 sec), 15% 1x abc (10 sec), ...
+Longest topological path in dpc (length=735):
+End of script. Logfile hash: d8f001563d, CPU: user 55.94s system 4.32s, MEM: 2229.67 MB peak
