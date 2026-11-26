@@ -64,21 +64,23 @@ SUMMARY_FILE="${LOG_DIR}/synth_summary.txt"
 : > "${SUMMARY_FILE}"
 OVERALL_RC=0
 
-WORK_TMP="$(mktemp -d)"
-trap 'rm -rf "${WORK_TMP}"' EXIT
+WORK_BASE="${REPO_ROOT}/experiments/exp001/results/m1_smoke/synth_work"
+mkdir -p "${WORK_BASE}"
+WORK_TMP="$(mktemp -d "${WORK_BASE}/run.XXXXXXXX")"
+echo "[smoke_synth] Retaining generated artifacts in ${WORK_TMP}"
 
 synth_one_entity() {
   local vhd_path="$1"
   local top_name="$2"
   local work_sub="${WORK_TMP}/${top_name}"
-  mkdir -p "${work_sub}"
+  mkdir -p "${work_sub}" || return $?
 
   if [ "${SELECTED_MODE}" = "plugin" ]; then
     yosys -m ghdl -p \
       "ghdl --std=08 --workdir=${work_sub} ${vhd_path} -e ${top_name}; hierarchy -check -top ${top_name}; proc; opt; memory; opt; check -assert; stat"
   else
     local verilog_out="${work_sub}/${top_name}_synth.v"
-    ghdl --synth --std=08 --workdir="${work_sub}" --out=verilog "${vhd_path}" -e "${top_name}" > "${verilog_out}"
+    ghdl --synth --std=08 --no-formal --workdir="${work_sub}" --out=verilog "${vhd_path}" -e "${top_name}" > "${verilog_out}" || return $?
     yosys -p \
       "read_verilog ${verilog_out}; hierarchy -check -top ${top_name}; proc; opt; memory; opt; check -assert; stat"
   fi

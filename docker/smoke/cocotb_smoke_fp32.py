@@ -14,11 +14,12 @@ def f32_to_u32(val: np.float32) -> int:
 
 @cocotb.test()
 async def test_smoke_fp32_adder(dut) -> None:
-    cocotb.start_soon(Clock(dut.clk, 10, "ns").start())
+    dut.clk.value = 0
 
     dut.rst.value = 1
     dut.a_bits.value = f32_to_u32(np.float32(1.5))
     dut.b_bits.value = f32_to_u32(np.float32(2.25))
+    cocotb.start_soon(Clock(dut.clk, 10, "ns").start(start_high=False))
     await RisingEdge(dut.clk)
     await FallingEdge(dut.clk)
     assert int(dut.y_bits.value) == 0, f"Reset failed: got 0x{int(dut.y_bits.value):08x}"

@@ -18,3 +18,12 @@ Maintained per [../.agents/skills/todo-tracking/SKILL.md](../.agents/skills/todo
 | `TODO-003` | `P0` | `M2` | `DEFERRED` | `experiments/exp001/rtl/`, `experiments/exp001/tb/`, `experiments/exp001/syn/` | Propose bounded `M2` plan, obtain approval, and implement generic VHDL-2008 `binary32` filter RTL, `cocotb`/`pytest` tests, and synthesis script | `TODO-002` (`G1`--`G5`) + `M2` plan approval |
 | `TODO-007` | `P0` | `M4` (Ph.2) | `NOT_STARTED` | `experiments/exp001/results/`, `research/` | Compile `exp001` RTL (`AC3`), run protected-oracle numerical verification across fixtures (`AC1`, `AC4`), and run generic synthesis (`AC5`) | `TODO-005` + `TODO-003` |
 | `TODO-006` | `P1` | `M5` | `NOT_STARTED` | `experiments/exp001/results/`, `research/` | Measure cycle/throughput/resource metrics across approved parallelism configs and assemble Amir's expert review package (`AC6`, `AC7`) | `TODO-007` correctness baseline |
+
+
+## 2026-11-26 - M1 local validation
+
+- [ ] Verify post-synthesis numerical equivalence and investigate the four tri-state warnings before claiming arithmetic netlist correctness.
+- [ ] Validate binary32 multiplication independently if required by a future approved generic arithmetic experiment.
+- [ ] Move container pytest temporary build artifacts into the project results tree.
+- [ ] Review proposed reusable skill updates separately; do not edit protected files without approval.
+- [ ] Review infrastructure changes and commit explicitly if approved.

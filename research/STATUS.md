@@ -31,3 +31,8 @@ Definitions follow [../context/experiments/exp001/ACCEPTANCE_CRITERIA.md](../con
 * **Immediate Next Action (`2026-11-26` Local Session)**: Follow [HANDOFF_M3.md](HANDOFF_M3.md) -- run `M4` Phase 1 (`make verify`, `make build`, `make smoke-sim`, `make smoke-synth`) on MacBook Pro M5, resolve `R-ENV-1`..`3`, and supply approved `G1`--`G5` before starting `M2`.
 * **Hard `M2` Blocker**: `M2` (`Implementation`) remains `BLOCKED` until planner/owner approve `G1`--`G5` ([../experiments/exp001/docs/SPECIFICATION_REVIEW.md](../experiments/exp001/docs/SPECIFICATION_REVIEW.md)).
 * **Prioritized Backlog**: Tracked in [TODO.md](TODO.md).
+
+
+## 2026-11-26 - M1 local validation
+
+M1 local infrastructure validation: COMPLETE (individual simulation and structural synthesis smoke suites passed after two fixes). See [M1 local validation](M1_LOCAL_VALIDATION.md). AC2 infrastructure smoke evidence is available; full experimental acceptance, post-synthesis equivalence and physical mapping are not established. This does not complete M2 or M4. Existing specification gates remain unchanged.

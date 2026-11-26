@@ -9,10 +9,11 @@ from cocotb.triggers import FallingEdge, RisingEdge
 
 @cocotb.test()
 async def test_smoke_reg_passthrough(dut) -> None:
-    cocotb.start_soon(Clock(dut.clk, 10, "ns").start())
+    dut.clk.value = 0
 
     dut.rst.value = 1
     dut.d_in.value = 0xAA
+    cocotb.start_soon(Clock(dut.clk, 10, "ns").start(start_high=False))
     await RisingEdge(dut.clk)
     await FallingEdge(dut.clk)
     assert int(dut.q_out.value) == 0x00, f"Reset failed: got 0x{int(dut.q_out.value):02x}"
