@@ -34,3 +34,9 @@ Maintained per [../.agents/skills/todo-tracking/SKILL.md](../.agents/skills/todo
 - [ ] Fix the warning count in experiments/edu_complex_arithmetic/tb/run_ghdl.sh (CA-DEFECT-001).
 - [ ] Post-synthesis equivalence for the complex arithmetic blocks before reuse claims.
 - [ ] Propose exp001 G1-G5 specification for the DPC component and obtain approval.
+
+## 2026-11-26 - EXP001 M2a
+
+- [ ] M2b: plan, then RTL with G_LANES = 1, testbench with output dump, runner (edge and baseline fixtures).
+- [ ] M2c: G_LANES > 1 and cycle measurements.
+- [ ] Series 7 mapping and review document for Amir.

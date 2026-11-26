@@ -65,3 +65,6 @@ yosys_tmp*/
 
 # Complex arithmetic experiment artifacts
 /experiments/edu_complex_arithmetic/build/
+
+# EXP001 build artifacts
+/experiments/exp001/build/

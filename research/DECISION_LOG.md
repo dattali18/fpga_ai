@@ -205,3 +205,17 @@ Owner: Claude as planner. Exact rational (Fraction) reference with one rounding 
 
 ### D-059 - Accept edu_complex_arithmetic
 Owner: user; approved after review of run 20261126T103335Z. Accepted within simulation and generic structural synthesis scope: 24,462 checks, 0 errors; 0 structural problems. Observations CA-OBS-001 (tri-state warnings, 4 per float operation) and CA-DEFECT-001 (runner warning count off by one) recorded, not corrected. Post-synthesis equivalence, technology mapping and timing not established. Evidence: experiments/edu_complex_arithmetic/VALIDATION.md.
+
+## EXP001 DPC specification and golden reference (2026-11-26)
+
+### D-060 - Approve the DPC specification (gates G1-G5)
+Owner: user; approved ("I trust you"). Proposal items P-01 to P-09 accepted: simulation and generic synthesis demonstration with Series 7 mapping, no FPGA device (Docker toolchain only); correlation contract with output length N_RG; binary32, round to nearest even, fixed summation order, finite inputs; error-bound gate plus bit-exact check; frozen Python reference; valid/ready streams, one block at a time; output-parallel lanes with sliding window; fixture matrix; M2a next. Contract: experiments/exp001/docs/DPC_SPECIFICATION.md.
+
+### D-061 - Component conjugates the pulse reference
+Owner: Claude as planner, at approval; revises P-02. The owner described the deliverable as taking N_RG samples and a pulse reference. The component therefore receives the pulse r as supplied and computes y[n] = sum conj(r[k]) x[n+k]; windowing and scaling remain external (PROJECT_DECISIONS item 8). Conjugation is an exact sign change, so the numerical contract is unaffected. Generics named G_N_RG, G_P, G_LANES; pulse port ref_*.
+
+### D-062 - Golden reference design and freeze
+Owner: Claude as planner. experiments/exp001/reference/dpc_ref.py, standard library only: exact rational model, binary32 sequential model, error bound, seeded stimuli, judge for output dumps. Frozen by ORACLE_MANIFEST.sha256 before any RTL; verified with --extra-manifest before and after test runs. Vectors are regenerated, not committed. NumPy used only for cross-checks. Independence caveat (D-055) mitigated by freezing first, numpy.correlate and float32 cross-checks, and file-only coupling to RTL.
+
+### D-063 - Accept M2a
+Owner: user via this run (20261126T105320Z). Self-test PASS in the container (worst seq32 err/tol = 0.2569; numpy 2.1.3 cross-checks (42 transactions)). Vectors IDENTICAL to the authoring sandbox (x86_64). Oracle digest verified before and after. No RTL exists yet; M2b (G_LANES = 1 RTL) requires approval of its plan.

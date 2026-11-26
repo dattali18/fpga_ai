@@ -1,0 +1,1 @@
+vectors: IDENTICAL to the authoring sandbox (x86_64)

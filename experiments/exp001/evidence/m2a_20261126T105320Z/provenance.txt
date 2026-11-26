@@ -1,0 +1,5 @@
+timestamp_utc: 20261126T105320Z
+host: Darwin daniels-mbp 25.6.0 Darwin Kernel Version 25.6.0: Fri Jul 31 19:16:20 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T8142 arm64
+git_head: 084be39003e308816d6d1adb542b1aa75cf5bef1
+image_id: sha256:cfa652b2fa6b6e661c83bed5d8ef9a35eb616683644b1bb49f75db3f8bb8d85f
+zip_sha256: 668439eb68261f6f8b6ebc99d4447af10a1b913e275b7a359cd7d4ceabf89082

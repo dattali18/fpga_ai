@@ -40,3 +40,7 @@ M1 local infrastructure validation: COMPLETE (individual simulation and structur
 ## 2026-11-26 - Educational complex arithmetic
 
 edu_complex_add and edu_complex_mul (binary32) ACCEPTED within simulation and generic structural synthesis scope (D-059). See [validation](../experiments/edu_complex_arithmetic/VALIDATION.md). Claude now acts as planner and coder (D-055). exp001 gates G1-G5 remain open; next proposed step is a plain-language G1-G5 specification proposal for the DPC component.
+
+## 2026-11-26 - EXP001 M2a
+
+DPC specification approved (D-060, D-061): [specification](../experiments/exp001/docs/DPC_SPECIFICATION.md). Golden reference frozen and self-tested in the container (D-062, D-063). AC1: contract approved and reference present with digest; before/after digest checks around RTL tests start in M2b. AC3-AC7 NOT_RUN. Next: M2b plan (RTL with G_LANES = 1).
