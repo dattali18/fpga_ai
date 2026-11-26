@@ -10,10 +10,15 @@ date: "2026-11-25"
 - `TODO-002` (golden reference and G1-G5): **DONE** in M2a (D-060 to D-063).
 - `TODO-003` (M2 RTL): **SUPERSEDED** by M2b
   ([M2B_PROMPT.md](../experiments/exp001/prompts/M2B_PROMPT.md)), with plain GHDL
-  testbenches instead of cocotb/pytest (D-065).
+  testbenches instead of cocotb/pytest (D-065). M2b is accepted (D-074,
+  [validation](../experiments/exp001/VALIDATION_M2B.md)).
 - `TODO-005` (local Docker smoke): done in the M1 local validation.
-- Next: M2b plan approval, then M2b implementation; then M2c (`G_LANES > 1`), Series 7
-  mapping and the review document for Amir.
+- Next:
+  - M2c (`G_LANES > 1`, parallel fixtures, measured cycles against the G5 model);
+  - M4 on the final design (D-075): post-synthesis checks and Series 7 mapping,
+    including LUTRAM mapping for every configuration, (256,64) included;
+  - pipelining milestone;
+  - M5 review document for Amir.
 - The table below is a historical M3 snapshot of 2026-11-25 (D-067); later dated
   sections remain valid.
 

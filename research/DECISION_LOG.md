@@ -238,3 +238,26 @@ Owner: user; approved (planner decision 4). research/STATUS.md and research/TODO
 Owner: user; approved (planner decision 5). verify_protected_digests.py checks dpc_ref.py against ORACLE_MANIFEST.sha256 but not the manifest itself. Recorded digest:
 SHA-256(experiments/exp001/reference/ORACLE_MANIFEST.sha256) = 1f26c582f6507d2b742d24bc8d658fdc0043fa06be674c5cdc261e94294bb294
 (manifest content: dpc_ref.py = 4389871a1b857349fbd8f0600e207e36f1cf2a98d017e6be629792af8dd8c1eb). Check with `shasum -a 256 experiments/exp001/reference/ORACLE_MANIFEST.sha256`.
+
+## EXP001 M2b - DPC RTL baseline, G_LANES = 1 (2026-11-26)
+
+### D-069 - Pulse load priority and the combinational in_ready path
+Owner: planner; approved (M2b plan review, answer 4); implemented by Claude Code. In S_IDLE, in_ready = pulse_loaded and not ref_valid, so a pulse load wins when ref and in are offered in the same cycle and exactly one transfer (the ref one) happens. Ready may depend on valid; no valid depends on any ready; out_valid, out_last and out data come only from registers. Documented in experiments/exp001/rtl/dpc.vhd; covered by a directed testbench check after the first pulse load. Alternative rejected: registered mutually exclusive ready signals (adds a cycle and a second idle state for no functional gain).
+
+### D-070 - M2b verification additions
+Owner: planner; approved (answers 1-3). Timing mode runs a third time per fixture and its CYCLES lines must be identical to the second run (18 simulation runs; B1 counts 12). Memory objects and bits are counted with a separate "memory -nomap; stat" pass; the acceptance flow (proc; opt; memory; opt; check -assert; stat) is unchanged and must report 0 problems. Periods that include a pulse reload (transaction 4 to 5) are reported as measured and labelled.
+
+### D-071 - DPC control structure and counter widths
+Owner: Claude Code (implementer), within the approved contract. Five states: S_IDLE, S_LOAD_REF, S_LOAD_IN, S_COMPUTE (P cycles, one multiply-accumulate per cycle), S_OUT (hold y[n] until transferred). Sample 0 of a pulse or block is accepted in S_IDLE. Widths: sample address addr_width(N_RG), pulse address and k addr_width(P), output index n and sample index idx = n + k addr_width(N_RG + P) bits (holds N_RG + P - 1, planner addition 5); addr_width(x) = max(1, ceil(log2 x)) so N_RG = 1 or P = 1 never gives a null range. idx is compared with N_RG before truncation to a memory address; for idx >= N_RG the all-zero sample is used and the MAC still runs. Memories padded to powers of two, write pointers wrap explicitly. acc reset to +0 at the start of each output. Expected cost at out_ready = 1: N_RG input cycles plus N_RG * (P + 1) cycles.
+
+### D-072 - Testbench conventions for tb_dpc
+Owner: Claude Code (implementer). A raised valid is held, with stable data, until its transfer; the only exception is the directed priority cycle, where the in offer is withdrawn after the ref transfer. The priority check reloads the same pulse (k = 0 offered again), so expected outputs are unchanged. Random stalls use ieee.math_real.uniform seeded from G_SEED (runner: 20261126); timing mode draws no random numbers. Per-transaction watchdog. Output dump lines "O <re> <im>" in uppercase hex, consumed only by dpc_ref.py --check.
+
+### D-073 - DPC-DEFECT-001 and the accepted M2b run
+Owner: Claude Code (implementer); for planner review. Run m2b_20261126T111341Z passed every check but reported memories=0 because Yosys stat counts only unpacked memories and the count-only flow left them packed as $mem_v2 cells (runner defect, not RTL). Fix: memory_unpack before stat, plus a positive control failing the run on a zero memory count. Re-run m2b_20261126T111903Z: OVERALL PASS (B1-B6); 18/18 simulations and dumps 0 errors, bit exact; NC1 and NC2 fail as intended; 6/6 syntheses 0 problems, 4 $mul, 4 memories, 32 tri-state warnings each; latency N_RG + N_RG(P+1) cycles, equal to the G5 model at L = 1. The first run is kept unchanged with CORRECTION.md (D-066 precedent). Evidence: experiments/exp001/VALIDATION_M2B.md. M2b acceptance is the owner's decision.
+
+### D-074 - Accept M2b
+Owner: user; approved (planner review of M2b). M2b accepted on run m2b_20261126T111903Z (completes D-073) within the simulation and generic structural synthesis scope. Post-synthesis equivalence, technology mapping and timing are not established. The superseded run m2b_20261126T111341Z is kept with its CORRECTION.md (D-053 policy).
+
+### D-075 - Order of the next milestones
+Owner: planner; approved by the user. M2c (G_LANES > 1) is next. Post-synthesis checks and Series 7 mapping move to M4 and apply to the final design. M4 checks LUTRAM mapping for all configurations, including (256,64). BRAM would need a synchronous-read architecture and is out of scope for now.

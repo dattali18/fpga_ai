@@ -13,3 +13,4 @@ date: "2026-11-26"
 - Inserted "Current status (2026-11-26)" blocks in research/STATUS.md and research/TODO.md; nothing deleted.
 - Added experiments/exp001/prompts/M2B_PROMPT.md (moved from the repository root, where it was saved).
 - Deleted the one-time install_and_verify_m2a.sh (untracked; D-012).
+- Deleted 14 untracked transfer ZIPs from the repository root (owner approval; list in the 2026-11-26 daily note).

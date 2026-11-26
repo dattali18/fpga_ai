@@ -1,0 +1,77 @@
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:7764)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:7826)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:7944)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:7985)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:9044)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:9106)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:9224)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:9265)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:10324)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:10386)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:10504)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:10545)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:11604)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:11666)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:11784)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:11825)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:12902)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:12964)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:13059)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:13100)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:14669)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:14731)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:14826)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:14867)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:16436)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:16498)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:16593)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:16634)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:18203)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:18265)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:18360)
+Warning: Yosys has only limited support for tri-state logic at the moment. (syn/dpc_n1_p1.v:18401)
+---- check and statistics (last sections) ----
+7. Executing CHECK pass (checking for obvious problems).
+Checking module dpc...
+Found and reported 0 problems.
+
+8. Printing statistics.
+
+=== dpc ===
+
+   Number of wires:               7444
+   Number of wire bits:          52945
+   Number of public wires:        7202
+   Number of public wire bits:   52517
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               3278
+     $add                           49
+     $and                           48
+     $dffe                          12
+     $eq                           305
+     $ge                             8
+     $gt                            28
+     $le                             8
+     $logic_not                     49
+     $lt                           425
+     $mul                            4
+     $mux                         1361
+     $ne                            18
+     $neg                           20
+     $not                           34
+     $or                           576
+     $pmux                         147
+     $reduce_and                    29
+     $reduce_or                     78
+     $sdffe                          7
+     $shl                           12
+     $shr                           16
+     $sub                           40
+     $xor                            4
+
+Warnings: 32 unique messages, 32 total
+End of script. Logfile hash: d7f0bcba15, CPU: user 2.15s system 0.02s, MEM: 73.84 MB peak
+Yosys 0.33 (git sha1 2584903a060)
+Time spent: 23% 9x opt_clean (0 sec), 22% 10x opt_expr (0 sec), ...

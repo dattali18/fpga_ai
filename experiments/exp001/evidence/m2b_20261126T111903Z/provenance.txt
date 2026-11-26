@@ -1,0 +1,15 @@
+run_id: m2b_20261126T111903Z
+command: bash experiments/exp001/tb/run_dpc.sh
+date_utc: 2026-11-26T11:23:10Z
+git_head: a272393160280dbf2834528a6fba0cd6bc87f960
+image: fpga_ai-toolchain:m1-arm64 (sha256:cfa652b2fa6b6e661c83bed5d8ef9a35eb616683644b1bb49f75db3f8bb8d85f)
+host: Darwin arm64
+seed: 20261126  stress_pct: 30
+git_status_short:
+ M research/DECISION_LOG.md
+M  research/changelog/log_20261126_claude_code_workflow.md
+M  research/daily_notes/2026-11-26.md
+?? experiments/exp001/evidence/m2b_20261126T111341Z/
+?? experiments/exp001/rtl/
+?? experiments/exp001/tb/run_dpc.sh
+?? experiments/exp001/tb/tb_dpc.vhd

@@ -1,0 +1,3 @@
+vectors/dpc_n8_p8.txt: 7 transactions, 56 outputs, 1200 checks, 0 errors
+PASS: vectors/dpc_n8_p8.txt
+simulation finished @6520ns

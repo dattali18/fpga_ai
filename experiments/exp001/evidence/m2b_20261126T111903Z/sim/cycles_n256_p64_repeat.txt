@@ -1,0 +1,7 @@
+CYCLES t=0 latency=16896 period=16896
+CYCLES t=1 latency=16896 period=16896
+CYCLES t=2 latency=16896 period=16896
+CYCLES t=3 latency=16896 period=16896
+CYCLES t=4 latency=16896 period=16960
+CYCLES t=5 latency=16896 period=16896
+CYCLES t=6 latency=16896 period=NA

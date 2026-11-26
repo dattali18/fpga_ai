@@ -1,0 +1,56 @@
+PASS  protected+oracle before: PASS: Verified 35 protected bootstrap files (combined SHA-256: e10a800fe0a2a1407ee46656bc4a73d4eb2373cefd43641d20b7e3d2482a129c) + 1 oracle files
+PASS  reference vectors: 6 files
+PASS  ghdl analysis + elaboration
+PASS  sim   n1_p1_stress: 7 transactions, 7 outputs, 62 checks, 0 errors
+PASS  check n1_p1_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.2569
+PASS  sim   n1_p1_timing: 7 transactions, 7 outputs, 53 checks, 0 errors
+PASS  check n1_p1_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.2569
+PASS  sim   n1_p1_timing2: 7 transactions, 7 outputs, 53 checks, 0 errors
+PASS  check n1_p1_timing2: gate failures=0 bit-exact mismatches=0 worst err/tol=0.2569
+PASS  cycles n1_p1: identical in two timing runs (7 lines)
+PASS  sim   n5_p8_stress: 7 transactions, 35 outputs, 774 checks, 0 errors
+PASS  check n5_p8_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1372
+PASS  sim   n5_p8_timing: 7 transactions, 35 outputs, 711 checks, 0 errors
+PASS  check n5_p8_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1372
+PASS  sim   n5_p8_timing2: 7 transactions, 35 outputs, 711 checks, 0 errors
+PASS  check n5_p8_timing2: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1372
+PASS  cycles n5_p8: identical in two timing runs (7 lines)
+PASS  sim   n8_p3_stress: 7 transactions, 56 outputs, 625 checks, 0 errors
+PASS  check n8_p3_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.2490
+PASS  sim   n8_p3_timing: 7 transactions, 56 outputs, 571 checks, 0 errors
+PASS  check n8_p3_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.2490
+PASS  sim   n8_p3_timing2: 7 transactions, 56 outputs, 571 checks, 0 errors
+PASS  check n8_p3_timing2: gate failures=0 bit-exact mismatches=0 worst err/tol=0.2490
+PASS  cycles n8_p3: identical in two timing runs (7 lines)
+PASS  sim   n8_p8_stress: 7 transactions, 56 outputs, 1200 checks, 0 errors
+PASS  check n8_p8_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1415
+PASS  sim   n8_p8_timing: 7 transactions, 56 outputs, 1131 checks, 0 errors
+PASS  check n8_p8_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1415
+PASS  sim   n8_p8_timing2: 7 transactions, 56 outputs, 1131 checks, 0 errors
+PASS  check n8_p8_timing2: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1415
+PASS  cycles n8_p8: identical in two timing runs (7 lines)
+PASS  sim   n64_p16_stress: 7 transactions, 448 outputs, 16802 checks, 0 errors
+PASS  check n64_p16_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1490
+PASS  sim   n64_p16_timing: 7 transactions, 448 outputs, 16139 checks, 0 errors
+PASS  check n64_p16_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1490
+PASS  sim   n64_p16_timing2: 7 transactions, 448 outputs, 16139 checks, 0 errors
+PASS  check n64_p16_timing2: gate failures=0 bit-exact mismatches=0 worst err/tol=0.1490
+PASS  cycles n64_p16: identical in two timing runs (7 lines)
+PASS  sim   n256_p64_stress: 7 transactions, 1792 outputs, 238562 checks, 0 errors
+PASS  check n256_p64_stress: gate failures=0 bit-exact mismatches=0 worst err/tol=0.0637
+PASS  sim   n256_p64_timing: 7 transactions, 1792 outputs, 236555 checks, 0 errors
+PASS  check n256_p64_timing: gate failures=0 bit-exact mismatches=0 worst err/tol=0.0637
+PASS  sim   n256_p64_timing2: 7 transactions, 1792 outputs, 236555 checks, 0 errors
+PASS  check n256_p64_timing2: gate failures=0 bit-exact mismatches=0 worst err/tol=0.0637
+PASS  cycles n256_p64: identical in two timing runs (7 lines)
+PASS  NC1 bit flip: --check failed as intended (gate failures=0 bit-exact mismatches=1 worst err/tol=0.2490)
+PASS  NC2 bad Y: testbench failed as intended (1 errors)
+PASS  synth n1_p1: problems=0 cells=3278 $mul=4 memories=0 bits=0 warnings=32 (tri-state 32)
+PASS  synth n5_p8: problems=0 cells=3367 $mul=4 memories=0 bits=0 warnings=32 (tri-state 32)
+PASS  synth n8_p3: problems=0 cells=3338 $mul=4 memories=0 bits=0 warnings=32 (tri-state 32)
+PASS  synth n8_p8: problems=0 cells=3367 $mul=4 memories=0 bits=0 warnings=32 (tri-state 32)
+PASS  synth n64_p16: problems=0 cells=3779 $mul=4 memories=0 bits=0 warnings=32 (tri-state 32)
+PASS  synth n256_p64: problems=0 cells=5263 $mul=4 memories=0 bits=0 warnings=32 (tri-state 32)
+PASS  protected+oracle after: PASS: Verified 35 protected bootstrap files (combined SHA-256: e10a800fe0a2a1407ee46656bc4a73d4eb2373cefd43641d20b7e3d2482a129c) + 1 oracle files
+PASS  oracle manifest digest = D-068 value, unchanged
+OVERALL: PASS
