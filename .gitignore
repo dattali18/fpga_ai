@@ -56,3 +56,9 @@ yosys_tmp*/
 
 # Temporary repository transfer archives
 /*.zip
+
+# FIFO experiment artifacts
+/experiments/edu_fifo/build/
+
+# FIFO experiment artifacts
+/experiments/edu_fifo/build/
