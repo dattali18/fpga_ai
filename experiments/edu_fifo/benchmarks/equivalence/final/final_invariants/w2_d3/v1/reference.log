@@ -1,0 +1,118 @@
+
+-- Running command `read_verilog raw.v; hierarchy -check -top edu_fifo; proc; memory_map; opt_clean; check -assert; write_json reference.json' --
+
+1. Executing Verilog-2005 frontend: raw.v
+Parsing Verilog input from `raw.v' to AST representation.
+Generating RTLIL representation for module `\edu_fifo'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \edu_fifo
+
+2.2. Analyzing design hierarchy..
+Top module:  \edu_fifo
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 13 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\edu_fifo.$proc$raw.v:0$62'.
+  Set init value: \n114_q = 2'00
+Found init rule in `\edu_fifo.$proc$raw.v:0$61'.
+  Set init value: \n113_q = 2'00
+Found init rule in `\edu_fifo.$proc$raw.v:0$60'.
+  Set init value: \n112_q = 2'00
+Found init rule in `\edu_fifo.$proc$raw.v:0$59'.
+  Set init value: \count = 2'00
+Found init rule in `\edu_fifo.$proc$raw.v:0$58'.
+  Set init value: \wr_ptr = 2'00
+Found init rule in `\edu_fifo.$proc$raw.v:0$57'.
+  Set init value: \rd_ptr = 2'00
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\edu_fifo.$proc$raw.v:0$62'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:0$61'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:0$60'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:0$59'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:0$58'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:0$57'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:249$45'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:244$44'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:239$43'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:236$42'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:111$3'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:106$2'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:101$1'.
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\edu_fifo.\count' from process `\edu_fifo.$proc$raw.v:111$3'.
+Removing init bit 1'0 for non-memory siginal `\edu_fifo.\count [0]` in process `\edu_fifo.$proc$raw.v:111$3`.
+Removing init bit 1'0 for non-memory siginal `\edu_fifo.\count [1]` in process `\edu_fifo.$proc$raw.v:111$3`.
+No latch inferred for signal `\edu_fifo.\wr_ptr' from process `\edu_fifo.$proc$raw.v:106$2'.
+Removing init bit 1'0 for non-memory siginal `\edu_fifo.\wr_ptr [0]` in process `\edu_fifo.$proc$raw.v:106$2`.
+Removing init bit 1'0 for non-memory siginal `\edu_fifo.\wr_ptr [1]` in process `\edu_fifo.$proc$raw.v:106$2`.
+No latch inferred for signal `\edu_fifo.\rd_ptr' from process `\edu_fifo.$proc$raw.v:101$1'.
+Removing init bit 1'0 for non-memory siginal `\edu_fifo.\rd_ptr [0]` in process `\edu_fifo.$proc$raw.v:101$1`.
+Removing init bit 1'0 for non-memory siginal `\edu_fifo.\rd_ptr [1]` in process `\edu_fifo.$proc$raw.v:101$1`.
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\edu_fifo.\n114_q' using process `\edu_fifo.$proc$raw.v:249$45'.
+  created $dff cell `$procdff$63' with positive edge clock.
+Creating register for signal `\edu_fifo.\n113_q' using process `\edu_fifo.$proc$raw.v:244$44'.
+  created $dff cell `$procdff$64' with positive edge clock.
+Creating register for signal `\edu_fifo.\n112_q' using process `\edu_fifo.$proc$raw.v:239$43'.
+  created $dff cell `$procdff$65' with positive edge clock.
+Creating register for signal `\edu_fifo.\n111_q' using process `\edu_fifo.$proc$raw.v:236$42'.
+  created $dff cell `$procdff$66' with positive edge clock.
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `edu_fifo.$proc$raw.v:0$62'.
+Removing empty process `edu_fifo.$proc$raw.v:0$61'.
+Removing empty process `edu_fifo.$proc$raw.v:0$60'.
+Removing empty process `edu_fifo.$proc$raw.v:0$59'.
+Removing empty process `edu_fifo.$proc$raw.v:0$58'.
+Removing empty process `edu_fifo.$proc$raw.v:0$57'.
+Removing empty process `edu_fifo.$proc$raw.v:249$45'.
+Removing empty process `edu_fifo.$proc$raw.v:244$44'.
+Removing empty process `edu_fifo.$proc$raw.v:239$43'.
+Removing empty process `edu_fifo.$proc$raw.v:236$42'.
+Removing empty process `edu_fifo.$proc$raw.v:111$3'.
+Removing empty process `edu_fifo.$proc$raw.v:106$2'.
+Removing empty process `edu_fifo.$proc$raw.v:101$1'.
+Cleaned up 0 empty switches.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_fifo.
+<suppressed ~2 debug messages>
+
+4. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_fifo..
+Removed 0 unused cells and 62 unused wires.
+<suppressed ~1 debug messages>
+
+6. Executing CHECK pass (checking for obvious problems).
+Checking module edu_fifo...
+Found and reported 0 problems.
+
+7. Executing JSON backend.

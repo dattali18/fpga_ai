@@ -1,0 +1,220 @@
+
+-- Running command `read_json ../v1/reference.json; rename edu_fifo gold; read_json ../v1/optimized.json; rename edu_fifo gate; read_verilog harness.v; hierarchy -check -top compare_fifo; proc; flatten; opt_clean; check -assert; select -module compare_fifo; sat -seq 16 -prove ok 1 -show-inputs -show-outputs -show-regs -show armed -timeout 15 -verify -dump_vcd bounded_counterexample.vcd' --
+
+1. Executing JSON frontend.
+Importing module edu_fifo from JSON tree.
+Renaming module \edu_fifo to \gold.
+
+2. Executing JSON frontend.
+Importing module edu_fifo from JSON tree.
+Renaming module \edu_fifo to \gate.
+
+3. Executing Verilog-2005 frontend: harness.v
+Parsing Verilog input from `harness.v' to AST representation.
+Generating RTLIL representation for module `\compare_fifo'.
+Successfully finished Verilog frontend.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1. Analyzing design hierarchy..
+Top module:  \compare_fifo
+Used module:     \gate
+Used module:     \gold
+
+4.2. Analyzing design hierarchy..
+Top module:  \compare_fifo
+Used module:     \gate
+Used module:     \gold
+Removed 0 unused modules.
+
+5. Executing PROC pass (convert processes to netlists).
+
+5.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 2 assignments to connections.
+
+5.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\compare_fifo.$proc$harness.v:3$13'.
+  Set init value: \armed = 1'0
+
+5.5. Executing PROC_ARST pass (detect async resets in processes).
+
+5.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\compare_fifo.$proc$harness.v:3$13'.
+Creating decoders for process `\compare_fifo.$proc$harness.v:4$1'.
+
+5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+5.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\compare_fifo.\armed' using process `\compare_fifo.$proc$harness.v:4$1'.
+  created $dff cell `$procdff$14' with positive edge clock.
+
+5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `compare_fifo.$proc$harness.v:3$13'.
+Removing empty process `compare_fifo.$proc$harness.v:4$1'.
+Cleaned up 0 empty switches.
+
+5.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module compare_fifo.
+Optimizing module gate.
+Optimizing module gold.
+
+6. Executing FLATTEN pass (flatten design).
+Deleting now unused module gate.
+Deleting now unused module gold.
+<suppressed ~2 debug messages>
+
+7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \compare_fifo..
+Removed 0 unused cells and 4 unused wires.
+<suppressed ~1 debug messages>
+
+8. Executing CHECK pass (checking for obvious problems).
+Checking module compare_fifo...
+Found and reported 0 problems.
+
+9. Executing SAT pass (solving SAT problems in the circuit).
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Imported 129 cells to SAT database.
+Import set-constraint from init attribute: \a.n99_o [2:0] = 3'000
+Import set-constraint from init attribute: \a.rd_ptr = 2'00
+Import set-constraint from init attribute: \a.wr_ptr = 2'00
+Import set-constraint from init attribute: \armed = 1'0
+Import set-constraint from init attribute: \b.n99_o [2:0] = 3'000
+Import set-constraint from init attribute: \b.rd_ptr = 2'00
+Import set-constraint from init attribute: \b.wr_ptr = 2'00
+Final init constraint equation: { \b.wr_ptr \b.rd_ptr \b.n99_o [2:0] \armed \a.wr_ptr \a.rd_ptr \a.n99_o [2:0] } = 15'000000000000000
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Imported 129 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 3:
+Final constraint equation: { } = { }
+Imported 129 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 4:
+Final constraint equation: { } = { }
+Imported 129 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 5:
+Final constraint equation: { } = { }
+Imported 129 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 6:
+Final constraint equation: { } = { }
+Imported 129 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 7:
+Final constraint equation: { } = { }
+Imported 129 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 8:
+Final constraint equation: { } = { }
+Imported 129 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 9:
+Final constraint equation: { } = { }
+Imported 129 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 10:
+Final constraint equation: { } = { }
+Imported 129 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 11:
+Final constraint equation: { } = { }
+Imported 129 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 12:
+Final constraint equation: { } = { }
+Imported 129 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 13:
+Final constraint equation: { } = { }
+Imported 129 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 14:
+Final constraint equation: { } = { }
+Imported 129 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 15:
+Final constraint equation: { } = { }
+Imported 129 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 16:
+Final constraint equation: { } = { }
+Imported 129 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \armed
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \armed
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.n42_o
+Import show expression: \a.n47_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n99_o
+
+Solving problem with 24816 variables and 65083 clauses..
+SAT proof finished - no model found: SUCCESS!
+
+                  /$$$$$$      /$$$$$$$$     /$$$$$$$    
+                 /$$__  $$    | $$_____/    | $$__  $$   
+                | $$  \ $$    | $$          | $$  \ $$   
+                | $$  | $$    | $$$$$       | $$  | $$   
+                | $$  | $$    | $$__/       | $$  | $$   
+                | $$/$$ $$    | $$          | $$  | $$   
+                |  $$$$$$/ /$$| $$$$$$$$ /$$| $$$$$$$//$$
+                 \____ $$$|__/|________/|__/|_______/|__/
+                       \__/                              
+

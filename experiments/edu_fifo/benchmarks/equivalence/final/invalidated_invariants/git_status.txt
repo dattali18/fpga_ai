@@ -1,0 +1,6 @@
+ M research/DECISION_LOG.md
+?? EDU_FIFO_EQ_INITIAL_RESULTS.md
+?? archive_edu_fifo_equivalence_initial.sh
+?? experiments/edu_fifo/benchmarks/equivalence/
+?? scripts/verify_edu_fifo_equivalence.sh
+?? scripts/verify_edu_fifo_invariants.sh

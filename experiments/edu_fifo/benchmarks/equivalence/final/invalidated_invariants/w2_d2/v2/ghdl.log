@@ -1,0 +1,3 @@
+/workspace/experiments/edu_fifo/v2/rtl/edu_fifo.vhd:130:12:note: found RAM "g_mem.mem", width: 2 bits, depth: 2
+    signal mem    : t_mem;               -- storage: intentionally not reset
+           ^

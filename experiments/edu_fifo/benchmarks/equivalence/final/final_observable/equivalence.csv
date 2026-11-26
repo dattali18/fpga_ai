@@ -1,0 +1,19 @@
+width,depth,comparison,horizon,bounded,induction,status,bounded_seconds,induction_seconds,reason
+1,1,EQ1,10,PASS,PASS,PROVEN,0.035,0.016,combined base and induction proof
+1,1,EQ2,10,PASS,PASS,PROVEN,0.036,0.017,combined base and induction proof
+1,1,EQ3,10,PASS,PASS,PROVEN,0.033,0.017,combined base and induction proof
+2,2,EQ1,12,PASS,INCONCLUSIVE,BOUNDED,0.127,0.128,induction not established; inspect log
+2,2,EQ2,12,PASS,INCONCLUSIVE,BOUNDED,0.129,0.129,induction not established; inspect log
+2,2,EQ3,12,PASS,INCONCLUSIVE,BOUNDED,0.18,0.125,induction not established; inspect log
+2,3,EQ1,14,PASS,INCONCLUSIVE,BOUNDED,0.511,0.18,induction not established; inspect log
+2,3,EQ2,14,PASS,INCONCLUSIVE,BOUNDED,0.563,0.131,induction not established; inspect log
+2,3,EQ3,14,PASS,INCONCLUSIVE,BOUNDED,1.168,0.238,induction not established; inspect log
+2,4,EQ1,16,PASS,INCONCLUSIVE,BOUNDED,1.798,0.186,induction not established; inspect log
+2,4,EQ2,16,PASS,INCONCLUSIVE,BOUNDED,2.107,0.181,induction not established; inspect log
+2,4,EQ3,16,PASS,INCONCLUSIVE,BOUNDED,6.009,0.238,induction not established; inspect log
+8,3,EQ1,14,PASS,INCONCLUSIVE,BOUNDED,0.732,0.239,induction not established; inspect log
+8,3,EQ2,14,PASS,INCONCLUSIVE,BOUNDED,1.065,0.288,induction not established; inspect log
+8,3,EQ3,14,PASS,INCONCLUSIVE,BOUNDED,1.17,0.35,induction not established; inspect log
+8,4,EQ1,16,PASS,INCONCLUSIVE,BOUNDED,3.308,0.293,induction not established; inspect log
+8,4,EQ2,16,PASS,INCONCLUSIVE,BOUNDED,3.439,0.296,induction not established; inspect log
+8,4,EQ3,16,PASS,INCONCLUSIVE,BOUNDED,5.673,0.348,induction not established; inspect log

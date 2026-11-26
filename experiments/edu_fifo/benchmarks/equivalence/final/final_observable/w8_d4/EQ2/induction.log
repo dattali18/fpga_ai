@@ -1,0 +1,1286 @@
+
+-- Running command `read_json ../v2/reference.json; rename edu_fifo gold; read_json ../v2/optimized.json; rename edu_fifo gate; read_verilog harness.v; hierarchy -check -top compare_fifo; proc; flatten; opt_clean; check -assert; select -module compare_fifo; sat -seq 1 -tempinduct -maxsteps 8 -prove ok 1 -show-inputs -show-outputs -show-regs -show armed -timeout 15 -verify -dump_vcd induction_trace.vcd' --
+
+1. Executing JSON frontend.
+Importing module edu_fifo from JSON tree.
+Renaming module \edu_fifo to \gold.
+
+2. Executing JSON frontend.
+Importing module edu_fifo from JSON tree.
+Renaming module \edu_fifo to \gate.
+
+3. Executing Verilog-2005 frontend: harness.v
+Parsing Verilog input from `harness.v' to AST representation.
+Generating RTLIL representation for module `\compare_fifo'.
+Successfully finished Verilog frontend.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1. Analyzing design hierarchy..
+Top module:  \compare_fifo
+Used module:     \gate
+Used module:     \gold
+
+4.2. Analyzing design hierarchy..
+Top module:  \compare_fifo
+Used module:     \gate
+Used module:     \gold
+Removed 0 unused modules.
+
+5. Executing PROC pass (convert processes to netlists).
+
+5.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 2 assignments to connections.
+
+5.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\compare_fifo.$proc$harness.v:3$13'.
+  Set init value: \armed = 1'0
+
+5.5. Executing PROC_ARST pass (detect async resets in processes).
+
+5.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\compare_fifo.$proc$harness.v:3$13'.
+Creating decoders for process `\compare_fifo.$proc$harness.v:4$1'.
+
+5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+5.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\compare_fifo.\armed' using process `\compare_fifo.$proc$harness.v:4$1'.
+  created $dff cell `$procdff$14' with positive edge clock.
+
+5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `compare_fifo.$proc$harness.v:3$13'.
+Removing empty process `compare_fifo.$proc$harness.v:4$1'.
+Cleaned up 0 empty switches.
+
+5.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module compare_fifo.
+Optimizing module gate.
+Optimizing module gold.
+<suppressed ~4 debug messages>
+
+6. Executing FLATTEN pass (flatten design).
+Deleting now unused module gate.
+Deleting now unused module gold.
+<suppressed ~2 debug messages>
+
+7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \compare_fifo..
+Removed 0 unused cells and 6 unused wires.
+<suppressed ~1 debug messages>
+
+8. Executing CHECK pass (checking for obvious problems).
+Checking module compare_fifo...
+Found and reported 0 problems.
+
+9. Executing SAT pass (solving SAT problems in the circuit).
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Imported 222 cells to SAT database.
+Import set-constraint from init attribute: \a.n96_q = 2'00
+Import set-constraint from init attribute: \a.n97_q = 2'00
+Import set-constraint from init attribute: \a.n98_q = 3'000
+Import set-constraint from init attribute: \armed = 1'0
+Import set-constraint from init attribute: \b.n96_q = 2'00
+Import set-constraint from init attribute: \b.n97_q = 2'00
+Import set-constraint from init attribute: \b.n98_q = 3'000
+Final init constraint equation: { \b.n98_q \b.n97_q \b.n96_q \armed \a.n98_q \a.n97_q \a.n96_q } = 15'000000000000000
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Imported 222 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+** Trying induction with length 1 **
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Imported 222 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \armed
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \armed
+Import show expression: \a.n96_q
+Import show expression: \a.n97_q
+Import show expression: \a.n98_q
+Import show expression: \a.g_mem_mem[3]
+Import show expression: \a.g_mem_mem[2]
+Import show expression: \a.g_mem_mem[1]
+Import show expression: \a.g_mem_mem[0]
+
+[base case 1] Solving problem with 3910 variables and 10144 clauses..
+Base case for induction length 1 proven.
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Imported 222 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \armed
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \armed
+Import show expression: \a.n96_q
+Import show expression: \a.n97_q
+Import show expression: \a.n98_q
+Import show expression: \a.g_mem_mem[3]
+Import show expression: \a.g_mem_mem[2]
+Import show expression: \a.g_mem_mem[1]
+Import show expression: \a.g_mem_mem[0]
+
+[induction step 1] Solving problem with 3887 variables and 10061 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                  Dec       Hex           Bin
+  ---- -------------------- ----------- --------- -------------
+  init \a.g_mem_mem[0]                0         0      00000000
+  init \a.g_mem_mem[1]                0         0      00000000
+  init \a.g_mem_mem[2]                0         0      00000000
+  init \a.g_mem_mem[3]              122        7a      01111010
+  init \a.n96_q                       3         3            11
+  init \a.n97_q                       3         3            11
+  init \a.n98_q                       3         3           011
+  init \armed                         1         1             1
+  init \b.g_mem_mem[0]              246        f6      11110110
+  init \b.g_mem_mem[1]              182        b6      10110110
+  init \b.g_mem_mem[2]              122        7a      01111010
+  init \b.g_mem_mem[3]              140        8c      10001100
+  init \b.n96_q                       2         2            10
+  init \b.n97_q                       0         0            00
+  init \b.n98_q                       3         3           011
+  ---- -------------------- ----------- --------- -------------
+     1 \a.g_mem_mem[0]                0         0      00000000
+     1 \a.g_mem_mem[1]                0         0      00000000
+     1 \a.g_mem_mem[2]                0         0      00000000
+     1 \a.g_mem_mem[3]              122        7a      01111010
+     1 \a.n96_q                       3         3            11
+     1 \a.n97_q                       3         3            11
+     1 \a.n98_q                       3         3           011
+     1 \armed                         1         1             1
+     1 \clk                           0         0             0
+     1 \ok                            1         1             1
+     1 \rd_ready                      0         0             0
+     1 \rst                           0         0             0
+     1 \wr_data                      48        30      00110000
+     1 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     2 \a.g_mem_mem[0]                0         0      00000000
+     2 \a.g_mem_mem[1]                0         0      00000000
+     2 \a.g_mem_mem[2]                0         0      00000000
+     2 \a.g_mem_mem[3]               48        30      00110000
+     2 \a.n96_q                       3         3            11
+     2 \a.n97_q                       0         0            00
+     2 \a.n98_q                       4         4           100
+     2 \armed                         1         1             1
+     2 \clk                           0         0             0
+     2 \ok                            0         0             0
+     2 \rd_ready                      0         0             0
+     2 \rst                           0         0             0
+     2 \wr_data                       0         0      00000000
+     2 \wr_valid                      0         0             0
+
+** Trying induction with length 2 **
+
+Setting up time step 3:
+Final constraint equation: { } = { }
+Imported 222 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \armed
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \armed
+Import show expression: \a.n96_q
+Import show expression: \a.n97_q
+Import show expression: \a.n98_q
+Import show expression: \a.g_mem_mem[3]
+Import show expression: \a.g_mem_mem[2]
+Import show expression: \a.g_mem_mem[1]
+Import show expression: \a.g_mem_mem[0]
+
+[base case 2] Solving problem with 6275 variables and 16559 clauses..
+Base case for induction length 2 proven.
+
+Setting up time step 3:
+Final constraint equation: { } = { }
+Imported 222 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \armed
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \armed
+Import show expression: \a.n96_q
+Import show expression: \a.n97_q
+Import show expression: \a.n98_q
+Import show expression: \a.g_mem_mem[3]
+Import show expression: \a.g_mem_mem[2]
+Import show expression: \a.g_mem_mem[1]
+Import show expression: \a.g_mem_mem[0]
+
+[induction step 2] Solving problem with 6490 variables and 17268 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                  Dec       Hex           Bin
+  ---- -------------------- ----------- --------- -------------
+  init \a.g_mem_mem[0]                0         0      00000000
+  init \a.g_mem_mem[1]                0         0      00000000
+  init \a.g_mem_mem[2]                0         0      00000000
+  init \a.g_mem_mem[3]              122        7a      01111010
+  init \a.n96_q                       3         3            11
+  init \a.n97_q                       3         3            11
+  init \a.n98_q                       7         7           111
+  init \armed                         1         1             1
+  init \b.g_mem_mem[0]              246        f6      11110110
+  init \b.g_mem_mem[1]              182        b6      10110110
+  init \b.g_mem_mem[2]              122        7a      01111010
+  init \b.g_mem_mem[3]              140        8c      10001100
+  init \b.n96_q                       2         2            10
+  init \b.n97_q                       0         0            00
+  init \b.n98_q                       7         7           111
+  ---- -------------------- ----------- --------- -------------
+     1 \a.g_mem_mem[0]                0         0      00000000
+     1 \a.g_mem_mem[1]                0         0      00000000
+     1 \a.g_mem_mem[2]                0         0      00000000
+     1 \a.g_mem_mem[3]              122        7a      01111010
+     1 \a.n96_q                       3         3            11
+     1 \a.n97_q                       3         3            11
+     1 \a.n98_q                       7         7           111
+     1 \armed                         1         1             1
+     1 \clk                           0         0             0
+     1 \ok                            1         1             1
+     1 \rd_ready                      0         0             0
+     1 \rst                           0         0             0
+     1 \wr_data                      48        30      00110000
+     1 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     2 \a.g_mem_mem[0]                0         0      00000000
+     2 \a.g_mem_mem[1]                0         0      00000000
+     2 \a.g_mem_mem[2]                0         0      00000000
+     2 \a.g_mem_mem[3]               48        30      00110000
+     2 \a.n96_q                       3         3            11
+     2 \a.n97_q                       0         0            00
+     2 \a.n98_q                       0         0           000
+     2 \armed                         1         1             1
+     2 \clk                           0         0             0
+     2 \ok                            1         1             1
+     2 \rd_ready                      0         0             0
+     2 \rst                           0         0             0
+     2 \wr_data                     182        b6      10110110
+     2 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     3 \a.g_mem_mem[0]              182        b6      10110110
+     3 \a.g_mem_mem[1]                0         0      00000000
+     3 \a.g_mem_mem[2]                0         0      00000000
+     3 \a.g_mem_mem[3]               48        30      00110000
+     3 \a.n96_q                       3         3            11
+     3 \a.n97_q                       1         1            01
+     3 \a.n98_q                       1         1           001
+     3 \armed                         1         1             1
+     3 \clk                           0         0             0
+     3 \ok                            0         0             0
+     3 \rd_ready                      0         0             0
+     3 \rst                           0         0             0
+     3 \wr_data                       0         0      00000000
+     3 \wr_valid                      1         1             1
+
+** Trying induction with length 3 **
+
+Setting up time step 4:
+Final constraint equation: { } = { }
+Imported 222 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \armed
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \armed
+Import show expression: \a.n96_q
+Import show expression: \a.n97_q
+Import show expression: \a.n98_q
+Import show expression: \a.g_mem_mem[3]
+Import show expression: \a.g_mem_mem[2]
+Import show expression: \a.g_mem_mem[1]
+Import show expression: \a.g_mem_mem[0]
+
+[base case 3] Solving problem with 8878 variables and 23766 clauses..
+Base case for induction length 3 proven.
+
+Setting up time step 4:
+Final constraint equation: { } = { }
+Imported 222 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \armed
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \armed
+Import show expression: \a.n96_q
+Import show expression: \a.n97_q
+Import show expression: \a.n98_q
+Import show expression: \a.g_mem_mem[3]
+Import show expression: \a.g_mem_mem[2]
+Import show expression: \a.g_mem_mem[1]
+Import show expression: \a.g_mem_mem[0]
+
+[induction step 3] Solving problem with 9331 variables and 25267 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                  Dec       Hex           Bin
+  ---- -------------------- ----------- --------- -------------
+  init \a.g_mem_mem[0]              127        7f      01111111
+  init \a.g_mem_mem[1]              247        f7      11110111
+  init \a.g_mem_mem[2]              255        ff      11111111
+  init \a.g_mem_mem[3]               74        4a      01001010
+  init \a.n96_q                       3         3            11
+  init \a.n97_q                       2         2            10
+  init \a.n98_q                       1         1           001
+  init \armed                         1         1             1
+  init \b.g_mem_mem[0]               74        4a      01001010
+  init \b.g_mem_mem[1]              239        ef      11101111
+  init \b.g_mem_mem[2]               74        4a      01001010
+  init \b.g_mem_mem[3]              115        73      01110011
+  init \b.n96_q                       2         2            10
+  init \b.n97_q                       3         3            11
+  init \b.n98_q                       2         2           010
+  ---- -------------------- ----------- --------- -------------
+     1 \a.g_mem_mem[0]              127        7f      01111111
+     1 \a.g_mem_mem[1]              247        f7      11110111
+     1 \a.g_mem_mem[2]              255        ff      11111111
+     1 \a.g_mem_mem[3]               74        4a      01001010
+     1 \a.n96_q                       3         3            11
+     1 \a.n97_q                       2         2            10
+     1 \a.n98_q                       1         1           001
+     1 \armed                         1         1             1
+     1 \clk                           0         0             0
+     1 \ok                            1         1             1
+     1 \rd_ready                      0         0             0
+     1 \rst                           0         0             0
+     1 \wr_data                     117        75      01110101
+     1 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     2 \a.g_mem_mem[0]              127        7f      01111111
+     2 \a.g_mem_mem[1]              247        f7      11110111
+     2 \a.g_mem_mem[2]              117        75      01110101
+     2 \a.g_mem_mem[3]               74        4a      01001010
+     2 \a.n96_q                       3         3            11
+     2 \a.n97_q                       3         3            11
+     2 \a.n98_q                       2         2           010
+     2 \armed                         1         1             1
+     2 \clk                           0         0             0
+     2 \ok                            1         1             1
+     2 \rd_ready                      0         0             0
+     2 \rst                           0         0             0
+     2 \wr_data                      74        4a      01001010
+     2 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     3 \a.g_mem_mem[0]              127        7f      01111111
+     3 \a.g_mem_mem[1]              247        f7      11110111
+     3 \a.g_mem_mem[2]              117        75      01110101
+     3 \a.g_mem_mem[3]               74        4a      01001010
+     3 \a.n96_q                       3         3            11
+     3 \a.n97_q                       0         0            00
+     3 \a.n98_q                       3         3           011
+     3 \armed                         1         1             1
+     3 \clk                           0         0             0
+     3 \ok                            1         1             1
+     3 \rd_ready                      1         1             1
+     3 \rst                           0         0             0
+     3 \wr_data                     117        75      01110101
+     3 \wr_valid                      0         0             0
+  ---- -------------------- ----------- --------- -------------
+     4 \a.g_mem_mem[0]              127        7f      01111111
+     4 \a.g_mem_mem[1]              247        f7      11110111
+     4 \a.g_mem_mem[2]              117        75      01110101
+     4 \a.g_mem_mem[3]               74        4a      01001010
+     4 \a.n96_q                       0         0            00
+     4 \a.n97_q                       0         0            00
+     4 \a.n98_q                       2         2           010
+     4 \armed                         1         1             1
+     4 \clk                           0         0             0
+     4 \ok                            0         0             0
+     4 \rd_ready                      1         1             1
+     4 \rst                           0         0             0
+     4 \wr_data                      16        10      00010000
+     4 \wr_valid                      1         1             1
+
+** Trying induction with length 4 **
+
+Setting up time step 5:
+Final constraint equation: { } = { }
+Imported 222 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \armed
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \armed
+Import show expression: \a.n96_q
+Import show expression: \a.n97_q
+Import show expression: \a.n98_q
+Import show expression: \a.g_mem_mem[3]
+Import show expression: \a.g_mem_mem[2]
+Import show expression: \a.g_mem_mem[1]
+Import show expression: \a.g_mem_mem[0]
+
+[base case 4] Solving problem with 11719 variables and 31765 clauses..
+Base case for induction length 4 proven.
+
+Setting up time step 5:
+Final constraint equation: { } = { }
+Imported 222 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \armed
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \armed
+Import show expression: \a.n96_q
+Import show expression: \a.n97_q
+Import show expression: \a.n98_q
+Import show expression: \a.g_mem_mem[3]
+Import show expression: \a.g_mem_mem[2]
+Import show expression: \a.g_mem_mem[1]
+Import show expression: \a.g_mem_mem[0]
+
+[induction step 4] Solving problem with 12410 variables and 34058 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                  Dec       Hex           Bin
+  ---- -------------------- ----------- --------- -------------
+  init \a.g_mem_mem[0]              117        75      01110101
+  init \a.g_mem_mem[1]              247        f7      11110111
+  init \a.g_mem_mem[2]              255        ff      11111111
+  init \a.g_mem_mem[3]               74        4a      01001010
+  init \a.n96_q                       3         3            11
+  init \a.n97_q                       2         2            10
+  init \a.n98_q                       1         1           001
+  init \armed                         1         1             1
+  init \b.g_mem_mem[0]               74        4a      01001010
+  init \b.g_mem_mem[1]              239        ef      11101111
+  init \b.g_mem_mem[2]               74        4a      01001010
+  init \b.g_mem_mem[3]              115        73      01110011
+  init \b.n96_q                       2         2            10
+  init \b.n97_q                       3         3            11
+  init \b.n98_q                       2         2           010
+  ---- -------------------- ----------- --------- -------------
+     1 \a.g_mem_mem[0]              117        75      01110101
+     1 \a.g_mem_mem[1]              247        f7      11110111
+     1 \a.g_mem_mem[2]              255        ff      11111111
+     1 \a.g_mem_mem[3]               74        4a      01001010
+     1 \a.n96_q                       3         3            11
+     1 \a.n97_q                       2         2            10
+     1 \a.n98_q                       1         1           001
+     1 \armed                         1         1             1
+     1 \clk                           0         0             0
+     1 \ok                            1         1             1
+     1 \rd_ready                      0         0             0
+     1 \rst                           0         0             0
+     1 \wr_data                     117        75      01110101
+     1 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     2 \a.g_mem_mem[0]              117        75      01110101
+     2 \a.g_mem_mem[1]              247        f7      11110111
+     2 \a.g_mem_mem[2]              117        75      01110101
+     2 \a.g_mem_mem[3]               74        4a      01001010
+     2 \a.n96_q                       3         3            11
+     2 \a.n97_q                       3         3            11
+     2 \a.n98_q                       2         2           010
+     2 \armed                         1         1             1
+     2 \clk                           0         0             0
+     2 \ok                            1         1             1
+     2 \rd_ready                      0         0             0
+     2 \rst                           0         0             0
+     2 \wr_data                      74        4a      01001010
+     2 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     3 \a.g_mem_mem[0]              117        75      01110101
+     3 \a.g_mem_mem[1]              247        f7      11110111
+     3 \a.g_mem_mem[2]              117        75      01110101
+     3 \a.g_mem_mem[3]               74        4a      01001010
+     3 \a.n96_q                       3         3            11
+     3 \a.n97_q                       0         0            00
+     3 \a.n98_q                       3         3           011
+     3 \armed                         1         1             1
+     3 \clk                           0         0             0
+     3 \ok                            1         1             1
+     3 \rd_ready                      1         1             1
+     3 \rst                           0         0             0
+     3 \wr_data                     117        75      01110101
+     3 \wr_valid                      0         0             0
+  ---- -------------------- ----------- --------- -------------
+     4 \a.g_mem_mem[0]              117        75      01110101
+     4 \a.g_mem_mem[1]              247        f7      11110111
+     4 \a.g_mem_mem[2]              117        75      01110101
+     4 \a.g_mem_mem[3]               74        4a      01001010
+     4 \a.n96_q                       0         0            00
+     4 \a.n97_q                       0         0            00
+     4 \a.n98_q                       2         2           010
+     4 \armed                         1         1             1
+     4 \clk                           0         0             0
+     4 \ok                            1         1             1
+     4 \rd_ready                      0         0             0
+     4 \rst                           0         0             0
+     4 \wr_data                     117        75      01110101
+     4 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     5 \a.g_mem_mem[0]              117        75      01110101
+     5 \a.g_mem_mem[1]              247        f7      11110111
+     5 \a.g_mem_mem[2]              117        75      01110101
+     5 \a.g_mem_mem[3]               74        4a      01001010
+     5 \a.n96_q                       0         0            00
+     5 \a.n97_q                       1         1            01
+     5 \a.n98_q                       3         3           011
+     5 \armed                         1         1             1
+     5 \clk                           0         0             0
+     5 \ok                            0         0             0
+     5 \rd_ready                      0         0             0
+     5 \rst                           0         0             0
+     5 \wr_data                       0         0      00000000
+     5 \wr_valid                      0         0             0
+
+** Trying induction with length 5 **
+
+Setting up time step 6:
+Final constraint equation: { } = { }
+Imported 222 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \armed
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \armed
+Import show expression: \a.n96_q
+Import show expression: \a.n97_q
+Import show expression: \a.n98_q
+Import show expression: \a.g_mem_mem[3]
+Import show expression: \a.g_mem_mem[2]
+Import show expression: \a.g_mem_mem[1]
+Import show expression: \a.g_mem_mem[0]
+
+[base case 5] Solving problem with 14798 variables and 40556 clauses..
+Base case for induction length 5 proven.
+
+Setting up time step 6:
+Final constraint equation: { } = { }
+Imported 222 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \armed
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \armed
+Import show expression: \a.n96_q
+Import show expression: \a.n97_q
+Import show expression: \a.n98_q
+Import show expression: \a.g_mem_mem[3]
+Import show expression: \a.g_mem_mem[2]
+Import show expression: \a.g_mem_mem[1]
+Import show expression: \a.g_mem_mem[0]
+
+[induction step 5] Solving problem with 15727 variables and 43641 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                  Dec       Hex           Bin
+  ---- -------------------- ----------- --------- -------------
+  init \a.g_mem_mem[0]              117        75      01110101
+  init \a.g_mem_mem[1]               74        4a      01001010
+  init \a.g_mem_mem[2]              168        a8      10101000
+  init \a.g_mem_mem[3]               74        4a      01001010
+  init \a.n96_q                       3         3            11
+  init \a.n97_q                       3         3            11
+  init \a.n98_q                       6         6           110
+  init \armed                         1         1             1
+  init \b.g_mem_mem[0]               74        4a      01001010
+  init \b.g_mem_mem[1]              239        ef      11101111
+  init \b.g_mem_mem[2]               74        4a      01001010
+  init \b.g_mem_mem[3]              136        88      10001000
+  init \b.n96_q                       2         2            10
+  init \b.n97_q                       0         0            00
+  init \b.n98_q                       3         3           011
+  ---- -------------------- ----------- --------- -------------
+     1 \a.g_mem_mem[0]              117        75      01110101
+     1 \a.g_mem_mem[1]               74        4a      01001010
+     1 \a.g_mem_mem[2]              168        a8      10101000
+     1 \a.g_mem_mem[3]               74        4a      01001010
+     1 \a.n96_q                       3         3            11
+     1 \a.n97_q                       3         3            11
+     1 \a.n98_q                       6         6           110
+     1 \armed                         1         1             1
+     1 \clk                           0         0             0
+     1 \ok                            1         1             1
+     1 \rd_ready                      0         0             0
+     1 \rst                           0         0             0
+     1 \wr_data                     136        88      10001000
+     1 \wr_valid                      0         0             0
+  ---- -------------------- ----------- --------- -------------
+     2 \a.g_mem_mem[0]              117        75      01110101
+     2 \a.g_mem_mem[1]               74        4a      01001010
+     2 \a.g_mem_mem[2]              168        a8      10101000
+     2 \a.g_mem_mem[3]               74        4a      01001010
+     2 \a.n96_q                       3         3            11
+     2 \a.n97_q                       3         3            11
+     2 \a.n98_q                       6         6           110
+     2 \armed                         1         1             1
+     2 \clk                           0         0             0
+     2 \ok                            1         1             1
+     2 \rd_ready                      0         0             0
+     2 \rst                           0         0             0
+     2 \wr_data                      74        4a      01001010
+     2 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     3 \a.g_mem_mem[0]              117        75      01110101
+     3 \a.g_mem_mem[1]               74        4a      01001010
+     3 \a.g_mem_mem[2]              168        a8      10101000
+     3 \a.g_mem_mem[3]               74        4a      01001010
+     3 \a.n96_q                       3         3            11
+     3 \a.n97_q                       0         0            00
+     3 \a.n98_q                       7         7           111
+     3 \armed                         1         1             1
+     3 \clk                           0         0             0
+     3 \ok                            1         1             1
+     3 \rd_ready                      1         1             1
+     3 \rst                           0         0             0
+     3 \wr_data                     136        88      10001000
+     3 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     4 \a.g_mem_mem[0]              136        88      10001000
+     4 \a.g_mem_mem[1]               74        4a      01001010
+     4 \a.g_mem_mem[2]              168        a8      10101000
+     4 \a.g_mem_mem[3]               74        4a      01001010
+     4 \a.n96_q                       0         0            00
+     4 \a.n97_q                       1         1            01
+     4 \a.n98_q                       7         7           111
+     4 \armed                         1         1             1
+     4 \clk                           0         0             0
+     4 \ok                            1         1             1
+     4 \rd_ready                      1         1             1
+     4 \rst                           0         0             0
+     4 \wr_data                     117        75      01110101
+     4 \wr_valid                      0         0             0
+  ---- -------------------- ----------- --------- -------------
+     5 \a.g_mem_mem[0]              136        88      10001000
+     5 \a.g_mem_mem[1]               74        4a      01001010
+     5 \a.g_mem_mem[2]              168        a8      10101000
+     5 \a.g_mem_mem[3]               74        4a      01001010
+     5 \a.n96_q                       1         1            01
+     5 \a.n97_q                       1         1            01
+     5 \a.n98_q                       6         6           110
+     5 \armed                         1         1             1
+     5 \clk                           0         0             0
+     5 \ok                            1         1             1
+     5 \rd_ready                      1         1             1
+     5 \rst                           0         0             0
+     5 \wr_data                       0         0      00000000
+     5 \wr_valid                      0         0             0
+  ---- -------------------- ----------- --------- -------------
+     6 \a.g_mem_mem[0]              136        88      10001000
+     6 \a.g_mem_mem[1]               74        4a      01001010
+     6 \a.g_mem_mem[2]              168        a8      10101000
+     6 \a.g_mem_mem[3]               74        4a      01001010
+     6 \a.n96_q                       2         2            10
+     6 \a.n97_q                       1         1            01
+     6 \a.n98_q                       5         5           101
+     6 \armed                         1         1             1
+     6 \clk                           0         0             0
+     6 \ok                            0         0             0
+     6 \rd_ready                      0         0             0
+     6 \rst                           0         0             0
+     6 \wr_data                       0         0      00000000
+     6 \wr_valid                      1         1             1
+
+** Trying induction with length 6 **
+
+Setting up time step 7:
+Final constraint equation: { } = { }
+Imported 222 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \armed
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \armed
+Import show expression: \a.n96_q
+Import show expression: \a.n97_q
+Import show expression: \a.n98_q
+Import show expression: \a.g_mem_mem[3]
+Import show expression: \a.g_mem_mem[2]
+Import show expression: \a.g_mem_mem[1]
+Import show expression: \a.g_mem_mem[0]
+
+[base case 6] Solving problem with 18115 variables and 50139 clauses..
+Base case for induction length 6 proven.
+
+Setting up time step 7:
+Final constraint equation: { } = { }
+Imported 222 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \armed
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \armed
+Import show expression: \a.n96_q
+Import show expression: \a.n97_q
+Import show expression: \a.n98_q
+Import show expression: \a.g_mem_mem[3]
+Import show expression: \a.g_mem_mem[2]
+Import show expression: \a.g_mem_mem[1]
+Import show expression: \a.g_mem_mem[0]
+
+[induction step 6] Solving problem with 19282 variables and 54016 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                  Dec       Hex           Bin
+  ---- -------------------- ----------- --------- -------------
+  init \a.g_mem_mem[0]              117        75      01110101
+  init \a.g_mem_mem[1]               74        4a      01001010
+  init \a.g_mem_mem[2]              168        a8      10101000
+  init \a.g_mem_mem[3]               74        4a      01001010
+  init \a.n96_q                       3         3            11
+  init \a.n97_q                       3         3            11
+  init \a.n98_q                       0         0           000
+  init \armed                         1         1             1
+  init \b.g_mem_mem[0]               74        4a      01001010
+  init \b.g_mem_mem[1]              239        ef      11101111
+  init \b.g_mem_mem[2]               74        4a      01001010
+  init \b.g_mem_mem[3]              136        88      10001000
+  init \b.n96_q                       2         2            10
+  init \b.n97_q                       0         0            00
+  init \b.n98_q                       0         0           000
+  ---- -------------------- ----------- --------- -------------
+     1 \a.g_mem_mem[0]              117        75      01110101
+     1 \a.g_mem_mem[1]               74        4a      01001010
+     1 \a.g_mem_mem[2]              168        a8      10101000
+     1 \a.g_mem_mem[3]               74        4a      01001010
+     1 \a.n96_q                       3         3            11
+     1 \a.n97_q                       3         3            11
+     1 \a.n98_q                       0         0           000
+     1 \armed                         1         1             1
+     1 \clk                           0         0             0
+     1 \ok                            1         1             1
+     1 \rd_ready                      0         0             0
+     1 \rst                           0         0             0
+     1 \wr_data                     136        88      10001000
+     1 \wr_valid                      0         0             0
+  ---- -------------------- ----------- --------- -------------
+     2 \a.g_mem_mem[0]              117        75      01110101
+     2 \a.g_mem_mem[1]               74        4a      01001010
+     2 \a.g_mem_mem[2]              168        a8      10101000
+     2 \a.g_mem_mem[3]               74        4a      01001010
+     2 \a.n96_q                       3         3            11
+     2 \a.n97_q                       3         3            11
+     2 \a.n98_q                       0         0           000
+     2 \armed                         1         1             1
+     2 \clk                           0         0             0
+     2 \ok                            1         1             1
+     2 \rd_ready                      0         0             0
+     2 \rst                           0         0             0
+     2 \wr_data                      74        4a      01001010
+     2 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     3 \a.g_mem_mem[0]              117        75      01110101
+     3 \a.g_mem_mem[1]               74        4a      01001010
+     3 \a.g_mem_mem[2]              168        a8      10101000
+     3 \a.g_mem_mem[3]               74        4a      01001010
+     3 \a.n96_q                       3         3            11
+     3 \a.n97_q                       0         0            00
+     3 \a.n98_q                       1         1           001
+     3 \armed                         1         1             1
+     3 \clk                           0         0             0
+     3 \ok                            1         1             1
+     3 \rd_ready                      1         1             1
+     3 \rst                           0         0             0
+     3 \wr_data                     136        88      10001000
+     3 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     4 \a.g_mem_mem[0]              136        88      10001000
+     4 \a.g_mem_mem[1]               74        4a      01001010
+     4 \a.g_mem_mem[2]              168        a8      10101000
+     4 \a.g_mem_mem[3]               74        4a      01001010
+     4 \a.n96_q                       0         0            00
+     4 \a.n97_q                       1         1            01
+     4 \a.n98_q                       1         1           001
+     4 \armed                         1         1             1
+     4 \clk                           0         0             0
+     4 \ok                            1         1             1
+     4 \rd_ready                      1         1             1
+     4 \rst                           0         0             0
+     4 \wr_data                      74        4a      01001010
+     4 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     5 \a.g_mem_mem[0]              136        88      10001000
+     5 \a.g_mem_mem[1]               74        4a      01001010
+     5 \a.g_mem_mem[2]              168        a8      10101000
+     5 \a.g_mem_mem[3]               74        4a      01001010
+     5 \a.n96_q                       1         1            01
+     5 \a.n97_q                       2         2            10
+     5 \a.n98_q                       1         1           001
+     5 \armed                         1         1             1
+     5 \clk                           0         0             0
+     5 \ok                            1         1             1
+     5 \rd_ready                      1         1             1
+     5 \rst                           0         0             0
+     5 \wr_data                       0         0      00000000
+     5 \wr_valid                      0         0             0
+  ---- -------------------- ----------- --------- -------------
+     6 \a.g_mem_mem[0]              136        88      10001000
+     6 \a.g_mem_mem[1]               74        4a      01001010
+     6 \a.g_mem_mem[2]              168        a8      10101000
+     6 \a.g_mem_mem[3]               74        4a      01001010
+     6 \a.n96_q                       2         2            10
+     6 \a.n97_q                       2         2            10
+     6 \a.n98_q                       0         0           000
+     6 \armed                         1         1             1
+     6 \clk                           0         0             0
+     6 \ok                            1         1             1
+     6 \rd_ready                      0         0             0
+     6 \rst                           0         0             0
+     6 \wr_data                       8         8      00001000
+     6 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     7 \a.g_mem_mem[0]              136        88      10001000
+     7 \a.g_mem_mem[1]               74        4a      01001010
+     7 \a.g_mem_mem[2]                8         8      00001000
+     7 \a.g_mem_mem[3]               74        4a      01001010
+     7 \a.n96_q                       2         2            10
+     7 \a.n97_q                       3         3            11
+     7 \a.n98_q                       1         1           001
+     7 \armed                         1         1             1
+     7 \clk                           0         0             0
+     7 \ok                            0         0             0
+     7 \rd_ready                      0         0             0
+     7 \rst                           0         0             0
+     7 \wr_data                       0         0      00000000
+     7 \wr_valid                      1         1             1
+
+** Trying induction with length 7 **
+
+Setting up time step 8:
+Final constraint equation: { } = { }
+Imported 222 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \armed
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \armed
+Import show expression: \a.n96_q
+Import show expression: \a.n97_q
+Import show expression: \a.n98_q
+Import show expression: \a.g_mem_mem[3]
+Import show expression: \a.g_mem_mem[2]
+Import show expression: \a.g_mem_mem[1]
+Import show expression: \a.g_mem_mem[0]
+
+[base case 7] Solving problem with 21670 variables and 60514 clauses..
+Base case for induction length 7 proven.
+
+Setting up time step 8:
+Final constraint equation: { } = { }
+Imported 222 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \armed
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \armed
+Import show expression: \a.n96_q
+Import show expression: \a.n97_q
+Import show expression: \a.n98_q
+Import show expression: \a.g_mem_mem[3]
+Import show expression: \a.g_mem_mem[2]
+Import show expression: \a.g_mem_mem[1]
+Import show expression: \a.g_mem_mem[0]
+
+[induction step 7] Solving problem with 23075 variables and 65183 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                  Dec       Hex           Bin
+  ---- -------------------- ----------- --------- -------------
+  init \a.g_mem_mem[0]              117        75      01110101
+  init \a.g_mem_mem[1]               74        4a      01001010
+  init \a.g_mem_mem[2]              168        a8      10101000
+  init \a.g_mem_mem[3]               74        4a      01001010
+  init \a.n96_q                       3         3            11
+  init \a.n97_q                       3         3            11
+  init \a.n98_q                       0         0           000
+  init \armed                         1         1             1
+  init \b.g_mem_mem[0]               74        4a      01001010
+  init \b.g_mem_mem[1]              239        ef      11101111
+  init \b.g_mem_mem[2]               74        4a      01001010
+  init \b.g_mem_mem[3]              136        88      10001000
+  init \b.n96_q                       2         2            10
+  init \b.n97_q                       0         0            00
+  init \b.n98_q                       0         0           000
+  ---- -------------------- ----------- --------- -------------
+     1 \a.g_mem_mem[0]              117        75      01110101
+     1 \a.g_mem_mem[1]               74        4a      01001010
+     1 \a.g_mem_mem[2]              168        a8      10101000
+     1 \a.g_mem_mem[3]               74        4a      01001010
+     1 \a.n96_q                       3         3            11
+     1 \a.n97_q                       3         3            11
+     1 \a.n98_q                       0         0           000
+     1 \armed                         1         1             1
+     1 \clk                           0         0             0
+     1 \ok                            1         1             1
+     1 \rd_ready                      0         0             0
+     1 \rst                           0         0             0
+     1 \wr_data                     136        88      10001000
+     1 \wr_valid                      0         0             0
+  ---- -------------------- ----------- --------- -------------
+     2 \a.g_mem_mem[0]              117        75      01110101
+     2 \a.g_mem_mem[1]               74        4a      01001010
+     2 \a.g_mem_mem[2]              168        a8      10101000
+     2 \a.g_mem_mem[3]               74        4a      01001010
+     2 \a.n96_q                       3         3            11
+     2 \a.n97_q                       3         3            11
+     2 \a.n98_q                       0         0           000
+     2 \armed                         1         1             1
+     2 \clk                           0         0             0
+     2 \ok                            1         1             1
+     2 \rd_ready                      0         0             0
+     2 \rst                           0         0             0
+     2 \wr_data                      74        4a      01001010
+     2 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     3 \a.g_mem_mem[0]              117        75      01110101
+     3 \a.g_mem_mem[1]               74        4a      01001010
+     3 \a.g_mem_mem[2]              168        a8      10101000
+     3 \a.g_mem_mem[3]               74        4a      01001010
+     3 \a.n96_q                       3         3            11
+     3 \a.n97_q                       0         0            00
+     3 \a.n98_q                       1         1           001
+     3 \armed                         1         1             1
+     3 \clk                           0         0             0
+     3 \ok                            1         1             1
+     3 \rd_ready                      1         1             1
+     3 \rst                           0         0             0
+     3 \wr_data                     136        88      10001000
+     3 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     4 \a.g_mem_mem[0]              136        88      10001000
+     4 \a.g_mem_mem[1]               74        4a      01001010
+     4 \a.g_mem_mem[2]              168        a8      10101000
+     4 \a.g_mem_mem[3]               74        4a      01001010
+     4 \a.n96_q                       0         0            00
+     4 \a.n97_q                       1         1            01
+     4 \a.n98_q                       1         1           001
+     4 \armed                         1         1             1
+     4 \clk                           0         0             0
+     4 \ok                            1         1             1
+     4 \rd_ready                      1         1             1
+     4 \rst                           0         0             0
+     4 \wr_data                      74        4a      01001010
+     4 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     5 \a.g_mem_mem[0]              136        88      10001000
+     5 \a.g_mem_mem[1]               74        4a      01001010
+     5 \a.g_mem_mem[2]              168        a8      10101000
+     5 \a.g_mem_mem[3]               74        4a      01001010
+     5 \a.n96_q                       1         1            01
+     5 \a.n97_q                       2         2            10
+     5 \a.n98_q                       1         1           001
+     5 \armed                         1         1             1
+     5 \clk                           0         0             0
+     5 \ok                            1         1             1
+     5 \rd_ready                      1         1             1
+     5 \rst                           0         0             0
+     5 \wr_data                       0         0      00000000
+     5 \wr_valid                      0         0             0
+  ---- -------------------- ----------- --------- -------------
+     6 \a.g_mem_mem[0]              136        88      10001000
+     6 \a.g_mem_mem[1]               74        4a      01001010
+     6 \a.g_mem_mem[2]              168        a8      10101000
+     6 \a.g_mem_mem[3]               74        4a      01001010
+     6 \a.n96_q                       2         2            10
+     6 \a.n97_q                       2         2            10
+     6 \a.n98_q                       0         0           000
+     6 \armed                         1         1             1
+     6 \clk                           0         0             0
+     6 \ok                            1         1             1
+     6 \rd_ready                      0         0             0
+     6 \rst                           0         0             0
+     6 \wr_data                     136        88      10001000
+     6 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     7 \a.g_mem_mem[0]              136        88      10001000
+     7 \a.g_mem_mem[1]               74        4a      01001010
+     7 \a.g_mem_mem[2]              136        88      10001000
+     7 \a.g_mem_mem[3]               74        4a      01001010
+     7 \a.n96_q                       2         2            10
+     7 \a.n97_q                       3         3            11
+     7 \a.n98_q                       1         1           001
+     7 \armed                         1         1             1
+     7 \clk                           0         0             0
+     7 \ok                            1         1             1
+     7 \rd_ready                      1         1             1
+     7 \rst                           0         0             0
+     7 \wr_data                      72        48      01001000
+     7 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     8 \a.g_mem_mem[0]              136        88      10001000
+     8 \a.g_mem_mem[1]               74        4a      01001010
+     8 \a.g_mem_mem[2]              136        88      10001000
+     8 \a.g_mem_mem[3]               72        48      01001000
+     8 \a.n96_q                       3         3            11
+     8 \a.n97_q                       0         0            00
+     8 \a.n98_q                       1         1           001
+     8 \armed                         1         1             1
+     8 \clk                           0         0             0
+     8 \ok                            0         0             0
+     8 \rd_ready                      0         0             0
+     8 \rst                           0         0             0
+     8 \wr_data                       0         0      00000000
+     8 \wr_valid                      0         0             0
+
+** Trying induction with length 8 **
+
+Setting up time step 9:
+Final constraint equation: { } = { }
+Imported 222 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \armed
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \armed
+Import show expression: \a.n96_q
+Import show expression: \a.n97_q
+Import show expression: \a.n98_q
+Import show expression: \a.g_mem_mem[3]
+Import show expression: \a.g_mem_mem[2]
+Import show expression: \a.g_mem_mem[1]
+Import show expression: \a.g_mem_mem[0]
+
+[base case 8] Solving problem with 25463 variables and 71681 clauses..
+Base case for induction length 8 proven.
+
+Setting up time step 9:
+Final constraint equation: { } = { }
+Imported 222 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \armed
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \armed
+Import show expression: \a.n96_q
+Import show expression: \a.n97_q
+Import show expression: \a.n98_q
+Import show expression: \a.g_mem_mem[3]
+Import show expression: \a.g_mem_mem[2]
+Import show expression: \a.g_mem_mem[1]
+Import show expression: \a.g_mem_mem[0]
+
+[induction step 8] Solving problem with 27106 variables and 77142 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                  Dec       Hex           Bin
+  ---- -------------------- ----------- --------- -------------
+  init \a.g_mem_mem[0]              117        75      01110101
+  init \a.g_mem_mem[1]               74        4a      01001010
+  init \a.g_mem_mem[2]              168        a8      10101000
+  init \a.g_mem_mem[3]               72        48      01001000
+  init \a.n96_q                       3         3            11
+  init \a.n97_q                       3         3            11
+  init \a.n98_q                       0         0           000
+  init \armed                         1         1             1
+  init \b.g_mem_mem[0]               72        48      01001000
+  init \b.g_mem_mem[1]              239        ef      11101111
+  init \b.g_mem_mem[2]               72        48      01001000
+  init \b.g_mem_mem[3]              136        88      10001000
+  init \b.n96_q                       2         2            10
+  init \b.n97_q                       0         0            00
+  init \b.n98_q                       0         0           000
+  ---- -------------------- ----------- --------- -------------
+     1 \a.g_mem_mem[0]              117        75      01110101
+     1 \a.g_mem_mem[1]               74        4a      01001010
+     1 \a.g_mem_mem[2]              168        a8      10101000
+     1 \a.g_mem_mem[3]               72        48      01001000
+     1 \a.n96_q                       3         3            11
+     1 \a.n97_q                       3         3            11
+     1 \a.n98_q                       0         0           000
+     1 \armed                         1         1             1
+     1 \clk                           0         0             0
+     1 \ok                            1         1             1
+     1 \rd_ready                      0         0             0
+     1 \rst                           0         0             0
+     1 \wr_data                     136        88      10001000
+     1 \wr_valid                      0         0             0
+  ---- -------------------- ----------- --------- -------------
+     2 \a.g_mem_mem[0]              117        75      01110101
+     2 \a.g_mem_mem[1]               74        4a      01001010
+     2 \a.g_mem_mem[2]              168        a8      10101000
+     2 \a.g_mem_mem[3]               72        48      01001000
+     2 \a.n96_q                       3         3            11
+     2 \a.n97_q                       3         3            11
+     2 \a.n98_q                       0         0           000
+     2 \armed                         1         1             1
+     2 \clk                           0         0             0
+     2 \ok                            1         1             1
+     2 \rd_ready                      0         0             0
+     2 \rst                           0         0             0
+     2 \wr_data                      72        48      01001000
+     2 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     3 \a.g_mem_mem[0]              117        75      01110101
+     3 \a.g_mem_mem[1]               74        4a      01001010
+     3 \a.g_mem_mem[2]              168        a8      10101000
+     3 \a.g_mem_mem[3]               72        48      01001000
+     3 \a.n96_q                       3         3            11
+     3 \a.n97_q                       0         0            00
+     3 \a.n98_q                       1         1           001
+     3 \armed                         1         1             1
+     3 \clk                           0         0             0
+     3 \ok                            1         1             1
+     3 \rd_ready                      1         1             1
+     3 \rst                           0         0             0
+     3 \wr_data                     136        88      10001000
+     3 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     4 \a.g_mem_mem[0]              136        88      10001000
+     4 \a.g_mem_mem[1]               74        4a      01001010
+     4 \a.g_mem_mem[2]              168        a8      10101000
+     4 \a.g_mem_mem[3]               72        48      01001000
+     4 \a.n96_q                       0         0            00
+     4 \a.n97_q                       1         1            01
+     4 \a.n98_q                       1         1           001
+     4 \armed                         1         1             1
+     4 \clk                           0         0             0
+     4 \ok                            1         1             1
+     4 \rd_ready                      1         1             1
+     4 \rst                           0         0             0
+     4 \wr_data                      72        48      01001000
+     4 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     5 \a.g_mem_mem[0]              136        88      10001000
+     5 \a.g_mem_mem[1]               72        48      01001000
+     5 \a.g_mem_mem[2]              168        a8      10101000
+     5 \a.g_mem_mem[3]               72        48      01001000
+     5 \a.n96_q                       1         1            01
+     5 \a.n97_q                       2         2            10
+     5 \a.n98_q                       1         1           001
+     5 \armed                         1         1             1
+     5 \clk                           0         0             0
+     5 \ok                            1         1             1
+     5 \rd_ready                      1         1             1
+     5 \rst                           0         0             0
+     5 \wr_data                       0         0      00000000
+     5 \wr_valid                      0         0             0
+  ---- -------------------- ----------- --------- -------------
+     6 \a.g_mem_mem[0]              136        88      10001000
+     6 \a.g_mem_mem[1]               72        48      01001000
+     6 \a.g_mem_mem[2]              168        a8      10101000
+     6 \a.g_mem_mem[3]               72        48      01001000
+     6 \a.n96_q                       2         2            10
+     6 \a.n97_q                       2         2            10
+     6 \a.n98_q                       0         0           000
+     6 \armed                         1         1             1
+     6 \clk                           0         0             0
+     6 \ok                            1         1             1
+     6 \rd_ready                      0         0             0
+     6 \rst                           0         0             0
+     6 \wr_data                     136        88      10001000
+     6 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     7 \a.g_mem_mem[0]              136        88      10001000
+     7 \a.g_mem_mem[1]               72        48      01001000
+     7 \a.g_mem_mem[2]              136        88      10001000
+     7 \a.g_mem_mem[3]               72        48      01001000
+     7 \a.n96_q                       2         2            10
+     7 \a.n97_q                       3         3            11
+     7 \a.n98_q                       1         1           001
+     7 \armed                         1         1             1
+     7 \clk                           0         0             0
+     7 \ok                            1         1             1
+     7 \rd_ready                      1         1             1
+     7 \rst                           0         0             0
+     7 \wr_data                      72        48      01001000
+     7 \wr_valid                      1         1             1
+  ---- -------------------- ----------- --------- -------------
+     8 \a.g_mem_mem[0]              136        88      10001000
+     8 \a.g_mem_mem[1]               72        48      01001000
+     8 \a.g_mem_mem[2]              136        88      10001000
+     8 \a.g_mem_mem[3]               72        48      01001000
+     8 \aERROR: Called with -verify and proof did fail!

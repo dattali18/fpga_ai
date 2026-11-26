@@ -1,0 +1,167 @@
+
+-- Running command `read_json ../v1/reference_exposed.json; rename edu_fifo gold; read_json ../v2/reference_exposed.json; rename edu_fifo gate; read_verilog harness.v; hierarchy -check -top compare_fifo; flatten; opt_clean; check -assert; select -module compare_fifo; sat -seq 14 -prove ok 1 -show-inputs -show-outputs -show-regs -timeout 15 -verify -dump_vcd bounded_counterexample.vcd' --
+
+1. Executing JSON frontend.
+Importing module edu_fifo from JSON tree.
+Renaming module \edu_fifo to \gold.
+
+2. Executing JSON frontend.
+Importing module edu_fifo from JSON tree.
+Renaming module \edu_fifo to \gate.
+
+3. Executing Verilog-2005 frontend: harness.v
+Parsing Verilog input from `harness.v' to AST representation.
+Generating RTLIL representation for module `\compare_fifo'.
+Successfully finished Verilog frontend.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1. Analyzing design hierarchy..
+Top module:  \compare_fifo
+Used module:     \gate
+Used module:     \gold
+
+4.2. Analyzing design hierarchy..
+Top module:  \compare_fifo
+Used module:     \gate
+Used module:     \gold
+Removed 0 unused modules.
+
+5. Executing FLATTEN pass (flatten design).
+Deleting now unused module gate.
+Deleting now unused module gold.
+<suppressed ~2 debug messages>
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Warning: Ignoring module compare_fifo because it contains processes (run 'proc' command first).
+
+7. Executing CHECK pass (checking for obvious problems).
+Checking module compare_fifo...
+Found and reported 0 problems.
+
+8. Executing SAT pass (solving SAT problems in the circuit).
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Imported 275 cells to SAT database.
+Import set-constraint from init attribute: \a.proof_rd_ptr = 2'00
+Import set-constraint from init attribute: \a.proof_wr_ptr = 2'00
+Import set-constraint from init attribute: \a.proof_count = 2'00
+Import set-constraint from init attribute: \b.proof_rd_ptr = 2'00
+Import set-constraint from init attribute: \b.proof_wr_ptr = 2'00
+Import set-constraint from init attribute: \b.proof_count = 2'00
+Final init constraint equation: { \b.proof_count \b.proof_wr_ptr \b.proof_rd_ptr \a.proof_count \a.proof_wr_ptr \a.proof_rd_ptr } = 12'000000000000
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Imported 275 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 3:
+Final constraint equation: { } = { }
+Imported 275 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 4:
+Final constraint equation: { } = { }
+Imported 275 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 5:
+Final constraint equation: { } = { }
+Imported 275 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 6:
+Final constraint equation: { } = { }
+Imported 275 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 7:
+Final constraint equation: { } = { }
+Imported 275 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 8:
+Final constraint equation: { } = { }
+Imported 275 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 9:
+Final constraint equation: { } = { }
+Imported 275 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 10:
+Final constraint equation: { } = { }
+Imported 275 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 11:
+Final constraint equation: { } = { }
+Imported 275 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 12:
+Final constraint equation: { } = { }
+Imported 275 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 13:
+Final constraint equation: { } = { }
+Imported 275 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+Setting up time step 14:
+Final constraint equation: { } = { }
+Imported 275 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \observable_ok
+Import show expression: \ok
+Import show expression: \b.proof_rd_ptr
+Import show expression: \b.proof_wr_ptr
+Import show expression: \b.proof_count
+Import show expression: \b.g_mem_mem[3]
+Import show expression: \b.proof_word_2
+Import show expression: \b.proof_word_1
+Import show expression: \b.proof_word_0
+Import show expression: \a.proof_word_0
+Import show expression: \a.proof_word_1
+Import show expression: \a.proof_word_2
+Import show expression: \a.proof_rd_ptr
+Import show expression: \a.proof_wr_ptr
+Import show expression: \a.proof_count
+
+Solving problem with 38585 variables and 101218 clauses..
+SAT proof finished - no model found: SUCCESS!
+
+                  /$$$$$$      /$$$$$$$$     /$$$$$$$    
+                 /$$__  $$    | $$_____/    | $$__  $$   
+                | $$  \ $$    | $$          | $$  \ $$   
+                | $$  | $$    | $$$$$       | $$  | $$   
+                | $$  | $$    | $$__/       | $$  | $$   
+                | $$/$$ $$    | $$          | $$  | $$   
+                |  $$$$$$/ /$$| $$$$$$$$ /$$| $$$$$$$//$$
+                 \____ $$$|__/|________/|__/|_______/|__/
+                       \__/                              
+

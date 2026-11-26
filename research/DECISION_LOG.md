@@ -136,3 +136,55 @@ Owner: planner. Archive CSVs, commands, configuration list, logs summary and pro
 
 ### D-040 - Prioritize mapped functional equivalence
 Owner: planner; user approved sequence. Preserve V1/V2 and evaluate mapped behavior before considering BRAM-oriented V3. Neither structural checks nor resource mapping establish equivalence.
+
+## Generic formal verification (2026-11-26)
+
+### D-041 - Solver selection
+Owner: planner; user approved direction. Use installed Yosys internal SAT; no new dependencies. External SMT solvers unavailable in probe. EQ4 deferred.
+
+### D-042 - Observable equivalence
+Owner: planner; delegated. Compare ready and valid exactly and valid read data only. Compare GHDL-generated Verilog before generic optimization (normalized for SAT) against generic synthesis and compare V1/V2. This does not independently prove VHDL translation correctness.
+
+### D-043 - Invalid data masking
+Owner: planner; delegated. Ignore read data only when both outputs are invalid; do not ignore valid mismatches. Binary-valued input model, no restrictions on subsequent request sequences. No unknown-cell skipping.
+
+### D-044 - Reset semantics
+Owner: planner; delegated. Harness forces reset during first modeled cycle via initialized armed flag; all subsequent resets arbitrary. Compare after first reset edge. No forced zero initialization of data storage.
+
+### D-045 - Proof classification
+Owner: planner; delegated. Run bounded SAT and independent combined base/induction proof. PROVEN requires explicit induction success; BOUNDED means bounded pass but no complete proof; FAILED requires reachable bounded counterexample; other failures INCONCLUSIVE. Keep logs and counterexamples; induction-step counterexamples alone are not reachable defects.
+
+### D-046 - Progressive proof sweep
+Owner: planner; delegated. Pilot widths/depths (1,1), (2,2), (2,3), (2,4), (8,3), (8,4). Bounded horizon 2D+8 cycles including reset; induction max 8 steps; SAT instance timeout 15 seconds, wall timeout 90 seconds per invocation. Larger configurations and XC7 mapping deferred. No RTL or oracle changes. Status: planned.
+
+## Invariant-strengthened formal verification (2026-11-26)
+
+### D-047 - Preserve initial proof evidence
+Owner: planner; user approved direction. Initial experiment: 3 complete proofs, 15 bounded, no reachable counterexamples. Induction reached maximum depth for the 15 cases; no timeout observed. Preserve original runner and logs.
+
+### D-048 - Strengthen induction property
+Owner: planner; delegated. Expose existing netlist state as verification-only ports; prove pointer bounds, equal occupancy and pointers, circular pointer/occupancy relation, and equality of occupied words. Unoccupied words are unconstrained. Prove conjunction from reset and by induction, never assume these invariants externally. Preserve observable property. This is a sufficient state relation for these architectures, not a general FIFO equivalence method.
+
+### D-049 - Controlled proof pilot
+Owner: planner; delegated. Repeat six configurations and three comparisons with original horizons and time limits. Audit state aliases against prior generated Verilog and JSON; fail closed on missing or unexpected widths. No source RTL changes. Classify incomplete induction as bounded only if observable bounded proof previously established or current strengthened bounded proof passes; strengthened-property failure is not automatically an observable defect. XC7 equivalence deferred.
+
+## Formal verification harness audit (2026-11-26)
+
+### D-050 - Correct verification harness elaboration (EQ-DEFECT-001)
+Owner: planner/reviewer; delegated. Both initial and invariant-strengthened proof logs contain the warning that compare_fifo contains unlowered processes. The SAT logs do not show the expected armed initialization constraint. The earlier 3/18 and 18/18 proof completion results are provisional and cannot establish reset-aware equivalence until rerun. Preserve historical evidence; supersede its acceptance claims rather than erase it.
+
+Correction: lower the comparison harness with proc before flattening and SAT. For every problem, prove armed=0 initially and armed=1 after the first transition; require an intentionally false armed=0 property across two cycles to produce a counterexample. Fail closed if any harness control fails. Retain original configurations, time horizons, solver limits, RTL and oracle. No changes to functional requirements. Corrected proof results pending.
+
+### D-051 - Correct Yosys SAT result parsing (EQ-DEFECT-002)
+Owner: planner/reviewer; delegated. Audit of both corrected runs found 36/36 initial activation proofs and 36/36 next-state activation proofs succeeded. All 36 deliberately false properties emitted the Yosys 0.33 -verify failure diagnostic and produced counterexample traces. The runner expected a different diagnostic, so all actual equivalence checks were NOT_RUN. Preserve the historical runs as infrastructure evidence.
+
+Correction: recognize the actual -verify failure diagnostic as well as the previous format, require exit status 1 and a counterexample VCD for negative controls and bounded failures. Retain strict positive-proof checks, proc lowering, solver limits and all original RTL and oracle files. No equivalence acceptance until corrected runs are audited.
+
+### D-052 - Accept corrected formal equivalence pilot
+Owner: planner/reviewer; delegated, user approved milestone closure. Accept only corrected runs equiv.VFD9H4vr and equiv_invariants.Uu1w69q7. All 36 bounded checks passed; strengthened 18/18 proofs completed with one-step induction. No general parameter or XC7 proof claim. Findings F-FIFO-026 through F-FIFO-031.
+
+### D-053 - Preserve invalidated and parser-blocked experiments
+Owner: planner; delegated. Retain historical evidence separately with explicit invalidation labels; do not overwrite or count earlier results as proofs. Record original hashes and exclude compiled objects from tracked evidence.
+
+### D-054 - Scale only after pilot closure
+Owner: planner; delegated. Next investigate broader fixed-parameter proofs using corrected harness and controls; keep XC7 mapped equivalence separate. A timeout remains inconclusive. No RTL changes authorized by this archival step.

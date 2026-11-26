@@ -1,0 +1,729 @@
+
+-- Running command `read_verilog raw.v; hierarchy -check -top edu_fifo; synth -top edu_fifo; opt; check -assert; write_json optimized.json' --
+
+1. Executing Verilog-2005 frontend: raw.v
+Parsing Verilog input from `raw.v' to AST representation.
+Generating RTLIL representation for module `\edu_fifo'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \edu_fifo
+
+2.2. Analyzing design hierarchy..
+Top module:  \edu_fifo
+Removed 0 unused modules.
+
+3. Executing SYNTH pass.
+
+3.1. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1.1. Analyzing design hierarchy..
+Top module:  \edu_fifo
+
+3.1.2. Analyzing design hierarchy..
+Top module:  \edu_fifo
+Removed 0 unused modules.
+
+3.2. Executing PROC pass (convert processes to netlists).
+
+3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$raw.v:176$40 in module edu_fifo.
+Removed a total of 0 dead cases.
+
+3.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 15 assignments to connections.
+
+3.2.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\edu_fifo.$proc$raw.v:0$52'.
+  Set init value: \n98_q = 3'000
+Found init rule in `\edu_fifo.$proc$raw.v:0$51'.
+  Set init value: \n97_q = 2'00
+Found init rule in `\edu_fifo.$proc$raw.v:0$50'.
+  Set init value: \n96_q = 2'00
+Found init rule in `\edu_fifo.$proc$raw.v:0$49'.
+  Set init value: \g_mem_wr_ptr = 2'00
+Found init rule in `\edu_fifo.$proc$raw.v:0$48'.
+  Set init value: \g_mem_rd_ptr = 2'00
+Found init rule in `\edu_fifo.$proc$raw.v:0$47'.
+  Set init value: \count = 3'000
+
+3.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~1 debug messages>
+
+3.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\edu_fifo.$proc$raw.v:0$52'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:0$51'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:0$50'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:0$49'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:0$48'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:0$47'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:176$40'.
+     1/3: $1$memwr$\g_mem_mem$raw.v:178$1_EN[7:0]$46
+     2/3: $1$memwr$\g_mem_mem$raw.v:178$1_DATA[7:0]$45
+     3/3: $1$memwr$\g_mem_mem$raw.v:178$1_ADDR[1:0]$44
+Creating decoders for process `\edu_fifo.$proc$raw.v:169$38'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:164$37'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:159$36'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:134$25'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:129$24'.
+Creating decoders for process `\edu_fifo.$proc$raw.v:62$2'.
+
+3.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\edu_fifo.\g_mem_wr_ptr' from process `\edu_fifo.$proc$raw.v:134$25'.
+Removing init bit 1'0 for non-memory siginal `\edu_fifo.\g_mem_wr_ptr [0]` in process `\edu_fifo.$proc$raw.v:134$25`.
+Removing init bit 1'0 for non-memory siginal `\edu_fifo.\g_mem_wr_ptr [1]` in process `\edu_fifo.$proc$raw.v:134$25`.
+No latch inferred for signal `\edu_fifo.\g_mem_rd_ptr' from process `\edu_fifo.$proc$raw.v:129$24'.
+Removing init bit 1'0 for non-memory siginal `\edu_fifo.\g_mem_rd_ptr [0]` in process `\edu_fifo.$proc$raw.v:129$24`.
+Removing init bit 1'0 for non-memory siginal `\edu_fifo.\g_mem_rd_ptr [1]` in process `\edu_fifo.$proc$raw.v:129$24`.
+No latch inferred for signal `\edu_fifo.\count' from process `\edu_fifo.$proc$raw.v:62$2'.
+Removing init bit 1'0 for non-memory siginal `\edu_fifo.\count [0]` in process `\edu_fifo.$proc$raw.v:62$2`.
+Removing init bit 1'0 for non-memory siginal `\edu_fifo.\count [1]` in process `\edu_fifo.$proc$raw.v:62$2`.
+Removing init bit 1'0 for non-memory siginal `\edu_fifo.\count [2]` in process `\edu_fifo.$proc$raw.v:62$2`.
+
+3.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\edu_fifo.$memwr$\g_mem_mem$raw.v:178$1_ADDR' using process `\edu_fifo.$proc$raw.v:176$40'.
+  created $dff cell `$procdff$62' with positive edge clock.
+Creating register for signal `\edu_fifo.$memwr$\g_mem_mem$raw.v:178$1_DATA' using process `\edu_fifo.$proc$raw.v:176$40'.
+  created $dff cell `$procdff$63' with positive edge clock.
+Creating register for signal `\edu_fifo.$memwr$\g_mem_mem$raw.v:178$1_EN' using process `\edu_fifo.$proc$raw.v:176$40'.
+  created $dff cell `$procdff$64' with positive edge clock.
+Creating register for signal `\edu_fifo.\n98_q' using process `\edu_fifo.$proc$raw.v:169$38'.
+  created $dff cell `$procdff$65' with positive edge clock.
+Creating register for signal `\edu_fifo.\n97_q' using process `\edu_fifo.$proc$raw.v:164$37'.
+  created $dff cell `$procdff$66' with positive edge clock.
+Creating register for signal `\edu_fifo.\n96_q' using process `\edu_fifo.$proc$raw.v:159$36'.
+  created $dff cell `$procdff$67' with positive edge clock.
+
+3.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `edu_fifo.$proc$raw.v:0$52'.
+Removing empty process `edu_fifo.$proc$raw.v:0$51'.
+Removing empty process `edu_fifo.$proc$raw.v:0$50'.
+Removing empty process `edu_fifo.$proc$raw.v:0$49'.
+Removing empty process `edu_fifo.$proc$raw.v:0$48'.
+Removing empty process `edu_fifo.$proc$raw.v:0$47'.
+Found and cleaned up 1 empty switch in `\edu_fifo.$proc$raw.v:176$40'.
+Removing empty process `edu_fifo.$proc$raw.v:176$40'.
+Removing empty process `edu_fifo.$proc$raw.v:169$38'.
+Removing empty process `edu_fifo.$proc$raw.v:164$37'.
+Removing empty process `edu_fifo.$proc$raw.v:159$36'.
+Removing empty process `edu_fifo.$proc$raw.v:134$25'.
+Removing empty process `edu_fifo.$proc$raw.v:129$24'.
+Removing empty process `edu_fifo.$proc$raw.v:62$2'.
+Cleaned up 1 empty switch.
+
+3.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_fifo.
+<suppressed ~1 debug messages>
+
+3.3. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_fifo.
+
+3.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_fifo..
+Removed 3 unused cells and 56 unused wires.
+<suppressed ~4 debug messages>
+
+3.5. Executing CHECK pass (checking for obvious problems).
+Checking module edu_fifo...
+Found and reported 0 problems.
+
+3.6. Executing OPT pass (performing simple optimizations).
+
+3.6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_fifo.
+
+3.6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_fifo'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+3.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \edu_fifo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~8 debug messages>
+
+3.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \edu_fifo.
+    Consolidated identical input bits for $mux cell $procmux$54:
+      Old ports: A=8'00000000, B=8'11111111, Y=$0$memwr$\g_mem_mem$raw.v:178$1_EN[7:0]$43
+      New ports: A=1'0, B=1'1, Y=$0$memwr$\g_mem_mem$raw.v:178$1_EN[7:0]$43 [0]
+      New connections: $0$memwr$\g_mem_mem$raw.v:178$1_EN[7:0]$43 [7:1] = { $0$memwr$\g_mem_mem$raw.v:178$1_EN[7:0]$43 [0] $0$memwr$\g_mem_mem$raw.v:178$1_EN[7:0]$43 [0] $0$memwr$\g_mem_mem$raw.v:178$1_EN[7:0]$43 [0] $0$memwr$\g_mem_mem$raw.v:178$1_EN[7:0]$43 [0] $0$memwr$\g_mem_mem$raw.v:178$1_EN[7:0]$43 [0] $0$memwr$\g_mem_mem$raw.v:178$1_EN[7:0]$43 [0] $0$memwr$\g_mem_mem$raw.v:178$1_EN[7:0]$43 [0] }
+  Optimizing cells in module \edu_fifo.
+Performed a total of 1 changes.
+
+3.6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_fifo'.
+Removed a total of 0 cells.
+
+3.6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_fifo..
+
+3.6.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_fifo.
+
+3.6.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.6.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \edu_fifo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~8 debug messages>
+
+3.6.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \edu_fifo.
+Performed a total of 0 changes.
+
+3.6.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_fifo'.
+Removed a total of 0 cells.
+
+3.6.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.6.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_fifo..
+
+3.6.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_fifo.
+
+3.6.16. Finished OPT passes. (There is nothing left to do.)
+
+3.7. Executing FSM pass (extract and optimize FSM).
+
+3.7.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+3.7.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+3.7.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+3.7.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_fifo..
+
+3.7.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+3.7.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+3.7.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+3.7.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+3.8. Executing OPT pass (performing simple optimizations).
+
+3.8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_fifo.
+
+3.8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_fifo'.
+Removed a total of 0 cells.
+
+3.8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \edu_fifo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~8 debug messages>
+
+3.8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \edu_fifo.
+Performed a total of 0 changes.
+
+3.8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_fifo'.
+Removed a total of 0 cells.
+
+3.8.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$67 ($dff) from module edu_fifo (D = \n74_o, Q = \n96_q, rval = 2'00).
+Adding EN signal on $auto$ff.cc:266:slice$69 ($sdff) from module edu_fifo (D = \n73_o, Q = \n96_q).
+Adding SRST signal on $procdff$66 ($dff) from module edu_fifo (D = \n86_o, Q = \n97_q, rval = 2'00).
+Adding EN signal on $auto$ff.cc:266:slice$71 ($sdff) from module edu_fifo (D = \n85_o, Q = \n97_q).
+Adding SRST signal on $procdff$65 ($dff) from module edu_fifo (D = \n39_o, Q = \n98_q, rval = 3'000).
+Adding EN signal on $auto$ff.cc:266:slice$73 ($sdff) from module edu_fifo (D = \n39_o, Q = \n98_q).
+
+3.8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_fifo..
+Removed 5 unused cells and 5 unused wires.
+<suppressed ~10 debug messages>
+
+3.8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_fifo.
+<suppressed ~1 debug messages>
+
+3.8.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.8.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \edu_fifo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~8 debug messages>
+
+3.8.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \edu_fifo.
+Performed a total of 0 changes.
+
+3.8.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_fifo'.
+Removed a total of 0 cells.
+
+3.8.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.8.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_fifo..
+
+3.8.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_fifo.
+
+3.8.16. Finished OPT passes. (There is nothing left to do.)
+
+3.9. Executing WREDUCE pass (reducing word size of cells).
+Removed top 29 bits (of 32) from port A of cell edu_fifo.$add$raw.v:109$17 ($add).
+Removed top 31 bits (of 32) from port B of cell edu_fifo.$add$raw.v:109$17 ($add).
+Removed top 29 bits (of 32) from port Y of cell edu_fifo.$add$raw.v:109$17 ($add).
+Removed top 29 bits (of 32) from port A of cell edu_fifo.$sub$raw.v:119$20 ($sub).
+Removed top 31 bits (of 32) from port B of cell edu_fifo.$sub$raw.v:119$20 ($sub).
+Removed top 29 bits (of 32) from port Y of cell edu_fifo.$sub$raw.v:119$20 ($sub).
+Removed top 1 bits (of 2) from port B of cell edu_fifo.$add$raw.v:141$27 ($add).
+Removed top 1 bits (of 2) from port B of cell edu_fifo.$add$raw.v:149$31 ($add).
+
+3.10. Executing PEEPOPT pass (run peephole optimizers).
+
+3.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_fifo..
+
+3.12. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module edu_fifo:
+  creating $macc model for $add$raw.v:109$17 ($add).
+  creating $macc model for $add$raw.v:141$27 ($add).
+  creating $macc model for $add$raw.v:149$31 ($add).
+  creating $macc model for $sub$raw.v:119$20 ($sub).
+  creating $alu model for $macc $sub$raw.v:119$20.
+  creating $alu model for $macc $add$raw.v:149$31.
+  creating $alu model for $macc $add$raw.v:141$27.
+  creating $alu model for $macc $add$raw.v:109$17.
+  creating $alu cell for $add$raw.v:109$17: $auto$alumacc.cc:485:replace_alu$77
+  creating $alu cell for $add$raw.v:141$27: $auto$alumacc.cc:485:replace_alu$80
+  creating $alu cell for $add$raw.v:149$31: $auto$alumacc.cc:485:replace_alu$83
+  creating $alu cell for $sub$raw.v:119$20: $auto$alumacc.cc:485:replace_alu$86
+  created 4 $alu and 0 $macc cells.
+
+3.13. Executing SHARE pass (SAT-based resource sharing).
+
+3.14. Executing OPT pass (performing simple optimizations).
+
+3.14.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_fifo.
+
+3.14.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_fifo'.
+Removed a total of 0 cells.
+
+3.14.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \edu_fifo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~8 debug messages>
+
+3.14.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \edu_fifo.
+Performed a total of 0 changes.
+
+3.14.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_fifo'.
+Removed a total of 0 cells.
+
+3.14.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.14.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_fifo..
+
+3.14.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_fifo.
+
+3.14.9. Finished OPT passes. (There is nothing left to do.)
+
+3.15. Executing MEMORY pass.
+
+3.15.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+3.15.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+3.15.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+  Analyzing edu_fifo.g_mem_mem write port 0.
+
+3.15.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+3.15.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+Checking read port `\g_mem_mem'[0] in module `\edu_fifo': no output FF found.
+Checking read port address `\g_mem_mem'[0] in module `\edu_fifo': address FF has fully-defined init value, not supported.
+
+3.15.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_fifo..
+
+3.15.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+3.15.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+3.15.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_fifo..
+
+3.15.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+3.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_fifo..
+
+3.17. Executing OPT pass (performing simple optimizations).
+
+3.17.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_fifo.
+<suppressed ~40 debug messages>
+
+3.17.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_fifo'.
+Removed a total of 0 cells.
+
+3.17.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.17.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_fifo..
+Removed 0 unused cells and 3 unused wires.
+<suppressed ~1 debug messages>
+
+3.17.5. Finished fast OPT passes.
+
+3.18. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+Mapping memory \g_mem_mem in module \edu_fifo:
+  created 4 $dff cells and 0 static cells of width 8.
+  read interface: 0 $dff and 3 $mux cells.
+  write interface: 4 write mux blocks.
+
+3.19. Executing OPT pass (performing simple optimizations).
+
+3.19.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_fifo.
+<suppressed ~4 debug messages>
+
+3.19.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_fifo'.
+Removed a total of 0 cells.
+
+3.19.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \edu_fifo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~8 debug messages>
+
+3.19.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \edu_fifo.
+Performed a total of 0 changes.
+
+3.19.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_fifo'.
+Removed a total of 0 cells.
+
+3.19.6. Executing OPT_SHARE pass.
+    Found cells that share an operand and can be merged by moving the $mux $ternary$raw.v:125$22 in front of them:
+        $auto$alumacc.cc:485:replace_alu$77
+        $auto$alumacc.cc:485:replace_alu$86
+
+3.19.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.19.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_fifo..
+Removed 0 unused cells and 14 unused wires.
+<suppressed ~1 debug messages>
+
+3.19.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_fifo.
+<suppressed ~6 debug messages>
+
+3.19.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.19.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \edu_fifo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~8 debug messages>
+
+3.19.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \edu_fifo.
+    Consolidated identical input bits for $mux cell $auto$opt_share.cc:244:merge_operators$143:
+      Old ports: A=3'111, B=3'001, Y=$auto$rtlil.cc:2498:Mux$144
+      New ports: A=1'1, B=1'0, Y=$auto$rtlil.cc:2498:Mux$144 [1]
+      New connections: { $auto$rtlil.cc:2498:Mux$144 [2] $auto$rtlil.cc:2498:Mux$144 [0] } = { $auto$rtlil.cc:2498:Mux$144 [1] 1'1 }
+  Optimizing cells in module \edu_fifo.
+Performed a total of 1 changes.
+
+3.19.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_fifo'.
+Removed a total of 0 cells.
+
+3.19.14. Executing OPT_SHARE pass.
+
+3.19.15. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $memory\g_mem_mem[3]$97 ($dff) from module edu_fifo (D = \wr_data, Q = \g_mem_mem[3]).
+Adding EN signal on $memory\g_mem_mem[2]$95 ($dff) from module edu_fifo (D = \wr_data, Q = \g_mem_mem[2]).
+Adding EN signal on $memory\g_mem_mem[1]$93 ($dff) from module edu_fifo (D = \wr_data, Q = \g_mem_mem[1]).
+Adding EN signal on $memory\g_mem_mem[0]$91 ($dff) from module edu_fifo (D = \wr_data, Q = \g_mem_mem[0]).
+
+3.19.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_fifo..
+Removed 4 unused cells and 6 unused wires.
+<suppressed ~5 debug messages>
+
+3.19.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_fifo.
+<suppressed ~1 debug messages>
+
+3.19.18. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.19.19. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \edu_fifo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+3.19.20. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \edu_fifo.
+Performed a total of 0 changes.
+
+3.19.21. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_fifo'.
+Removed a total of 0 cells.
+
+3.19.22. Executing OPT_SHARE pass.
+
+3.19.23. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.19.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_fifo..
+
+3.19.25. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_fifo.
+
+3.19.26. Finished OPT passes. (There is nothing left to do.)
+
+3.20. Executing TECHMAP pass (map to technology primitives).
+
+3.20.1. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/usr/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+3.20.2. Continuing TECHMAP pass.
+Using template $paramod$78e969f2586efcf3a5b0b0440bcca0db83d5cca2\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $ne.
+Using extmapper simplemap for cells of type $or.
+Using template $paramod$175e67c02b86e96b1288b9dc100122520d7240d8\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $dffe.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $sdffe.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000000011 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000000010 for cells of type $lcu.
+No more expansions possible.
+<suppressed ~405 debug messages>
+
+3.21. Executing OPT pass (performing simple optimizations).
+
+3.21.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_fifo.
+<suppressed ~42 debug messages>
+
+3.21.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_fifo'.
+<suppressed ~36 debug messages>
+Removed a total of 12 cells.
+
+3.21.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.21.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_fifo..
+Removed 7 unused cells and 102 unused wires.
+<suppressed ~10 debug messages>
+
+3.21.5. Finished fast OPT passes.
+
+3.22. Executing ABC pass (technology mapping using ABC).
+
+3.22.1. Extracting gate netlist of module `\edu_fifo' to `<abc-temp-dir>/input.blif'..
+Extracted 68 gates and 111 wires to a netlist network with 42 inputs and 24 outputs.
+
+3.22.1.1. Executing ABC.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 13 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+3.22.1.2. Re-integrating ABC results.
+ABC RESULTS:               MUX cells:       24
+ABC RESULTS:              NAND cells:        1
+ABC RESULTS:               NOR cells:        2
+ABC RESULTS:               NOT cells:        4
+ABC RESULTS:               AND cells:        2
+ABC RESULTS:                OR cells:        4
+ABC RESULTS:             ORNOT cells:        3
+ABC RESULTS:            ANDNOT cells:       11
+ABC RESULTS:               XOR cells:        7
+ABC RESULTS:        internal signals:       45
+ABC RESULTS:           input signals:       42
+ABC RESULTS:          output signals:       24
+Removing temp directory.
+
+3.23. Executing OPT pass (performing simple optimizations).
+
+3.23.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_fifo.
+<suppressed ~8 debug messages>
+
+3.23.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_fifo'.
+Removed a total of 0 cells.
+
+3.23.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.23.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_fifo..
+Removed 1 unused cells and 95 unused wires.
+<suppressed ~13 debug messages>
+
+3.23.5. Finished fast OPT passes.
+
+3.24. Executing HIERARCHY pass (managing design hierarchy).
+
+3.24.1. Analyzing design hierarchy..
+Top module:  \edu_fifo
+
+3.24.2. Analyzing design hierarchy..
+Top module:  \edu_fifo
+Removed 0 unused modules.
+
+3.25. Printing statistics.
+
+=== edu_fifo ===
+
+   Number of wires:                 80
+   Number of wire bits:            333
+   Number of public wires:          42
+   Number of public wire bits:     295
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 96
+     $_ANDNOT_                      11
+     $_AND_                          2
+     $_DFFE_PP_                     32
+     $_MUX_                         24
+     $_NAND_                         1
+     $_NOR_                          2
+     $_NOT_                          3
+     $_ORNOT_                        3
+     $_OR_                           4
+     $_SDFFE_PP0P_                   7
+     $_XOR_                          7
+
+3.26. Executing CHECK pass (checking for obvious problems).
+Checking module edu_fifo...
+Found and reported 0 problems.
+
+4. Executing OPT pass (performing simple optimizations).
+
+4.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_fifo.
+
+4.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_fifo'.
+Removed a total of 0 cells.
+
+4.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \edu_fifo..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+4.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \edu_fifo.
+Performed a total of 0 changes.
+
+4.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_fifo'.
+Removed a total of 0 cells.
+
+4.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_fifo..
+
+4.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_fifo.
+
+4.9. Finished OPT passes. (There is nothing left to do.)
+
+5. Executing CHECK pass (checking for obvious problems).
+Checking module edu_fifo...
+Found and reported 0 problems.
+
+6. Executing JSON backend.

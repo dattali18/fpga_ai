@@ -1,0 +1,1184 @@
+
+-- Running command `read_json ../v1/reference.json; rename edu_fifo gold; read_json ../v1/optimized.json; rename edu_fifo gate; read_verilog harness.v; hierarchy -check -top compare_fifo; flatten; opt_clean; check -assert; select -module compare_fifo; sat -seq 1 -tempinduct -maxsteps 8 -prove ok 1 -show-inputs -show-outputs -show-regs -timeout 15 -verify -dump_vcd induction_trace.vcd' --
+
+1. Executing JSON frontend.
+Importing module edu_fifo from JSON tree.
+Renaming module \edu_fifo to \gold.
+
+2. Executing JSON frontend.
+Importing module edu_fifo from JSON tree.
+Renaming module \edu_fifo to \gate.
+
+3. Executing Verilog-2005 frontend: harness.v
+Parsing Verilog input from `harness.v' to AST representation.
+Generating RTLIL representation for module `\compare_fifo'.
+Successfully finished Verilog frontend.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1. Analyzing design hierarchy..
+Top module:  \compare_fifo
+Used module:     \gate
+Used module:     \gold
+
+4.2. Analyzing design hierarchy..
+Top module:  \compare_fifo
+Used module:     \gate
+Used module:     \gold
+Removed 0 unused modules.
+
+5. Executing FLATTEN pass (flatten design).
+Deleting now unused module gate.
+Deleting now unused module gold.
+<suppressed ~2 debug messages>
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Warning: Ignoring module compare_fifo because it contains processes (run 'proc' command first).
+
+7. Executing CHECK pass (checking for obvious problems).
+Checking module compare_fifo...
+Found and reported 0 problems.
+
+8. Executing SAT pass (solving SAT problems in the circuit).
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Imported 128 cells to SAT database.
+Import set-constraint from init attribute: \a.rd_ptr = 2'00
+Import set-constraint from init attribute: \a.wr_ptr = 2'00
+Import set-constraint from init attribute: \a.n99_o [2:0] = 3'000
+Import set-constraint from init attribute: \b.rd_ptr = 2'00
+Import set-constraint from init attribute: \b.wr_ptr = 2'00
+Import set-constraint from init attribute: \b.n99_o [2:0] = 3'000
+Final init constraint equation: { \b.n99_o [2:0] \b.wr_ptr \b.rd_ptr \a.n99_o [2:0] \a.wr_ptr \a.rd_ptr } = 14'00000000000000
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Imported 128 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+** Trying induction with length 1 **
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Imported 128 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.n42_o
+Import show expression: \a.n47_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n99_o
+
+[base case 1] Solving problem with 2981 variables and 7751 clauses..
+Base case for induction length 1 proven.
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Imported 128 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.n42_o
+Import show expression: \a.n47_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n99_o
+
+[induction step 1] Solving problem with 2965 variables and 7690 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                 Dec       Hex                                 Bin
+  ---- ------------------- ----------- --------- -----------------------------------
+  init \a.n30_o                      1         1                                  01
+  init \a.n37_o                      1         1                                  01
+  init \a.n42_o                      3         3                                  11
+  init \a.n47_o                      3         3                                  11
+  init \a.n99_o [2:0]                3         3                                 011
+  init \a.rd_ptr                     0         0                                  00
+  init \a.wr_ptr                     2         2                                  10
+  init \b.n30_o                      3         3                                  11
+  init \b.n37_o                      1         1                                  01
+  init \b.n42_o                      0         0                                  00
+  init \b.n47_o                      1         1                                  01
+  init \b.n99_o [2:0]                1         1                                 001
+  init \b.rd_ptr                     1         1                                  01
+  init \b.wr_ptr                     0         0                                  00
+  ---- ------------------- ----------- --------- -----------------------------------
+     1 \a.n30_o                      1         1                                  01
+     1 \a.n37_o                      1         1                                  01
+     1 \a.n42_o                      3         3                                  11
+     1 \a.n47_o                      3         3                                  11
+     1 \a.n99_o                      3         3    00000000000000000000000000000011
+     1 \a.rd_ptr                     0         0                                  00
+     1 \a.wr_ptr                     2         2                                  10
+     1 \clk                          0         0                                   0
+     1 \ok                           1         1                                   1
+     1 \rd_ready                     0         0                                   0
+     1 \rst                          0         0                                   0
+     1 \wr_data                      3         3                                  11
+     1 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     2 \a.n30_o                      1         1                                  01
+     2 \a.n37_o                      1         1                                  01
+     2 \a.n42_o                      3         3                                  11
+     2 \a.n47_o                      3         3                                  11
+     2 \a.n99_o                      4         4    00000000000000000000000000000100
+     2 \a.rd_ptr                     0         0                                  00
+     2 \a.wr_ptr                     3         3                                  11
+     2 \clk                          0         0                                   0
+     2 \ok                           0         0                                   0
+     2 \rd_ready                     0         0                                   0
+     2 \rst                          0         0                                   0
+     2 \wr_data                      0         0                                  00
+     2 \wr_valid                     0         0                                   0
+
+** Trying induction with length 2 **
+
+Setting up time step 3:
+Final constraint equation: { } = { }
+Imported 128 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.n42_o
+Import show expression: \a.n47_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n99_o
+
+[base case 2] Solving problem with 4629 variables and 12139 clauses..
+Base case for induction length 2 proven.
+
+Setting up time step 3:
+Final constraint equation: { } = { }
+Imported 128 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.n42_o
+Import show expression: \a.n47_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n99_o
+
+[induction step 2] Solving problem with 4704 variables and 12380 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                 Dec       Hex                                 Bin
+  ---- ------------------- ----------- --------- -----------------------------------
+  init \a.n30_o                      1         1                                  01
+  init \a.n37_o                      1         1                                  01
+  init \a.n42_o                      3         3                                  11
+  init \a.n47_o                      3         3                                  11
+  init \a.n99_o [2:0]                5         5                                 101
+  init \a.rd_ptr                     0         0                                  00
+  init \a.wr_ptr                     2         2                                  10
+  init \b.n30_o                      3         3                                  11
+  init \b.n37_o                      1         1                                  01
+  init \b.n42_o                      0         0                                  00
+  init \b.n47_o                      1         1                                  01
+  init \b.n99_o [2:0]                2         2                                 010
+  init \b.rd_ptr                     1         1                                  01
+  init \b.wr_ptr                     0         0                                  00
+  ---- ------------------- ----------- --------- -----------------------------------
+     1 \a.n30_o                      1         1                                  01
+     1 \a.n37_o                      1         1                                  01
+     1 \a.n42_o                      3         3                                  11
+     1 \a.n47_o                      3         3                                  11
+     1 \a.n99_o                      5         5    00000000000000000000000000000101
+     1 \a.rd_ptr                     0         0                                  00
+     1 \a.wr_ptr                     2         2                                  10
+     1 \clk                          0         0                                   0
+     1 \ok                           1         1                                   1
+     1 \rd_ready                     0         0                                   0
+     1 \rst                          0         0                                   0
+     1 \wr_data                      3         3                                  11
+     1 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     2 \a.n30_o                      1         1                                  01
+     2 \a.n37_o                      1         1                                  01
+     2 \a.n42_o                      3         3                                  11
+     2 \a.n47_o                      3         3                                  11
+     2 \a.n99_o                      6         6    00000000000000000000000000000110
+     2 \a.rd_ptr                     0         0                                  00
+     2 \a.wr_ptr                     3         3                                  11
+     2 \clk                          0         0                                   0
+     2 \ok                           1         1                                   1
+     2 \rd_ready                     0         0                                   0
+     2 \rst                          0         0                                   0
+     2 \wr_data                      1         1                                  01
+     2 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     3 \a.n30_o                      1         1                                  01
+     3 \a.n37_o                      1         1                                  01
+     3 \a.n42_o                      3         3                                  11
+     3 \a.n47_o                      1         1                                  01
+     3 \a.n99_o                      7         7    00000000000000000000000000000111
+     3 \a.rd_ptr                     0         0                                  00
+     3 \a.wr_ptr                     0         0                                  00
+     3 \clk                          0         0                                   0
+     3 \ok                           0         0                                   0
+     3 \rd_ready                     0         0                                   0
+     3 \rst                          0         0                                   0
+     3 \wr_data                      0         0                                  00
+     3 \wr_valid                     1         1                                   1
+
+** Trying induction with length 3 **
+
+Setting up time step 4:
+Final constraint equation: { } = { }
+Imported 128 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.n42_o
+Import show expression: \a.n47_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n99_o
+
+[base case 3] Solving problem with 6368 variables and 16829 clauses..
+Base case for induction length 3 proven.
+
+Setting up time step 4:
+Final constraint equation: { } = { }
+Imported 128 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.n42_o
+Import show expression: \a.n47_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n99_o
+
+[induction step 3] Solving problem with 6534 variables and 17372 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                 Dec       Hex                                 Bin
+  ---- ------------------- ----------- --------- -----------------------------------
+  init \a.n30_o                      1         1                                  01
+  init \a.n37_o                      1         1                                  01
+  init \a.n42_o                      3         3                                  11
+  init \a.n47_o                      3         3                                  11
+  init \a.n99_o [2:0]                5         5                                 101
+  init \a.rd_ptr                     0         0                                  00
+  init \a.wr_ptr                     2         2                                  10
+  init \b.n30_o                      3         3                                  11
+  init \b.n37_o                      1         1                                  01
+  init \b.n42_o                      0         0                                  00
+  init \b.n47_o                      1         1                                  01
+  init \b.n99_o [2:0]                2         2                                 010
+  init \b.rd_ptr                     1         1                                  01
+  init \b.wr_ptr                     0         0                                  00
+  ---- ------------------- ----------- --------- -----------------------------------
+     1 \a.n30_o                      1         1                                  01
+     1 \a.n37_o                      1         1                                  01
+     1 \a.n42_o                      3         3                                  11
+     1 \a.n47_o                      3         3                                  11
+     1 \a.n99_o                      5         5    00000000000000000000000000000101
+     1 \a.rd_ptr                     0         0                                  00
+     1 \a.wr_ptr                     2         2                                  10
+     1 \clk                          0         0                                   0
+     1 \ok                           1         1                                   1
+     1 \rd_ready                     0         0                                   0
+     1 \rst                          0         0                                   0
+     1 \wr_data                      3         3                                  11
+     1 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     2 \a.n30_o                      1         1                                  01
+     2 \a.n37_o                      1         1                                  01
+     2 \a.n42_o                      3         3                                  11
+     2 \a.n47_o                      3         3                                  11
+     2 \a.n99_o                      6         6    00000000000000000000000000000110
+     2 \a.rd_ptr                     0         0                                  00
+     2 \a.wr_ptr                     3         3                                  11
+     2 \clk                          0         0                                   0
+     2 \ok                           1         1                                   1
+     2 \rd_ready                     0         0                                   0
+     2 \rst                          0         0                                   0
+     2 \wr_data                      1         1                                  01
+     2 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     3 \a.n30_o                      1         1                                  01
+     3 \a.n37_o                      1         1                                  01
+     3 \a.n42_o                      3         3                                  11
+     3 \a.n47_o                      1         1                                  01
+     3 \a.n99_o                      7         7    00000000000000000000000000000111
+     3 \a.rd_ptr                     0         0                                  00
+     3 \a.wr_ptr                     0         0                                  00
+     3 \clk                          0         0                                   0
+     3 \ok                           1         1                                   1
+     3 \rd_ready                     1         1                                   1
+     3 \rst                          0         0                                   0
+     3 \wr_data                      0         0                                  00
+     3 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     4 \a.n30_o                      0         0                                  00
+     4 \a.n37_o                      1         1                                  01
+     4 \a.n42_o                      3         3                                  11
+     4 \a.n47_o                      1         1                                  01
+     4 \a.n99_o                      7         7    00000000000000000000000000000111
+     4 \a.rd_ptr                     1         1                                  01
+     4 \a.wr_ptr                     1         1                                  01
+     4 \clk                          0         0                                   0
+     4 \ok                           0         0                                   0
+     4 \rd_ready                     0         0                                   0
+     4 \rst                          0         0                                   0
+     4 \wr_data                      0         0                                  00
+     4 \wr_valid                     0         0                                   0
+
+** Trying induction with length 4 **
+
+Setting up time step 5:
+Final constraint equation: { } = { }
+Imported 128 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.n42_o
+Import show expression: \a.n47_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n99_o
+
+[base case 4] Solving problem with 8198 variables and 21821 clauses..
+Base case for induction length 4 proven.
+
+Setting up time step 5:
+Final constraint equation: { } = { }
+Imported 128 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.n42_o
+Import show expression: \a.n47_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n99_o
+
+[induction step 4] Solving problem with 8455 variables and 22666 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                 Dec       Hex                                 Bin
+  ---- ------------------- ----------- --------- -----------------------------------
+  init \a.n30_o                      1         1                                  01
+  init \a.n37_o                      0         0                                  00
+  init \a.n42_o                      3         3                                  11
+  init \a.n47_o                      3         3                                  11
+  init \a.n99_o [2:0]                5         5                                 101
+  init \a.rd_ptr                     0         0                                  00
+  init \a.wr_ptr                     2         2                                  10
+  init \b.n30_o                      3         3                                  11
+  init \b.n37_o                      1         1                                  01
+  init \b.n42_o                      0         0                                  00
+  init \b.n47_o                      3         3                                  11
+  init \b.n99_o [2:0]                1         1                                 001
+  init \b.rd_ptr                     1         1                                  01
+  init \b.wr_ptr                     0         0                                  00
+  ---- ------------------- ----------- --------- -----------------------------------
+     1 \a.n30_o                      1         1                                  01
+     1 \a.n37_o                      0         0                                  00
+     1 \a.n42_o                      3         3                                  11
+     1 \a.n47_o                      3         3                                  11
+     1 \a.n99_o                      5         5    00000000000000000000000000000101
+     1 \a.rd_ptr                     0         0                                  00
+     1 \a.wr_ptr                     2         2                                  10
+     1 \clk                          0         0                                   0
+     1 \ok                           1         1                                   1
+     1 \rd_ready                     0         0                                   0
+     1 \rst                          0         0                                   0
+     1 \wr_data                      3         3                                  11
+     1 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     2 \a.n30_o                      1         1                                  01
+     2 \a.n37_o                      0         0                                  00
+     2 \a.n42_o                      3         3                                  11
+     2 \a.n47_o                      3         3                                  11
+     2 \a.n99_o                      6         6    00000000000000000000000000000110
+     2 \a.rd_ptr                     0         0                                  00
+     2 \a.wr_ptr                     3         3                                  11
+     2 \clk                          0         0                                   0
+     2 \ok                           1         1                                   1
+     2 \rd_ready                     1         1                                   1
+     2 \rst                          0         0                                   0
+     2 \wr_data                      3         3                                  11
+     2 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     3 \a.n30_o                      1         1                                  01
+     3 \a.n37_o                      0         0                                  00
+     3 \a.n42_o                      3         3                                  11
+     3 \a.n47_o                      3         3                                  11
+     3 \a.n99_o                      6         6    00000000000000000000000000000110
+     3 \a.rd_ptr                     1         1                                  01
+     3 \a.wr_ptr                     0         0                                  00
+     3 \clk                          0         0                                   0
+     3 \ok                           1         1                                   1
+     3 \rd_ready                     1         1                                   1
+     3 \rst                          0         0                                   0
+     3 \wr_data                      3         3                                  11
+     3 \wr_valid                     0         0                                   0
+  ---- ------------------- ----------- --------- -----------------------------------
+     4 \a.n30_o                      1         1                                  01
+     4 \a.n37_o                      0         0                                  00
+     4 \a.n42_o                      3         3                                  11
+     4 \a.n47_o                      3         3                                  11
+     4 \a.n99_o                      5         5    00000000000000000000000000000101
+     4 \a.rd_ptr                     2         2                                  10
+     4 \a.wr_ptr                     0         0                                  00
+     4 \clk                          0         0                                   0
+     4 \ok                           1         1                                   1
+     4 \rd_ready                     1         1                                   1
+     4 \rst                          0         0                                   0
+     4 \wr_data                      0         0                                  00
+     4 \wr_valid                     0         0                                   0
+  ---- ------------------- ----------- --------- -----------------------------------
+     5 \a.n30_o                      1         1                                  01
+     5 \a.n37_o                      0         0                                  00
+     5 \a.n42_o                      3         3                                  11
+     5 \a.n47_o                      3         3                                  11
+     5 \a.n99_o                      4         4    00000000000000000000000000000100
+     5 \a.rd_ptr                     3         3                                  11
+     5 \a.wr_ptr                     0         0                                  00
+     5 \clk                          0         0                                   0
+     5 \ok                           0         0                                   0
+     5 \rd_ready                     0         0                                   0
+     5 \rst                          0         0                                   0
+     5 \wr_data                      0         0                                  00
+     5 \wr_valid                     1         1                                   1
+
+** Trying induction with length 5 **
+
+Setting up time step 6:
+Final constraint equation: { } = { }
+Imported 128 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.n42_o
+Import show expression: \a.n47_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n99_o
+
+[base case 5] Solving problem with 10119 variables and 27115 clauses..
+Base case for induction length 5 proven.
+
+Setting up time step 6:
+Final constraint equation: { } = { }
+Imported 128 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.n42_o
+Import show expression: \a.n47_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n99_o
+
+[induction step 5] Solving problem with 10467 variables and 28262 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                 Dec       Hex                                 Bin
+  ---- ------------------- ----------- --------- -----------------------------------
+  init \a.n30_o                      1         1                                  01
+  init \a.n37_o                      0         0                                  00
+  init \a.n42_o                      3         3                                  11
+  init \a.n47_o                      3         3                                  11
+  init \a.n99_o [2:0]                5         5                                 101
+  init \a.rd_ptr                     0         0                                  00
+  init \a.wr_ptr                     2         2                                  10
+  init \b.n30_o                      3         3                                  11
+  init \b.n37_o                      1         1                                  01
+  init \b.n42_o                      0         0                                  00
+  init \b.n47_o                      3         3                                  11
+  init \b.n99_o [2:0]                1         1                                 001
+  init \b.rd_ptr                     1         1                                  01
+  init \b.wr_ptr                     0         0                                  00
+  ---- ------------------- ----------- --------- -----------------------------------
+     1 \a.n30_o                      1         1                                  01
+     1 \a.n37_o                      0         0                                  00
+     1 \a.n42_o                      3         3                                  11
+     1 \a.n47_o                      3         3                                  11
+     1 \a.n99_o                      5         5    00000000000000000000000000000101
+     1 \a.rd_ptr                     0         0                                  00
+     1 \a.wr_ptr                     2         2                                  10
+     1 \clk                          0         0                                   0
+     1 \ok                           1         1                                   1
+     1 \rd_ready                     0         0                                   0
+     1 \rst                          0         0                                   0
+     1 \wr_data                      3         3                                  11
+     1 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     2 \a.n30_o                      1         1                                  01
+     2 \a.n37_o                      0         0                                  00
+     2 \a.n42_o                      3         3                                  11
+     2 \a.n47_o                      3         3                                  11
+     2 \a.n99_o                      6         6    00000000000000000000000000000110
+     2 \a.rd_ptr                     0         0                                  00
+     2 \a.wr_ptr                     3         3                                  11
+     2 \clk                          0         0                                   0
+     2 \ok                           1         1                                   1
+     2 \rd_ready                     1         1                                   1
+     2 \rst                          0         0                                   0
+     2 \wr_data                      3         3                                  11
+     2 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     3 \a.n30_o                      1         1                                  01
+     3 \a.n37_o                      0         0                                  00
+     3 \a.n42_o                      3         3                                  11
+     3 \a.n47_o                      3         3                                  11
+     3 \a.n99_o                      6         6    00000000000000000000000000000110
+     3 \a.rd_ptr                     1         1                                  01
+     3 \a.wr_ptr                     0         0                                  00
+     3 \clk                          0         0                                   0
+     3 \ok                           1         1                                   1
+     3 \rd_ready                     1         1                                   1
+     3 \rst                          0         0                                   0
+     3 \wr_data                      3         3                                  11
+     3 \wr_valid                     0         0                                   0
+  ---- ------------------- ----------- --------- -----------------------------------
+     4 \a.n30_o                      1         1                                  01
+     4 \a.n37_o                      0         0                                  00
+     4 \a.n42_o                      3         3                                  11
+     4 \a.n47_o                      3         3                                  11
+     4 \a.n99_o                      5         5    00000000000000000000000000000101
+     4 \a.rd_ptr                     2         2                                  10
+     4 \a.wr_ptr                     0         0                                  00
+     4 \clk                          0         0                                   0
+     4 \ok                           1         1                                   1
+     4 \rd_ready                     1         1                                   1
+     4 \rst                          0         0                                   0
+     4 \wr_data                      3         3                                  11
+     4 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     5 \a.n30_o                      3         3                                  11
+     5 \a.n37_o                      0         0                                  00
+     5 \a.n42_o                      3         3                                  11
+     5 \a.n47_o                      3         3                                  11
+     5 \a.n99_o                      5         5    00000000000000000000000000000101
+     5 \a.rd_ptr                     3         3                                  11
+     5 \a.wr_ptr                     1         1                                  01
+     5 \clk                          0         0                                   0
+     5 \ok                           1         1                                   1
+     5 \rd_ready                     1         1                                   1
+     5 \rst                          0         0                                   0
+     5 \wr_data                      0         0                                  00
+     5 \wr_valid                     0         0                                   0
+  ---- ------------------- ----------- --------- -----------------------------------
+     6 \a.n30_o                      3         3                                  11
+     6 \a.n37_o                      0         0                                  00
+     6 \a.n42_o                      3         3                                  11
+     6 \a.n47_o                      3         3                                  11
+     6 \a.n99_o                      4         4    00000000000000000000000000000100
+     6 \a.rd_ptr                     0         0                                  00
+     6 \a.wr_ptr                     1         1                                  01
+     6 \clk                          0         0                                   0
+     6 \ok                           0         0                                   0
+     6 \rd_ready                     0         0                                   0
+     6 \rst                          0         0                                   0
+     6 \wr_data                      0         0                                  00
+     6 \wr_valid                     1         1                                   1
+
+** Trying induction with length 6 **
+
+Setting up time step 7:
+Final constraint equation: { } = { }
+Imported 128 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.n42_o
+Import show expression: \a.n47_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n99_o
+
+[base case 6] Solving problem with 12131 variables and 32711 clauses..
+Base case for induction length 6 proven.
+
+Setting up time step 7:
+Final constraint equation: { } = { }
+Imported 128 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.n42_o
+Import show expression: \a.n47_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n99_o
+
+[induction step 6] Solving problem with 12570 variables and 34160 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                 Dec       Hex                                 Bin
+  ---- ------------------- ----------- --------- -----------------------------------
+  init \a.n30_o                      1         1                                  01
+  init \a.n37_o                      0         0                                  00
+  init \a.n42_o                      3         3                                  11
+  init \a.n47_o                      3         3                                  11
+  init \a.n99_o [2:0]                5         5                                 101
+  init \a.rd_ptr                     0         0                                  00
+  init \a.wr_ptr                     2         2                                  10
+  init \b.n30_o                      3         3                                  11
+  init \b.n37_o                      1         1                                  01
+  init \b.n42_o                      0         0                                  00
+  init \b.n47_o                      3         3                                  11
+  init \b.n99_o [2:0]                1         1                                 001
+  init \b.rd_ptr                     1         1                                  01
+  init \b.wr_ptr                     0         0                                  00
+  ---- ------------------- ----------- --------- -----------------------------------
+     1 \a.n30_o                      1         1                                  01
+     1 \a.n37_o                      0         0                                  00
+     1 \a.n42_o                      3         3                                  11
+     1 \a.n47_o                      3         3                                  11
+     1 \a.n99_o                      5         5    00000000000000000000000000000101
+     1 \a.rd_ptr                     0         0                                  00
+     1 \a.wr_ptr                     2         2                                  10
+     1 \clk                          0         0                                   0
+     1 \ok                           1         1                                   1
+     1 \rd_ready                     0         0                                   0
+     1 \rst                          0         0                                   0
+     1 \wr_data                      3         3                                  11
+     1 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     2 \a.n30_o                      1         1                                  01
+     2 \a.n37_o                      0         0                                  00
+     2 \a.n42_o                      3         3                                  11
+     2 \a.n47_o                      3         3                                  11
+     2 \a.n99_o                      6         6    00000000000000000000000000000110
+     2 \a.rd_ptr                     0         0                                  00
+     2 \a.wr_ptr                     3         3                                  11
+     2 \clk                          0         0                                   0
+     2 \ok                           1         1                                   1
+     2 \rd_ready                     1         1                                   1
+     2 \rst                          0         0                                   0
+     2 \wr_data                      3         3                                  11
+     2 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     3 \a.n30_o                      1         1                                  01
+     3 \a.n37_o                      0         0                                  00
+     3 \a.n42_o                      3         3                                  11
+     3 \a.n47_o                      3         3                                  11
+     3 \a.n99_o                      6         6    00000000000000000000000000000110
+     3 \a.rd_ptr                     1         1                                  01
+     3 \a.wr_ptr                     0         0                                  00
+     3 \clk                          0         0                                   0
+     3 \ok                           1         1                                   1
+     3 \rd_ready                     1         1                                   1
+     3 \rst                          0         0                                   0
+     3 \wr_data                      3         3                                  11
+     3 \wr_valid                     0         0                                   0
+  ---- ------------------- ----------- --------- -----------------------------------
+     4 \a.n30_o                      1         1                                  01
+     4 \a.n37_o                      0         0                                  00
+     4 \a.n42_o                      3         3                                  11
+     4 \a.n47_o                      3         3                                  11
+     4 \a.n99_o                      5         5    00000000000000000000000000000101
+     4 \a.rd_ptr                     2         2                                  10
+     4 \a.wr_ptr                     0         0                                  00
+     4 \clk                          0         0                                   0
+     4 \ok                           1         1                                   1
+     4 \rd_ready                     1         1                                   1
+     4 \rst                          0         0                                   0
+     4 \wr_data                      3         3                                  11
+     4 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     5 \a.n30_o                      3         3                                  11
+     5 \a.n37_o                      0         0                                  00
+     5 \a.n42_o                      3         3                                  11
+     5 \a.n47_o                      3         3                                  11
+     5 \a.n99_o                      5         5    00000000000000000000000000000101
+     5 \a.rd_ptr                     3         3                                  11
+     5 \a.wr_ptr                     1         1                                  01
+     5 \clk                          0         0                                   0
+     5 \ok                           1         1                                   1
+     5 \rd_ready                     1         1                                   1
+     5 \rst                          0         0                                   0
+     5 \wr_data                      2         2                                  10
+     5 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     6 \a.n30_o                      3         3                                  11
+     6 \a.n37_o                      2         2                                  10
+     6 \a.n42_o                      3         3                                  11
+     6 \a.n47_o                      3         3                                  11
+     6 \a.n99_o                      5         5    00000000000000000000000000000101
+     6 \a.rd_ptr                     0         0                                  00
+     6 \a.wr_ptr                     2         2                                  10
+     6 \clk                          0         0                                   0
+     6 \ok                           1         1                                   1
+     6 \rd_ready                     1         1                                   1
+     6 \rst                          0         0                                   0
+     6 \wr_data                      0         0                                  00
+     6 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     7 \a.n30_o                      3         3                                  11
+     7 \a.n37_o                      2         2                                  10
+     7 \a.n42_o                      0         0                                  00
+     7 \a.n47_o                      3         3                                  11
+     7 \a.n99_o                      5         5    00000000000000000000000000000101
+     7 \a.rd_ptr                     1         1                                  01
+     7 \a.wr_ptr                     3         3                                  11
+     7 \clk                          0         0                                   0
+     7 \ok                           0         0                                   0
+     7 \rd_ready                     0         0                                   0
+     7 \rst                          0         0                                   0
+     7 \wr_data                      0         0                                  00
+     7 \wr_valid                     0         0                                   0
+
+** Trying induction with length 7 **
+
+Setting up time step 8:
+Final constraint equation: { } = { }
+Imported 128 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.n42_o
+Import show expression: \a.n47_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n99_o
+
+[base case 7] Solving problem with 14234 variables and 38609 clauses..
+Base case for induction length 7 proven.
+
+Setting up time step 8:
+Final constraint equation: { } = { }
+Imported 128 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.n42_o
+Import show expression: \a.n47_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n99_o
+
+[induction step 7] Solving problem with 14764 variables and 40360 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                 Dec       Hex                                 Bin
+  ---- ------------------- ----------- --------- -----------------------------------
+  init \a.n30_o                      1         1                                  01
+  init \a.n37_o                      1         1                                  01
+  init \a.n42_o                      3         3                                  11
+  init \a.n47_o                      3         3                                  11
+  init \a.n99_o [2:0]                5         5                                 101
+  init \a.rd_ptr                     0         0                                  00
+  init \a.wr_ptr                     2         2                                  10
+  init \b.n30_o                      3         3                                  11
+  init \b.n37_o                      1         1                                  01
+  init \b.n42_o                      1         1                                  01
+  init \b.n47_o                      3         3                                  11
+  init \b.n99_o [2:0]                1         1                                 001
+  init \b.rd_ptr                     1         1                                  01
+  init \b.wr_ptr                     3         3                                  11
+  ---- ------------------- ----------- --------- -----------------------------------
+     1 \a.n30_o                      1         1                                  01
+     1 \a.n37_o                      1         1                                  01
+     1 \a.n42_o                      3         3                                  11
+     1 \a.n47_o                      3         3                                  11
+     1 \a.n99_o                      5         5    00000000000000000000000000000101
+     1 \a.rd_ptr                     0         0                                  00
+     1 \a.wr_ptr                     2         2                                  10
+     1 \clk                          0         0                                   0
+     1 \ok                           1         1                                   1
+     1 \rd_ready                     0         0                                   0
+     1 \rst                          0         0                                   0
+     1 \wr_data                      3         3                                  11
+     1 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     2 \a.n30_o                      1         1                                  01
+     2 \a.n37_o                      1         1                                  01
+     2 \a.n42_o                      3         3                                  11
+     2 \a.n47_o                      3         3                                  11
+     2 \a.n99_o                      6         6    00000000000000000000000000000110
+     2 \a.rd_ptr                     0         0                                  00
+     2 \a.wr_ptr                     3         3                                  11
+     2 \clk                          0         0                                   0
+     2 \ok                           1         1                                   1
+     2 \rd_ready                     1         1                                   1
+     2 \rst                          0         0                                   0
+     2 \wr_data                      3         3                                  11
+     2 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     3 \a.n30_o                      1         1                                  01
+     3 \a.n37_o                      1         1                                  01
+     3 \a.n42_o                      3         3                                  11
+     3 \a.n47_o                      3         3                                  11
+     3 \a.n99_o                      6         6    00000000000000000000000000000110
+     3 \a.rd_ptr                     1         1                                  01
+     3 \a.wr_ptr                     0         0                                  00
+     3 \clk                          0         0                                   0
+     3 \ok                           1         1                                   1
+     3 \rd_ready                     1         1                                   1
+     3 \rst                          0         0                                   0
+     3 \wr_data                      3         3                                  11
+     3 \wr_valid                     0         0                                   0
+  ---- ------------------- ----------- --------- -----------------------------------
+     4 \a.n30_o                      1         1                                  01
+     4 \a.n37_o                      1         1                                  01
+     4 \a.n42_o                      3         3                                  11
+     4 \a.n47_o                      3         3                                  11
+     4 \a.n99_o                      5         5    00000000000000000000000000000101
+     4 \a.rd_ptr                     2         2                                  10
+     4 \a.wr_ptr                     0         0                                  00
+     4 \clk                          0         0                                   0
+     4 \ok                           1         1                                   1
+     4 \rd_ready                     1         1                                   1
+     4 \rst                          0         0                                   0
+     4 \wr_data                      3         3                                  11
+     4 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     5 \a.n30_o                      3         3                                  11
+     5 \a.n37_o                      1         1                                  01
+     5 \a.n42_o                      3         3                                  11
+     5 \a.n47_o                      3         3                                  11
+     5 \a.n99_o                      5         5    00000000000000000000000000000101
+     5 \a.rd_ptr                     3         3                                  11
+     5 \a.wr_ptr                     1         1                                  01
+     5 \clk                          0         0                                   0
+     5 \ok                           1         1                                   1
+     5 \rd_ready                     1         1                                   1
+     5 \rst                          0         0                                   0
+     5 \wr_data                      2         2                                  10
+     5 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     6 \a.n30_o                      3         3                                  11
+     6 \a.n37_o                      2         2                                  10
+     6 \a.n42_o                      3         3                                  11
+     6 \a.n47_o                      3         3                                  11
+     6 \a.n99_o                      5         5    00000000000000000000000000000101
+     6 \a.rd_ptr                     0         0                                  00
+     6 \a.wr_ptr                     2         2                                  10
+     6 \clk                          0         0                                   0
+     6 \ok                           1         1                                   1
+     6 \rd_ready                     1         1                                   1
+     6 \rst                          0         0                                   0
+     6 \wr_data                      1         1                                  01
+     6 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     7 \a.n30_o                      3         3                                  11
+     7 \a.n37_o                      2         2                                  10
+     7 \a.n42_o                      1         1                                  01
+     7 \a.n47_o                      3         3                                  11
+     7 \a.n99_o                      5         5    00000000000000000000000000000101
+     7 \a.rd_ptr                     1         1                                  01
+     7 \a.wr_ptr                     3         3                                  11
+     7 \clk                          0         0                                   0
+     7 \ok                           1         1                                   1
+     7 \rd_ready                     1         1                                   1
+     7 \rst                          0         0                                   0
+     7 \wr_data                      1         1                                  01
+     7 \wr_valid                     0         0                                   0
+  ---- ------------------- ----------- --------- -----------------------------------
+     8 \a.n30_o                      3         3                                  11
+     8 \a.n37_o                      2         2                                  10
+     8 \a.n42_o                      1         1                                  01
+     8 \a.n47_o                      3         3                                  11
+     8 \a.n99_o                      4         4    00000000000000000000000000000100
+     8 \a.rd_ptr                     2         2                                  10
+     8 \a.wr_ptr                     3         3                                  11
+     8 \clk                          0         0                                   0
+     8 \ok                           0         0                                   0
+     8 \rd_ready                     0         0                                   0
+     8 \rst                          0         0                                   0
+     8 \wr_data                      0         0                                  00
+     8 \wr_valid                     1         1                                   1
+
+** Trying induction with length 8 **
+
+Setting up time step 9:
+Final constraint equation: { } = { }
+Imported 128 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.n42_o
+Import show expression: \a.n47_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n99_o
+
+[base case 8] Solving problem with 16428 variables and 44809 clauses..
+Base case for induction length 8 proven.
+
+Setting up time step 9:
+Final constraint equation: { } = { }
+Imported 128 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.n42_o
+Import show expression: \a.n47_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n99_o
+
+[induction step 8] Solving problem with 17049 variables and 46862 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                 Dec       Hex                                 Bin
+  ---- ------------------- ----------- --------- -----------------------------------
+  init \a.n30_o                      0         0                                  00
+  init \a.n37_o                      1         1                                  01
+  init \a.n42_o                      0         0                                  00
+  init \a.n47_o                      0         0                                  00
+  init \a.n99_o [2:0]                3         3                                 011
+  init \a.rd_ptr                     0         0                                  00
+  init \a.wr_ptr                     1         1                                  01
+  init \b.n30_o                      2         2                                  10
+  init \b.n37_o                      0         0                                  00
+  init \b.n42_o                      1         1                                  01
+  init \b.n47_o                      2         2                                  10
+  init \b.n99_o [2:0]                7         7                                 111
+  init \b.rd_ptr                     1         1                                  01
+  init \b.wr_ptr                     3         3                                  11
+  ---- ------------------- ----------- --------- -----------------------------------
+     1 \a.n30_o                      0         0                                  00
+     1 \a.n37_o                      1         1                                  01
+     1 \a.n42_o                      0         0                                  00
+     1 \a.n47_o                      0         0                                  00
+     1 \a.n99_o                      3         3    00000000000000000000000000000011
+     1 \a.rd_ptr                     0         0                                  00
+     1 \a.wr_ptr                     1         1                                  01
+     1 \clk                          0         0                                   0
+     1 \ok                           1         1                                   1
+     1 \rd_ready                     0         0                                   0
+     1 \rst                          0         0                                   0
+     1 \wr_data                      1         1                                  01
+     1 \wr_valid                     0         0                                   0
+  ---- ------------------- ----------- --------- -----------------------------------
+     2 \a.n30_o                      0         0                                  00
+     2 \a.n37_o                      1         1                                  01
+     2 \a.n42_o                      0         0                                  00
+     2 \a.n47_o                      0         0                                  00
+     2 \a.n99_o                      3         3    00000000000000000000000000000011
+     2 \a.rd_ptr                     0         0                                  00
+     2 \a.wr_ptr                     1         1                                  01
+     2 \clk                          0         0                                   0
+     2 \ok                           1         1                                   1
+     2 \rd_ready                     1         1                                   1
+     2 \rst                          0         0                                   0
+     2 \wr_data                      1         1                                  01
+     2 \wr_valid                     0         0                                   0
+  ---- ------------------- ----------- --------- -----------------------------------
+     3 \a.n30_o                      0         0                                  00
+     3 \a.n37_o                      1         1                                  01
+     3 \a.n42_o                      0         0                                  00
+     3 \a.n47_o                      0         0                                  00
+     3 \a.n99_o                      2         2    00000000000000000000000000000010
+     3 \a.rd_ptr                     1         1                                  01
+     3 \a.wr_ptr                     1         1                                  01
+     3 \clk                          0         0                                   0
+     3 \ok                           1         1                                   1
+     3 \rd_ready                     1         1                                   1
+     3 \rst                          0         0                                   0
+     3 \wr_data                      0         0                                  00
+     3 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     4 \a.n30_o                      0         0                                  00
+     4 \a.n37_o                      0         0                                  00
+     4 \a.n42_o                      0         0                                  00
+     4 \a.n47_o                      0         0                                  00
+     4 \a.n99_o                      2         2    00000000000000000000000000000010
+     4 \a.rd_ptr                     2         2                                  10
+     4 \a.wr_ptr                     2         2                                  10
+     4 \clk                          0         0                                   0
+     4 \ok                           1         1                                   1
+     4 \rd_ready                     0         0                                   0
+     4 \rst                          0         0                                   0
+     4 \wr_data                      0         0                                  00
+     4 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     5 \a.n30_o                      0         0                                  00
+     5 \a.n37_o                      0         0                                  00
+     5 \a.n42_o                      0         0                                  00
+     5 \a.n47_o                      0         0                                  00
+     5 \a.n99_o                      3         3    00000000000000000000000000000011
+     5 \a.rd_ptr                     2         2                                  10
+     5 \a.wr_ptr                     3         3                                  11
+     5 \clk                          0         0                                   0
+     5 \ok                           1         1                                   1
+     5 \rd_ready                     1         1                                   1
+     5 \rst                          0         0                                   0
+     5 \wr_data                      0         0                                  00
+     5 \wr_valid                     0         0                                   0
+  ---- ------------------- ----------- --------- -----------------------------------
+     6 \a.n30_o                      0         0                                  00
+     6 \a.n37_o                      0         0                                  00
+     6 \a.n42_o                      0         0                                  00
+     6 \a.n47_o                      0         0                                  00
+     6 \a.n99_o                      2         2    00000000000000000000000000000010
+     6 \a.rd_ptr                     3         3                                  11
+     6 \a.wr_ptr                     3         3                                  11
+     6 \clk                          0         0                                   0
+     6 \ok                           1         1                                   1
+     6 \rd_ready                     1         1                                   1
+     6 \rst                          0         0                                   0
+     6 \wr_data                      0         0                                  00
+     6 \wr_valid                     0         0                                   0
+  ---- ------------------- ----------- --------- -----------------------------------
+     7 \a.n30_o                      0         0                                  00
+     7 \a.n37_o                      0         0                                  00
+     7 \a.n42_o                      0         0                                  00
+     7 \a.n47_o                      0         0                                  00
+     7 \a.n99_o                      1         1    00000000000000000000000000000001
+     7 \a.rd_ptr                     0         0                                  00
+     7 \a.wr_ptr                     3         3                                  11
+     7 \clk                          0         0                                   0
+     7 \ok                           1         1                                   1
+     7 \rd_ready                     0         0                                   0
+     7 \rst                          0         0                                   0
+     7 \wr_data                      0         0                                  00
+     7 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     8 \a.n30_o                      0         0                                  00
+     8 \a.n37_o                      0         0                                  00
+     8 \a.n42_o                      0         0                                  00
+     8 \a.n47_o                      0         0                                  00
+     8 \a.n99_o                      2         2    00000000000000000000000000000010
+     8 \a.rd_ptr                     0         0                                  00
+     8 \a.wr_ptr                     0         0                                  00
+     8 \clk                          0         0                                   0
+     8 \ok                           1         1                                   1
+     8 \rd_ready                     0         0                                   0
+     8 \rst                          0         0                                   0
+     8 \wr_data                      1         1                                  01
+     8 \wr_valid                     1         1                                   1
+  ---- ------------------- ----------- --------- -----------------------------------
+     9 \a.n30_o                      1         1                                  01
+     9 \a.n37_o                      0         0                                  00
+     9 \a.n42_o                      0         0                                  00
+     9 \a.n47_o                      0         0                                  00
+     9 \a.n99_o                      3         3    00000000000000000000000000000011
+     9 \a.rd_ptr                     0         0                                  00
+     9 \a.wr_ptr                     1         1                                  01
+     9 \clk                          0         0                                   0
+     9 \ok                           0         0                                   0
+     9 \rd_ready                     0         0                                   0
+     9 \rst                          0         0                                   0
+     9 \wr_data                      0         0                                  00
+     9 \wr_valid                     0         0                                   0
+
+Reached maximum number of time steps -> proof failed.
+Dumping SAT model to VCD file induction_trace.vcd
+
+   ______                   ___       ___       _ _      ERROR: Called with -verify and proof did fail!

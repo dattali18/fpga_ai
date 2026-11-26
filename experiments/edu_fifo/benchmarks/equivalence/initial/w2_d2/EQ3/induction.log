@@ -1,0 +1,1305 @@
+
+-- Running command `read_json ../v1/reference.json; rename edu_fifo gold; read_json ../v2/reference.json; rename edu_fifo gate; read_verilog harness.v; hierarchy -check -top compare_fifo; flatten; opt_clean; check -assert; select -module compare_fifo; sat -seq 1 -tempinduct -maxsteps 8 -prove ok 1 -show-inputs -show-outputs -show-regs -timeout 15 -verify -dump_vcd induction_trace.vcd' --
+
+1. Executing JSON frontend.
+Importing module edu_fifo from JSON tree.
+Renaming module \edu_fifo to \gold.
+
+2. Executing JSON frontend.
+Importing module edu_fifo from JSON tree.
+Renaming module \edu_fifo to \gate.
+
+3. Executing Verilog-2005 frontend: harness.v
+Parsing Verilog input from `harness.v' to AST representation.
+Generating RTLIL representation for module `\compare_fifo'.
+Successfully finished Verilog frontend.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1. Analyzing design hierarchy..
+Top module:  \compare_fifo
+Used module:     \gate
+Used module:     \gold
+
+4.2. Analyzing design hierarchy..
+Top module:  \compare_fifo
+Used module:     \gate
+Used module:     \gold
+Removed 0 unused modules.
+
+5. Executing FLATTEN pass (flatten design).
+Deleting now unused module gate.
+Deleting now unused module gold.
+<suppressed ~2 debug messages>
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Warning: Ignoring module compare_fifo because it contains processes (run 'proc' command first).
+
+7. Executing CHECK pass (checking for obvious problems).
+Checking module compare_fifo...
+Found and reported 0 problems.
+
+8. Executing SAT pass (solving SAT problems in the circuit).
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Imported 104 cells to SAT database.
+Import set-constraint from init attribute: \a.rd_ptr = 1'0
+Import set-constraint from init attribute: \a.wr_ptr = 1'0
+Import set-constraint from init attribute: \a.n8_o [1:0] = 2'00
+Import set-constraint from init attribute: \b.n96_q = 1'0
+Import set-constraint from init attribute: \b.n97_q = 1'0
+Import set-constraint from init attribute: \b.n98_q = 2'00
+Final init constraint equation: { \b.n98_q \b.n97_q \b.n96_q \a.n8_o [1:0] \a.wr_ptr \a.rd_ptr } = 8'00000000
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Imported 104 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+
+** Trying induction with length 1 **
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Imported 104 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \b.n96_q
+Import show expression: \b.n97_q
+Import show expression: \b.n98_q
+Import show expression: \b.g_mem_mem[1]
+Import show expression: \b.g_mem_mem[0]
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n8_o
+
+[base case 1] Solving problem with 3104 variables and 8020 clauses..
+Base case for induction length 1 proven.
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Imported 104 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \b.n96_q
+Import show expression: \b.n97_q
+Import show expression: \b.n98_q
+Import show expression: \b.g_mem_mem[1]
+Import show expression: \b.g_mem_mem[0]
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n8_o
+
+[induction step 1] Solving problem with 3098 variables and 7995 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                  Dec       Hex                                 Bin
+  ---- -------------------- ----------- --------- -----------------------------------
+  init \a.n30_o                       3         3                                  11
+  init \a.n37_o                       3         3                                  11
+  init \a.n8_o [1:0]                  0         0                                  00
+  init \a.rd_ptr                      1         1                                   1
+  init \a.wr_ptr                      0         0                                   0
+  init \b.g_mem_mem[0]                1         1                                  01
+  init \b.g_mem_mem[1]                2         2                                  10
+  init \b.n96_q                       0         0                                   0
+  init \b.n97_q                       0         0                                   0
+  init \b.n98_q                       0         0                                  00
+  ---- -------------------- ----------- --------- -----------------------------------
+     1 \a.n30_o                       3         3                                  11
+     1 \a.n37_o                       3         3                                  11
+     1 \a.n8_o                        0         0    00000000000000000000000000000000
+     1 \a.rd_ptr                      1         1                                   1
+     1 \a.wr_ptr                      0         0                                   0
+     1 \b.g_mem_mem[0]                1         1                                  01
+     1 \b.g_mem_mem[1]                2         2                                  10
+     1 \b.n96_q                       0         0                                   0
+     1 \b.n97_q                       0         0                                   0
+     1 \b.n98_q                       0         0                                  00
+     1 \clk                           0         0                                   0
+     1 \ok                            1         1                                   1
+     1 \rd_ready                      0         0                                   0
+     1 \rst                           0         0                                   0
+     1 \wr_data                       2         2                                  10
+     1 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     2 \a.n30_o                       2         2                                  10
+     2 \a.n37_o                       3         3                                  11
+     2 \a.n8_o                        1         1    00000000000000000000000000000001
+     2 \a.rd_ptr                      1         1                                   1
+     2 \a.wr_ptr                      1         1                                   1
+     2 \b.g_mem_mem[0]                2         2                                  10
+     2 \b.g_mem_mem[1]                2         2                                  10
+     2 \b.n96_q                       0         0                                   0
+     2 \b.n97_q                       1         1                                   1
+     2 \b.n98_q                       1         1                                  01
+     2 \clk                           0         0                                   0
+     2 \ok                            0         0                                   0
+     2 \rd_ready                      0         0                                   0
+     2 \rst                           0         0                                   0
+     2 \wr_data                       0         0                                  00
+     2 \wr_valid                      1         1                                   1
+
+** Trying induction with length 2 **
+
+Setting up time step 3:
+Final constraint equation: { } = { }
+Imported 104 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \b.n96_q
+Import show expression: \b.n97_q
+Import show expression: \b.n98_q
+Import show expression: \b.g_mem_mem[1]
+Import show expression: \b.g_mem_mem[0]
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n8_o
+
+[base case 2] Solving problem with 4726 variables and 12262 clauses..
+Base case for induction length 2 proven.
+
+Setting up time step 3:
+Final constraint equation: { } = { }
+Imported 104 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \b.n96_q
+Import show expression: \b.n97_q
+Import show expression: \b.n98_q
+Import show expression: \b.g_mem_mem[1]
+Import show expression: \b.g_mem_mem[0]
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n8_o
+
+[induction step 2] Solving problem with 4769 variables and 12399 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                  Dec       Hex                                 Bin
+  ---- -------------------- ----------- --------- -----------------------------------
+  init \a.n30_o                       3         3                                  11
+  init \a.n37_o                       2         2                                  10
+  init \a.n8_o [1:0]                  0         0                                  00
+  init \a.rd_ptr                      1         1                                   1
+  init \a.wr_ptr                      0         0                                   0
+  init \b.g_mem_mem[0]                3         3                                  11
+  init \b.g_mem_mem[1]                1         1                                  01
+  init \b.n96_q                       1         1                                   1
+  init \b.n97_q                       1         1                                   1
+  init \b.n98_q                       0         0                                  00
+  ---- -------------------- ----------- --------- -----------------------------------
+     1 \a.n30_o                       3         3                                  11
+     1 \a.n37_o                       2         2                                  10
+     1 \a.n8_o                        0         0    00000000000000000000000000000000
+     1 \a.rd_ptr                      1         1                                   1
+     1 \a.wr_ptr                      0         0                                   0
+     1 \b.g_mem_mem[0]                3         3                                  11
+     1 \b.g_mem_mem[1]                1         1                                  01
+     1 \b.n96_q                       1         1                                   1
+     1 \b.n97_q                       1         1                                   1
+     1 \b.n98_q                       0         0                                  00
+     1 \clk                           0         0                                   0
+     1 \ok                            1         1                                   1
+     1 \rd_ready                      0         0                                   0
+     1 \rst                           0         0                                   0
+     1 \wr_data                       2         2                                  10
+     1 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     2 \a.n30_o                       2         2                                  10
+     2 \a.n37_o                       2         2                                  10
+     2 \a.n8_o                        1         1    00000000000000000000000000000001
+     2 \a.rd_ptr                      1         1                                   1
+     2 \a.wr_ptr                      1         1                                   1
+     2 \b.g_mem_mem[0]                3         3                                  11
+     2 \b.g_mem_mem[1]                2         2                                  10
+     2 \b.n96_q                       1         1                                   1
+     2 \b.n97_q                       0         0                                   0
+     2 \b.n98_q                       1         1                                  01
+     2 \clk                           0         0                                   0
+     2 \ok                            1         1                                   1
+     2 \rd_ready                      0         0                                   0
+     2 \rst                           0         0                                   0
+     2 \wr_data                       0         0                                  00
+     2 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     3 \a.n30_o                       2         2                                  10
+     3 \a.n37_o                       0         0                                  00
+     3 \a.n8_o                        2         2    00000000000000000000000000000010
+     3 \a.rd_ptr                      1         1                                   1
+     3 \a.wr_ptr                      0         0                                   0
+     3 \b.g_mem_mem[0]                0         0                                  00
+     3 \b.g_mem_mem[1]                2         2                                  10
+     3 \b.n96_q                       1         1                                   1
+     3 \b.n97_q                       1         1                                   1
+     3 \b.n98_q                       2         2                                  10
+     3 \clk                           0         0                                   0
+     3 \ok                            0         0                                   0
+     3 \rd_ready                      0         0                                   0
+     3 \rst                           0         0                                   0
+     3 \wr_data                       0         0                                  00
+     3 \wr_valid                      0         0                                   0
+
+** Trying induction with length 3 **
+
+Setting up time step 4:
+Final constraint equation: { } = { }
+Imported 104 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \b.n96_q
+Import show expression: \b.n97_q
+Import show expression: \b.n98_q
+Import show expression: \b.g_mem_mem[1]
+Import show expression: \b.g_mem_mem[0]
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n8_o
+
+[base case 3] Solving problem with 6397 variables and 16666 clauses..
+Base case for induction length 3 proven.
+
+Setting up time step 4:
+Final constraint equation: { } = { }
+Imported 104 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \b.n96_q
+Import show expression: \b.n97_q
+Import show expression: \b.n98_q
+Import show expression: \b.g_mem_mem[1]
+Import show expression: \b.g_mem_mem[0]
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n8_o
+
+[induction step 3] Solving problem with 6489 variables and 16965 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                  Dec       Hex                                 Bin
+  ---- -------------------- ----------- --------- -----------------------------------
+  init \a.n30_o                       3         3                                  11
+  init \a.n37_o                       2         2                                  10
+  init \a.n8_o [1:0]                  0         0                                  00
+  init \a.rd_ptr                      1         1                                   1
+  init \a.wr_ptr                      0         0                                   0
+  init \b.g_mem_mem[0]                3         3                                  11
+  init \b.g_mem_mem[1]                1         1                                  01
+  init \b.n96_q                       1         1                                   1
+  init \b.n97_q                       1         1                                   1
+  init \b.n98_q                       0         0                                  00
+  ---- -------------------- ----------- --------- -----------------------------------
+     1 \a.n30_o                       3         3                                  11
+     1 \a.n37_o                       2         2                                  10
+     1 \a.n8_o                        0         0    00000000000000000000000000000000
+     1 \a.rd_ptr                      1         1                                   1
+     1 \a.wr_ptr                      0         0                                   0
+     1 \b.g_mem_mem[0]                3         3                                  11
+     1 \b.g_mem_mem[1]                1         1                                  01
+     1 \b.n96_q                       1         1                                   1
+     1 \b.n97_q                       1         1                                   1
+     1 \b.n98_q                       0         0                                  00
+     1 \clk                           0         0                                   0
+     1 \ok                            1         1                                   1
+     1 \rd_ready                      0         0                                   0
+     1 \rst                           0         0                                   0
+     1 \wr_data                       2         2                                  10
+     1 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     2 \a.n30_o                       2         2                                  10
+     2 \a.n37_o                       2         2                                  10
+     2 \a.n8_o                        1         1    00000000000000000000000000000001
+     2 \a.rd_ptr                      1         1                                   1
+     2 \a.wr_ptr                      1         1                                   1
+     2 \b.g_mem_mem[0]                3         3                                  11
+     2 \b.g_mem_mem[1]                2         2                                  10
+     2 \b.n96_q                       1         1                                   1
+     2 \b.n97_q                       0         0                                   0
+     2 \b.n98_q                       1         1                                  01
+     2 \clk                           0         0                                   0
+     2 \ok                            1         1                                   1
+     2 \rd_ready                      1         1                                   1
+     2 \rst                           0         0                                   0
+     2 \wr_data                       2         2                                  10
+     2 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     3 \a.n30_o                       2         2                                  10
+     3 \a.n37_o                       2         2                                  10
+     3 \a.n8_o                        1         1    00000000000000000000000000000001
+     3 \a.rd_ptr                      0         0                                   0
+     3 \a.wr_ptr                      0         0                                   0
+     3 \b.g_mem_mem[0]                2         2                                  10
+     3 \b.g_mem_mem[1]                2         2                                  10
+     3 \b.n96_q                       0         0                                   0
+     3 \b.n97_q                       1         1                                   1
+     3 \b.n98_q                       1         1                                  01
+     3 \clk                           0         0                                   0
+     3 \ok                            1         1                                   1
+     3 \rd_ready                      0         0                                   0
+     3 \rst                           0         0                                   0
+     3 \wr_data                       3         3                                  11
+     3 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     4 \a.n30_o                       3         3                                  11
+     4 \a.n37_o                       2         2                                  10
+     4 \a.n8_o                        2         2    00000000000000000000000000000010
+     4 \a.rd_ptr                      0         0                                   0
+     4 \a.wr_ptr                      1         1                                   1
+     4 \b.g_mem_mem[0]                2         2                                  10
+     4 \b.g_mem_mem[1]                3         3                                  11
+     4 \b.n96_q                       0         0                                   0
+     4 \b.n97_q                       0         0                                   0
+     4 \b.n98_q                       2         2                                  10
+     4 \clk                           0         0                                   0
+     4 \ok                            0         0                                   0
+     4 \rd_ready                      0         0                                   0
+     4 \rst                           0         0                                   0
+     4 \wr_data                       0         0                                  00
+     4 \wr_valid                      1         1                                   1
+
+** Trying induction with length 4 **
+
+Setting up time step 5:
+Final constraint equation: { } = { }
+Imported 104 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \b.n96_q
+Import show expression: \b.n97_q
+Import show expression: \b.n98_q
+Import show expression: \b.g_mem_mem[1]
+Import show expression: \b.g_mem_mem[0]
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n8_o
+
+[base case 4] Solving problem with 8117 variables and 21232 clauses..
+Base case for induction length 4 proven.
+
+Setting up time step 5:
+Final constraint equation: { } = { }
+Imported 104 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \b.n96_q
+Import show expression: \b.n97_q
+Import show expression: \b.n98_q
+Import show expression: \b.g_mem_mem[1]
+Import show expression: \b.g_mem_mem[0]
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n8_o
+
+[induction step 4] Solving problem with 8258 variables and 21693 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                  Dec       Hex                                 Bin
+  ---- -------------------- ----------- --------- -----------------------------------
+  init \a.n30_o                       0         0                                  00
+  init \a.n37_o                       2         2                                  10
+  init \a.n8_o [1:0]                  1         1                                  01
+  init \a.rd_ptr                      1         1                                   1
+  init \a.wr_ptr                      0         0                                   0
+  init \b.g_mem_mem[0]                2         2                                  10
+  init \b.g_mem_mem[1]                0         0                                  00
+  init \b.n96_q                       0         0                                   0
+  init \b.n97_q                       0         0                                   0
+  init \b.n98_q                       3         3                                  11
+  ---- -------------------- ----------- --------- -----------------------------------
+     1 \a.n30_o                       0         0                                  00
+     1 \a.n37_o                       2         2                                  10
+     1 \a.n8_o                        1         1    00000000000000000000000000000001
+     1 \a.rd_ptr                      1         1                                   1
+     1 \a.wr_ptr                      0         0                                   0
+     1 \b.g_mem_mem[0]                2         2                                  10
+     1 \b.g_mem_mem[1]                0         0                                  00
+     1 \b.n96_q                       0         0                                   0
+     1 \b.n97_q                       0         0                                   0
+     1 \b.n98_q                       3         3                                  11
+     1 \clk                           0         0                                   0
+     1 \ok                            1         1                                   1
+     1 \rd_ready                      0         0                                   0
+     1 \rst                           0         0                                   0
+     1 \wr_data                       2         2                                  10
+     1 \wr_valid                      0         0                                   0
+  ---- -------------------- ----------- --------- -----------------------------------
+     2 \a.n30_o                       0         0                                  00
+     2 \a.n37_o                       2         2                                  10
+     2 \a.n8_o                        1         1    00000000000000000000000000000001
+     2 \a.rd_ptr                      1         1                                   1
+     2 \a.wr_ptr                      0         0                                   0
+     2 \b.g_mem_mem[0]                2         2                                  10
+     2 \b.g_mem_mem[1]                0         0                                  00
+     2 \b.n96_q                       0         0                                   0
+     2 \b.n97_q                       0         0                                   0
+     2 \b.n98_q                       3         3                                  11
+     2 \clk                           0         0                                   0
+     2 \ok                            1         1                                   1
+     2 \rd_ready                      1         1                                   1
+     2 \rst                           0         0                                   0
+     2 \wr_data                       0         0                                  00
+     2 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     3 \a.n30_o                       0         0                                  00
+     3 \a.n37_o                       2         2                                  10
+     3 \a.n8_o                        1         1    00000000000000000000000000000001
+     3 \a.rd_ptr                      0         0                                   0
+     3 \a.wr_ptr                      1         1                                   1
+     3 \b.g_mem_mem[0]                0         0                                  00
+     3 \b.g_mem_mem[1]                0         0                                  00
+     3 \b.n96_q                       1         1                                   1
+     3 \b.n97_q                       1         1                                   1
+     3 \b.n98_q                       3         3                                  11
+     3 \clk                           0         0                                   0
+     3 \ok                            1         1                                   1
+     3 \rd_ready                      1         1                                   1
+     3 \rst                           0         0                                   0
+     3 \wr_data                       0         0                                  00
+     3 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     4 \a.n30_o                       0         0                                  00
+     4 \a.n37_o                       0         0                                  00
+     4 \a.n8_o                        1         1    00000000000000000000000000000001
+     4 \a.rd_ptr                      1         1                                   1
+     4 \a.wr_ptr                      0         0                                   0
+     4 \b.g_mem_mem[0]                0         0                                  00
+     4 \b.g_mem_mem[1]                0         0                                  00
+     4 \b.n96_q                       0         0                                   0
+     4 \b.n97_q                       0         0                                   0
+     4 \b.n98_q                       3         3                                  11
+     4 \clk                           0         0                                   0
+     4 \ok                            1         1                                   1
+     4 \rd_ready                      1         1                                   1
+     4 \rst                           0         0                                   0
+     4 \wr_data                       2         2                                  10
+     4 \wr_valid                      0         0                                   0
+  ---- -------------------- ----------- --------- -----------------------------------
+     5 \a.n30_o                       0         0                                  00
+     5 \a.n37_o                       0         0                                  00
+     5 \a.n8_o                        0         0    00000000000000000000000000000000
+     5 \a.rd_ptr                      0         0                                   0
+     5 \a.wr_ptr                      0         0                                   0
+     5 \b.g_mem_mem[0]                0         0                                  00
+     5 \b.g_mem_mem[1]                0         0                                  00
+     5 \b.n96_q                       1         1                                   1
+     5 \b.n97_q                       0         0                                   0
+     5 \b.n98_q                       2         2                                  10
+     5 \clk                           0         0                                   0
+     5 \ok                            0         0                                   0
+     5 \rd_ready                      0         0                                   0
+     5 \rst                           0         0                                   0
+     5 \wr_data                       0         0                                  00
+     5 \wr_valid                      0         0                                   0
+
+** Trying induction with length 5 **
+
+Setting up time step 6:
+Final constraint equation: { } = { }
+Imported 104 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \b.n96_q
+Import show expression: \b.n97_q
+Import show expression: \b.n98_q
+Import show expression: \b.g_mem_mem[1]
+Import show expression: \b.g_mem_mem[0]
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n8_o
+
+[base case 5] Solving problem with 9886 variables and 25960 clauses..
+Base case for induction length 5 proven.
+
+Setting up time step 6:
+Final constraint equation: { } = { }
+Imported 104 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \b.n96_q
+Import show expression: \b.n97_q
+Import show expression: \b.n98_q
+Import show expression: \b.g_mem_mem[1]
+Import show expression: \b.g_mem_mem[0]
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n8_o
+
+[induction step 5] Solving problem with 10076 variables and 26583 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                  Dec       Hex                                 Bin
+  ---- -------------------- ----------- --------- -----------------------------------
+  init \a.n30_o                       0         0                                  00
+  init \a.n37_o                       2         2                                  10
+  init \a.n8_o [1:0]                  1         1                                  01
+  init \a.rd_ptr                      1         1                                   1
+  init \a.wr_ptr                      0         0                                   0
+  init \b.g_mem_mem[0]                2         2                                  10
+  init \b.g_mem_mem[1]                0         0                                  00
+  init \b.n96_q                       0         0                                   0
+  init \b.n97_q                       0         0                                   0
+  init \b.n98_q                       1         1                                  01
+  ---- -------------------- ----------- --------- -----------------------------------
+     1 \a.n30_o                       0         0                                  00
+     1 \a.n37_o                       2         2                                  10
+     1 \a.n8_o                        1         1    00000000000000000000000000000001
+     1 \a.rd_ptr                      1         1                                   1
+     1 \a.wr_ptr                      0         0                                   0
+     1 \b.g_mem_mem[0]                2         2                                  10
+     1 \b.g_mem_mem[1]                0         0                                  00
+     1 \b.n96_q                       0         0                                   0
+     1 \b.n97_q                       0         0                                   0
+     1 \b.n98_q                       1         1                                  01
+     1 \clk                           0         0                                   0
+     1 \ok                            1         1                                   1
+     1 \rd_ready                      0         0                                   0
+     1 \rst                           0         0                                   0
+     1 \wr_data                       2         2                                  10
+     1 \wr_valid                      0         0                                   0
+  ---- -------------------- ----------- --------- -----------------------------------
+     2 \a.n30_o                       0         0                                  00
+     2 \a.n37_o                       2         2                                  10
+     2 \a.n8_o                        1         1    00000000000000000000000000000001
+     2 \a.rd_ptr                      1         1                                   1
+     2 \a.wr_ptr                      0         0                                   0
+     2 \b.g_mem_mem[0]                2         2                                  10
+     2 \b.g_mem_mem[1]                0         0                                  00
+     2 \b.n96_q                       0         0                                   0
+     2 \b.n97_q                       0         0                                   0
+     2 \b.n98_q                       1         1                                  01
+     2 \clk                           0         0                                   0
+     2 \ok                            1         1                                   1
+     2 \rd_ready                      1         1                                   1
+     2 \rst                           0         0                                   0
+     2 \wr_data                       0         0                                  00
+     2 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     3 \a.n30_o                       0         0                                  00
+     3 \a.n37_o                       2         2                                  10
+     3 \a.n8_o                        1         1    00000000000000000000000000000001
+     3 \a.rd_ptr                      0         0                                   0
+     3 \a.wr_ptr                      1         1                                   1
+     3 \b.g_mem_mem[0]                0         0                                  00
+     3 \b.g_mem_mem[1]                0         0                                  00
+     3 \b.n96_q                       1         1                                   1
+     3 \b.n97_q                       1         1                                   1
+     3 \b.n98_q                       1         1                                  01
+     3 \clk                           0         0                                   0
+     3 \ok                            1         1                                   1
+     3 \rd_ready                      1         1                                   1
+     3 \rst                           0         0                                   0
+     3 \wr_data                       0         0                                  00
+     3 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     4 \a.n30_o                       0         0                                  00
+     4 \a.n37_o                       0         0                                  00
+     4 \a.n8_o                        1         1    00000000000000000000000000000001
+     4 \a.rd_ptr                      1         1                                   1
+     4 \a.wr_ptr                      0         0                                   0
+     4 \b.g_mem_mem[0]                0         0                                  00
+     4 \b.g_mem_mem[1]                0         0                                  00
+     4 \b.n96_q                       0         0                                   0
+     4 \b.n97_q                       0         0                                   0
+     4 \b.n98_q                       1         1                                  01
+     4 \clk                           0         0                                   0
+     4 \ok                            1         1                                   1
+     4 \rd_ready                      1         1                                   1
+     4 \rst                           0         0                                   0
+     4 \wr_data                       2         2                                  10
+     4 \wr_valid                      0         0                                   0
+  ---- -------------------- ----------- --------- -----------------------------------
+     5 \a.n30_o                       0         0                                  00
+     5 \a.n37_o                       0         0                                  00
+     5 \a.n8_o                        0         0    00000000000000000000000000000000
+     5 \a.rd_ptr                      0         0                                   0
+     5 \a.wr_ptr                      0         0                                   0
+     5 \b.g_mem_mem[0]                0         0                                  00
+     5 \b.g_mem_mem[1]                0         0                                  00
+     5 \b.n96_q                       1         1                                   1
+     5 \b.n97_q                       0         0                                   0
+     5 \b.n98_q                       0         0                                  00
+     5 \clk                           0         0                                   0
+     5 \ok                            1         1                                   1
+     5 \rd_ready                      0         0                                   0
+     5 \rst                           0         0                                   0
+     5 \wr_data                       1         1                                  01
+     5 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     6 \a.n30_o                       1         1                                  01
+     6 \a.n37_o                       0         0                                  00
+     6 \a.n8_o                        1         1    00000000000000000000000000000001
+     6 \a.rd_ptr                      0         0                                   0
+     6 \a.wr_ptr                      1         1                                   1
+     6 \b.g_mem_mem[0]                1         1                                  01
+     6 \b.g_mem_mem[1]                0         0                                  00
+     6 \b.n96_q                       1         1                                   1
+     6 \b.n97_q                       1         1                                   1
+     6 \b.n98_q                       1         1                                  01
+     6 \clk                           0         0                                   0
+     6 \ok                            0         0                                   0
+     6 \rd_ready                      0         0                                   0
+     6 \rst                           0         0                                   0
+     6 \wr_data                       0         0                                  00
+     6 \wr_valid                      0         0                                   0
+
+** Trying induction with length 6 **
+
+Setting up time step 7:
+Final constraint equation: { } = { }
+Imported 104 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \b.n96_q
+Import show expression: \b.n97_q
+Import show expression: \b.n98_q
+Import show expression: \b.g_mem_mem[1]
+Import show expression: \b.g_mem_mem[0]
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n8_o
+
+[base case 6] Solving problem with 11704 variables and 30850 clauses..
+Base case for induction length 6 proven.
+
+Setting up time step 7:
+Final constraint equation: { } = { }
+Imported 104 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \b.n96_q
+Import show expression: \b.n97_q
+Import show expression: \b.n98_q
+Import show expression: \b.g_mem_mem[1]
+Import show expression: \b.g_mem_mem[0]
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n8_o
+
+[induction step 6] Solving problem with 11943 variables and 31635 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                  Dec       Hex                                 Bin
+  ---- -------------------- ----------- --------- -----------------------------------
+  init \a.n30_o                       0         0                                  00
+  init \a.n37_o                       2         2                                  10
+  init \a.n8_o [1:0]                  1         1                                  01
+  init \a.rd_ptr                      1         1                                   1
+  init \a.wr_ptr                      0         0                                   0
+  init \b.g_mem_mem[0]                2         2                                  10
+  init \b.g_mem_mem[1]                0         0                                  00
+  init \b.n96_q                       0         0                                   0
+  init \b.n97_q                       0         0                                   0
+  init \b.n98_q                       1         1                                  01
+  ---- -------------------- ----------- --------- -----------------------------------
+     1 \a.n30_o                       0         0                                  00
+     1 \a.n37_o                       2         2                                  10
+     1 \a.n8_o                        1         1    00000000000000000000000000000001
+     1 \a.rd_ptr                      1         1                                   1
+     1 \a.wr_ptr                      0         0                                   0
+     1 \b.g_mem_mem[0]                2         2                                  10
+     1 \b.g_mem_mem[1]                0         0                                  00
+     1 \b.n96_q                       0         0                                   0
+     1 \b.n97_q                       0         0                                   0
+     1 \b.n98_q                       1         1                                  01
+     1 \clk                           0         0                                   0
+     1 \ok                            1         1                                   1
+     1 \rd_ready                      0         0                                   0
+     1 \rst                           0         0                                   0
+     1 \wr_data                       2         2                                  10
+     1 \wr_valid                      0         0                                   0
+  ---- -------------------- ----------- --------- -----------------------------------
+     2 \a.n30_o                       0         0                                  00
+     2 \a.n37_o                       2         2                                  10
+     2 \a.n8_o                        1         1    00000000000000000000000000000001
+     2 \a.rd_ptr                      1         1                                   1
+     2 \a.wr_ptr                      0         0                                   0
+     2 \b.g_mem_mem[0]                2         2                                  10
+     2 \b.g_mem_mem[1]                0         0                                  00
+     2 \b.n96_q                       0         0                                   0
+     2 \b.n97_q                       0         0                                   0
+     2 \b.n98_q                       1         1                                  01
+     2 \clk                           0         0                                   0
+     2 \ok                            1         1                                   1
+     2 \rd_ready                      1         1                                   1
+     2 \rst                           0         0                                   0
+     2 \wr_data                       0         0                                  00
+     2 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     3 \a.n30_o                       0         0                                  00
+     3 \a.n37_o                       2         2                                  10
+     3 \a.n8_o                        1         1    00000000000000000000000000000001
+     3 \a.rd_ptr                      0         0                                   0
+     3 \a.wr_ptr                      1         1                                   1
+     3 \b.g_mem_mem[0]                0         0                                  00
+     3 \b.g_mem_mem[1]                0         0                                  00
+     3 \b.n96_q                       1         1                                   1
+     3 \b.n97_q                       1         1                                   1
+     3 \b.n98_q                       1         1                                  01
+     3 \clk                           0         0                                   0
+     3 \ok                            1         1                                   1
+     3 \rd_ready                      1         1                                   1
+     3 \rst                           0         0                                   0
+     3 \wr_data                       0         0                                  00
+     3 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     4 \a.n30_o                       0         0                                  00
+     4 \a.n37_o                       0         0                                  00
+     4 \a.n8_o                        1         1    00000000000000000000000000000001
+     4 \a.rd_ptr                      1         1                                   1
+     4 \a.wr_ptr                      0         0                                   0
+     4 \b.g_mem_mem[0]                0         0                                  00
+     4 \b.g_mem_mem[1]                0         0                                  00
+     4 \b.n96_q                       0         0                                   0
+     4 \b.n97_q                       0         0                                   0
+     4 \b.n98_q                       1         1                                  01
+     4 \clk                           0         0                                   0
+     4 \ok                            1         1                                   1
+     4 \rd_ready                      1         1                                   1
+     4 \rst                           0         0                                   0
+     4 \wr_data                       2         2                                  10
+     4 \wr_valid                      0         0                                   0
+  ---- -------------------- ----------- --------- -----------------------------------
+     5 \a.n30_o                       0         0                                  00
+     5 \a.n37_o                       0         0                                  00
+     5 \a.n8_o                        0         0    00000000000000000000000000000000
+     5 \a.rd_ptr                      0         0                                   0
+     5 \a.wr_ptr                      0         0                                   0
+     5 \b.g_mem_mem[0]                0         0                                  00
+     5 \b.g_mem_mem[1]                0         0                                  00
+     5 \b.n96_q                       1         1                                   1
+     5 \b.n97_q                       0         0                                   0
+     5 \b.n98_q                       0         0                                  00
+     5 \clk                           0         0                                   0
+     5 \ok                            1         1                                   1
+     5 \rd_ready                      0         0                                   0
+     5 \rst                           0         0                                   0
+     5 \wr_data                       0         0                                  00
+     5 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     6 \a.n30_o                       0         0                                  00
+     6 \a.n37_o                       0         0                                  00
+     6 \a.n8_o                        1         1    00000000000000000000000000000001
+     6 \a.rd_ptr                      0         0                                   0
+     6 \a.wr_ptr                      1         1                                   1
+     6 \b.g_mem_mem[0]                0         0                                  00
+     6 \b.g_mem_mem[1]                0         0                                  00
+     6 \b.n96_q                       1         1                                   1
+     6 \b.n97_q                       1         1                                   1
+     6 \b.n98_q                       1         1                                  01
+     6 \clk                           0         0                                   0
+     6 \ok                            1         1                                   1
+     6 \rd_ready                      0         0                                   0
+     6 \rst                           0         0                                   0
+     6 \wr_data                       1         1                                  01
+     6 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     7 \a.n30_o                       0         0                                  00
+     7 \a.n37_o                       1         1                                  01
+     7 \a.n8_o                        2         2    00000000000000000000000000000010
+     7 \a.rd_ptr                      0         0                                   0
+     7 \a.wr_ptr                      0         0                                   0
+     7 \b.g_mem_mem[0]                0         0                                  00
+     7 \b.g_mem_mem[1]                1         1                                  01
+     7 \b.n96_q                       1         1                                   1
+     7 \b.n97_q                       0         0                                   0
+     7 \b.n98_q                       2         2                                  10
+     7 \clk                           0         0                                   0
+     7 \ok                            0         0                                   0
+     7 \rd_ready                      0         0                                   0
+     7 \rst                           0         0                                   0
+     7 \wr_data                       0         0                                  00
+     7 \wr_valid                      0         0                                   0
+
+** Trying induction with length 7 **
+
+Setting up time step 8:
+Final constraint equation: { } = { }
+Imported 104 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \b.n96_q
+Import show expression: \b.n97_q
+Import show expression: \b.n98_q
+Import show expression: \b.g_mem_mem[1]
+Import show expression: \b.g_mem_mem[0]
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n8_o
+
+[base case 7] Solving problem with 13571 variables and 35902 clauses..
+Base case for induction length 7 proven.
+
+Setting up time step 8:
+Final constraint equation: { } = { }
+Imported 104 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \b.n96_q
+Import show expression: \b.n97_q
+Import show expression: \b.n98_q
+Import show expression: \b.g_mem_mem[1]
+Import show expression: \b.g_mem_mem[0]
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n8_o
+
+[induction step 7] Solving problem with 13859 variables and 36849 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                  Dec       Hex                                 Bin
+  ---- -------------------- ----------- --------- -----------------------------------
+  init \a.n30_o                       0         0                                  00
+  init \a.n37_o                       0         0                                  00
+  init \a.n8_o [1:0]                  3         3                                  11
+  init \a.rd_ptr                      1         1                                   1
+  init \a.wr_ptr                      1         1                                   1
+  init \b.g_mem_mem[0]                0         0                                  00
+  init \b.g_mem_mem[1]                0         0                                  00
+  init \b.n96_q                       1         1                                   1
+  init \b.n97_q                       1         1                                   1
+  init \b.n98_q                       1         1                                  01
+  ---- -------------------- ----------- --------- -----------------------------------
+     1 \a.n30_o                       0         0                                  00
+     1 \a.n37_o                       0         0                                  00
+     1 \a.n8_o                        3         3    00000000000000000000000000000011
+     1 \a.rd_ptr                      1         1                                   1
+     1 \a.wr_ptr                      1         1                                   1
+     1 \b.g_mem_mem[0]                0         0                                  00
+     1 \b.g_mem_mem[1]                0         0                                  00
+     1 \b.n96_q                       1         1                                   1
+     1 \b.n97_q                       1         1                                   1
+     1 \b.n98_q                       1         1                                  01
+     1 \clk                           0         0                                   0
+     1 \ok                            1         1                                   1
+     1 \rd_ready                      0         0                                   0
+     1 \rst                           0         0                                   0
+     1 \wr_data                       2         2                                  10
+     1 \wr_valid                      0         0                                   0
+  ---- -------------------- ----------- --------- -----------------------------------
+     2 \a.n30_o                       0         0                                  00
+     2 \a.n37_o                       0         0                                  00
+     2 \a.n8_o                        3         3    00000000000000000000000000000011
+     2 \a.rd_ptr                      1         1                                   1
+     2 \a.wr_ptr                      1         1                                   1
+     2 \b.g_mem_mem[0]                0         0                                  00
+     2 \b.g_mem_mem[1]                0         0                                  00
+     2 \b.n96_q                       1         1                                   1
+     2 \b.n97_q                       1         1                                   1
+     2 \b.n98_q                       1         1                                  01
+     2 \clk                           0         0                                   0
+     2 \ok                            1         1                                   1
+     2 \rd_ready                      1         1                                   1
+     2 \rst                           0         0                                   0
+     2 \wr_data                       2         2                                  10
+     2 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     3 \a.n30_o                       0         0                                  00
+     3 \a.n37_o                       2         2                                  10
+     3 \a.n8_o                        3         3    00000000000000000000000000000011
+     3 \a.rd_ptr                      0         0                                   0
+     3 \a.wr_ptr                      0         0                                   0
+     3 \b.g_mem_mem[0]                0         0                                  00
+     3 \b.g_mem_mem[1]                2         2                                  10
+     3 \b.n96_q                       0         0                                   0
+     3 \b.n97_q                       0         0                                   0
+     3 \b.n98_q                       1         1                                  01
+     3 \clk                           0         0                                   0
+     3 \ok                            1         1                                   1
+     3 \rd_ready                      1         1                                   1
+     3 \rst                           0         0                                   0
+     3 \wr_data                       0         0                                  00
+     3 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     4 \a.n30_o                       0         0                                  00
+     4 \a.n37_o                       2         2                                  10
+     4 \a.n8_o                        3         3    00000000000000000000000000000011
+     4 \a.rd_ptr                      1         1                                   1
+     4 \a.wr_ptr                      1         1                                   1
+     4 \b.g_mem_mem[0]                0         0                                  00
+     4 \b.g_mem_mem[1]                2         2                                  10
+     4 \b.n96_q                       1         1                                   1
+     4 \b.n97_q                       1         1                                   1
+     4 \b.n98_q                       1         1                                  01
+     4 \clk                           0         0                                   0
+     4 \ok                            1         1                                   1
+     4 \rd_ready                      1         1                                   1
+     4 \rst                           0         0                                   0
+     4 \wr_data                       3         3                                  11
+     4 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     5 \a.n30_o                       0         0                                  00
+     5 \a.n37_o                       3         3                                  11
+     5 \a.n8_o                        3         3    00000000000000000000000000000011
+     5 \a.rd_ptr                      0         0                                   0
+     5 \a.wr_ptr                      0         0                                   0
+     5 \b.g_mem_mem[0]                0         0                                  00
+     5 \b.g_mem_mem[1]                3         3                                  11
+     5 \b.n96_q                       0         0                                   0
+     5 \b.n97_q                       0         0                                   0
+     5 \b.n98_q                       1         1                                  01
+     5 \clk                           0         0                                   0
+     5 \ok                            1         1                                   1
+     5 \rd_ready                      1         1                                   1
+     5 \rst                           0         0                                   0
+     5 \wr_data                       2         2                                  10
+     5 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     6 \a.n30_o                       2         2                                  10
+     6 \a.n37_o                       3         3                                  11
+     6 \a.n8_o                        3         3    00000000000000000000000000000011
+     6 \a.rd_ptr                      1         1                                   1
+     6 \a.wr_ptr                      1         1                                   1
+     6 \b.g_mem_mem[0]                2         2                                  10
+     6 \b.g_mem_mem[1]                3         3                                  11
+     6 \b.n96_q                       1         1                                   1
+     6 \b.n97_q                       1         1                                   1
+     6 \b.n98_q                       1         1                                  01
+     6 \clk                           0         0                                   0
+     6 \ok                            1         1                                   1
+     6 \rd_ready                      1         1                                   1
+     6 \rst                           0         0                                   0
+     6 \wr_data                       3         3                                  11
+     6 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     7 \a.n30_o                       2         2                                  10
+     7 \a.n37_o                       3         3                                  11
+     7 \a.n8_o                        3         3    00000000000000000000000000000011
+     7 \a.rd_ptr                      0         0                                   0
+     7 \a.wr_ptr                      0         0                                   0
+     7 \b.g_mem_mem[0]                2         2                                  10
+     7 \b.g_mem_mem[1]                3         3                                  11
+     7 \b.n96_q                       0         0                                   0
+     7 \b.n97_q                       0         0                                   0
+     7 \b.n98_q                       1         1                                  01
+     7 \clk                           0         0                                   0
+     7 \ok                            1         1                                   1
+     7 \rd_ready                      0         0                                   0
+     7 \rst                           0         0                                   0
+     7 \wr_data                       2         2                                  10
+     7 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     8 \a.n30_o                       2         2                                  10
+     8 \a.n37_o                       3         3                                  11
+     8 \a.n8_o                        0         0    00000000000000000000000000000000
+     8 \a.rd_ptr                      0         0                                   0
+     8 \a.wr_ptr                      1         1                                   1
+     8 \b.g_mem_mem[0]                2         2                                  10
+     8 \b.g_mem_mem[1]                3         3                                  11
+     8 \b.n96_q                       0         0                                   0
+     8 \b.n97_q                       1         1                                   1
+     8 \b.n98_q                       2         2                                  10
+     8 \clk                           0         0                                   0
+     8 \ok                            0         0                                   0
+     8 \rd_ready                      0         0                                   0
+     8 \rst                           0         0                                   0
+     8 \wr_data                       0         0                                  00
+     8 \wr_valid                      0         0                                   0
+
+** Trying induction with length 8 **
+
+Setting up time step 9:
+Final constraint equation: { } = { }
+Imported 104 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \b.n96_q
+Import show expression: \b.n97_q
+Import show expression: \b.n98_q
+Import show expression: \b.g_mem_mem[1]
+Import show expression: \b.g_mem_mem[0]
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n8_o
+
+[base case 8] Solving problem with 15487 variables and 41116 clauses..
+Base case for induction length 8 proven.
+
+Setting up time step 9:
+Final constraint equation: { } = { }
+Imported 104 cells to SAT database.
+Import proof-constraint: \ok = 1'1
+Final proof equation: \ok = 1'1
+Import show expression: \clk
+Import show expression: \rd_ready
+Import show expression: \rst
+Import show expression: \wr_data
+Import show expression: \wr_valid
+Import show expression: \ok
+Import show expression: \b.n96_q
+Import show expression: \b.n97_q
+Import show expression: \b.n98_q
+Import show expression: \b.g_mem_mem[1]
+Import show expression: \b.g_mem_mem[0]
+Import show expression: \a.n30_o
+Import show expression: \a.n37_o
+Import show expression: \a.rd_ptr
+Import show expression: \a.wr_ptr
+Import show expression: \a.n8_o
+
+[induction step 8] Solving problem with 15824 variables and 42225 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                  Dec       Hex                                 Bin
+  ---- -------------------- ----------- --------- -----------------------------------
+  init \a.n30_o                       0         0                                  00
+  init \a.n37_o                       2         2                                  10
+  init \a.n8_o [1:0]                  3         3                                  11
+  init \a.rd_ptr                      0         0                                   0
+  init \a.wr_ptr                      1         1                                   1
+  init \b.g_mem_mem[0]                0         0                                  00
+  init \b.g_mem_mem[1]                2         2                                  10
+  init \b.n96_q                       0         0                                   0
+  init \b.n97_q                       0         0                                   0
+  init \b.n98_q                       3         3                                  11
+  ---- -------------------- ----------- --------- -----------------------------------
+     1 \a.n30_o                       0         0                                  00
+     1 \a.n37_o                       2         2                                  10
+     1 \a.n8_o                        3         3    00000000000000000000000000000011
+     1 \a.rd_ptr                      0         0                                   0
+     1 \a.wr_ptr                      1         1                                   1
+     1 \b.g_mem_mem[0]                0         0                                  00
+     1 \b.g_mem_mem[1]                2         2                                  10
+     1 \b.n96_q                       0         0                                   0
+     1 \b.n97_q                       0         0                                   0
+     1 \b.n98_q                       3         3                                  11
+     1 \clk                           0         0                                   0
+     1 \ok                            1         1                                   1
+     1 \rd_ready                      0         0                                   0
+     1 \rst                           0         0                                   0
+     1 \wr_data                       2         2                                  10
+     1 \wr_valid                      0         0                                   0
+  ---- -------------------- ----------- --------- -----------------------------------
+     2 \a.n30_o                       0         0                                  00
+     2 \a.n37_o                       2         2                                  10
+     2 \a.n8_o                        3         3    00000000000000000000000000000011
+     2 \a.rd_ptr                      0         0                                   0
+     2 \a.wr_ptr                      1         1                                   1
+     2 \b.g_mem_mem[0]                0         0                                  00
+     2 \b.g_mem_mem[1]                2         2                                  10
+     2 \b.n96_q                       0         0                                   0
+     2 \b.n97_q                       0         0                                   0
+     2 \b.n98_q                       3         3                                  11
+     2 \clk                           0         0                                   0
+     2 \ok                            1         1                                   1
+     2 \rd_ready                      1         1                                   1
+     2 \rst                           0         0                                   0
+     2 \wr_data                       2         2                                  10
+     2 \wr_valid                      0         0                                   0
+  ---- -------------------- ----------- --------- -----------------------------------
+     3 \a.n30_o                       0         0                                  00
+     3 \a.n37_o                       2         2                                  10
+     3 \a.n8_o                        2         2    00000000000000000000000000000010
+     3 \a.rd_ptr                      1         1                                   1
+     3 \a.wr_ptr                      1         1                                   1
+     3 \b.g_mem_mem[0]                0         0                                  00
+     3 \b.g_mem_mem[1]                2         2                                  10
+     3 \b.n96_q                       1         1                                   1
+     3 \b.n97_q                       0         0                                   0
+     3 \b.n98_q                       2         2                                  10
+     3 \clk                           0         0                                   0
+     3 \ok                            1         1                                   1
+     3 \rd_ready                      1         1                                   1
+     3 \rst                           0         0                                   0
+     3 \wr_data                       2         2                                  10
+     3 \wr_valid                      0         0                                   0
+  ---- -------------------- ----------- --------- -----------------------------------
+     4 \a.n30_o                       0         0                                  00
+     4 \a.n37_o                       2         2                                  10
+     4 \a.n8_o                        1         1    00000000000000000000000000000001
+     4 \a.rd_ptr                      0         0                                   0
+     4 \a.wr_ptr                      1         1                                   1
+     4 \b.g_mem_mem[0]                0         0                                  00
+     4 \b.g_mem_mem[1]                2         2                                  10
+     4 \b.n96_q                       0         0                                   0
+     4 \b.n97_q                       0         0                                   0
+     4 \b.n98_q                       1         1                                  01
+     4 \clk                           0         0                                   0
+     4 \ok                            1         1                                   1
+     4 \rd_ready                      1         1                                   1
+     4 \rst                           0         0                                   0
+     4 \wr_data                       2         2                                  10
+     4 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     5 \a.n30_o                       0         0                                  00
+     5 \a.n37_o                       2         2                                  10
+     5 \a.n8_o                        1         1    00000000000000000000000000000001
+     5 \a.rd_ptr                      1         1                                   1
+     5 \a.wr_ptr                      0         0                                   0
+     5 \b.g_mem_mem[0]                2         2                                  10
+     5 \b.g_mem_mem[1]                2         2                                  10
+     5 \b.n96_q                       1         1                                   1
+     5 \b.n97_q                       1         1                                   1
+     5 \b.n98_q                       1         1                                  01
+     5 \clk                           0         0                                   0
+     5 \ok                            1         1                                   1
+     5 \rd_ready                      1         1                                   1
+     5 \rst                           0         0                                   0
+     5 \wr_data                       2         2                                  10
+     5 \wr_valid                      0         0                                   0
+  ---- -------------------- ----------- --------- -----------------------------------
+     6 \a.n30_o                       0         0                                  00
+     6 \a.n37_o                       2         2                                  10
+     6 \a.n8_o                        0         0    00000000000000000000000000000000
+     6 \a.rd_ptr                      0         0                                   0
+     6 \a.wr_ptr                      0         0                                   0
+     6 \b.g_mem_mem[0]                2         2                                  10
+     6 \b.g_mem_mem[1]                2         2                                  10
+     6 \b.n96_q                       0         0                                   0
+     6 \b.n97_q                       1         1                                   1
+     6 \b.n98_q                       0         0                                  00
+     6 \clk                           0         0                                   0
+     6 \ok                            1         1                                   1
+     6 \rd_ready                      1         1                                   1
+     6 \rst                           0         0                                   0
+     6 \wr_data                       2         2                                  10
+     6 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     7 \a.n30_o                       2         2                                  10
+     7 \a.n37_o                       2         2                                  10
+     7 \a.n8_o                        1         1    00000000000000000000000000000001
+     7 \a.rd_ptr                      0         0                                   0
+     7 \a.wr_ptr                      1         1                                   1
+     7 \b.g_mem_mem[0]                2         2                                  10
+     7 \b.g_mem_mem[1]                2         2                                  10
+     7 \b.n96_q                       0         0                                   0
+     7 \b.n97_q                       0         0                                   0
+     7 \b.n98_q                       1         1                                  01
+     7 \clk                           0         0                                   0
+     7 \ok                            1         1                                   1
+     7 \rd_ready                      1         1                                   1
+     7 \rst                           0         0                                   0
+     7 \wr_data                       2         2                                  10
+     7 \wr_valid                      1         1                                   1
+  ---- -------------------- ----------- --------- -----------------------------------
+     8 \a.n30_o                       2         2                                  10
+     8 \a.n37_o                       2         2                                  10
+     8 \a.n8_o                        1         1    00000000000000000000000000000001
+     8 \a.rd_ptr                      1         1                                   1
+     8 \a.wr_ptr                      0         0                                   0
+     8 \b.g_mem_mem[0]                2         2                                  10
+     8 \b.g_mem_mem[1]                2         2                                  10
+     8 \b.n96_q                       1         1                                   1
+     8 \b.n97_q                       1         1                                   1
+     8 \b.n98_q                       1         1                                  01
+     8 \clk          ERROR: Called with -verify and proof did fail!
