@@ -219,3 +219,22 @@ Owner: Claude as planner. experiments/exp001/reference/dpc_ref.py, standard libr
 
 ### D-063 - Accept M2a
 Owner: user via this run (20261126T105320Z). Self-test PASS in the container (worst seq32 err/tol = 0.2569; numpy 2.1.3 cross-checks (42 transactions)). Vectors IDENTICAL to the authoring sandbox (x86_64). Oracle digest verified before and after. No RTL exists yet; M2b (G_LANES = 1 RTL) requires approval of its plan.
+
+## Claude Code workflow and M2a evidence correction (2026-11-26)
+
+### D-064 - Claude Code as implementer
+Owner: user; approved (planner decision 1 on the session-start audit). Claude Code writes RTL, tests and scripts, runs the Docker toolchain and keeps the research records. Claude chat is planner and reviewer; the user approves milestones and decides commits; Amir performs the final review. Supersedes the coder part of D-055. Project memory for Claude Code: CLAUDE.md.
+
+### D-065 - Plain GHDL testbenches for exp001
+Owner: user; approved (planner decision 2). exp001 testbenches are plain VHDL-2008 GHDL testbenches that read vector files (edu_complex_arithmetic pattern); dpc_ref.py judges output dumps after simulation. cocotb and experiments/exp001/tb/conftest.py are not used for M2b. Supersedes "cocotb/pytest" in TODO-003. Rationale: keeps the reference/RTL boundary file-only (D-062).
+
+### D-066 - M2A-DEFECT-001 handling
+Owner: user; approved (planner decision 3). Observation M2A-OBS-001 reclassified as M2A-DEFECT-001, a defect in the planner's install script: MANIFEST.sha256 was computed while the tee'd log was still being written, and the listing included the script's own .tmp file. MANIFEST.sha256 is not edited; install_and_verify.log is committed as it is now (it only grew, 30 to 53 lines); experiments/exp001/evidence/m2a_20261126T105320Z/CORRECTION.md records the defect, root causes and fresh digests. M2a results are unaffected. Lesson: write manifests last, after logs are closed, excluding the manifest itself and temporary files.
+
+### D-067 - Current-status blocks in STATUS and TODO
+Owner: user; approved (planner decision 4). research/STATUS.md and research/TODO.md get a dated "Current status (2026-11-26)" block right after the YAML header. The original tables remain as a historical M3 snapshot of 2026-11-25; nothing is deleted. TODO-002 DONE (M2a); TODO-003 superseded by M2b.
+
+### D-068 - Fingerprint of the oracle manifest
+Owner: user; approved (planner decision 5). verify_protected_digests.py checks dpc_ref.py against ORACLE_MANIFEST.sha256 but not the manifest itself. Recorded digest:
+SHA-256(experiments/exp001/reference/ORACLE_MANIFEST.sha256) = 1f26c582f6507d2b742d24bc8d658fdc0043fa06be674c5cdc261e94294bb294
+(manifest content: dpc_ref.py = 4389871a1b857349fbd8f0600e207e36f1cf2a98d017e6be629792af8dd8c1eb). Check with `shasum -a 256 experiments/exp001/reference/ORACLE_MANIFEST.sha256`.

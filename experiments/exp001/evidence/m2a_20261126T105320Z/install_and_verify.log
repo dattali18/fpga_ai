@@ -28,3 +28,26 @@ PASS: Verified 35 protected bootstrap files (combined SHA-256: e10a800fe0a2a1407
 OK
 
 === 8/8 stage and commit
+M  .gitignore
+A  experiments/exp001/docs/DPC_SPECIFICATION.md
+A  experiments/exp001/evidence/m2a_20261126T105320Z/MANIFEST.sha256
+A  experiments/exp001/evidence/m2a_20261126T105320Z/install_and_verify.log
+A  experiments/exp001/evidence/m2a_20261126T105320Z/oracle_after.txt
+A  experiments/exp001/evidence/m2a_20261126T105320Z/oracle_before.txt
+A  experiments/exp001/evidence/m2a_20261126T105320Z/protected_before.txt
+A  experiments/exp001/evidence/m2a_20261126T105320Z/provenance.txt
+A  experiments/exp001/evidence/m2a_20261126T105320Z/reference.log
+A  experiments/exp001/evidence/m2a_20261126T105320Z/tool_versions.txt
+A  experiments/exp001/evidence/m2a_20261126T105320Z/vector_comparison.txt
+A  experiments/exp001/evidence/m2a_20261126T105320Z/vector_sha256.txt
+A  experiments/exp001/reference/ORACLE_MANIFEST.sha256
+A  experiments/exp001/reference/dpc_ref.py
+M  research/DECISION_LOG.md
+M  research/STATUS.md
+M  research/TODO.md
+A  research/changelog/log_20261126_exp001_m2a.md
+M  research/daily_notes/2026-11-26.md
+?? install_and_verify_m2a.sh
+Commit now? [y/N] fe26c25 feat(exp001): approve DPC specification and freeze golden reference (M2a)
+Committed (not pushed). Copy the terminal output from step 5 onward to Claude.
+OVERALL: PASS

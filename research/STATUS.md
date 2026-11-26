@@ -5,6 +5,22 @@ author: "Coding agent"
 date: "2026-11-25"
 ---
 
+## Current status (2026-11-26)
+
+- **Milestone:** M2a COMPLETE (D-063, commit `fe26c25`): DPC specification approved
+  ([specification](../experiments/exp001/docs/DPC_SPECIFICATION.md)), golden reference
+  frozen. M2b (RTL with `G_LANES = 1`) prompt received
+  ([M2B_PROMPT.md](../experiments/exp001/prompts/M2B_PROMPT.md)); plan pending approval.
+- **Workflow:** Claude Code implements, Claude chat plans and reviews, the owner approves
+  and commits (D-064). exp001 testbenches are plain GHDL (D-065).
+- **AC1:** contract approved, reference present, oracle digest verified (manifest itself
+  fingerprinted in D-068). AC2: local Docker ARM64 smoke PASS (M1 local validation).
+  AC3-AC7: NOT_RUN (no exp001 RTL yet).
+- **Open defect:** M2A-DEFECT-001 (install-script manifest), handled by D-066 and
+  [CORRECTION.md](../experiments/exp001/evidence/m2a_20261126T105320Z/CORRECTION.md).
+- The tables and sections below are a historical M3 snapshot of 2026-11-25 plus dated
+  updates; this block supersedes them (D-067).
+
 # Project Status
 
 * **Current Milestone State**: `M3 COMPLETE (GCP HANDOFF)` (uncommitted above `4647b70`; `M0` committed at `58be40c`, `M1` committed at `4647b70`; `M2` deferred to 2026-11-26 local ARM64 session pending `G1`--`G5`).

@@ -5,6 +5,18 @@ author: "Coding agent"
 date: "2026-11-25"
 ---
 
+## Current status (2026-11-26)
+
+- `TODO-002` (golden reference and G1-G5): **DONE** in M2a (D-060 to D-063).
+- `TODO-003` (M2 RTL): **SUPERSEDED** by M2b
+  ([M2B_PROMPT.md](../experiments/exp001/prompts/M2B_PROMPT.md)), with plain GHDL
+  testbenches instead of cocotb/pytest (D-065).
+- `TODO-005` (local Docker smoke): done in the M1 local validation.
+- Next: M2b plan approval, then M2b implementation; then M2c (`G_LANES > 1`), Series 7
+  mapping and the review document for Amir.
+- The table below is a historical M3 snapshot of 2026-11-25 (D-067); later dated
+  sections remain valid.
+
 # Prioritized Backlog (`TODO`)
 
 Maintained per [../.agents/skills/todo-tracking/SKILL.md](../.agents/skills/todo-tracking/SKILL.md). Details on gates `G1`--`G5` live in [../experiments/exp001/docs/SPECIFICATION_REVIEW.md](../experiments/exp001/docs/SPECIFICATION_REVIEW.md); environment risks `R-ENV-1`..`3` live in [ENVIRONMENT_CAPABILITY.md](ENVIRONMENT_CAPABILITY.md).
