@@ -27,3 +27,10 @@ Maintained per [../.agents/skills/todo-tracking/SKILL.md](../.agents/skills/todo
 - [ ] Move container pytest temporary build artifacts into the project results tree.
 - [ ] Review proposed reusable skill updates separately; do not edit protected files without approval.
 - [ ] Review infrastructure changes and commit explicitly if approved.
+
+## 2026-11-26 - Educational complex arithmetic
+
+- [ ] Explain the tri-state warnings from the generated Verilog (CA-OBS-001).
+- [ ] Fix the warning count in experiments/edu_complex_arithmetic/tb/run_ghdl.sh (CA-DEFECT-001).
+- [ ] Post-synthesis equivalence for the complex arithmetic blocks before reuse claims.
+- [ ] Propose exp001 G1-G5 specification for the DPC component and obtain approval.

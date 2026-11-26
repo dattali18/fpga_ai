@@ -1,0 +1,11 @@
+      18 add_directed.txt
+      22 add_edge.txt
+    2002 add_random_bits.txt
+    2002 add_random_normal.txt
+      28 add_special.txt
+      18 mul_directed.txt
+      22 mul_edge.txt
+    2002 mul_random_bits.txt
+    2002 mul_random_normal.txt
+      28 mul_special.txt
+    8144 total

@@ -1,0 +1,5 @@
+crosscheck_numpy_rc=0
+run_ghdl_rc=0
+docker_rc=0
+protected_before_rc=0
+protected_after_rc=0

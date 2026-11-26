@@ -62,3 +62,6 @@ yosys_tmp*/
 
 # FIFO experiment artifacts
 /experiments/edu_fifo/build/
+
+# Complex arithmetic experiment artifacts
+/experiments/edu_complex_arithmetic/build/

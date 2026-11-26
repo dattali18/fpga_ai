@@ -1,0 +1,6 @@
+## main...origin/main
+?? HUMAN_ORCHESTRATED_MULTI_AGENT_ENGINEERING.md
+?? claude_edu_complex_arithmetic_prompt.md
+?? collect_handoff.sh
+?? experiments/edu_complex_arithmetic/
+?? install_and_verify_edu_complex_arithmetic.sh

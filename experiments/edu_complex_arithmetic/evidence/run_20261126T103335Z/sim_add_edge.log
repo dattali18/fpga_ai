@@ -1,0 +1,3 @@
+/workspace/experiments/edu_complex_arithmetic/tb/tb_edu_complex_add.vhd:204:5:@276ns:(report note): vectors/add_edge.txt: 20 vectors, 69 checks, 0 errors
+/workspace/experiments/edu_complex_arithmetic/tb/tb_edu_complex_add.vhd:209:5:@276ns:(report note): PASS: vectors/add_edge.txt
+simulation finished @276ns

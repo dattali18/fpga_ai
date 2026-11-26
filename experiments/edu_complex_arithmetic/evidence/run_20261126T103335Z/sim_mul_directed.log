@@ -1,0 +1,3 @@
+/workspace/experiments/edu_complex_arithmetic/tb/tb_edu_complex_mul.vhd:204:5:@236ns:(report note): vectors/mul_directed.txt: 16 vectors, 57 checks, 0 errors
+/workspace/experiments/edu_complex_arithmetic/tb/tb_edu_complex_mul.vhd:209:5:@236ns:(report note): PASS: vectors/mul_directed.txt
+simulation finished @236ns

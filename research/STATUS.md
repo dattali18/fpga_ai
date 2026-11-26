@@ -36,3 +36,7 @@ Definitions follow [../context/experiments/exp001/ACCEPTANCE_CRITERIA.md](../con
 ## 2026-11-26 - M1 local validation
 
 M1 local infrastructure validation: COMPLETE (individual simulation and structural synthesis smoke suites passed after two fixes). See [M1 local validation](M1_LOCAL_VALIDATION.md). AC2 infrastructure smoke evidence is available; full experimental acceptance, post-synthesis equivalence and physical mapping are not established. This does not complete M2 or M4. Existing specification gates remain unchanged.
+
+## 2026-11-26 - Educational complex arithmetic
+
+edu_complex_add and edu_complex_mul (binary32) ACCEPTED within simulation and generic structural synthesis scope (D-059). See [validation](../experiments/edu_complex_arithmetic/VALIDATION.md). Claude now acts as planner and coder (D-055). exp001 gates G1-G5 remain open; next proposed step is a plain-language G1-G5 specification proposal for the DPC component.

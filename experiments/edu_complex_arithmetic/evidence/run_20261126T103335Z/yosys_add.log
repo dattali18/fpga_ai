@@ -1,0 +1,726 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.33 (git sha1 2584903a060)
+
+
+-- Running command `read_verilog edu_complex_add.v; hierarchy -check -top edu_complex_add; proc; opt; memory; opt; check -assert; stat' --
+
+1. Executing Verilog-2005 frontend: edu_complex_add.v
+Parsing Verilog input from `edu_complex_add.v' to AST representation.
+Warning: Yosys has only limited support for tri-state logic at the moment. (edu_complex_add.v:2260)
+Warning: Yosys has only limited support for tri-state logic at the moment. (edu_complex_add.v:2322)
+Warning: Yosys has only limited support for tri-state logic at the moment. (edu_complex_add.v:2417)
+Warning: Yosys has only limited support for tri-state logic at the moment. (edu_complex_add.v:2458)
+Warning: Yosys has only limited support for tri-state logic at the moment. (edu_complex_add.v:4027)
+Warning: Yosys has only limited support for tri-state logic at the moment. (edu_complex_add.v:4089)
+Warning: Yosys has only limited support for tri-state logic at the moment. (edu_complex_add.v:4184)
+Warning: Yosys has only limited support for tri-state logic at the moment. (edu_complex_add.v:4225)
+Generating RTLIL representation for module `\edu_complex_add'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \edu_complex_add
+
+2.2. Analyzing design hierarchy..
+Top module:  \edu_complex_add
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed 1 dead cases from process $proc$edu_complex_add.v:6524$1173 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6524$1173 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6514$1172 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6514$1172 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6504$1171 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6504$1171 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6494$1170 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6494$1170 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6484$1169 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6484$1169 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6474$1168 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6474$1168 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6464$1167 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6464$1167 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6454$1166 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6454$1166 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6392$1162 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6392$1162 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6382$1161 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6382$1161 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6372$1160 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6372$1160 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6362$1159 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6362$1159 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6352$1158 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6352$1158 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6342$1157 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6342$1157 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6332$1156 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6332$1156 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6322$1155 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6322$1155 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6262$1151 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6262$1151 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6252$1150 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6252$1150 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6242$1149 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6242$1149 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6232$1148 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6232$1148 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6222$1147 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6222$1147 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6212$1146 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6212$1146 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6202$1145 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6202$1145 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6192$1144 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6192$1144 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6128$1140 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6128$1140 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6118$1139 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6118$1139 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6108$1138 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6108$1138 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6098$1137 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6098$1137 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6088$1136 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6088$1136 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6078$1135 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6078$1135 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6068$1134 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6068$1134 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:6058$1133 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:6058$1133 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:5994$1129 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:5994$1129 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:5984$1128 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:5984$1128 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:5974$1127 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:5974$1127 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:5964$1126 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:5964$1126 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:5954$1125 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:5954$1125 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:5944$1124 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:5944$1124 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:5934$1123 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:5934$1123 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:5924$1122 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:5924$1122 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:5862$1118 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:5862$1118 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:5852$1117 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:5852$1117 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:5842$1116 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:5842$1116 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:5832$1115 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:5832$1115 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:5822$1114 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:5822$1114 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:5812$1113 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:5812$1113 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:5802$1112 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:5802$1112 in module edu_complex_add.
+Removed 1 dead cases from process $proc$edu_complex_add.v:5792$1111 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:5792$1111 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:4343$684 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:4335$683 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:4327$682 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:4279$667 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:4271$666 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:4263$665 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:2576$132 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:2568$131 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:2560$130 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:2512$115 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:2504$114 in module edu_complex_add.
+Marked 1 switch rules as full_case in process $proc$edu_complex_add.v:2496$113 in module edu_complex_add.
+Removed a total of 48 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 63 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~60 debug messages>
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6524$1173'.
+     1/1: $1\n4444_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6514$1172'.
+     1/1: $1\n4442_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6504$1171'.
+     1/1: $1\n4440_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6494$1170'.
+     1/1: $1\n4438_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6484$1169'.
+     1/1: $1\n4436_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6474$1168'.
+     1/1: $1\n4434_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6464$1167'.
+     1/1: $1\n4432_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6454$1166'.
+     1/1: $1\n4430_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6392$1162'.
+     1/1: $1\n4394_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6382$1161'.
+     1/1: $1\n4392_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6372$1160'.
+     1/1: $1\n4390_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6362$1159'.
+     1/1: $1\n4388_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6352$1158'.
+     1/1: $1\n4386_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6342$1157'.
+     1/1: $1\n4384_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6332$1156'.
+     1/1: $1\n4382_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6322$1155'.
+     1/1: $1\n4380_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6262$1151'.
+     1/1: $1\n4344_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6252$1150'.
+     1/1: $1\n4342_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6242$1149'.
+     1/1: $1\n4340_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6232$1148'.
+     1/1: $1\n4338_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6222$1147'.
+     1/1: $1\n4336_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6212$1146'.
+     1/1: $1\n4334_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6202$1145'.
+     1/1: $1\n4332_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6192$1144'.
+     1/1: $1\n4330_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6128$1140'.
+     1/1: $1\n4294_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6118$1139'.
+     1/1: $1\n4292_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6108$1138'.
+     1/1: $1\n4290_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6098$1137'.
+     1/1: $1\n4288_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6088$1136'.
+     1/1: $1\n4286_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6078$1135'.
+     1/1: $1\n4284_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6068$1134'.
+     1/1: $1\n4282_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:6058$1133'.
+     1/1: $1\n4280_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:5994$1129'.
+     1/1: $1\n4244_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:5984$1128'.
+     1/1: $1\n4242_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:5974$1127'.
+     1/1: $1\n4240_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:5964$1126'.
+     1/1: $1\n4238_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:5954$1125'.
+     1/1: $1\n4236_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:5944$1124'.
+     1/1: $1\n4234_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:5934$1123'.
+     1/1: $1\n4232_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:5924$1122'.
+     1/1: $1\n4230_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:5862$1118'.
+     1/1: $1\n4194_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:5852$1117'.
+     1/1: $1\n4192_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:5842$1116'.
+     1/1: $1\n4190_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:5832$1115'.
+     1/1: $1\n4188_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:5822$1114'.
+     1/1: $1\n4186_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:5812$1113'.
+     1/1: $1\n4184_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:5802$1112'.
+     1/1: $1\n4182_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:5792$1111'.
+     1/1: $1\n4180_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:5744$1110'.
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:5739$1108'.
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:5734$1106'.
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:4343$684'.
+     1/1: $1\n2904_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:4335$683'.
+     1/1: $1\n2900_o[6:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:4327$682'.
+     1/1: $1\n2896_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:4279$667'.
+     1/1: $1\n2838_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:4271$666'.
+     1/1: $1\n2834_o[6:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:4263$665'.
+     1/1: $1\n2830_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:2576$132'.
+     1/1: $1\n839_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:2568$131'.
+     1/1: $1\n835_o[6:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:2560$130'.
+     1/1: $1\n831_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:2512$115'.
+     1/1: $1\n773_o[0:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:2504$114'.
+     1/1: $1\n769_o[6:0]
+Creating decoders for process `\edu_complex_add.$proc$edu_complex_add.v:2496$113'.
+     1/1: $1\n765_o[0:0]
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\edu_complex_add.\n4444_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6524$1173'.
+No latch inferred for signal `\edu_complex_add.\n4442_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6514$1172'.
+No latch inferred for signal `\edu_complex_add.\n4440_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6504$1171'.
+No latch inferred for signal `\edu_complex_add.\n4438_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6494$1170'.
+No latch inferred for signal `\edu_complex_add.\n4436_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6484$1169'.
+No latch inferred for signal `\edu_complex_add.\n4434_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6474$1168'.
+No latch inferred for signal `\edu_complex_add.\n4432_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6464$1167'.
+No latch inferred for signal `\edu_complex_add.\n4430_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6454$1166'.
+No latch inferred for signal `\edu_complex_add.\n4394_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6392$1162'.
+No latch inferred for signal `\edu_complex_add.\n4392_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6382$1161'.
+No latch inferred for signal `\edu_complex_add.\n4390_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6372$1160'.
+No latch inferred for signal `\edu_complex_add.\n4388_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6362$1159'.
+No latch inferred for signal `\edu_complex_add.\n4386_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6352$1158'.
+No latch inferred for signal `\edu_complex_add.\n4384_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6342$1157'.
+No latch inferred for signal `\edu_complex_add.\n4382_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6332$1156'.
+No latch inferred for signal `\edu_complex_add.\n4380_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6322$1155'.
+No latch inferred for signal `\edu_complex_add.\n4344_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6262$1151'.
+No latch inferred for signal `\edu_complex_add.\n4342_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6252$1150'.
+No latch inferred for signal `\edu_complex_add.\n4340_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6242$1149'.
+No latch inferred for signal `\edu_complex_add.\n4338_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6232$1148'.
+No latch inferred for signal `\edu_complex_add.\n4336_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6222$1147'.
+No latch inferred for signal `\edu_complex_add.\n4334_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6212$1146'.
+No latch inferred for signal `\edu_complex_add.\n4332_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6202$1145'.
+No latch inferred for signal `\edu_complex_add.\n4330_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6192$1144'.
+No latch inferred for signal `\edu_complex_add.\n4294_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6128$1140'.
+No latch inferred for signal `\edu_complex_add.\n4292_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6118$1139'.
+No latch inferred for signal `\edu_complex_add.\n4290_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6108$1138'.
+No latch inferred for signal `\edu_complex_add.\n4288_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6098$1137'.
+No latch inferred for signal `\edu_complex_add.\n4286_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6088$1136'.
+No latch inferred for signal `\edu_complex_add.\n4284_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6078$1135'.
+No latch inferred for signal `\edu_complex_add.\n4282_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6068$1134'.
+No latch inferred for signal `\edu_complex_add.\n4280_o' from process `\edu_complex_add.$proc$edu_complex_add.v:6058$1133'.
+No latch inferred for signal `\edu_complex_add.\n4244_o' from process `\edu_complex_add.$proc$edu_complex_add.v:5994$1129'.
+No latch inferred for signal `\edu_complex_add.\n4242_o' from process `\edu_complex_add.$proc$edu_complex_add.v:5984$1128'.
+No latch inferred for signal `\edu_complex_add.\n4240_o' from process `\edu_complex_add.$proc$edu_complex_add.v:5974$1127'.
+No latch inferred for signal `\edu_complex_add.\n4238_o' from process `\edu_complex_add.$proc$edu_complex_add.v:5964$1126'.
+No latch inferred for signal `\edu_complex_add.\n4236_o' from process `\edu_complex_add.$proc$edu_complex_add.v:5954$1125'.
+No latch inferred for signal `\edu_complex_add.\n4234_o' from process `\edu_complex_add.$proc$edu_complex_add.v:5944$1124'.
+No latch inferred for signal `\edu_complex_add.\n4232_o' from process `\edu_complex_add.$proc$edu_complex_add.v:5934$1123'.
+No latch inferred for signal `\edu_complex_add.\n4230_o' from process `\edu_complex_add.$proc$edu_complex_add.v:5924$1122'.
+No latch inferred for signal `\edu_complex_add.\n4194_o' from process `\edu_complex_add.$proc$edu_complex_add.v:5862$1118'.
+No latch inferred for signal `\edu_complex_add.\n4192_o' from process `\edu_complex_add.$proc$edu_complex_add.v:5852$1117'.
+No latch inferred for signal `\edu_complex_add.\n4190_o' from process `\edu_complex_add.$proc$edu_complex_add.v:5842$1116'.
+No latch inferred for signal `\edu_complex_add.\n4188_o' from process `\edu_complex_add.$proc$edu_complex_add.v:5832$1115'.
+No latch inferred for signal `\edu_complex_add.\n4186_o' from process `\edu_complex_add.$proc$edu_complex_add.v:5822$1114'.
+No latch inferred for signal `\edu_complex_add.\n4184_o' from process `\edu_complex_add.$proc$edu_complex_add.v:5812$1113'.
+No latch inferred for signal `\edu_complex_add.\n4182_o' from process `\edu_complex_add.$proc$edu_complex_add.v:5802$1112'.
+No latch inferred for signal `\edu_complex_add.\n4180_o' from process `\edu_complex_add.$proc$edu_complex_add.v:5792$1111'.
+No latch inferred for signal `\edu_complex_add.\n2904_o' from process `\edu_complex_add.$proc$edu_complex_add.v:4343$684'.
+No latch inferred for signal `\edu_complex_add.\n2900_o' from process `\edu_complex_add.$proc$edu_complex_add.v:4335$683'.
+No latch inferred for signal `\edu_complex_add.\n2896_o' from process `\edu_complex_add.$proc$edu_complex_add.v:4327$682'.
+No latch inferred for signal `\edu_complex_add.\n2838_o' from process `\edu_complex_add.$proc$edu_complex_add.v:4279$667'.
+No latch inferred for signal `\edu_complex_add.\n2834_o' from process `\edu_complex_add.$proc$edu_complex_add.v:4271$666'.
+No latch inferred for signal `\edu_complex_add.\n2830_o' from process `\edu_complex_add.$proc$edu_complex_add.v:4263$665'.
+No latch inferred for signal `\edu_complex_add.\n839_o' from process `\edu_complex_add.$proc$edu_complex_add.v:2576$132'.
+No latch inferred for signal `\edu_complex_add.\n835_o' from process `\edu_complex_add.$proc$edu_complex_add.v:2568$131'.
+No latch inferred for signal `\edu_complex_add.\n831_o' from process `\edu_complex_add.$proc$edu_complex_add.v:2560$130'.
+No latch inferred for signal `\edu_complex_add.\n773_o' from process `\edu_complex_add.$proc$edu_complex_add.v:2512$115'.
+No latch inferred for signal `\edu_complex_add.\n769_o' from process `\edu_complex_add.$proc$edu_complex_add.v:2504$114'.
+No latch inferred for signal `\edu_complex_add.\n765_o' from process `\edu_complex_add.$proc$edu_complex_add.v:2496$113'.
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\edu_complex_add.\n4150_q' using process `\edu_complex_add.$proc$edu_complex_add.v:5744$1110'.
+  created $dff cell `$procdff$1473' with positive edge clock.
+Creating register for signal `\edu_complex_add.\n4148_q' using process `\edu_complex_add.$proc$edu_complex_add.v:5739$1108'.
+  created $dff cell `$procdff$1474' with positive edge clock.
+Creating register for signal `\edu_complex_add.\n4146_q' using process `\edu_complex_add.$proc$edu_complex_add.v:5734$1106'.
+  created $dff cell `$procdff$1475' with positive edge clock.
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6524$1173'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6524$1173'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6514$1172'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6514$1172'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6504$1171'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6504$1171'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6494$1170'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6494$1170'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6484$1169'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6484$1169'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6474$1168'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6474$1168'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6464$1167'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6464$1167'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6454$1166'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6454$1166'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6392$1162'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6392$1162'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6382$1161'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6382$1161'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6372$1160'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6372$1160'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6362$1159'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6362$1159'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6352$1158'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6352$1158'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6342$1157'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6342$1157'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6332$1156'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6332$1156'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6322$1155'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6322$1155'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6262$1151'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6262$1151'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6252$1150'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6252$1150'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6242$1149'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6242$1149'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6232$1148'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6232$1148'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6222$1147'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6222$1147'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6212$1146'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6212$1146'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6202$1145'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6202$1145'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6192$1144'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6192$1144'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6128$1140'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6128$1140'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6118$1139'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6118$1139'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6108$1138'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6108$1138'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6098$1137'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6098$1137'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6088$1136'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6088$1136'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6078$1135'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6078$1135'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6068$1134'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6068$1134'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:6058$1133'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:6058$1133'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:5994$1129'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:5994$1129'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:5984$1128'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:5984$1128'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:5974$1127'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:5974$1127'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:5964$1126'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:5964$1126'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:5954$1125'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:5954$1125'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:5944$1124'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:5944$1124'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:5934$1123'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:5934$1123'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:5924$1122'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:5924$1122'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:5862$1118'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:5862$1118'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:5852$1117'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:5852$1117'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:5842$1116'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:5842$1116'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:5832$1115'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:5832$1115'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:5822$1114'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:5822$1114'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:5812$1113'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:5812$1113'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:5802$1112'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:5802$1112'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:5792$1111'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:5792$1111'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:5744$1110'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:5739$1108'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:5734$1106'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:4343$684'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:4343$684'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:4335$683'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:4335$683'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:4327$682'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:4327$682'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:4279$667'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:4279$667'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:4271$666'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:4271$666'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:4263$665'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:4263$665'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:2576$132'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:2576$132'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:2568$131'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:2568$131'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:2560$130'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:2560$130'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:2512$115'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:2512$115'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:2504$114'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:2504$114'.
+Found and cleaned up 1 empty switch in `\edu_complex_add.$proc$edu_complex_add.v:2496$113'.
+Removing empty process `edu_complex_add.$proc$edu_complex_add.v:2496$113'.
+Cleaned up 60 empty switches.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_complex_add.
+<suppressed ~212 debug messages>
+
+4. Executing OPT pass (performing simple optimizations).
+
+4.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_complex_add.
+<suppressed ~8 debug messages>
+
+4.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_complex_add'.
+<suppressed ~642 debug messages>
+Removed a total of 214 cells.
+
+4.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \edu_complex_add..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $ternary$edu_complex_add.v:3949$547.
+    dead port 2/2 on $mux $ternary$edu_complex_add.v:3949$547.
+    dead port 1/2 on $mux $ternary$edu_complex_add.v:5716$1099.
+    dead port 2/2 on $mux $ternary$edu_complex_add.v:5716$1099.
+Removed 4 multiplexer ports.
+<suppressed ~209 debug messages>
+
+4.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \edu_complex_add.
+    New input vector for $reduce_or cell $reduce_or$edu_complex_add.v:2604$135: { $procmux$1470_Y \a_re [22:0] }
+    New input vector for $reduce_or cell $reduce_or$edu_complex_add.v:2962$229: { $procmux$1456_Y \b_re [22:0] }
+    New input vector for $reduce_or cell $reduce_or$edu_complex_add.v:4371$687: { $procmux$1442_Y \a_im [22:0] }
+    New input vector for $reduce_or cell $reduce_or$edu_complex_add.v:4729$781: { $procmux$1428_Y \b_im [22:0] }
+    New ctrl vector for $pmux cell $procmux$1292: { $auto$opt_reduce.cc:134:opt_pmux$1477 $procmux$1293_CMP }
+    New ctrl vector for $pmux cell $procmux$1372: { $auto$opt_reduce.cc:134:opt_pmux$1479 $procmux$1343_CMP }
+    New ctrl vector for $pmux cell $procmux$1252: { $auto$opt_reduce.cc:134:opt_pmux$1481 $procmux$1253_CMP }
+    New ctrl vector for $pmux cell $procmux$1412: { $auto$opt_reduce.cc:134:opt_pmux$1483 $procmux$1383_CMP }
+    New ctrl vector for $pmux cell $procmux$1423: { $procmux$1421_CMP $auto$opt_reduce.cc:134:opt_pmux$1485 }
+    New ctrl vector for $pmux cell $procmux$1428: $auto$opt_reduce.cc:134:opt_pmux$1487
+    New ctrl vector for $pmux cell $procmux$1437: { $procmux$1435_CMP $auto$opt_reduce.cc:134:opt_pmux$1489 }
+    New ctrl vector for $pmux cell $procmux$1442: $auto$opt_reduce.cc:134:opt_pmux$1491
+    New ctrl vector for $pmux cell $procmux$1451: { $procmux$1449_CMP $auto$opt_reduce.cc:134:opt_pmux$1493 }
+    New ctrl vector for $pmux cell $procmux$1456: $auto$opt_reduce.cc:134:opt_pmux$1495
+    New ctrl vector for $pmux cell $procmux$1465: { $procmux$1463_CMP $auto$opt_reduce.cc:134:opt_pmux$1497 }
+    New ctrl vector for $pmux cell $procmux$1470: $auto$opt_reduce.cc:134:opt_pmux$1499
+  Optimizing cells in module \edu_complex_add.
+Performed a total of 16 changes.
+
+4.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_complex_add'.
+<suppressed ~72 debug messages>
+Removed a total of 24 cells.
+
+4.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$1475 ($dff) from module edu_complex_add (D = \in_valid, Q = \n4146_q, rval = 1'0).
+Adding EN signal on $procdff$1474 ($dff) from module edu_complex_add (D = \n2013_o, Q = \n4148_q).
+Adding EN signal on $procdff$1473 ($dff) from module edu_complex_add (D = \n4078_o, Q = \n4150_q).
+
+4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_complex_add..
+Removed 33 unused cells and 1475 unused wires.
+<suppressed ~53 debug messages>
+
+4.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_complex_add.
+
+4.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \edu_complex_add..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~208 debug messages>
+
+4.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \edu_complex_add.
+Performed a total of 0 changes.
+
+4.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_complex_add'.
+Removed a total of 0 cells.
+
+4.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_complex_add..
+Removed 0 unused cells and 50 unused wires.
+<suppressed ~50 debug messages>
+
+4.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_complex_add.
+
+4.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \edu_complex_add..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~208 debug messages>
+
+4.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \edu_complex_add.
+Performed a total of 0 changes.
+
+4.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_complex_add'.
+Removed a total of 0 cells.
+
+4.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_complex_add..
+
+4.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_complex_add.
+
+4.23. Finished OPT passes. (There is nothing left to do.)
+
+5. Executing MEMORY pass.
+
+5.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+5.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+5.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+5.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+5.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+5.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_complex_add..
+
+5.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+5.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+5.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_complex_add..
+
+5.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+5.11. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_complex_add.
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_complex_add'.
+Removed a total of 0 cells.
+
+6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \edu_complex_add..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~208 debug messages>
+
+6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \edu_complex_add.
+Performed a total of 0 changes.
+
+6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\edu_complex_add'.
+Removed a total of 0 cells.
+
+6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \edu_complex_add..
+
+6.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module edu_complex_add.
+
+6.9. Finished OPT passes. (There is nothing left to do.)
+
+7. Executing CHECK pass (checking for obvious problems).
+Checking module edu_complex_add...
+Found and reported 0 problems.
+
+8. Printing statistics.
+
+=== edu_complex_add ===
+
+   Number of wires:               2177
+   Number of wire bits:          17117
+   Number of public wires:        2109
+   Number of public wire bits:   17049
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1021
+     $add                           10
+     $and                           10
+     $dffe                           2
+     $eq                           102
+     $ge                             2
+     $gt                            10
+     $le                             2
+     $logic_not                     18
+     $lt                           156
+     $mux                          400
+     $neg                            6
+     $not                            6
+     $or                           196
+     $pmux                          52
+     $reduce_and                     6
+     $reduce_or                     24
+     $sdff                           1
+     $shl                            2
+     $shr                            6
+     $sub                           10
+
+Warnings: 8 unique messages, 8 total
+End of script. Logfile hash: 008e46c31a, CPU: user 0.36s system 0.01s, MEM: 29.33 MB peak
+Yosys 0.33 (git sha1 2584903a060)
+Time spent: 25% 6x opt_clean (0 sec), 24% 7x opt_expr (0 sec), ...

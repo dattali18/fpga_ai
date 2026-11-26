@@ -1,0 +1,33 @@
+### crosscheck_numpy
+numpy 2.1.3: 8124 vectors, 0 mismatches
+crosscheck_rc=0
+### run_ghdl.sh
+== reference: selftest and vectors
+PASS: complex_ref selftest
+add_directed.txt: 16 vectors
+add_edge.txt: 20 vectors
+add_special.txt: 26 vectors
+add_random_normal.txt: 2000 vectors
+add_random_bits.txt: 2000 vectors
+mul_directed.txt: 16 vectors
+mul_edge.txt: 20 vectors
+mul_special.txt: 26 vectors
+mul_random_normal.txt: 2000 vectors
+mul_random_bits.txt: 2000 vectors
+== GHDL analysis and elaboration
+== simulation
+== structural synthesis
+== summary (logs in /workspace/experiments/edu_complex_arithmetic/build)
+sim  add  directed  PASS  16 vectors, 57 checks, 0 errors
+sim  add  edge  PASS  20 vectors, 69 checks, 0 errors
+sim  add  special  PASS  26 vectors, 87 checks, 0 errors
+sim  add  random_normal  PASS  2000 vectors, 6009 checks, 0 errors
+sim  add  random_bits  PASS  2000 vectors, 6009 checks, 0 errors
+sim  mul  directed  PASS  16 vectors, 57 checks, 0 errors
+sim  mul  edge  PASS  20 vectors, 69 checks, 0 errors
+sim  mul  special  PASS  26 vectors, 87 checks, 0 errors
+sim  mul  random_normal  PASS  2000 vectors, 6009 checks, 0 errors
+sim  mul  random_bits  PASS  2000 vectors, 6009 checks, 0 errors
+synth add  -  PASS  9 yosys warnings
+synth mul  -  PASS  25 yosys warnings
+run_ghdl_rc=0

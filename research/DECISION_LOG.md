@@ -188,3 +188,20 @@ Owner: planner; delegated. Retain historical evidence separately with explicit i
 
 ### D-054 - Scale only after pilot closure
 Owner: planner; delegated. Next investigate broader fixed-parameter proofs using corrected harness and controls; keep XC7 mapped equivalence separate. A timeout remains inconclusive. No RTL changes authorized by this archival step.
+
+## Educational complex arithmetic (2026-11-26)
+
+### D-055 - Claude as planner and coder
+Owner: user; approved. ChatGPT planner role discontinued for subsequent work. Claude (chat) plans, specifies and implements; the user executes scripts locally and approves milestones; local tools are the verification authority; senior engineer review remains the final assessment. Trade-off: planner/coder/reviewer independence is reduced. Mitigations: plan and acceptance criteria stated before code, independent reference models with a second cross-check, only tool evidence counts as PASS.
+
+### D-056 - Binary32 representation for complex arithmetic
+Owner: Claude as planner; delegated by an open assignment. IEEE-754 binary32 parts, round to nearest even, subnormals, IEEE special values, fixed evaluation order (four rounded products, then one rounded subtraction/addition), no FMA or three-multiplier form, bit-exact pass criterion with NaN compared by class. Alternative rejected: fixed point (simpler to verify, but conflicts with PROJECT_DECISIONS item 7 and is unusable for the DPC). Does not resolve exp001 gate G3.
+
+### D-057 - Interface and implementation
+Owner: Claude as coder. Identical ports for both entities, one registered output stage (latency 1, one input per cycle), synchronous active-high reset clears out_valid only, data registers not reset and hold when in_valid is low. float_pkg calls state round_nearest, guard 3, check_error and denormalize explicitly.
+
+### D-058 - Independent reference and vectors
+Owner: Claude as planner. Exact rational (Fraction) reference with one rounding per operation, standard library only; NumPy float32 cross-check as a second model. Five categories per operation (directed, edge, special, random_normal, random_bits), 8124 vectors, seed 20261126.
+
+### D-059 - Accept edu_complex_arithmetic
+Owner: user; approved after review of run 20261126T103335Z. Accepted within simulation and generic structural synthesis scope: 24,462 checks, 0 errors; 0 structural problems. Observations CA-OBS-001 (tri-state warnings, 4 per float operation) and CA-DEFECT-001 (runner warning count off by one) recorded, not corrected. Post-synthesis equivalence, technology mapping and timing not established. Evidence: experiments/edu_complex_arithmetic/VALIDATION.md.

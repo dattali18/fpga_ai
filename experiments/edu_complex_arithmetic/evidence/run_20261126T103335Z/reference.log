@@ -1,0 +1,11 @@
+PASS: complex_ref selftest
+add_directed.txt: 16 vectors
+add_edge.txt: 20 vectors
+add_special.txt: 26 vectors
+add_random_normal.txt: 2000 vectors
+add_random_bits.txt: 2000 vectors
+mul_directed.txt: 16 vectors
+mul_edge.txt: 20 vectors
+mul_special.txt: 26 vectors
+mul_random_normal.txt: 2000 vectors
+mul_random_bits.txt: 2000 vectors
